@@ -761,8 +761,11 @@ In this section, we apply similar quantization method to
 the TDHFB Hamiltonian (\ref{TDHFB_Hamiltonian_3}).
 The main difference is that the collective canonical variables are
 not assumed in the present case, but are obtained from the TDHFB dynamics
-itself.
+itself.\par
+In this section, we consider two separated methods to solve the quantum mechanics: periodic boundary condition and adiabatic approximation. 
 %The most natural procedure for quantizing classical dynamics is canonical quantization. The canonical variables become to operators and fulfill the commutation relation
+
+\subsubsection{Periodic boundary condition}
 
 The quantization method is not unique.
 A common choice in the nuclear collective model is the Pauli's prescription.
@@ -918,6 +921,43 @@ B(P_{\rm ad};k\rightarrow k') &=
 	\psi^{(N)}_{k}(\phi)e^{i\frac{N}{2}\Phi} \right|^2,
 \end{align}
 which automatically vanishes for $N'\neq N+2$.
+
+\subsubsection{Adiabatic approximation}
+We assume $j$ as a coordinate, $\phi$ as a conjugate momentum. 
+The adiabatic approximation means $\phi$ in Hamiltonian can be
+ expanded up to second order
+\begin{align}
+ \mathcal{H}(\phi,j;J)
+	\approx V(j:J) + \frac{1}{2B(j;J)}j^2
+\end{align}
+where
+\begin{align}
+ V(j:J) &\equiv \mathcal{H}(\phi=0,j;J) \nonumber \\
+  &= \sum_{l=1,2} \Omega_l \left\{ \epsilon_l(1- q_l)
+	- \frac{g}{4} (\Omega_l(1-q_l^2)+(1-q_l)^2) \right\}
+- \frac{g}{2}\Omega_1\Omega_2
+	\sqrt{(1-q_1^2)(1-q_2^2)} \\
+ B(j;J)^{-1} &\equiv \left. \frac{\partial^2\mathcal{H}}{\partial\phi^2}\right|_{\phi=0} \nonumber \\
+ &= \frac{g}{2}\Omega_1\Omega_2
+	\sqrt{(1-q_1^2)(1-q_2^2)} .
+\end{align}
+We transform the carved space into plain space
+ which keeps the mass parameter equals one
+\begin{align}
+ \mathcal{H}(\phi,j;J) \to \mathcal{\bar{H}}(p,q;J) = \bar{V}(q;J) + \frac{1}{2}p^2 .
+\end{align}
+The relation between both coordinates fulfills
+\begin{align}
+ \frac{\partial q(j)}{\partial j} = \sqrt{B(j;J)} .
+\end{align}
+Instead of Pauli prescription, we solve the Schr\"{o}dinger equation in plain space
+\begin{equation}
+	\bar{H}\left( q,-i\frac{d}{dq},\frac{N}{2} \right)
+	u_k^{(N)}(q) = E_k^{(N)}u_k^{(N)}(q).
+	\label{Schroedinger_eq2}
+\end{equation}
+At weak pairing limit in ground state, most of the component of wave function is expected to occupy around the minimum value of $j$. We choose Neumann boundary condition $u_k^{(N)}(q)'|_{q=q_{min}}=0$, where $q_{min}$ corresponds to the minimum value of $j$.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Fourier decomposition of time-dependent matrix elements}
