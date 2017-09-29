@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  28 SEP 2017 19:06
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  29 SEP 2017 17:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -179,6 +179,30 @@ LaTeX Info: Redefining \REV@mathfrak on input line 119.
 \CommentStream=\write4
 
 Excluding comment 'comment')
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 95.
+
+(c:/w32tex/share/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
+)
 (c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty)
 (c:/w32tex/share/texmf-dist/tex/latex/cases/cases.sty
 Package: cases 2002/05/02 ver 2.5 
@@ -189,18 +213,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (c:/w32tex/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks23
-)
-\captionmargin=\dimen127
-\captionmargin@=\dimen128
-\captionwidth=\dimen129
-\caption@tempdima=\dimen130
-\caption@indent=\dimen131
-\caption@parindent=\dimen132
-\caption@hangindent=\dimen133
+\captionmargin=\dimen129
+\captionmargin@=\dimen130
+\captionwidth=\dimen131
+\caption@tempdima=\dimen132
+\caption@indent=\dimen133
+\caption@parindent=\dimen134
+\caption@hangindent=\dimen135
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -232,14 +251,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count110
 \Gm@cntv=\count111
 \c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen134
-\Gm@wd@mp=\dimen135
-\Gm@odd@mp=\dimen136
-\Gm@even@mp=\dimen137
-\Gm@layoutwidth=\dimen138
-\Gm@layoutheight=\dimen139
-\Gm@layouthoffset=\dimen140
-\Gm@layoutvoffset=\dimen141
+\Gm@bindingoffset=\dimen136
+\Gm@wd@mp=\dimen137
+\Gm@odd@mp=\dimen138
+\Gm@even@mp=\dimen139
+\Gm@layoutwidth=\dimen140
+\Gm@layoutheight=\dimen141
+\Gm@layouthoffset=\dimen142
+\Gm@layoutvoffset=\dimen143
 \Gm@dimlist=\toks24
 
 (c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.cfg))
@@ -399,6 +418,10 @@ LaTeX Warning: Reference `Pad' on page 20 undefined on input line 1515.
 
 LaTeX Warning: Reference `p_Delta2' on page 21 undefined on input line 1558.
 
+File: images/N8p_Delta.eps Graphic file (type eps)
+<images/N8p_Delta.eps>
+File: images/N16p_Delta.eps Graphic file (type eps)
+ <images/N16p_Delta.eps>
 
 LaTeX Warning: Reference `mapping' on page 21 undefined on input line 1625.
 
@@ -437,14 +460,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
  ) 
 Here is how much of TeX's memory you used:
- 4944 strings out of 493709
- 68715 string characters out of 6152372
- 158790 words of memory out of 5000000
- 8456 multiletter control sequences out of 15000+600000
+ 5243 strings out of 493709
+ 72480 string characters out of 6152372
+ 163581 words of memory out of 5000000
+ 8736 multiletter control sequences out of 15000+600000
  20394 words of font info for 79 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,11n,39p,1328b,423s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1.1.dvi (24 pages, 89484 bytes).
+Output written on draft1.1.dvi (24 pages, 90040 bytes).

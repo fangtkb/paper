@@ -27,7 +27,7 @@ floatfix ]%
 
 %aaa
 \usepackage{comment}
-%\usepackage[dvips]{graphicx}
+\usepackage[dvips]{graphicx}
 %\usepackage{amsmath,amssymb}
 %\usepackage{mathrsfs}
 %\usepackage{txfonts}
@@ -1546,35 +1546,35 @@ In this section, we examine the collective treatment of the pairing.
 
 In the superfluid phase, the energy minimization always lead to $\phi=0$.
 Although the global gauge angle $\Phi$ is arbitrary,
-the gap parameter is usually taken as real value ($\Phi=0$).
+the deformation parameter $\alpha$ in gauge space is usually taken as real value ($\Phi=0$).
 \begin{align}
-\Delta(j,J) = g\braket{Z_0|\hat{S}_-|Z_0} %= g\sum_{k>0} u_kv_k \nonumber \\
-	= g\sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
+\alpha(j,J) = \braket{Z_0|\hat{S}_-|Z_0} %= g\sum_{k>0} u_kv_k \nonumber \\
+	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
  \label{Delta_BCS}
 \end{align}
-The relation between $j$ and $\Delta$ 
-and that between $j$ and $E=\cal{H}(\phi=0,j;J)$
+The relation between $j$ and $\alpha$ 
+and that between $j$ and $E=\mathcal{H}(\phi=0,j;J)$
 are shown for $\Omega=8$
 in Figs. \ref{fig:p_Delta1} ($N=8$) and \ref{p_Delta2} ($N=16$).
 %These results correspond to the system in Section 4.2. 
-The gap $\Delta$ is largest at $j=0$ (equal filling in both levels),
+The deformation parameter $\alpha$ is largest at $j=0$ (equal filling in both levels),
 and smallest at end points of $j$.
-The constrained minimization with respect to $\Delta$ cannot 
+The constrained minimization with respect to $\alpha$ cannot 
 produce the states corresponding to $j>0$.
-Apparently, we cannot map the entire region of $j$ to $\Delta$,
-since there is no one-to-one correspondence between $j$ and $\Delta$.
+Apparently, we cannot map the entire region of $j$ to $\alpha$,
+since there is no one-to-one correspondence between $j$ and $\alpha$.
 
 If the system has a deep potential at $j<0$ to prevent the wave function
 from spreading toward the region of $j<0$,
-we may justify the use of $\Delta$ as a coordinate in
+we may justify the use of $\alpha$ as a coordinate in
 the collective model.
 For very large $\Omega$, this is the case.
 However, for $\Omega=8$, the treatment can be justified only for
 a very limited region of $x$, namely in the weak pairing limit.
-For instance, we show the potential energy curves as functions of $\Delta$
+For instance, we show the potential energy curves as functions of $\alpha$
 in Fig.~\ref{fig:Delta_E} for the $N=16$ case.
 In the weak pairing case ($x=0.5$),
-assuming the Neumann boundary condition at $\Delta=0$,
+assuming the Neumann boundary condition at $\alpha=0$,
 we may obtain the colletive wave functions up to the third excited states.
 On the other hand, in the strong pairing case ($x=3.2$), 
 even the ground state may not be bound in the region of $j<0$.
@@ -1604,7 +1604,7 @@ even the ground state may not be bound in the region of $j<0$.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=45mm,angle=-90]{images/N8p_Delta.eps}
+  \includegraphics[width=45mm,angle=-90]{images/N8p_Delta.eps}
  \end{center}
  \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=8$ system.}
  \label{fig:p_Delta1}
@@ -1612,7 +1612,7 @@ even the ground state may not be bound in the region of $j<0$.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=45mm,angle=-90]{images/N16p_Delta.eps}
+  \includegraphics[width=45mm,angle=-90]{images/N16p_Delta.eps}
  \end{center}
  \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=16$ system.}
  \label{fig:p_Delta2}
