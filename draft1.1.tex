@@ -766,6 +766,7 @@ In this section, we consider two separated methods to solve the quantum mechanic
 %The most natural procedure for quantizing classical dynamics is canonical quantization. The canonical variables become to operators and fulfill the commutation relation
 
 \subsubsection{Periodic boundary condition}
+\label{subsec:canonical1}
 
 The quantization method is not unique.
 A common choice in the nuclear collective model is the Pauli's prescription.
@@ -923,6 +924,8 @@ B(P_{\rm ad};k\rightarrow k') &=
 which automatically vanishes for $N'\neq N+2$.
 
 \subsubsection{Adiabatic approximation}
+\label{subsec:canonical2}
+
 We assume $j$ as a coordinate, $\phi$ as a conjugate momentum. 
 The adiabatic approximation means $\phi$ in Hamiltonian can be
  expanded up to second order
@@ -1100,7 +1103,9 @@ We apply the requantization methods in Sec.~\ref{sec:requantization}.
 In the following, the stationary-phase approximation to the path
 integral in Sec.~\ref{sec:SPA} is denoted as ``SPA'',
 the Fourier decomposition method (Sec.~\ref{sec:Fourier}) as ``FD'',
-and the canonical quantization (Sec.~\ref{sec:canonical}) as ``CQ''.
+ the canonical quantization with periodic boundary condition 
+(Sec.~\ref{subsec:canonical1}) as ``CQ1'', and the canonical quantization 
+with adiabatic approximation (Sec.~\ref{subsec:canonical2})  as ``CQ2''.
 In addition, the harmonic approximation at the ground state is
 called ''HA''.
 Note that the SPA and the FD produce the same eigenenergies which
@@ -1113,6 +1118,8 @@ In the limit of $\Omega\rightarrow\infty$,
 we expect that the classical approximation becomes exact.
 Here, we adopt $\Omega=50$ with $N=100$ (closed-shell configuration)
 and $N=50$ (mid-shell configuration).
+
+\subsubsection{Mid-shell configuration}
 
 %The system consists of $\Omega=50$ and $\Delta\epsilon=1$(MeV). We show the results in $N=50$ system, which is always superfluidity in ground state.\par
 Calulated excitation energies are shown in Figs.~\ref{fig:N50energy}
@@ -1264,12 +1271,12 @@ reproduce main features of the exact results.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N50Xeq0p5occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N50Xeq0p5occ.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-12.5$ corresponds to 0p50h configuration, $-11.5$ corresponds to 2p52h configuration, and so on.}
@@ -1299,6 +1306,51 @@ reproduce main features of the exact results.
  \label{fig:N50Pad}
 \end{figure}
 
+\begin{figure}[htbp]
+ \begin{center}
+%  \includegraphics[width=60mm,angle=-90]{images/N100ex_energy.eps}
+ \end{center}
+ \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=50$ system.}
+ \label{fig:N50energy}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{minipage}{1\hsize}
+ \begin{center}
+  \includegraphics[width=67mm,angle=-90]{images/N100Xeq0p5occ.eps}
+ \end{center}
+ \end{minipage}
+ \begin{minipage}{1\hsize}
+ \begin{center}
+  \includegraphics[width=67mm,angle=-90]{images/N100Xeq2occ.eps}
+ \end{center}
+ \end{minipage}
+ \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-12.5$ corresponds to 0p50h configuration, $-11.5$ corresponds to 2p52h configuration, and so on.}
+ \label{fig:N50_occ}
+\end{figure}
+
+\begin{figure}[htbp]
+ \begin{minipage}{0.33\hsize}
+ \begin{center}
+%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_exact.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+ \begin{minipage}{0.33\hsize}
+ \begin{center}
+%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_Type1.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+ \begin{minipage}{0.33\hsize}
+ \begin{center}
+%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_semiclassical.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+ \caption{The strength of pair additional transition from $N=48$ to $N=50$ system defined in (\ref{Pad}). The results of $\ket{0_1^+}\to\ket{0_1^+}$, $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$ are shown. Left panels: exact solution; Middle panels: canonical quantization; Right panels: semiclassical approach.}
+ \label{fig:N50Pad}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \subsection{Small-$\Omega$ cases}
@@ -1377,12 +1429,12 @@ The CQ method also underestimates the intraband transitions.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N8Xeq0p5occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N8Xeq0p5occ.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N8Xeq2occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N8Xeq2occ.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=8$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-2$ corresponds to 0p8h configuration, $-1$ corresponds to 2p10h configuration, and so on.}
@@ -1481,12 +1533,12 @@ with the open trajectory.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N16Xeq0p5occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N16Xeq0p5occ.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-%  \includegraphics[width=67mm,angle=-90]{images/N16Xeq2occ_woType2.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N16Xeq2occ.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-4$ corresponds to 0p0h configuration, $-3$ corresponds to 2p2h configuration, and so on.}
@@ -1604,7 +1656,7 @@ even the ground state may not be bound in the region of $j<0$.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=45mm,angle=-90]{images/N8p_Delta.eps}
+  \includegraphics[width=50mm,angle=-90]{images/N8p_E.eps}
  \end{center}
  \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=8$ system.}
  \label{fig:p_Delta1}
@@ -1612,7 +1664,7 @@ even the ground state may not be bound in the region of $j<0$.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=45mm,angle=-90]{images/N16p_Delta.eps}
+  \includegraphics[width=50mm,angle=-90]{images/N16p_E.eps}
  \end{center}
  \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=16$ system.}
  \label{fig:p_Delta2}
