@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  5 OCT 2017 15:32
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  11 OCT 2017 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -268,17 +268,7 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 49.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 49.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 49.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 49.
- (./draft1.1.aux
-
-LaTeX Warning: Label `fig:N50energy' multiply defined.
-
-
-LaTeX Warning: Label `fig:N50_occ' multiply defined.
-
-
-LaTeX Warning: Label `fig:N50Pad' multiply defined.
-
-)
+ (./draft1.1.aux)
 \openout1 = `draft1.1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -389,90 +379,134 @@ LaTeX Warning: Reference `sec:conclusion' on page 3 undefined on input line 205
 .
 
 [3] [4] [5]
+File: images/phase.eps Graphic file (type eps)
+ <images/phase.eps>
 
 Package natbib Warning: Citation `CDS84' on page 6 undefined on input line 476.
 
 
-[6] [7] [8] [9] [10] Excluding 'comment' comment. [11] [12]
+[6] [7] [8] [9] [10] [11] Excluding 'comment' comment. [12]
 
 Package natbib Warning: Citation `CDS84' on page 13 undefined on input line 971
 .
 
-[13] [14]
-
-LaTeX Warning: Reference `fig:N100energy' on page 15 undefined on input line 11
-26.
-
-[15] [16]
+[13] [14] [15] [16]
+File: images/N50ex_energy2.eps Graphic file (type eps)
+ <images/N50ex_energy2.eps>
 File: images/N50Xeq0p5occ.eps Graphic file (type eps)
  <images/N50Xeq0p5occ.eps>
 File: images/N50Xeq2occ.eps Graphic file (type eps)
- <images/N50Xeq2occ.eps>
 
-LaTeX Warning: Reference `Pad' on page 17 undefined on input line 1305.
+<images/N50Xeq2occ.eps>
+File: images/N50Pad_CQ.eps Graphic file (type eps)
+ <images/N50Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1289--1290
+ [] 
+ []
 
+File: images/N50Pad_FD.eps Graphic file (type eps)
+<images/N50Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1295--1296
+ [] 
+ []
 
-LaTeX Warning: Reference `Pad' on page 17 undefined on input line 1305.
+File: images/N50Pad_SPA.eps Graphic file (type eps)
+<images/N50Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1301--1302
+ [] 
+ []
 
+File: images/N100ex_energy2.eps Graphic file (type eps)
+<images/N100ex_energy2.eps>
 File: images/N100Xeq0p5occ.eps Graphic file (type eps)
-<images/N100Xeq0p5occ.eps>
+ <images/N100Xeq0p5occ.eps>
 File: images/N100Xeq2occ.eps Graphic file (type eps)
- <images/N100Xeq2occ.eps>
 
-LaTeX Warning: Reference `Pad' on page 17 undefined on input line 1351.
+<images/N100Xeq2occ.eps>
+File: images/N100Pad_CQ.eps Graphic file (type eps)
+ <images/N100Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1335--1336
+ [] 
+ []
 
+File: images/N100Pad_FD.eps Graphic file (type eps)
+<images/N100Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1341--1342
+ [] 
+ []
 
-LaTeX Warning: Reference `Pad' on page 17 undefined on input line 1351.
+File: images/N100Pad_SPA.eps Graphic file (type eps)
+<images/N100Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1347--1348
+ [] 
+ []
 
-[17] [18] [19]
+[17] [18] [19] [20]
+File: images/N8ex_energy2.eps Graphic file (type eps)
+ <images/N8ex_energy2.eps>
 File: images/N8Xeq0p5occ.eps Graphic file (type eps)
  <images/N8Xeq0p5occ.eps>
 File: images/N8Xeq2occ.eps Graphic file (type eps)
- <images/N8Xeq2occ.eps>
 
-LaTeX Warning: Reference `Pad' on page 20 undefined on input line 1463.
+<images/N8Xeq2occ.eps>
+File: images/N8Pad_CQ.eps Graphic file (type eps)
+ <images/N8Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1447--1448
+ [] 
+ []
 
+File: images/N8Pad_FD.eps Graphic file (type eps)
+<images/N8Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1453--1454
+ [] 
+ []
 
-LaTeX Warning: Reference `Pad' on page 20 undefined on input line 1463.
+File: images/N8Pad_SPA.eps Graphic file (type eps)
+<images/N8Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1459--1460
+ [] 
+ []
 
-[20] [21]
+[21]
+File: images/N16ex_energy2.eps Graphic file (type eps)
+ <images/N16ex_energy2.eps> [22]
 File: images/N16Xeq0p5occ.eps Graphic file (type eps)
  <images/N16Xeq0p5occ.eps>
 File: images/N16Xeq2occ.eps Graphic file (type eps)
- <images/N16Xeq2occ.eps>
 
-LaTeX Warning: Reference `Pad' on page 22 undefined on input line 1567.
+<images/N16Xeq2occ.eps>
+File: images/N16Pad_CQ.eps Graphic file (type eps)
+ <images/N16Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1551--1552
+ [] 
+ []
 
+File: images/N16Pad_FD.eps Graphic file (type eps)
+<images/N16Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1557--1558
+ [] 
+ []
 
-LaTeX Warning: Reference `Pad' on page 22 undefined on input line 1567.
+File: images/N16Pad_SPA.eps Graphic file (type eps)
+<images/N16Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1563--1564
+ [] 
+ []
 
+[23] [24]
 
-LaTeX Warning: Reference `p_Delta2' on page 22 undefined on input line 1610.
+LaTeX Warning: Reference `p_Delta2' on page 25 undefined on input line 1610.
 
-[22] [23]
+[25]
 File: images/N8p_E.eps Graphic file (type eps)
  <images/N8p_E.eps>
 File: images/N16p_E.eps Graphic file (type eps)
  <images/N16p_E.eps>
+File: images/N50gap_E.eps Graphic file (type eps)
+ <images/N50gap_E.eps>
+File: images/N16gap_E.eps Graphic file (type eps)
 
-LaTeX Warning: Reference `mapping' on page 24 undefined on input line 1677.
-
-
-LaTeX Warning: Reference `CBCS' on page 24 undefined on input line 1677.
-
-
-LaTeX Warning: Reference `Sommerfeld' on page 24 undefined on input line 1677.
-
-
-LaTeX Warning: Reference `mapping' on page 24 undefined on input line 1677.
-
-
-LaTeX Warning: Reference `CBCS' on page 24 undefined on input line 1677.
-
-
-LaTeX Warning: Reference `Sommerfeld' on page 24 undefined on input line 1677.
-
-[24] [25] (./draft1.1.bbl
+<images/N16gap_E.eps> [26] [27] [28] [29] (./draft1.1.bbl
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 5.
@@ -481,28 +515,25 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 5.
 
-[26])
+[30])
 
 Package natbib Warning: There were undefined citations.
 
-[27] (./draft1.1.aux)
+[31] (./draft1.1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 5260 strings out of 493709
- 72787 string characters out of 6152372
- 163581 words of memory out of 5000000
- 8745 multiletter control sequences out of 15000+600000
+ 5301 strings out of 493709
+ 73490 string characters out of 6152372
+ 161581 words of memory out of 5000000
+ 8767 multiletter control sequences out of 15000+600000
  20394 words of font info for 79 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,11n,39p,1328b,444s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,11n,39p,1328b,452s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1.1.dvi (27 pages, 93636 bytes).
+Output written on draft1.1.dvi (31 pages, 104412 bytes).

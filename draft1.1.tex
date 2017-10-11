@@ -451,7 +451,7 @@ terms in general.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=60mm,angle=-90]{images/phase.eps}
+  \includegraphics[width=60mm,angle=-90]{images/phase.eps}
  \end{center}
  \caption{Energy contour plot for $\Omega_1=\Omega_2=8$ and $N=16$.
 	The lines indicate the TDHFB trajectories fulfilling
@@ -673,7 +673,7 @@ becomes
 \begin{align}
 	\ket{\phi_k^N} &\propto \oint d\Phi \oint dt
 	e^{i\mathcal{T}_{N,E_k}(\Phi, t)}
-	\ket{\Phi,t}_{N,E_k} \nonumber \\
+	\ket{\Phi,t}_{N,E_k} \label{semi_wave_func0} \\
 %  &\propto \sum_k \frac{1}{k!}\int_0^{2\pi}d\Phi e^{i(\Pi-k)\Phi}\sum_{j=0}^{k}C_j^{(E,k)}\ket{S_1,-S_1+j;S_2,-S_2+(k-j)} \label{semi_wave_func1}
   &\propto \sum_{m=0}^{J}C_m^{(E_k,J)}\ket{S_1,-S_1+m;S_2,-S_2+(J-m)} ,
 	\label{semi_wave_func1}
@@ -1262,7 +1262,7 @@ reproduce main features of the exact results.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=60mm,angle=-90]{images/N50ex_energy.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N50ex_energy2.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=50$ system.}
  \label{fig:N50energy}
@@ -1279,39 +1279,39 @@ reproduce main features of the exact results.
   \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ.eps}
  \end{center}
  \end{minipage}
- \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-12.5$ corresponds to 0p50h configuration, $-11.5$ corresponds to 2p52h configuration, and so on.}
+ \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=50$ system. The upper and lower panels display the results for $x=0.5$ and $x=2$, respectively. From (\ref{momentum}), $j=-12.5$ corresponds to 0p50h configuration, $j=-11.5$ corresponds to 2p52h configuration, and so on.}
  \label{fig:N50_occ}
 \end{figure}
 
 \begin{figure}[htbp]
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N50Pad_exact.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N50Pad_CQ.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N50Pad_Type1.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N50Pad_FD.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N50Pad_semiclassical.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N50Pad_SPA.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \caption{The strength of pair additional transition from $N=48$ to $N=50$ system defined in (\ref{Pad}). The results of $\ket{0_1^+}\to\ket{0_1^+}$, $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$ are shown. Left panels: exact solution; Middle panels: canonical quantization; Right panels: semiclassical approach.}
+ \caption{The strength of pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from $N=48$ to $N=50$ system. Dashed lines are exact solution. Upper parts are the transition of $\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$, lower parts are the transition of $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$. Left panels: CQ1; Middle panels: FD; Right panels: SPA.}
  \label{fig:N50Pad}
 \end{figure}
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=60mm,angle=-90]{images/N100ex_energy.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N100ex_energy2.eps}
  \end{center}
- \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=50$ system.}
- \label{fig:N50energy}
+ \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=100$ system.}
+ \label{fig:N100energy}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -1325,31 +1325,31 @@ reproduce main features of the exact results.
   \includegraphics[width=67mm,angle=-90]{images/N100Xeq2occ.eps}
  \end{center}
  \end{minipage}
- \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-12.5$ corresponds to 0p50h configuration, $-11.5$ corresponds to 2p52h configuration, and so on.}
- \label{fig:N50_occ}
+ \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=100$ system. The upper and lower panels display the results for $x=0.5$ and $x=2$, respectively. From (\ref{momentum}), $j=-25$ corresponds to 0p0h configuration, $j=-24$ corresponds to 2p2h configuration, and so on.}
+ \label{fig:N100_occ}
 \end{figure}
 
 \begin{figure}[htbp]
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_exact.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N100Pad_CQ.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_Type1.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N100Pad_FD.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N100Pad_semiclassical.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N100Pad_SPA.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \caption{The strength of pair additional transition from $N=48$ to $N=50$ system defined in (\ref{Pad}). The results of $\ket{0_1^+}\to\ket{0_1^+}$, $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$ are shown. Left panels: exact solution; Middle panels: canonical quantization; Right panels: semiclassical approach.}
- \label{fig:N50Pad}
+ \caption{The strength of pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from $N=98$ to $N=100$ system. Dashed lines are exact solution. Upper parts are the transition of $\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$, lower parts are the transition of $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$. Left panels: CQ1; Middle panels: FD; Right panels: SPA.}
+ \label{fig:N100Pad}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -1420,7 +1420,7 @@ The CQ method also underestimates the intraband transitions.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=60mm,angle=-90]{images/N8ex_energy.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N8ex_energy2.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=8$ system.}
  \label{fig:N8energy}
@@ -1437,30 +1437,30 @@ The CQ method also underestimates the intraband transitions.
   \includegraphics[width=67mm,angle=-90]{images/N8Xeq2occ.eps}
  \end{center}
  \end{minipage}
- \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=8$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-2$ corresponds to 0p8h configuration, $-1$ corresponds to 2p10h configuration, and so on.}
+ \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=8$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From (\ref{momentum}), $j=-2$ corresponds to 0p8h configuration, $j=-1$ corresponds to 2p10h configuration, and so on.}
  \label{fig:N8_occ}
 \end{figure}
 
 \begin{figure}[htbp]
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N8Pad_exact.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N8Pad_CQ.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N8Pad_Type1.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N8Pad_FD.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N8Pad_semiclassical.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N8Pad_SPA.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \caption{The strength of pair additional transition from $N=6$ to $N=8$ system defined in (\ref{Pad}). The results of $\ket{0_1^+}\to\ket{0_1^+}$, $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$ are shown. Left panels: exact solution; Middle panels: canonical quantization; Right panels: semiclassical approach.}
+ \caption{The strength of pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from $N=6$ to $N=8$ system. Dashed lines are exact solution. Upper parts are the transition of $\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$, lower parts are the transition of $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$. Left panels: CQ1; Middle panels: FD; Right panels: SPA.}
  \label{fig:N8Pad}
 \end{figure}
 
@@ -1524,7 +1524,7 @@ with the open trajectory.
 
 \begin{figure}[htbp]
  \begin{center}
-%  \includegraphics[width=60mm,angle=-90]{images/N16ex_energy.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N16ex_energy2.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=16$ system.}
  \label{fig:N16energy}
@@ -1541,30 +1541,30 @@ with the open trajectory.
   \includegraphics[width=67mm,angle=-90]{images/N16Xeq2occ.eps}
  \end{center}
  \end{minipage}
- \caption{Occupation probability in excited $0^+$ states as a function of $\pi$ in $N=50$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From the physical meaning of $\pi$, $-4$ corresponds to 0p0h configuration, $-3$ corresponds to 2p2h configuration, and so on.}
+ \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=16$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively.From (\ref{momentum}), $-4$ corresponds to 0p0h configuration, $-3$ corresponds to 2p2h configuration, and so on.}
  \label{fig:N16_occ}
 \end{figure}
 
 \begin{figure}[htbp]
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N16Pad_exact.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N16Pad_CQ.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N16Pad_Type1.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N16Pad_FD.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \begin{minipage}{0.33\hsize}
+ \begin{minipage}{0.3\hsize}
  \begin{center}
-%  \includegraphics[width=70mm,angle=-90]{images/N16Pad_semiclassical.eps}
+  \includegraphics[width=70mm,angle=-90]{images/N16Pad_SPA.eps}
  \end{center}
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
- \caption{The strength of pair additional transition from $N=14$ to $N=16$ system defined in (\ref{Pad}). The results of $\ket{0_1^+}\to\ket{0_1^+}$, $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$ are shown. Left panels: exact solution; Middle panels: canonical quantization; Right panels: semiclassical approach.}
+ \caption{The strength of pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from $N=14$ to $N=16$ system. Dashed lines are exact solution. Upper parts are the transition of $\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$, lower parts are the transition of $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$. Left panels: CQ1; Middle panels: FD; Right panels: SPA.}
  \label{fig:N16Pad}
 \end{figure}
 %In realistic type, semiclassical approach is much better than canonical quantization in every physical values, especially in two-particle transition. The most difficult case is closed shell system with BCS phase transition. However, semiclassical approach works well in closed shell system except phase transition region. 
@@ -1658,7 +1658,8 @@ even the ground state may not be bound in the region of $j<0$.
  \begin{center}
   \includegraphics[width=50mm,angle=-90]{images/N8p_E.eps}
  \end{center}
- \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=8$ system.}
+ \caption{Energy surface with respect to $j$ in $x=0.5$, $x=2$ and $x=3.2$, in $\Omega=8$ and $N=8$ system.
+ Dashed line is pairing deformation parameter $\alpha$ in (\ref{Delta_BCS}) as a function of $j$.}
  \label{fig:p_Delta1}
 \end{figure}
 
@@ -1666,15 +1667,26 @@ even the ground state may not be bound in the region of $j<0$.
  \begin{center}
   \includegraphics[width=50mm,angle=-90]{images/N16p_E.eps}
  \end{center}
- \caption{Pairing gap $\Delta$ in (\ref{Delta_BCS}) as a function of $\pi$ with various pairing strength in $N=16$ system.}
+ \caption{Energy surface with respect to $j$ in $x=0.5$, $x=2$ and $x=3.2$, in $\Omega=8$ and $N=16$ system.
+ Dashed line is pairing deformation parameter $\alpha$ in (\ref{Delta_BCS}) as a function of $j$.}
  \label{fig:p_Delta2}
 \end{figure}
 
 \begin{figure}[htbp]
+ \begin{minipage}{0.45\hsize}
  \begin{center}
-%  \includegraphics[width=130mm,angle=-90]{images/Delta_compare.eps}
+  \includegraphics[width=130mm,angle=-90]{images/N50gap_E.eps}
  \end{center}
- \caption{Energy surface with respect to $\Delta$. The results correspond to Section 4.2, $N=16$ system. Purple lines are obtained from (\ref{mapping}) and green dashed lines are obtained from (\ref{CBCS}). The blue lines are excitation energy spectra until 3rd excitation obtained from (\ref{Sommerfeld}). The top, middle and bottom panels display the energy surfaces with various pairing strength.}
+ \end{minipage}
+ \begin{minipage}{0.45\hsize}
+ \begin{center}
+  \includegraphics[width=130mm,angle=-90]{images/N16gap_E.eps}
+ \end{center}
+\end{minipage}
+ \caption{Energy surface with respect to $\alpha$ in $x=0.5$, $x=1$ and $x=2$. 
+Green lines are energy spectra until 3rd excitation obtained from CQ2 
+(Sec.~\ref{subsec:canonical2}). Left panels: $\Omega=50$, $N=50$ system;
+ Right panels: $\Omega=8$, $N=16$ system.}
  \label{fig:Delta_E}
 \end{figure}
 
@@ -1753,6 +1765,53 @@ method \cite{NMMY16} is a promising tool.
 The combined study of the ASCC and the SPA for multi-level systems is our
 next target under progress.
 
+\appendix
+\section{Derivation of semiclassical wave function}
+
+We give the detail derivation of semiclassical wave function 
+discussed in Sec \ref{sec:SPA}. The explicit form of coherent state is
+\begin{align}
+  \ket{Z} &= \prod_{l=1}^2(1+|Z_l|^2)^{-\Omega_l/2}e^{Z_lS_l^{\dag}}\ket{0} \nonumber \\
+  &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
+  {}_kC_m \left(
+  \tan{\frac{\theta_1}{2}}e^{-i\phi_1}S_1^{\dag} \right)^m \left(
+  \tan{\frac{\theta_2}{2}}e^{-i\phi_2}S_2^{\dag} \right)^{k-m} \ket{0} \nonumber \\
+  &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
+  {}_kC_m \tan^m{\frac{\theta_1}{2}}\tan^{k-m}{\frac{\theta_2}{2}}e^{-ik\Phi}e^{-i(k/2-m)\phi}
+  (S_1^{\dag})^m(S_2^{\dag})^{k-m} \ket{0}
+  \label{ZZ}
+\end{align} 
+Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$, The classical wave function becomes
+\begin{align}
+	\ket{\phi_k^N} \propto& \oint d\Phi \oint dt
+	e^{i\mathcal{T}_{N,E_k}(\Phi, t)}
+	\ket{\Phi,t}_{N,E_k} \nonumber \\
+  \propto& \sum_k \frac{1}{k!} \sum_{m=0}^k{}_kC_m \int_0^{2\pi} d\Phi e^{i(N/2-k)\Phi} 
+  \int_0^T dt e^{i\int \pi(t') \dot{\phi}(t') dt'-i(k/2-m)\phi} \nonumber \\
+  &\times \left\{ \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \right\}
+\tan^m{\frac{\theta_1}{2}}\tan^{k-m}\frac{\theta_2}{2}(S_1^{\dag})^m(S_2^{\dag})^{k-m} \ket{0} \nonumber \\
+  \propto& \sum_{m=0}^{N/2}{}_{N/2}C_m  \int_0^T dt \exp{\left( i\int \pi(t') \dot{\phi}(t') dt'-i(N/4-m)\phi \right)} \nonumber \\
+  &\times \left\{ \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \right\} 
+\tan^m{\frac{\theta_1}{2}}\tan^{N/2-m}\frac{\theta_2}{2} (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} \label{semi_wave_func_b}
+\end{align}
+From 2nd line to 3rd line, we can find that it is nothing but number projection. In SU(2) quasispin representation, the vacuum state becomes $\ket{0}=\ket{S_1,-S_1;S_2,-S_2}$, which leads
+\begin{align}
+  (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} 
+  = \sqrt{\frac{(2S_1)!m!}{(2S_1-m)!}} \sqrt{\frac{(2S_2)!(N/2-m)!}{(2S_2-(N/2-m))!}}
+  \ket{S_1,-S_1+m;S_2,-S_2+(N/2-m)}.
+\end{align}
+For convenience, we define a coefficient 
+\begin{align}
+  A(q,S,m) &\equiv 
+  \frac{\tan^m{\frac{\theta}{2}}}{\left(1+\tan^2{\frac{\theta}{2}}\right)^{-S}}
+  \sqrt{\frac{(2S)!m!}{(2S-m)!}}  \nonumber \\
+  &= \left(\frac{1-q}{2}\right)^{m/2}\left(\frac{1+q}{2}\right)^{S-m/2} \sqrt{\frac{(2S)!m!}{(2S-m)!}}
+\label{tan}
+\end{align}
+where $q=\cos{\theta}$. Inserting (\ref{tan}) into (\ref{semi_wave_func_b}) and using $N/2=J$, the semiclassical wave function attributes to (\ref{semi_wave_func1}).
+%\begin{align}
+ % \sum_{m=0}^{J}{}_J C_m\int_0^T dt \exp{\left( i\int^t \pi(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) (S_1^{\dag})^m(S_2^{\dag})^{J-m}\ket{0}
+%\end{align}
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
