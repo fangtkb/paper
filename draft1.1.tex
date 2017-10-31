@@ -143,7 +143,7 @@ For this purpose,
 since the TDHF(B) trajectory corresponds to a classical limit of the path
 integral formulation,
 the requantization of the mean-field dynamics was
-proposed \cite{Neg80,path,path2,Rei80}.
+proposed \cite{Neg80,KS80,K81,Rei80}.
 It recovers quantum fluctuations missing in the mean-field
 level, and possibly enables us to describe large-amplitude collective
 tunneling phenomena such as spontaneous fission \cite{Neg80}.
@@ -545,7 +545,7 @@ $\mathcal{H}(Z_{\rm cl}(t),Z_{\rm cl}^*(t))= \mathcal{H}(Z',Z'^*)$.
 The energy eigenstates correspond to stationary states,
 $\braket{Z|\psi(t)} \propto \braket{Z|\psi(0)}=\psi(Z)$,
 which can be constructed by superposing the coherent states along
-a periodic TDHFB trajectory $Z_{\rm cl}^{(k)}$ as \cite{path,path2,SM88}.
+a periodic TDHFB trajectory $Z_{\rm cl}^{(k)}$ as \cite{KS80,K81,SM88}.
 \begin{equation}
 	\ket{\phi_k} = \oint d\mu(Z_{\rm cl}^{(k)}) \ket{Z_{\rm cl}^{(k)}}
 	e^{i\mathcal{T}[Z_{\rm cl}^{(k)}]} .
@@ -762,11 +762,12 @@ the TDHFB Hamiltonian (\ref{TDHFB_Hamiltonian_3}).
 The main difference is that the collective canonical variables are
 not assumed in the present case, but are obtained from the TDHFB dynamics
 itself.\par
-In this section, we consider two separated methods to solve the quantum mechanics: periodic boundary condition and adiabatic approximation. 
+
+%In this section, we consider two separated methods to solve the quantum mechanics: periodic boundary condition and adiabatic approximation. 
 %The most natural procedure for quantizing classical dynamics is canonical quantization. The canonical variables become to operators and fulfill the commutation relation
 
-\subsubsection{Periodic boundary condition}
-\label{subsec:canonical1}
+%\subsubsection{Periodic boundary condition}
+%\label{subsec:canonical1}
 
 The quantization method is not unique.
 A common choice in the nuclear collective model is the Pauli's prescription.
@@ -923,15 +924,19 @@ B(P_{\rm ad};k\rightarrow k') &=
 \end{align}
 which automatically vanishes for $N'\neq N+2$.
 
+\begin{comment}
+
 \subsubsection{Adiabatic approximation}
 \label{subsec:canonical2}
 
+We hope that the pairing large amplitude collective motion can be 
+described in adiabatic approximation. 
 We assume $j$ as a coordinate, $\phi$ as a conjugate momentum. 
-The adiabatic approximation means $\phi$ in Hamiltonian can be
+The adiabatic approximation means the conjugate momentum in Hamiltonian can be
  expanded up to second order
 \begin{align}
  \mathcal{H}(\phi,j;J)
-	\approx V(j:J) + \frac{1}{2B(j;J)}j^2
+	\approx V(j:J) + \frac{1}{2B(j;J)}\phi^2
 \end{align}
 where
 \begin{align}
@@ -944,12 +949,12 @@ where
  &= \frac{g}{2}\Omega_1\Omega_2
 	\sqrt{(1-q_1^2)(1-q_2^2)} .
 \end{align}
-We transform the carved space into plain space
- which keeps the mass parameter equals one
+Because $B(j;J)$ diverges at both end points in $j$ space, it has advantage 
+to transform the carved space into plain space which keeps the mass parameter equals one
 \begin{align}
  \mathcal{H}(\phi,j;J) \to \mathcal{\bar{H}}(p,q;J) = \bar{V}(q;J) + \frac{1}{2}p^2 .
 \end{align}
-The relation between both coordinates fulfills
+The relation between both coordinate systems fulfills
 \begin{align}
  \frac{\partial q(j)}{\partial j} = \sqrt{B(j;J)} .
 \end{align}
@@ -959,7 +964,13 @@ Instead of Pauli prescription, we solve the Schr\"{o}dinger equation in plain sp
 	u_k^{(N)}(q) = E_k^{(N)}u_k^{(N)}(q).
 	\label{Schroedinger_eq2}
 \end{equation}
-At weak pairing limit in ground state, most of the component of wave function is expected to occupy around the minimum value of $j$. We choose Neumann boundary condition $u_k^{(N)}(q)'|_{q=q_{min}}=0$, where $q_{min}$ corresponds to the minimum value of $j$.
+At weak pairing ($x<1$) in ground state, most of the component of wave function is 
+expected to occupy around the minimum value of $j$. 
+We choose Neumann boundary condition $u_k^{(N)}(q)'|_{q=q_{min}}=0$, 
+where $q_{min}$ corresponds to the minimum value of $j$. Under such boundary condition, 
+the occupation probability in $j$ space approaches to $\delta(j)$ in $x\to 0$ limit.
+
+\end{comment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1103,11 +1114,9 @@ We apply the requantization methods in Sec.~\ref{sec:requantization}.
 In the following, the stationary-phase approximation to the path
 integral in Sec.~\ref{sec:SPA} is denoted as ``SPA'',
 the Fourier decomposition method (Sec.~\ref{sec:Fourier}) as ``FD'',
- the canonical quantization with periodic boundary condition 
-(Sec.~\ref{subsec:canonical1}) as ``CQ1'', and the canonical quantization 
-with adiabatic approximation (Sec.~\ref{subsec:canonical2})  as ``CQ2''.
-In addition, the harmonic approximation at the ground state is
-called ''HA''.
+and the canonical quantization with periodic boundary condition 
+(Sec.~\ref{subsec:canonical1}) as ``CQ''.
+%In addition, the harmonic approximation at the ground state is called ''HA''.
 Note that the SPA and the FD produce the same eigenenergies which
 are based on the EBK quantization rule.
 
@@ -1262,7 +1271,7 @@ reproduce main features of the exact results.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{images/N50ex_energy2.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N50ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=50$ system.}
  \label{fig:N50energy}
@@ -1271,12 +1280,12 @@ reproduce main features of the exact results.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N50Xeq0p5occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N50Xeq0p5occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=50$ system. The upper and lower panels display the results for $x=0.5$ and $x=2$, respectively. From (\ref{momentum}), $j=-12.5$ corresponds to 0p50h configuration, $j=-11.5$ corresponds to 2p52h configuration, and so on.}
@@ -1308,7 +1317,7 @@ reproduce main features of the exact results.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{images/N100ex_energy2.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N100ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=100$ system.}
  \label{fig:N100energy}
@@ -1317,12 +1326,12 @@ reproduce main features of the exact results.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N100Xeq0p5occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N100Xeq0p5occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N100Xeq2occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N100Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=100$ system. The upper and lower panels display the results for $x=0.5$ and $x=2$, respectively. From (\ref{momentum}), $j=-25$ corresponds to 0p0h configuration, $j=-24$ corresponds to 2p2h configuration, and so on.}
@@ -1420,7 +1429,7 @@ The CQ method also underestimates the intraband transitions.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{images/N8ex_energy2.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N8ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=8$ system.}
  \label{fig:N8energy}
@@ -1429,12 +1438,12 @@ The CQ method also underestimates the intraband transitions.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N8Xeq0p5occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N8Xeq0p5occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N8Xeq2occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N8Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=8$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively. From (\ref{momentum}), $j=-2$ corresponds to 0p8h configuration, $j=-1$ corresponds to 2p10h configuration, and so on.}
@@ -1524,7 +1533,7 @@ with the open trajectory.
 
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{images/N16ex_energy2.eps}
+  \includegraphics[width=60mm,angle=-90]{images/N16ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and $\ket{0_4^+}$ in $N=16$ system.}
  \label{fig:N16energy}
@@ -1533,12 +1542,12 @@ with the open trajectory.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N16Xeq0p5occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N16Xeq0p5occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{1\hsize}
  \begin{center}
-  \includegraphics[width=67mm,angle=-90]{images/N16Xeq2occ.eps}
+  \includegraphics[width=67mm,angle=-90]{images/N16Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{Occupation probability in excited $0^+$ states as a function of $j$ in $N=16$ system. The upper and lower panels display the results for $x=0.05$ and $x=0.2$, respectively.From (\ref{momentum}), $-4$ corresponds to 0p0h configuration, $-3$ corresponds to 2p2h configuration, and so on.}
@@ -1604,10 +1613,15 @@ the deformation parameter $\alpha$ in gauge space is usually taken as real value
 	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
  \label{Delta_BCS}
 \end{align}
+Using $\alpha$ as a coordinate is equivalent to using pairing gap $\Delta$ as a coordinate because the relation
+\begin{align}
+  \alpha = \frac{1}{2}\sum_{k>0}\frac{\Delta}{\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}}
+\end{align}
+guarantees one-to-one correspondence between $\alpha$ and $\Delta$.
 The relation between $j$ and $\alpha$ 
 and that between $j$ and $E=\mathcal{H}(\phi=0,j;J)$
 are shown for $\Omega=8$
-in Figs. \ref{fig:p_Delta1} ($N=8$) and \ref{p_Delta2} ($N=16$).
+in Fig. \ref{fig:p_Delta1} ($N=8$) and Fig. \ref{fig:p_Delta2} ($N=16$).
 %These results correspond to the system in Section 4.2. 
 The deformation parameter $\alpha$ is largest at $j=0$ (equal filling in both levels),
 and smallest at end points of $j$.
@@ -1620,7 +1634,7 @@ If the system has a deep potential at $j<0$ to prevent the wave function
 from spreading toward the region of $j<0$,
 we may justify the use of $\alpha$ as a coordinate in
 the collective model.
-For very large $\Omega$, this is the case.
+For very large $\Omega$, this is the case (See Fig. \ref{fig:Delta_E}, left panels).
 However, for $\Omega=8$, the treatment can be justified only for
 a very limited region of $x$, namely in the weak pairing limit.
 For instance, we show the potential energy curves as functions of $\alpha$
@@ -1675,17 +1689,17 @@ even the ground state may not be bound in the region of $j<0$.
 \begin{figure}[htbp]
  \begin{minipage}{0.45\hsize}
  \begin{center}
-  \includegraphics[width=130mm,angle=-90]{images/N50gap_E.eps}
+  \includegraphics[width=50mm,angle=-90]{images/N50Xeq2p4gap_E.eps}
  \end{center}
  \end{minipage}
  \begin{minipage}{0.45\hsize}
  \begin{center}
-  \includegraphics[width=130mm,angle=-90]{images/N16gap_E.eps}
+  \includegraphics[width=50mm,angle=-90]{images/N16Xeq2p4gap_E.eps}
  \end{center}
 \end{minipage}
- \caption{Energy surface with respect to $\alpha$ in $x=0.5$, $x=1$ and $x=2$. 
-Green lines are energy spectra until 3rd excitation obtained from CQ2 
-(Sec.~\ref{subsec:canonical2}). Left panels: $\Omega=50$, $N=50$ system;
+ \caption{Energy surface with respect to $\alpha$ in $x=2.4$. 
+Green lines are energy spectra until 3rd excitation obtained from CQ 
+(Sec.~\ref{sec:canonical}). Left panels: $\Omega=50$, $N=50$ system;
  Right panels: $\Omega=8$, $N=16$ system.}
  \label{fig:Delta_E}
 \end{figure}
@@ -1694,6 +1708,7 @@ Green lines are energy spectra until 3rd excitation obtained from CQ2
 
 
 \section{Conclusion}
+\label{sec:conclusion}
 
 The different methods of the requantization of the TDHFB dynamics
 was studied for the two-level pairing model;
