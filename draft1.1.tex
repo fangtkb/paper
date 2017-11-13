@@ -48,6 +48,8 @@ floatfix ]%
 
 \begin{document}
 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 \title{Comparative study of requantization of time-dependent mean-field
 for pairing dynamics}
 \author{Fang Ni}
@@ -62,7 +64,7 @@ for pairing dynamics}
 
 
 \begin{abstract}
-In order to obtain quantal information, such as enegy eigenvalues
+In order to obtain quantal information, such as energy eigenvalues
 and transition matrix elements,
 it is useful to requantize the mean-field dynamics.
 We study the two-level pairing model to compare different
@@ -94,7 +96,7 @@ Properties of low-lying modes of excitation in even-even nuclei are
 expected to be determined by interplay between
 the pairing and the quadrupole correlations.
 However, the true nature of the low-lying excitations is still unclear,
-especilly for excited $J^\pi=0^+$ states \cite{garrett,HW11}.
+especially for excited $J^\pi=0^+$ states \cite{garrett,HW11}.
 Understanding the pairing dynamics is a key ingredient for solving
 mysteries of excited $0^+$ states.
 
@@ -161,12 +163,12 @@ practicable.
 
 Our final goal is to study the role of dynamical pairing effects
 and to reveal nature of the mysterious excited $0^+$ states.
-As the first step Toward this goal, we investigate accuracy and
+As the first step, toward this goal, we investigate accuracy and
 applicability of the requantized TDHFB model for a two-level pairing model
 with equal degeneracy $\Omega$ \cite{HF60},
 especially on the calculation of two-particle-transfer matrix elements.
 In Ref.~\cite{CDS84},
-the two-particle-transfer matrix elements were eveluated as
+the two-particle-transfer matrix elements were evaluated as
 Fourier components of the time-dependent mean values of the pair
 creation operators,
 which demonstrates nice agreement with the exact results at
@@ -522,7 +524,7 @@ connecting $Z_i=Z'_{\rm cl}(0)=Z'$ and $Z_f=Z'_{\rm cl}(t)$.
 \begin{equation}
 	\mathcal{S}_{\rm cl}(Z'_{\rm cl}(t),Z') \equiv \int_{0}^{t}
 \braket{Z_{\rm cl}(t)|
-	i\hbar\frac{\partial}{\partial t} - H
+	i\frac{\partial}{\partial t} - H
 	|Z_{\rm cl}(t)} dt
 	= \mathcal{T}[Z_{\rm cl}] - \mathcal{H}(Z',Z'^*) t 
 	,
@@ -531,7 +533,7 @@ connecting $Z_i=Z'_{\rm cl}(0)=Z'$ and $Z_f=Z'_{\rm cl}(t)$.
 with
 \begin{equation}
 \mathcal{T}[Z_{\rm cl}]\equiv
-\int_{0}^{t} \braket{Z_{\rm cl}(t)| i\hbar\frac{\partial}{\partial t}
+\int_{0}^{t} \braket{Z_{\rm cl}(t)| i\frac{\partial}{\partial t}
 	|Z_{\rm cl}(t)} dt 
 	= \int_{Z'}^{Z'_{\rm cl}(t)}
 	\frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l|^2}
@@ -590,7 +592,7 @@ the $k$-th semiclassical wave function can be calculated as
 \begin{equation}
   \ket{\phi_k} \propto \oint d\theta_1\cdots \oint d\theta_M \ 
 	\rho(E_k,v^{(k)},\theta)
-	\ket{E_k,v^{(k)},\theta} e^{i\mathcal{T}[E_k,v^{(k)},\theta]/\hbar} .
+	\ket{E_k,v^{(k)},\theta} e^{i\mathcal{T}[E_k,v^{(k)},\theta]} .
   \label{semi_wave_func}
 \end{equation}
 Here, we omit the integration with respect to the invariant variables,
@@ -1070,13 +1072,13 @@ Since all the properties are scaled with the ratio, $g/\Delta\epsilon$,
 where $\Delta\epsilon$ is the level spacing
 $\Delta\epsilon=\epsilon_2-\epsilon_1$,
 we define a dimensionless parameter to control the strength of
-the pairing correlation;
+the pairing correlation
 \begin{align}
   x = 2\Omega\frac{g}{\Delta\epsilon} .
 \end{align}
 For sub-shell-closed systems with $N=2\Omega$ system,
 the transition from normal ($x<1$) to superfluid ($x>1$) states
-takes place at $x=1$
+takes place at $x=1$.\footnote{$x$ is common definition of dimensionless coupling constant. Strictly, the exact phase transition point is $x=2\Omega/(2\Omega-1)$. }
 
 %We consider two types of system: [1. Ideal type] $\Omega$ is large, which causes BCS approximation works very well for $x>>1$; [2. Realistic type] $\Omega$ is comparable to the capacity of single particle level between neighborhood magic numbers in nuclei. For each type, we consider the dynamics for $N=\Omega$ (half-filled) and $N=2\Omega$ (closed shell) system.\par
 
@@ -1127,8 +1129,6 @@ In the limit of $\Omega\rightarrow\infty$,
 we expect that the classical approximation becomes exact.
 Here, we adopt $\Omega=50$ with $N=100$ (closed-shell configuration)
 and $N=50$ (mid-shell configuration).
-
-\subsubsection{Mid-shell configuration}
 
 %The system consists of $\Omega=50$ and $\Delta\epsilon=1$(MeV). We show the results in $N=50$ system, which is always superfluidity in ground state.\par
 Calulated excitation energies are shown in Figs.~\ref{fig:N50energy}
@@ -1222,7 +1222,7 @@ the $B(P_{\rm ad}; 0\rightarrow 0)$ in the vibrational region
 ($x\lesssim 1$), because they both change the number of pair-phonon quanta
 by one unit.
 In contrast, $B(P_{\rm ad}; 1\rightarrow 0)$, which change the phonon
-quanta by two, are almost zero.
+quanta by three, are almost zero.
 In the pair-rotational region ($x \gg 1$),
 $B(P_{\rm ad}; 1\rightarrow 0)$ and $B(P_{\rm ad}; 0\rightarrow 1)$
 are roughly identical,
@@ -1252,9 +1252,9 @@ The CQ method qualitatively agree with the exact calculation.
 For instance, the order-of-magnitude difference between intraband
 and interband transitions.
 However, the precision of the CQ method is not so good,
-especiallyaround $x=1$.
+especially around $x=1$.
 The FD method properly describes the main features
-in the superflud phase, while it fails for the normal phase
+in the superfluid phase, while it fails for the normal phase
 ($x\lesssim 1$). 
 In the mid-shell configuration, the ground state is always
 in the superfluid phase at $x>0$,
@@ -1379,7 +1379,7 @@ while it underestimates the excitation energies at $x\gtrsim 1$.
 Analogous to the case of $\Omega=50$,
 this is mainly due to effect of the zero-point energy $\Delta E$.
 The ground-state energy in the CQ calculation 
-is bound at $x\gtrsim 1$ ({\bf need to check}).
+is bound at $x\gtrsim 1$.
 However, because of the weak collectivity with $N=8$,
 the first excited state stays unbound even at the maximum $x$ in 
 Fig.~\ref{fig:N8energy}.
@@ -1487,8 +1487,8 @@ The behaviors of the lowest excitation agree with the exact calculations,
 while the CQ method substantially underestimates those for higher states.
 This is again due to the difference in the zero-point energy in
 the ground and the excited states.
-In the CQ calculation, the first excited state is bound at $x\gtrsim 1.?$,
-but the second excited state is unbound for $x\lesssim 3.?$.
+In the CQ calculation, the first excited state is bound at $x\gtrsim 2$,
+but the second excited state is unbound for $x\lesssim 3.2$.
 
 Near the transition point from the open to closed trajectories,
 the wave functions calculated with the SPA and CQ methods somewhat differ
@@ -1498,7 +1498,7 @@ They agree with exact calculation at $x=0.5$.
 In contrast, we find some deviations for the first excited state ($k=1$)
 at $x=2$.
 This is because the $k=1$ trajectory corresponding to the first excited state
-changes its character from open to closed at $x\approx 1.8$ {\bf need to check}.
+changes its character from open to closed at $x\approx 1.8$.
 Therefore, the first excited wave function is difficult to reproduce in
 the SPA, although the wave functions for
 the ground and higher excited states show reasonable agreement.
@@ -1613,7 +1613,7 @@ the deformation parameter $\alpha$ in gauge space is usually taken as real value
 	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
  \label{Delta_BCS}
 \end{align}
-Using $\alpha$ as a coordinate is equivalent to using pairing gap $\Delta$ as a coordinate because the relation
+$\alpha$ is equivalent to pairing gap $\Delta$ as a coordinate because the gap equation
 \begin{align}
   \alpha = \frac{1}{2}\sum_{k>0}\frac{\Delta}{\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}}
 \end{align}
@@ -1634,16 +1634,27 @@ If the system has a deep potential at $j<0$ to prevent the wave function
 from spreading toward the region of $j<0$,
 we may justify the use of $\alpha$ as a coordinate in
 the collective model.
-For very large $\Omega$, this is the case (See Fig. \ref{fig:Delta_E}, left panels).
-However, for $\Omega=8$, the treatment can be justified only for
-a very limited region of $x$, namely in the weak pairing limit.
-For instance, we show the potential energy curves as functions of $\alpha$
-in Fig.~\ref{fig:Delta_E} for the $N=16$ case.
-In the weak pairing case ($x=0.5$),
-assuming the Neumann boundary condition at $\alpha=0$,
-we may obtain the colletive wave functions up to the third excited states.
-On the other hand, in the strong pairing case ($x=3.2$), 
-even the ground state may not be bound in the region of $j<0$.
+The importance of the region of $j<0$ is considerable in strong pairing case.
+Fig. \ref{fig:Delta_E} shows two examples of the relationship 
+between excitation energies and energy surface.
+In the left panel ($\Omega=50$, $N=50$, $x=2.4$), the excited $0^+$ states are bound up to second excitation.
+For very large degeneracy, the pocket of energy surface is deep, 
+hence the low-lying excited states can be described by $\alpha$. 
+However, in the right panel ($\Omega=8$, $N=16$, $x=2.4$), 
+only the ground state is bound, and all excited $0^+$ states are unbound.
+For small degeneracy, the shallow pocket of energy surface allows 
+the excited $0^+$ states to be unbound. Therefore, pairing deformation parameter
+is not proper collective coordinate in small $\Omega$ and strong pairing case.
+
+%the treatment can be justified only for
+%a very limited region of $x$, namely in the weak pairing limit.
+%For instance, we show the potential energy curves as functions of $\alpha$
+%in Fig.~\ref{fig:Delta_E} for the $N=16$ case.
+%In the weak pairing case ($x=0.5$),
+%assuming the Neumann boundary condition at $\alpha=0$,
+%we may obtain the collective wave functions up to the third excited states.
+%On the other hand, in the strong pairing case ($x=3.2$), 
+%even the ground state may not be bound in the region of $j<0$.
 
 
 %We also consider the behavior of energy surface.  After mapping, the energy surface at $\phi=0$
@@ -1713,7 +1724,7 @@ Green lines are energy spectra until 3rd excitation obtained from CQ
 The different methods of the requantization of the TDHFB dynamics
 was studied for the two-level pairing model;
 the stationary phase approximation (SPA) of the path integral,
-the canonical quantization (CQ), and the Fourier decomposiion (FD)
+the canonical quantization (CQ), and the Fourier decomposition (FD)
 of the time-dependent observables.
 In this model, since the global gauge angle $\Phi$ is a cyclic variable,
 the TDHFB dynamics can be described by the integrable classical dynamics.
@@ -1736,7 +1747,7 @@ the agreement is less quantitative for the CQ and the FD,
 especially for the two-particle transfer matrix elements.
 In contrast, the SPA keeps its accuracy in the entire range of
 pairing strengths.
-One of the reasons of its sucess is due to the inclusion of the off-diagonal 
+One of the reasons of its success is due to the inclusion of the off-diagonal 
 parts of the pair transfer operator,
 by the explicit construction of the microscopic wave functions.
 The CQ and FD calculate the pair transfer matrix elements using only
@@ -1744,7 +1755,7 @@ the diagonal part (expectation value) of the operator $\hat{S}_\pm$,
 based on Eqs. (\ref{Sp_mean_value}) and (\ref{Sm_mean_value}).
 This is a good approximation when the collectivity is so large that the
 diagonal parts dominate.
-However, the pairing collecitivity may not be too weak to justify this
+However, the pairing collectivity may not be too weak to justify this
 treatment.
 
 %To describe pairing collective motion by using collective coordinates, we applied requantization of TDHFB method. In classical picture of two-level system, we have two degrees of freedom. The total gauge angle describing pairing rotational mode is a cyclic variable in classical Hamiltonian. The intrinsic time dependent coordinate which is only one-dimensional  corresponds to pairing vibrational mode. 
@@ -1758,7 +1769,7 @@ the collective model which assumes that the collective coordinate is
 the paring gap parameter.
 As we mentioned before, the present two-level pairing Hamiltonian has
 only one pair of collective variables $(\phi,j)$, in addition to the
-pair rotational varialbles $(\Phi,J)$.
+pair rotational variables $(\Phi,J)$.
 Even for such a simple system, we find that it is difficult to justify
 the use of $\Delta$ as the collective coordinate,
 especially for relatively small-$\Omega$ cases.
@@ -1769,7 +1780,7 @@ where the variable $\Delta$ can represent.
 % coordinate describing pairing vibration. We found that the collective path has significant difference compared with CBCS which use pairing gap as a constraint condition. The turning point must exist in energy surface, causing the collective path from CBCS only a part of the collective path in original coordinate. Hence pairing gap is not suitable collective coordinate to describe pairing collective motion in two-level system. However, if the energy of the turning point is much higher than low-lying excitation energy, pairing gap is available as a collective coordinate. In weak pairing correlation system, we expect that the low-lying excited states are able to be described by the coordinate of pairing gap. \par
 
 Among the different requantization methods,
-the SPA is the most accurate tool for desciption of
+the SPA is the most accurate tool for description of
 the pairing large amplitude collective motion in realistic nuclear system.
 The weak point of this approach is that it is applicable only to the
 integrable TDHFB system.
