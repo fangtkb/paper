@@ -13,7 +13,7 @@ nofootinbib,
 %nobibnotes,
 %bibnotes,
 amsmath,amssymb,
-%aps,
+aps,
 %pra,
 %prb,
 prc,
@@ -71,7 +71,7 @@ for pairing dynamics}
 %it is necessary to requantize the mean-field dynamics.
 To describe quantal collective phenomena, it is useful
 to requantize the time-dependent mean-field dynamics.
-We study the time-dependent Hartree-Fock-Boboliubov (TDHFB) theory
+We study the time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory
 for the two-level pairing Hamiltonian, and compare results
 of different quantization methods.
 The one constructing microscopic wave functions,
@@ -135,9 +135,9 @@ The problem is that it is not easy to determine quantum mechanical
 quantities, such as energy eigenvalues and transition matrix elements,
 from the TDHFB trajectories.
 In addition, the TDHFB lacks a part of quantum fluctuation
-associated with low-eneryg
+associated with low-energy
 large amplitude collective motion,
-which leads to difficutlties in description of the quantum tunneling
+which leads to difficulties in description of the quantum tunneling
 processes, such as spontaneous fission and sub-barrier fusion reaction.
 For this purpose,
 since the TDHF(B) trajectory corresponds to a classical limit of the path
@@ -175,7 +175,7 @@ chosen as the pair deformation (gap) $\Delta$ and the gauge angle $\Phi$
 \cite{BBPK70}.
 Based on the pairing collective Hamiltonian, 
 effects of the pair motion on the quadrupole vibrations %and fission half lives
-have been discussed in literatures \cite{delta1,delta3}.
+have been discussed in literature \cite{delta1,delta3}.
 %\cite{delta1,delta2,delta3}. 
 However, it is not trivial whether the pair deformation is really a suitable
 choice for the collective coordinate,
@@ -220,7 +220,7 @@ In Sec. \ref{sec:TDHFB},
 we derive a TDHFB classical Hamiltonian for the pairing model.
 In Sec. \ref{sec:requantization}, 
 the requantization of the TDHFB is performed using different methods,
-based on the canonical and the EBK quantizations.
+based on the canonical and the EBK quantization.
 In Sec. \ref{sec:results}, 
 the numerical results for the two-level model are shown and compared with
 exact results.
@@ -239,7 +239,7 @@ single-particle energies $\epsilon_l$ and the pairing strength $g$ as
 	H = \sum_l \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^-
     = \sum_l\epsilon_l(2S_l^0+\Omega_l) - g S^+ S^{-} ,
 \end{equation}
-where we use the SU(2) quasispin operators,
+where we use the SU(2) quasi-spin operators,
 $\boldsymbol{S}=\sum_l \boldsymbol{S}_l$, with
 \begin{eqnarray}
         S_l^0 &=& \frac{1}{2}(\sum_ma_{lm}^{\dag}a_{lm}-\Omega_l) ,\\
@@ -254,12 +254,12 @@ $
 	n_l = \sum_m a^{\dag}_{lm}a_{lm} = 2S_l^0+\Omega_l ,
 $.
 %The first term giving a spherical single particle energy $\epsilon_l$ for each j-shell, which 
-The quasispin operators satisfy the commutation relations
+The quasi-spin operators satisfy the commutation relations
 \begin{equation}
   [S_l^0,S_{l'}^{\pm}] = \pm\delta_{ll'}S_{l}^{\pm},
 	\quad [S_{l}^{+},S_{l'}^{-}] = 2\delta_{ll'}S_{l}^{0} .
 \end{equation}
-The magnitude of quasispin for each level is
+The magnitude of quasi-spin for each level is
 $S_l=\frac{1}{2}(\Omega_l-\nu_l)$, where $\nu_l$ is the seniority
 quantum number, namely the number of unpaired particle at each level $l$.
 %We call $\nu=\sum_l \nu_l=0$ excited states as pairing collective excited states. The pairing collective excited states can be simple $2p2h, 4p4h\cdots$ excitation or the complex combination of $2p2h, 4p4h\cdots$ components.
@@ -269,7 +269,7 @@ The residual two-body interaction only consists of monopole pairing
 interaction which couples two particles to zero angular momentum.
 We obtain exact solutions either by solving Richardson equation
 \cite{Richardson,Richardson2,Richardson3} or
-by diagonalizing the Hamiltonian using the quasispin symmetry.
+by diagonalizing the Hamiltonian using the quasi-spin symmetry.
 
 
 %\subsection{Coherent state}
@@ -285,7 +285,7 @@ The coherent state for the seniority $\nu=0$ states
 where $\ket{0}$ is the vacuum (zero particle) state,
 $Z_l(t)$ are time-dependent complex variables which describe
 motion of the system. 
-In the SU(2) quasispin representation,
+In the SU(2) quasi-spin representation,
 $\ket{0}=\prod_l \ket{S_l,-S_l}$.
 The coherent state $\ket{Z(t)}$ is a superposition of
 states with different particle numbers
@@ -296,7 +296,7 @@ the coherent state is the same as the time-dependent BCS wave function
 with $Z_l(t)=v_l(t)/u_l(t)$,
 where $(u_l(t),v_l(t))$ are the time-dependent BCS $u,v$ factors.
 
-The TDHFB equation can be derived from the tiem-dependent variational
+The TDHFB equation can be derived from the time-dependent variational
 principle,
 \begin{equation}
 	\delta \mathcal{S} = 0,
@@ -522,7 +522,7 @@ the time-dependent full quantum state can be written in the path integral form
 \label{path_integral_expression}
 \end{equation}
 where $\psi(Z)\equiv \braket{Z|\psi(0)}$ and
-the invariant measure $d\mu(Z)$ is defiend by 
+the invariant measure $d\mu(Z)$ is defined by 
 the unity condition,
 \begin{equation}
   \int d\mu(Z) \ket{Z}\bra{Z} = 1 .
@@ -594,7 +594,7 @@ with the energy of the $k$-th periodic trajectory,
 $E_k=\mathcal{H}(Z_{\rm cl}^{(k)},Z_{\rm cl}^{(k)*})$.
 
 Finding TDHFB trajectories satisfying the quantization condition
-(\ref{EBK}) is an extremenly difficult task in general.
+(\ref{EBK}) is an extremely difficult task in general.
 It is better founded and more practical
 if the classical system is completely integrable.
 In integrable systems, $M$ complex variables $Z(t)$ can be transformed into
@@ -922,9 +922,13 @@ In order to estimate the two-particle transfer matrix elements,
 we construct the corresponding operators as follows.
 The classical form of matrix elements are obtained as
 \begin{align}
-  S_+(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_+|Z} = \left( S_1\sqrt{1-q_1^2}e^{-i\phi/2}+S_2\sqrt{1-q_2^2}e^{i\phi/2} \right) e^{i\Phi}
+  S_+(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_+|Z}
+ = \frac{1}{2}
+\left( \Omega_1\sqrt{1-q_1^2}e^{-i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{i\phi/2} \right) e^{i\Phi}
 	\label{Sp_mean_value} \\
-  S_-(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_-|Z} = \left( S_1\sqrt{1-q_1^2}e^{i\phi/2}+S_2\sqrt{1-q_2^2}e^{-i\phi/2} \right) e^{-i\Phi} .
+  S_-(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_-|Z}
+ = \frac{1}{2}
+\left( \Omega_1\sqrt{1-q_1^2}e^{i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{-i\phi/2} \right) e^{-i\Phi} .
 	\label{Sm_mean_value}
 \end{align}
 %For simplicity, we ignore the part of off-diagonal element (e.g. $\braket{Z'|\hat{S}_+|Z}$). 
@@ -1151,7 +1155,7 @@ In the following, the stationary-phase approximation to the path
 integral in Sec.~\ref{sec:SPA} is denoted as ``SPA'',
 the Fourier decomposition method (Sec.~\ref{sec:Fourier}) as ``FD'',
 and the canonical quantization with periodic boundary condition 
-(Sec.~\ref{subsec:canonical1}) as ``CQ''.
+(Sec.~\ref{sec:canonical}) as ``CQ''.
 %In addition, the harmonic approximation at the ground state is called ''HA''.
 Note that the SPA and the FD produce the same eigenenergies which
 are based on the EBK quantization rule.
@@ -1180,7 +1184,7 @@ Here, we adopt $\Omega=50$ with $N=100$ (closed-shell configuration)
 and $N=50$ (mid-shell configuration).
 
 %The system consists of $\Omega=50$ and $\Delta\epsilon=1$(MeV). We show the results in $N=50$ system, which is always superfluidity in ground state.\par
-Calulated excitation energies are shown in Figs.~\ref{fig:N50energy}.
+Calculated excitation energies are shown in Figs.~\ref{fig:N50energy}.
 %and \ref{fig:N100energy}.
 The results of SPA/FD and CQ are compared with the exact values.
 At the weak pairing limit of $x\rightarrow 0$,
@@ -1467,7 +1471,7 @@ Occupation probability in excited $0^+$ states
 as a function of $j$ for $\Omega=N=8$ systems.
 The panels (a) and (b) display the results for $x=0.5$ and $x=2$,
 respectively. 
-See the caption of Fig.~\ref{fig:N50_occ}.
+See also the caption of Fig.~\ref{fig:N50_occ}.
 %The left end at $j=j_{\rm min}$ corresponds to a component with
 %$(n_1,n_2)=(N,0)$.
 %The next at $j=j_{\rm min}+1$ corresponds to the one with
@@ -1560,7 +1564,7 @@ CQ and the FD methods.
  \captionsetup{labelformat=empty,labelsep=none}
  \end{minipage}
 	\caption{The same as Fig.~\ref{fig:N50Pad} but for $N=6\rightarrow 8$
-	with $\Omega=16$.
+	with $\Omega=8$.
 }
  \label{fig:N8Pad}
 \end{figure}
@@ -1685,18 +1689,22 @@ pair-transfer transition strengths.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Collective model treatment}
 
-In literatures, the collective model has been proposed
-and utilized for the nuclear pairing dynamics.
-For those studies, the pairing gap parameter is assumed to be the
-collective coordinates.
+%In literatures, the collective model has been proposed
+The collective model has been proposed
+and utilized for the nuclear pairing dynamics
+\cite{BBPK70,delta1,delta3}.
+For those studies, the pairing gap parameter (or equivalent quantities)
+is assumed to be the collective coordinates.
 This is analogous to the five-dimensional (5D) collective (Bohr) model,
 in which the collective coordinates are assumed to be the
 quadrupole deformation parameters, $\alpha_{2\mu}$.
-The 5D collective model has been extensively studied and
-successfully applied to analysis on numerous experimental data.
-On the contrary, the collective model for the pairing was not so
-successful in comparison with experimental data.
-In this section, we examine the collective treatment of the pairing.
+The 5D collective model has been 
+extensively applied to analysis on numerous experimental data.
+On the contrary, there have been very few applications of
+the pairing collective model
+in comparison with experimental data.
+In this section, we examine the validity of
+the collective treatment of the pairing.
 
 %The most popular collective coordinate to describe pairing vibration is pairing gap, which is the order parameter in U(1) gauge space. The algebra form of pairing vibration is analogous the vibration in real three-dimensional space which suppose to be the swinging in quadrupole deformation parameters $\beta,\gamma$. In two-level system, the pairing gap becomes
 %\begin{align}
@@ -1706,46 +1714,97 @@ In this section, we examine the collective treatment of the pairing.
 %\end{align}
 %. Without total gauge angle part $e^{i\Phi}$, $\Delta$ is still complex number in general. However, the pairing gap is real number with the definition by BCS wave function
 
-In the superfluid phase, the energy minimization always lead to $\phi=0$.
 Although the global gauge angle $\Phi$ is arbitrary,
-the deformation parameter $\alpha$ in gauge space is usually taken as real value ($\Phi=0$).
+The deformation parameter $\alpha\equiv \braket{ \hat{S}_- }$
+in the gauge space is
+usually taken as real value ($\Phi=0$).
+%In the superfluid phase, 
+The energy minimization with a fixed value of real $\alpha$ always
+leads to $\phi=0$.
 \begin{align}
 \alpha(j,J) = \braket{Z_0|\hat{S}_-|Z_0} %= g\sum_{k>0} u_kv_k \nonumber \\
-	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
+%	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
+	= \frac{\Omega}{2} \left(\sqrt{1-q_1^2} +\sqrt{1-q_2^2} \right).
  \label{Delta_BCS}
 \end{align}
-$\alpha$ is equivalent to pairing gap $\Delta$ as a coordinate because the gap equation
-\begin{align}
-  \alpha = \frac{1}{2}\sum_{k>0}\frac{\Delta}{\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}}
-\end{align}
+The parameter $\alpha$ is equivalent to pairing gap $\Delta$,
+% as a coordinate because the gap equation
+%\begin{align}
+%  \alpha = \frac{1}{2}\sum_{k>0}\frac{\Delta}{\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}}
+%\end{align}
+since the relation, $\Delta=G\alpha$,
 guarantees one-to-one correspondence between $\alpha$ and $\Delta$.
+In Sec.~\ref{sec:canonical}, we treat $\phi$ as a collective coordinate
+and $j$ as its conjugate momentum.
+The collective model treatment is based on the opposite choice,
+$j$ as a coordinate and $\phi$ as a momentum.
+
+\begin{figure}[tb]
+ \begin{center}
+(a) \includegraphics[height=0.46\textwidth,angle=-90]{images/N8p_E.eps}
+(b) \includegraphics[height=0.46\textwidth,angle=-90]{images/N16p_E.eps}
+ \end{center}
+ \caption{Energy surface as functions of $j$
+ for $x=0.5$, $x=2$ and $x=3.2$.
+ Dashed line is the pairing deformation parameter $\alpha$
+ of Eq.~(\ref{Delta_BCS}) as a function of $j$.
+ (a) mid-shell ($\Omega=N=8$) and (b) closed-shell ($2\Omega=N=16$).
+}
+ \label{fig:p_Delta}
+\end{figure}
+
+%\begin{figure}[htbp]
+% \begin{center}
+%  \includegraphics[width=50mm,angle=-90]{images/N16p_E.eps}
+% \end{center}
+% \caption{Energy surface with respect to $j$ in $x=0.5$, $x=2$ and $x=3.2$, in $\Omega=8$ and $N=16$ system.
+% Dashed line is pairing deformation parameter $\alpha$ in (\ref{Delta_BCS}) as a function of $j$.}
+% \label{fig:p_Delta2}
+%\end{figure}
+
+The problem is that
+there is no one-to-one correspondence between $j$ and $\alpha$.
 The relation between $j$ and $\alpha$ 
-and that between $j$ and $E=\mathcal{H}(\phi=0,j;J)$
-are shown for $\Omega=8$
-in Fig. \ref{fig:p_Delta1} ($N=8$) and Fig. \ref{fig:p_Delta2} ($N=16$).
-%These results correspond to the system in Section 4.2. 
+are shown by dashed lines in Fig.~\ref{fig:p_Delta}
+for $\Omega=8$ mid-shell (a) and closed-shell (b) configurations.
 The deformation parameter $\alpha$ is largest at $j=0$ (equal filling in both levels),
 and smallest at end points of $j$.
 The constrained minimization with respect to $\alpha$ cannot 
 produce the states corresponding to $j>0$.
-Apparently, we cannot map the entire region of $j$ to $\alpha$,
-since there is no one-to-one correspondence between $j$ and $\alpha$.
+Apparently, we cannot map the entire region of $j$ to $\alpha$.
+%since there is no one-to-one correspondence between $j$ and $\alpha$.
 
-If the system has a deep potential at $j<0$ to prevent the wave function
-from spreading toward the region of $j<0$,
-we may justify the use of $\alpha$ as a coordinate in
-the collective model.
-The importance of the region of $j<0$ is considerable in strong pairing case.
-Fig. \ref{fig:Delta_E} shows two examples of the relationship 
+The collective model treatment
+requires the collective wave functions to be well localized
+in the $j<0$ region.
+The potential energy, $E=\mathcal{H}(\phi=0,j;J)$, is also shown in
+Fig.~\ref{fig:p_Delta}.
+The restriction becomes more serious for the stronger pairing cases.
+For instance, the potential with $x=3.2$ in Fig.~\ref{fig:p_Delta}(a)
+has only about 1 MeV depth at the minimum point, relative to the value
+at the boundary point ($j=0$) with the maximum value of $\alpha$ ($\Delta$).
+
+%If the system has a deep potential at $j<0$ to prevent the wave function
+%from spreading toward the region of $j<0$,
+%we may justify the use of $\alpha$ as a coordinate in
+%the collective model.
+%The importance of the region of $j<0$ is considerable in strong pairing case.
+Figure~\ref{fig:Delta_E} shows two examples of the relationship 
 between excitation energies and energy surface.
-In the left panel ($\Omega=50$, $N=50$, $x=2.4$), the excited $0^+$ states are bound up to second excitation.
+In the panel (a), we show the case of large $\Omega$
+($\Omega=50$, $N=50$, $x=2.4$),
+in which
+the excited $0^+$ states are bound up to second excitation.
 For very large degeneracy, the pocket of energy surface is deep, 
-hence the low-lying excited states can be described by $\alpha$. 
-However, in the right panel ($\Omega=8$, $N=16$, $x=2.4$), 
-only the ground state is bound, and all excited $0^+$ states are unbound.
-For small degeneracy, the shallow pocket of energy surface allows 
-the excited $0^+$ states to be unbound. Therefore, pairing deformation parameter
-is not proper collective coordinate in small $\Omega$ and strong pairing case.
+hence the low-lying excited states may be described by $\alpha$. 
+However, in the small-$\Omega$ case ($\Omega=8$, $N=16$, $x=2.4$)
+of the panel (b), no excited states are bound.
+This shallow pocket of potential energy is a consequence of the
+choice of the collective coordinate
+which represents only the $j<0$ region.
+Therefore, the collective model treatment assuming
+$\alpha$ ($\Delta$) as the collective coordinate
+is not applicable to small-$\Omega$ and strong-pairing cases.
 
 %the treatment can be justified only for
 %a very limited region of $x$, namely in the weak pairing limit.
@@ -1780,39 +1839,27 @@ is not proper collective coordinate in small $\Omega$ and strong pairing case.
 %It represents, in $\pi$ space, the gradient goes to $+\infty$ at the left end and $-\infty$ at the right end. Hence the turning point $\frac{\partial\Delta}{\partial\pi}=0$ must exist on the way of $\pi$. Therefore, paining gap is not suitable collective coordinate to describe pairing vibration in two-level system.\par
 %However, the effect of the turning point is not expected to be important in some cases. In the top panel of Figure \ref{fig:Delta_E}, we found that the low-lying energy spectra are located below the turning point. Because the energy of turning point is high, the collective path below the turning point is sufficient to describe the low-lying excited states. Therefore, the collective coordinate $\Delta$ is available to describe low-lying pairing vibration in weak pairing correlation system.
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=50mm,angle=-90]{images/N8p_E.eps}
- \end{center}
- \caption{Energy surface with respect to $j$ in $x=0.5$, $x=2$ and $x=3.2$, in $\Omega=8$ and $N=8$ system.
- Dashed line is pairing deformation parameter $\alpha$ in (\ref{Delta_BCS}) as a function of $j$.}
- \label{fig:p_Delta1}
-\end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
+% \begin{minipage}{0.45\hsize}
  \begin{center}
-  \includegraphics[width=50mm,angle=-90]{images/N16p_E.eps}
+(a)  \includegraphics[height=0.46\textwidth,angle=-90]{images/N50Xeq2p4gap_E.eps}
+% \end{center}
+% \end{minipage}
+% \begin{minipage}{0.45\hsize}
+% \begin{center}
+(b)  \includegraphics[height=0.46\textwidth,angle=-90]{images/N16Xeq2p4gap_E.eps}
  \end{center}
- \caption{Energy surface with respect to $j$ in $x=0.5$, $x=2$ and $x=3.2$, in $\Omega=8$ and $N=16$ system.
- Dashed line is pairing deformation parameter $\alpha$ in (\ref{Delta_BCS}) as a function of $j$.}
- \label{fig:p_Delta2}
-\end{figure}
-
-\begin{figure}[htbp]
- \begin{minipage}{0.45\hsize}
- \begin{center}
-  \includegraphics[width=50mm,angle=-90]{images/N50Xeq2p4gap_E.eps}
- \end{center}
- \end{minipage}
- \begin{minipage}{0.45\hsize}
- \begin{center}
-  \includegraphics[width=50mm,angle=-90]{images/N16Xeq2p4gap_E.eps}
- \end{center}
-\end{minipage}
- \caption{Energy surface with respect to $\alpha$ in $x=2.4$. 
-Green lines are energy spectra until 3rd excitation obtained from CQ 
-(Sec.~\ref{sec:canonical}). Left panels: $\Omega=50$, $N=50$ system;
- Right panels: $\Omega=8$, $N=16$ system.}
+%\end{minipage}
+\caption{Potential energy surface as functions of $\alpha$ with $x=2.4$;
+(a) $\Omega=N=50$,
+(b) $2\Omega=N=16$.
+Horizontal (green) lines indicate
+ energy spectra obtained with the CQ method
+(Sec.~\ref{sec:canonical}).
+%Left panels: $\Omega=50$, $N=50$ system;
+% Right panels: $\Omega=8$, $N=16$ system.
+}
  \label{fig:Delta_E}
 \end{figure}
 
@@ -1856,7 +1903,7 @@ the diagonal part (expectation value) of the operator $\hat{S}_\pm$,
 based on Eqs. (\ref{Sp_mean_value}) and (\ref{Sm_mean_value}).
 This is a good approximation when the collectivity is so large that the
 diagonal parts dominate.
-However, the pairing collectivity may not be too weak to justify this
+However, the pairing collectivity may be too weak to justify this
 treatment.
 
 %To describe pairing collective motion by using collective coordinates, we applied requantization of TDHFB method. In classical picture of two-level system, we have two degrees of freedom. The total gauge angle describing pairing rotational mode is a cyclic variable in classical Hamiltonian. The intrinsic time dependent coordinate which is only one-dimensional  corresponds to pairing vibrational mode. 
@@ -1892,11 +1939,13 @@ method \cite{NMMY16} is a promising tool.
 The combined study of the ASCC and the SPA for multi-level systems is our
 next target under progress.
 
+
 \appendix
 \section{Derivation of semiclassical wave function}
 
-We give the detail derivation of semiclassical wave function 
-discussed in Sec \ref{sec:SPA}. The explicit form of coherent state is
+We give a derivation of the semiclassical wave function
+of Eq. (\ref{semi_wave_func1}).
+The explicit form of coherent state is
 \begin{align}
   \ket{Z} &= \prod_{l=1}^2(1+|Z_l|^2)^{-\Omega_l/2}e^{Z_lS_l^{\dag}}\ket{0} \nonumber \\
   &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
@@ -1908,7 +1957,8 @@ discussed in Sec \ref{sec:SPA}. The explicit form of coherent state is
   (S_1^{\dag})^m(S_2^{\dag})^{k-m} \ket{0}
   \label{ZZ}
 \end{align} 
-Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$, The classical wave function becomes
+Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$,
+it becomes
 \begin{align}
 	\ket{\phi_k^N} \propto& \oint d\Phi \oint dt
 	e^{i\mathcal{T}_{N,E_k}(\Phi, t)}
@@ -1921,13 +1971,15 @@ Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$, The
   &\times \left\{ \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \right\} 
 \tan^m{\frac{\theta_1}{2}}\tan^{N/2-m}\frac{\theta_2}{2} (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} \label{semi_wave_func_b}
 \end{align}
-From 2nd line to 3rd line, we can find that it is nothing but number projection. In SU(2) quasispin representation, the vacuum state becomes $\ket{0}=\ket{S_1,-S_1;S_2,-S_2}$, which leads
+We find that the integration over $\Phi$ is nothing but the number projection.
+In SU(2) quasi-spin representation, the vacuum state is written as
+$\ket{0}=\ket{S_1,-S_1;S_2,-S_2}$, which leads to
 \begin{align}
   (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} 
   = \sqrt{\frac{(2S_1)!m!}{(2S_1-m)!}} \sqrt{\frac{(2S_2)!(N/2-m)!}{(2S_2-(N/2-m))!}}
   \ket{S_1,-S_1+m;S_2,-S_2+(N/2-m)}.
 \end{align}
-For convenience, we define a coefficient 
+For convenience, we define coefficients
 \begin{align}
   A(q,S,m) &\equiv 
   \frac{\tan^m{\frac{\theta}{2}}}{\left(1+\tan^2{\frac{\theta}{2}}\right)^{-S}}
@@ -1935,12 +1987,14 @@ For convenience, we define a coefficient
   &= \left(\frac{1-q}{2}\right)^{m/2}\left(\frac{1+q}{2}\right)^{S-m/2} \sqrt{\frac{(2S)!m!}{(2S-m)!}}
 \label{tan}
 \end{align}
-where $q=\cos{\theta}$. Inserting (\ref{tan}) into (\ref{semi_wave_func_b}) and using $N/2=J$, the semiclassical wave function attributes to (\ref{semi_wave_func1}).
+where $q=\cos{\theta}$.
+Inserting Eq. (\ref{tan}) into Eq. (\ref{semi_wave_func_b}) with $N/2=J$,
+we reach Eq. (\ref{semi_wave_func1}).
 %\begin{align}
  % \sum_{m=0}^{J}{}_J C_m\int_0^T dt \exp{\left( i\int^t \pi(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) (S_1^{\dag})^m(S_2^{\dag})^{J-m}\ket{0}
 %\end{align}
 
-\bibliographystyle{unsrt}
+\bibliographystyle{apsrev4-1}
 \bibliography{ref}
 
 \end{document}
