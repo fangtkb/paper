@@ -1744,7 +1744,8 @@ $j$ as a coordinate and $\phi$ as a momentum.
 (a) \includegraphics[height=0.46\textwidth,angle=-90]{images/N8p_E.eps}
 (b) \includegraphics[height=0.46\textwidth,angle=-90]{images/N16p_E.eps}
  \end{center}
- \caption{Energy surface as functions of $j$
+ \caption{Energy surface as functions of $j$,
+ Eq. (\ref{TDHFB_Hamiltonian_3}) with $\phi=0$,
  for $x=0.5$, $x=2$ and $x=3.2$.
  Dashed line is the pairing deformation parameter $\alpha$
  of Eq.~(\ref{Delta_BCS}) as a function of $j$.
@@ -1777,20 +1778,28 @@ Apparently, we cannot map the entire region of $j$ to $\alpha$.
 The collective model treatment
 requires the collective wave functions to be well localized
 in the $j<0$ region.
-The potential energy, $E=\mathcal{H}(\phi=0,j;J)$, is also shown in
+The potential energy, $E(j)=\mathcal{H}(\phi=0,j;J=N/2)$ of
+Eq. (\ref{TDHFB_Hamiltonian_3}), is also shown in
 Fig.~\ref{fig:p_Delta}.
 The restriction becomes more serious for the stronger pairing cases.
 For instance, the potential with $x=3.2$ in Fig.~\ref{fig:p_Delta}(a)
 has only about 1 MeV depth at the minimum point, relative to the value
-at the boundary point ($j=0$) with the maximum value of $\alpha$ ($\Delta$).
+at the boundary point ($j=0$) corresponding to
+the maximum value of $\alpha$ ($\Delta$).
 
 %If the system has a deep potential at $j<0$ to prevent the wave function
 %from spreading toward the region of $j<0$,
 %we may justify the use of $\alpha$ as a coordinate in
 %the collective model.
 %The importance of the region of $j<0$ is considerable in strong pairing case.
+To simulate the result of the collective model, we expand the Hamiltonian
+(\ref{TDHFB_Hamiltonian_3}) up to the second order in $\phi$,
+then, quantize it by $\hat{\phi}=i\partial/\partial j$ with
+the ordering given by the Pauli's prescription.
+The range of the coordinate $j$ is restricted to $j_{\rm min}\leq j \leq 0$
+with the vanishing boundary condition $\psi(j_{\rm min})=\psi(0)=0$.
 Figure~\ref{fig:Delta_E} shows two examples of the relationship 
-between excitation energies and energy surface.
+between excitation energies and the potential energy surface.
 In the panel (a), we show the case of large $\Omega$
 ($\Omega=50$, $N=50$, $x=2.4$),
 in which
