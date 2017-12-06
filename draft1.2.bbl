@@ -1,0 +1,228 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{22}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Bohr}\ and\ \citenamefont {Mottelson}(1975)}]{BM75}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Bohr}}\ and\ \bibinfo {author} {\bibfnamefont {B.~R.}\ \bibnamefont
+  {Mottelson}},\ }\href@noop {} {\emph {\bibinfo {title} {Nuclear Structure,
+  Vol. II}}}\ (\bibinfo  {publisher} {W. A. Benjamin},\ \bibinfo {address} {New
+  York},\ \bibinfo {year} {1975})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ring}\ and\ \citenamefont {Schuck}(1980)}]{RS80}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Ring}}\ and\ \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Schuck}},\
+  }\href@noop {} {\emph {\bibinfo {title} {The nuclear many-body problems}}},\
+  Texts and monographs in physics\ (\bibinfo  {publisher} {Springer-Verlag},\
+  \bibinfo {address} {New York},\ \bibinfo {year} {1980})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Brink}\ and\ \citenamefont {Broglia}(2005)}]{BB05}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Brink}}\ and\ \bibinfo {author} {\bibfnamefont {R.~A.}\ \bibnamefont
+  {Broglia}},\ }\href@noop {} {\emph {\bibinfo {title} {Nuclear Superfluidity,
+  Pairing in Finite Systems}}}\ (\bibinfo  {publisher} {Cambridge University
+  Press},\ \bibinfo {address} {Cambridge},\ \bibinfo {year} {2005})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Garrett}(2001)}]{garrett}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~E.}\ \bibnamefont
+  {Garrett}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {J.
+  Phys. G}\ }\textbf {\bibinfo {volume} {27}},\ \bibinfo {pages} {R1} (\bibinfo
+  {year} {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Heyde}\ and\ \citenamefont {Wood}(2011)}]{HW11}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Heyde}}\ and\ \bibinfo {author} {\bibfnamefont {J.~L.}\ \bibnamefont
+  {Wood}},\ }\href {\doibase 10.1103/RevModPhys.83.1467} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {83}},\
+  \bibinfo {pages} {1467} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bender}\ \emph {et~al.}(2003)\citenamefont {Bender},
+  \citenamefont {Heenen},\ and\ \citenamefont {Reinhard}}]{BHR03}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Bender}}, \bibinfo {author} {\bibfnamefont {P.~H.}\ \bibnamefont {Heenen}},
+  \ and\ \bibinfo {author} {\bibfnamefont {P.-G.}\ \bibnamefont {Reinhard}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Rev. Mod. Phys.}\
+  }\textbf {\bibinfo {volume} {75}},\ \bibinfo {pages} {121} (\bibinfo {year}
+  {2003})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Blaizot}\ and\ \citenamefont {Ripka}(1986)}]{BR86}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.-P.}\ \bibnamefont
+  {Blaizot}}\ and\ \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Ripka}},\ }\href@noop {} {\emph {\bibinfo {title} {Quantum Theory of Finite
+  Systems}}}\ (\bibinfo  {publisher} {MIT Press},\ \bibinfo {address}
+  {Cambridge},\ \bibinfo {year} {1986})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nakatsukasa}\ \emph {et~al.}(2016)\citenamefont
+  {Nakatsukasa}, \citenamefont {Matsuyanagi}, \citenamefont {Matsuo},\ and\
+  \citenamefont {Yabana}}]{NMMY16}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Nakatsukasa}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Matsuyanagi}}, \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Matsuo}},
+  \ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Yabana}},\ }\href
+  {\doibase 10.1103/RevModPhys.88.045004} {\bibfield  {journal} {\bibinfo
+  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {88}},\ \bibinfo
+  {pages} {045004} (\bibinfo {year} {2016})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Negele}(1982)}]{Neg82}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~W.}\ \bibnamefont
+  {Negele}},\ }\href {\doibase 10.1103/RevModPhys.54.913} {\bibfield  {journal}
+  {\bibinfo  {journal} {Rev. Mod. Phys.}\ }\textbf {\bibinfo {volume} {54}},\
+  \bibinfo {pages} {913} (\bibinfo {year} {1982})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kuratsuji}\ and\ \citenamefont
+  {Suzuki}(1980)}]{KS80}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Kuratsuji}}\ and\ \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Suzuki}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Phys.
+  Lett. B}\ }\textbf {\bibinfo {volume} {92}},\ \bibinfo {pages} {19} (\bibinfo
+  {year} {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kuratsuji}(1981)}]{K81}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Kuratsuji}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Prog. Theor. Phys.}\ }\textbf {\bibinfo {volume} {65}},\ \bibinfo {pages}
+  {224} (\bibinfo {year} {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Reinhardt}(1980)}]{Rei80}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Reinhardt}},\ }\href {\doibase
+  http://dx.doi.org/10.1016/0375-9474(80)90488-1} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo {volume}
+  {346}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1980})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {B\`es}\ \emph {et~al.}(1970)\citenamefont {B\`es},
+  \citenamefont {Broglia}, \citenamefont {Perazzo},\ and\ \citenamefont
+  {Kumar}}]{BBPK70}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {B\`es}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Broglia}},
+  \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Perazzo}}, \ and\
+  \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kumar}},\ }\href
+  {\doibase http://dx.doi.org/10.1016/0375-9474(70)90677-9} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo
+  {volume} {143}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1970})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Gozdz}\ \emph {et~al.}(1985)\citenamefont {Gozdz},
+  \citenamefont {Pomorski}, \citenamefont {M.Brack},\ and\ \citenamefont
+  {Werner}}]{delta1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Gozdz}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Pomorski}},
+  \bibinfo {author} {\bibnamefont {M.Brack}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Werner}},\ }\href@noop {} {\bibfield
+  {journal} {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume}
+  {442}},\ \bibinfo {pages} {50} (\bibinfo {year} {1985})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Pomorski}(2007)}]{delta3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Pomorski}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Int.
+  J. Mod. Phys. E.}\ }\textbf {\bibinfo {volume} {16}},\ \bibinfo {pages} {237}
+  (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {H{\"o}gaasen-Feldman}(1961)}]{HF60}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {H{\"o}gaasen-Feldman}},\ }\href {\doibase
+  http://dx.doi.org/10.1016/0029-5582(61)90050-5} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume} {28}},\
+  \bibinfo {pages} {258 } (\bibinfo {year} {1961})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Cambiaggio}\ \emph {et~al.}(1984)\citenamefont
+  {Cambiaggio}, \citenamefont {Dussel},\ and\ \citenamefont
+  {Saraceno}}]{CDS84}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Cambiaggio}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Dussel}},
+  \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Saraceno}},\
+  }\href {\doibase https://doi.org/10.1016/0375-9474(84)90600-6} {\bibfield
+  {journal} {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo
+  {volume} {415}},\ \bibinfo {pages} {70 } (\bibinfo {year}
+  {1984})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Suzuki}\ and\ \citenamefont
+  {Mizobuchi}(1988)}]{SM88}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Suzuki}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
+  {Mizobuchi}},\ }\href {\doibase 10.1143/PTP.79.480} {\bibfield  {journal}
+  {\bibinfo  {journal} {Progress of Theoretical Physics}\ }\textbf {\bibinfo
+  {volume} {79}},\ \bibinfo {pages} {480} (\bibinfo {year} {1988})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Richardson}(1963)}]{Richardson}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {277}
+  (\bibinfo {year} {1963})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Richardson}\ and\ \citenamefont
+  {Sherman}(1964{\natexlab{a}})}]{Richardson2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Sherman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl.
+  Phys.}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {221} (\bibinfo
+  {year} {1964}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Richardson}\ and\ \citenamefont
+  {Sherman}(1964{\natexlab{b}})}]{Richardson3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Sherman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl.
+  Phys.}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {353} (\bibinfo
+  {year} {1964}{\natexlab{b}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Landau}\ and\ \citenamefont {Lifshitz}(1965)}]{LL65}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~D.}\ \bibnamefont
+  {Landau}}\ and\ \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Lifshitz}},\ }\href@noop {} {\emph {\bibinfo {title} {Quantum Mechanics}}},\
+  A Course of Theoretical Physics\ (\bibinfo  {publisher} {Pergamon Press},\
+  \bibinfo {address} {Oxford},\ \bibinfo {year} {1965})\BibitemShut {NoStop}%
+\end{thebibliography}%
