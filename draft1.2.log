@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  6 DEC 2017 17:44
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  7 DEC 2017 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -372,37 +372,37 @@ File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 <images/N100Xeq2occ_wo_adiabatic.eps> [15]
 File: images/N50Pad_CQ.eps Graphic file (type eps)
  <images/N50Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1301--1302
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1298--1299
  [] 
  []
 
 File: images/N50Pad_FD.eps Graphic file (type eps)
 <images/N50Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1307--1308
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1304--1305
  [] 
  []
 
 File: images/N50Pad_SPA.eps Graphic file (type eps)
 <images/N50Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1313--1314
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1310--1311
  [] 
  []
 
 File: images/N100Pad_CQ.eps Graphic file (type eps)
 <images/N100Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1356--1357
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1353--1354
  [] 
  []
 
 File: images/N100Pad_FD.eps Graphic file (type eps)
 <images/N100Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1362--1363
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1359--1360
  [] 
  []
 
 File: images/N100Pad_SPA.eps Graphic file (type eps)
 <images/N100Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1368--1369
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1365--1366
  [] 
  []
 
@@ -417,19 +417,19 @@ File: images/N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 [18] [19]
 File: images/N8Pad_CQ.eps Graphic file (type eps)
  <images/N8Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1550--1551
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1541--1542
  [] 
  []
 
 File: images/N8Pad_FD.eps Graphic file (type eps)
 <images/N8Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1556--1557
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1547--1548
  [] 
  []
 
 File: images/N8Pad_SPA.eps Graphic file (type eps)
 <images/N8Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1562--1563
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1553--1554
  [] 
  []
 
@@ -442,19 +442,19 @@ File: images/N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 <images/N16Xeq2occ_wo_adiabatic.eps> [20] [21]
 File: images/N16Pad_CQ.eps Graphic file (type eps)
  <images/N16Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1663--1664
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1654--1655
  [] 
  []
 
 File: images/N16Pad_FD.eps Graphic file (type eps)
 <images/N16Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1669--1670
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1660--1661
  [] 
  []
 
 File: images/N16Pad_SPA.eps Graphic file (type eps)
 <images/N16Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1675--1676
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1666--1667
  [] 
  []
 
@@ -491,4 +491,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  36i,11n,39p,1328b,452s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1.2.dvi (28 pages, 101224 bytes).
+Output written on draft1.2.dvi (28 pages, 100916 bytes).

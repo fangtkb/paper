@@ -169,7 +169,7 @@ The most well-known and successful model is the Bohr model \cite{BM75},
 which was introduced to describe low-energy
 nuclear collective motion in quadrupole degrees of freedom with
 the deformation parameters $(\beta, \gamma)$ and the Euler angles
-$(\alpha,\beta,\gamma)$.
+$(\phi,\theta,\psi)$.
 For the pairing motion, the collective coordinates are analogously
 chosen as the pair deformation (gap) $\Delta$ and the gauge angle $\Phi$
 \cite{BBPK70}.
@@ -381,9 +381,6 @@ between upper level and lower level.
   J &= \frac{N}{2}, \hspace{5mm} j = \frac{n_{2}-n_{1}}{4} .
   \label{momentum}
 \end{align}
-Since the coherent states (\ref{coherent}) contains only even number of
-particles in each level,
-we assume that $n_l$ are even numbers.
 %The expectation value of total particle number is
 %\begin{align}
 %   N &= \braket{Z|N|Z} = \sum_l (-2S_lq_l+\Omega_l) \nonumber  \\
@@ -455,7 +452,7 @@ at $x<1$, the ground state is normal with fully occupied
 lower level $n_1=N$ and empty upper level ($n_2=0$).
 All the TDHFB trajectories represent rotational behavior with respect to
 relative angle $\phi$.
-Here, the ``rotational behavior'' means that the motion span the whole
+Here, the ``rotational behavior'' means that the motion spans the whole
 region of the angle $\phi$,
 while we use ``vibrational'' for the classical motion in a bound region of
 $\phi$ ($-\pi<\phi<\pi$).
@@ -578,7 +575,7 @@ $\braket{Z|\psi(t)} \propto \braket{Z|\psi(0)}=\psi(Z)$,
 which can be constructed by superposing the coherent states along
 a periodic TDHFB trajectory $Z_{\rm cl}^{(k)}$ as \cite{KS80,K81,SM88}.
 \begin{equation}
-	\ket{\phi_k} = \oint d\mu(Z_{\rm cl}^{(k)}) \ket{Z_{\rm cl}^{(k)}}
+	\ket{\psi_k} = \oint d\mu(Z_{\rm cl}^{(k)}) \ket{Z_{\rm cl}^{(k)}}
 	e^{i\mathcal{T}[Z_{\rm cl}^{(k)}]} .
 \end{equation}
 The single-valuedness of the wave function leads to
@@ -619,7 +616,7 @@ Using the invariant measure
 \end{align}
 the $k$-th semiclassical wave function can be calculated as
 \begin{equation}
-  \ket{\phi_k} \propto \oint d\theta_1\cdots \oint d\theta_M \ 
+  \ket{\psi_k} \propto \oint d\theta_1\cdots \oint d\theta_M \ 
 	\rho(E_k,v^{(k)},\theta)
 	\ket{E_k,v^{(k)},\theta} e^{i\mathcal{T}[E_k,v^{(k)},\theta]} .
   \label{semi_wave_func}
@@ -702,7 +699,7 @@ the variables $(\phi,j)$ are transformed into $(t,E)$.
 The semiclassical wave function fulfilling the EBK quantization condition
 becomes
 \begin{align}
-	\ket{\phi_k^N} &\propto \oint d\Phi \oint dt
+	\ket{\psi_k^N} &\propto \oint d\Phi \oint dt
 	e^{i\mathcal{T}_{N,E_k}(\Phi, t)}
 	\ket{\Phi,t}_{N,E_k} \label{semi_wave_func0} \\
 %  &\propto \sum_k \frac{1}{k!}\int_0^{2\pi}d\Phi e^{i(\Pi-k)\Phi}\sum_{j=0}^{k}C_j^{(E,k)}\ket{S_1,-S_1+j;S_2,-S_2+(k-j)} \label{semi_wave_func1}
@@ -761,7 +758,7 @@ the quantization condition becomes
 \begin{equation}
  \mathcal{T}_{N,E_k}(\Phi,T/2)
 	= \pm \frac{N}{2} \pi + \int_{-\pi}^\pi j d\phi
-	= 2k\pi .
+	= 2m\pi .
 \end{equation}
 This leads to the following:
 \begin{equation}
@@ -772,7 +769,7 @@ This leads to the following:
 	\end{cases}
 	\label{EBK_2}
 \end{equation}
-where $k$ and $n>0$ are integer numbers.
+where $m$, $k$ and $n>0$ are integer numbers.
 
 
 
@@ -922,11 +919,11 @@ In order to estimate the two-particle transfer matrix elements,
 we construct the corresponding operators as follows.
 The classical form of matrix elements are obtained as
 \begin{align}
-  S_+(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_+|Z}
+  S^+(\Phi,J;\phi,j) &= \braket{Z|\hat{S}^+|Z}
  = \frac{1}{2}
 \left( \Omega_1\sqrt{1-q_1^2}e^{-i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{i\phi/2} \right) e^{i\Phi}
 	\label{Sp_mean_value} \\
-  S_-(\Phi,J;\phi,j) &= \braket{Z|\hat{S}_-|Z}
+  S^-(\Phi,J;\phi,j) &= \braket{Z|\hat{S}^-|Z}
  = \frac{1}{2}
 \left( \Omega_1\sqrt{1-q_1^2}e^{i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{-i\phi/2} \right) e^{-i\Phi} .
 	\label{Sm_mean_value}
@@ -936,7 +933,7 @@ The classical form of matrix elements are obtained as
 Again, we adopt a simple symmetrized ordering for the quantization:
 \begin{eqnarray}
 %  &S_+(\Phi,\Pi;\phi,\pi) \to S_+(\hat{\Phi},\hat{\Pi};\hat{\phi},\hat{\pi}) \nonumber \\
-  S_\pm (\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
+  S^\pm (\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
 	&=& \frac{1}{4}\left( \Omega_1\sqrt{1-q_1^2}e^{\mp i\hat{\phi}/2}
 +\Omega_2\sqrt{1-q_2^2}e^{\pm i\hat{\phi}/2} \right) e^{\pm i\hat{\Phi}} 
 	\nonumber \\
@@ -953,11 +950,11 @@ Using these operators,
 the pair-addition transition strengths are calculated as
 \begin{align}
 B(P_{\rm ad};k\rightarrow k') &=
-|\braket{N',k'|S_+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})|N,k}|^2
+|\braket{N',k'|S^+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})|N,k}|^2
 	\nonumber \\
 &= \left| \int_{0}^{2\pi}d\Phi \int_{-2\pi}^{2\pi}d\phi 
 	\psi^{(N')*}_{k'}(\phi) e^{-i\frac{N'}{2}\Phi}
-	S_+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
+	S^+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
 	\psi^{(N)}_{k}(\phi)e^{i\frac{N}{2}\Phi} \right|^2,
 \end{align}
 which automatically vanishes for $N'\neq N+2$.
@@ -1025,7 +1022,7 @@ a given initial state $Z(0)$.
 The energy eigenvalues and the corresponding closed trajectories
 are determined from the EBK quantization condition (\ref{EBK}).
 The pair transfer matrix elements are evaluated as the Fourier components
-of the time-dependent mean values $S_\pm(t)=S_\pm(Z(t))$,
+of the time-dependent mean values $S^\pm(t)=S^\pm(Z(t))$,
 Eqs. (\ref{Sp_mean_value}) and (\ref{Sm_mean_value}).
 %In the ground state, the motion in the global gauge angle $\Phi$
 %is independent from the $\phi$ motion.
@@ -1036,8 +1033,8 @@ find the period of the $k$-th closed trajectory $T$
 satisfying Eq. (\ref{EBK}).
 Then, the Fourier component,
 \begin{equation}
-	\tilde{S}_\pm(E_k; \omega) = \frac{1}{T}\int_0^T dt
-	e^{i\omega t} S_\pm(t) ,
+	\tilde{S}^\pm(E_k; \omega) = \frac{1}{T}\int_0^T dt
+	e^{i\omega t} S^\pm(t) ,
 \label{Fourier_decomposition}
 \end{equation}
 corresponds to the pair transfer matrix element from the state $k$ to $k'$
@@ -1045,7 +1042,7 @@ when $\omega=2\pi (k'-k)/T$.
 The pair-addition transition strengths are calculated as
 \begin{equation}
 	B(P_{\rm ad};k\rightarrow k') 
-	= \left|\tilde{S}_+\left(E_k;\frac{2\pi}{T}\Delta k \right) \right|^2 ,
+	= \left|\tilde{S}^+\left(E_k;\frac{2\pi}{T}\Delta k \right) \right|^2 ,
 \end{equation}
 with $\Delta k=k'-k$.
 In this approach, the transition between the ground states of
@@ -1056,7 +1053,7 @@ namely the expectation value in the BCS approximation.
 The derivation  of Eq. (\ref{Fourier_decomposition})
 is based on the wave packet in the
 classical limit \cite{LL65}.
-The TDHFB state is assumed to be a superposition of eigenstates
+The TDHFB state is assumed to be a superposition of eigenstates $\ket{\phi_k^N}$
 in a narrow range of energy $E_{k_0}-\Delta E<E_k<E_{k_0}+\Delta E$,
 \begin{equation}
 	\ket{Z(t)} = \sum_N \sum_k c_k^N \ket{\phi_k^N} e^{-iE_k t} ,
@@ -1064,25 +1061,25 @@ in a narrow range of energy $E_{k_0}-\Delta E<E_k<E_{k_0}+\Delta E$,
 \end{equation}
 where the eigenenergies are evenly spaced and
 the coefficients $c_k^N$ slowly vary with respect to $k$ and $N$.
-The expectation value of $S_\pm$ is
+The expectation value of $S^\pm$ is
 \begin{equation}
-	S_\pm(t) = \sum_{N} \sum_{k,k'} c_{k'}^{N+2*} c_k^N 
-	\braket{\phi_{k'}^{N+2}|S_\pm|\phi_k^N} e^{i(E_{k'}-E_k)t} .
+	S^\pm(t) = \sum_{N} \sum_{k,k'} c_{k'}^{N+2*} c_k^N 
+	\braket{\phi_{k'}^{N+2}|S^\pm|\phi_k^N} e^{i(E_{k'}-E_k)t} .
 \end{equation}
-The matrix element $\braket{\phi_{k'}^{N+2}|S_\pm|\phi_k^N}$
+The matrix element $\braket{\phi_{k'}^{N+2}|S^\pm|\phi_k^N}$
 quickly disappears as $|k'-k|$ increases, while it stays almost constant
 for the small change of $k$ and $N$ with $|k'-k|$ being fixed.
 Thus, we may approximate $c_{k'}^{N+2}\approx c_k^N$,
 $E_{k'}-E_k\approx \omega_0 \Delta k$, and
-that $\braket{\phi_{k'}^{N+2}|S_\pm|\phi_k^N}\approx
-\braket{\phi_{k_0+\Delta k}^{N+2}|S_\pm|\phi_{k_0}^N}$ 
+that $\braket{\phi_{k'}^{N+2}|S^\pm|\phi_k^N}\approx
+\braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}$ 
 \begin{equation}
-	S_\pm(t) \approx \sum_{N} \sum_{k} \left|c_k^N\right|^2
+	S^\pm(t) \approx \sum_{N} \sum_{k} \left|c_k^N\right|^2
 	\sum_{\Delta k}
-	\braket{\phi_{k_0+\Delta k}^{N+2}|S_\pm|\phi_{k_0}^N}
+	\braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}
 	e^{i\omega_0 \Delta k t} 
 	= \sum_{\Delta k}
-	\braket{\phi_{k_0+\Delta k}^{N+2}|S_\pm|\phi_{k_0}^N}
+	\braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}
 	e^{i\omega_0 \Delta k t}  ,
 \end{equation}
 where $k_0$ is a representative index value of the superposition in 
@@ -1249,8 +1246,8 @@ We find the SPA is even more precise than the CQ.
  \begin{center}
 %  \includegraphics[width=67mm,angle=-90]{images/N50Xeq2occ_wo_adiabatic.eps}
 %  \includegraphics[width=67mm,angle=-90]{images/N100Xeq2occ_wo_adiabatic.eps}
-(a2)  \includegraphics[height=0.45\textwidth,angle=-90]{images/N50Xeq2occ_wo_adiabatic.eps}
-(b2)  \includegraphics[height=0.45\textwidth,angle=-90]{images/N100Xeq2occ_wo_adiabatic.eps}
+(a2)\includegraphics[height=0.45\textwidth,angle=-90]{images/N50Xeq2occ_wo_adiabatic.eps}
+(b2)\includegraphics[height=0.45\textwidth,angle=-90]{images/N100Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{
@@ -1276,7 +1273,7 @@ Next, let us discuss the transition matrix elements.
 In this paper, we discuss only $k=0$ (ground state) and $k=1$
 (1st excited $\nu=0$ state).
 The FD calculation is based on the time evolution of the expectation 
-value $S_+(t)$ with fixed $(J,\Phi)$ in Eq. (\ref{Fourier_decomposition}).
+value $S^+(t)$ with fixed $(J,\Phi)$ in Eq. (\ref{Fourier_decomposition}).
 %There is some ambiguity for the calculation of $S_+(t)$,
 %namely, for which trajectory we should calculate $S_+(t)$.
 For $(N,k)\rightarrow (N+2,k')$ transitions,
@@ -1288,8 +1285,8 @@ pair-rotational band, when the state is deformed in the
 gauge space (pair deformation).
 For the ground-state band ($k=0$),
 this is nothing but the expectation value at the BCS wave function,
-with the constant value of $S_+$.
-Since the constant $S_+$ provides only $\Delta k=0$ intraband transitions,
+with the constant value of $S^+$.
+Since the constant $S^+$ provides only $\Delta k=0$ intraband transitions,
 for the interband transition of $(N,k=0)\rightarrow (N+2,k=1)$
 transitions, the trajectory satisfying the EBK condition of $k=1$ is used to
 perform the Fourier decomposition (\ref{Fourier_decomposition})
@@ -1394,15 +1391,9 @@ In contrast, $B(P_{\rm ad}; 1\rightarrow 0)$, which change the phonon
 quanta by three, are almost zero.
 In the pair-rotational region ($x \gg 1$),
 $B(P_{\rm ad}; 1\rightarrow 0)$ and $B(P_{\rm ad}; 0\rightarrow 1)$
-are roughly identical,
-while their magnitude is significantly smaller than
-$B(P_{\rm ad}; 0\rightarrow 1)$ at $x\lesssim 1$.
-This indicates the character change of the $k=1$ states
-from the vibration around the ``spherical'' ground state
-to that around the ``deformed'' ground state.
-This is analogous to the quadrupole vibrations in spherical nuclei
-and the beta vibrations in deformed nuclei, respectively.
-%The latter may correspond to the Higgs amplitude mode.
+are roughly identical. This is because both $B(P_{\rm ad}; 1\rightarrow 0)$ 
+and $B(P_{\rm ad}; 0\rightarrow 1)$ correspond to one-phonon excitation
+in ``deformed'' cases ($x \gg 1$).
 
 In the mid-shell region ($N=48\rightarrow 50$),
 the intraband $B(P_{\rm ad}; k\rightarrow k)$ are smoothly increase as
@@ -1519,7 +1510,7 @@ exact ones.
 The pair-addition transition strengths from $N=6$ to $N=8$ are
 shown in Fig.~\ref{fig:N8Pad}.
 The intraband $k\rightarrow k$ transitions increase and 
-the interband $k=1\rightarrow 0$ transitions decrease as
+the interband $k=0\rightarrow 1$ transitions decrease as
 functions of $x$.
 Their relative difference becomes
 more than one order of magnitude at $x\gtrsim 2$.
@@ -1643,7 +1634,7 @@ The CQ calculation also shows smoothed kink-like behaviors near the
 transition points.
 However, it underestimates the intraband $B(P_{\rm ad}; k\rightarrow k)$.
 The FD method does not have a kink for $B(P_{\rm ad}; 0\rightarrow 0)$,
-because $S_+(t)$ is calculated for a $N=14$ system.
+because $S^+(t)$ is calculated for a $N=14$ system.
 Both intraband and interband transitions in the FD calculations
 reasonably agree with the exact results at $x\gtrsim 1.8$.
 The $k=1$ state is not properly reproduced at $x\lesssim 1.8$
@@ -1715,14 +1706,14 @@ the collective treatment of the pairing.
 %. Without total gauge angle part $e^{i\Phi}$, $\Delta$ is still complex number in general. However, the pairing gap is real number with the definition by BCS wave function
 
 Although the global gauge angle $\Phi$ is arbitrary,
-The deformation parameter $\alpha\equiv \braket{ \hat{S}_- }$
+The deformation parameter $\alpha\equiv \braket{ \hat{S}^- }$
 in the gauge space is
 usually taken as real value ($\Phi=0$).
 %In the superfluid phase, 
 The energy minimization with a fixed value of real $\alpha$ always
 leads to $\phi=0$.
 \begin{align}
-\alpha(j,J) = \braket{Z_0|\hat{S}_-|Z_0} %= g\sum_{k>0} u_kv_k \nonumber \\
+\alpha(j,J) = \braket{Z_0|\hat{S}^-|Z_0} %= g\sum_{k>0} u_kv_k \nonumber \\
 %	= \sum_{l=1}^2 S_l\sqrt{1-q_l^2} . % = \Delta(\pi) .
 	= \frac{\Omega}{2} \left(\sqrt{1-q_1^2} +\sqrt{1-q_2^2} \right).
  \label{Delta_BCS}
@@ -1915,7 +1906,7 @@ One of the reasons of its success is due to the inclusion of the off-diagonal
 parts of the pair transfer operator,
 by the explicit construction of the microscopic wave functions.
 The CQ and FD calculate the pair transfer matrix elements using only
-the diagonal part (expectation value) of the operator $\hat{S}_\pm$,
+the diagonal part (expectation value) of the operator $\hat{S}^\pm$,
 based on Eqs. (\ref{Sp_mean_value}) and (\ref{Sm_mean_value}).
 This is a good approximation when the collectivity is so large that the
 diagonal parts dominate.
@@ -1963,14 +1954,14 @@ We give a derivation of the semiclassical wave function
 of Eq. (\ref{semi_wave_func1}).
 The explicit form of coherent state is
 \begin{align}
-  \ket{Z} &= \prod_{l=1}^2(1+|Z_l|^2)^{-\Omega_l/2}e^{Z_lS_l^{\dag}}\ket{0} \nonumber \\
+  \ket{Z} &= \prod_{l=1}^2(1+|Z_l|^2)^{-\Omega_l/2}e^{Z_lS_l^{+}}\ket{0} \nonumber \\
   &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
   {}_kC_m \left(
-  \tan{\frac{\theta_1}{2}}e^{-i\phi_1}S_1^{\dag} \right)^m \left(
-  \tan{\frac{\theta_2}{2}}e^{-i\phi_2}S_2^{\dag} \right)^{k-m} \ket{0} \nonumber \\
+  \tan{\frac{\theta_1}{2}}e^{-i\phi_1}S_1^{+} \right)^m \left(
+  \tan{\frac{\theta_2}{2}}e^{-i\phi_2}S_2^{+} \right)^{k-m} \ket{0} \nonumber \\
   &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
   {}_kC_m \tan^m{\frac{\theta_1}{2}}\tan^{k-m}{\frac{\theta_2}{2}}e^{-ik\Phi}e^{-i(k/2-m)\phi}
-  (S_1^{\dag})^m(S_2^{\dag})^{k-m} \ket{0}
+  (S_1^{+})^m(S_2^{+})^{k-m} \ket{0}
   \label{ZZ}
 \end{align} 
 Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$,
@@ -1982,16 +1973,16 @@ it becomes
   \propto& \sum_k \frac{1}{k!} \sum_{m=0}^k{}_kC_m \int_0^{2\pi} d\Phi e^{i(N/2-k)\Phi} 
   \int_0^T dt e^{i\int \pi(t') \dot{\phi}(t') dt'-i(k/2-m)\phi} \nonumber \\
   &\times \left\{ \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \right\}
-\tan^m{\frac{\theta_1}{2}}\tan^{k-m}\frac{\theta_2}{2}(S_1^{\dag})^m(S_2^{\dag})^{k-m} \ket{0} \nonumber \\
+\tan^m{\frac{\theta_1}{2}}\tan^{k-m}\frac{\theta_2}{2}(S_1^{+})^m(S_2^{+})^{k-m} \ket{0} \nonumber \\
   \propto& \sum_{m=0}^{N/2}{}_{N/2}C_m  \int_0^T dt \exp{\left( i\int \pi(t') \dot{\phi}(t') dt'-i(N/4-m)\phi \right)} \nonumber \\
   &\times \left\{ \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \right\} 
-\tan^m{\frac{\theta_1}{2}}\tan^{N/2-m}\frac{\theta_2}{2} (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} \label{semi_wave_func_b}
+\tan^m{\frac{\theta_1}{2}}\tan^{N/2-m}\frac{\theta_2}{2} (S_1^{+})^m(S_2^{+})^{N/2-m} \ket{0} \label{semi_wave_func_b}
 \end{align}
 We find that the integration over $\Phi$ is nothing but the number projection.
 In SU(2) quasi-spin representation, the vacuum state is written as
 $\ket{0}=\ket{S_1,-S_1;S_2,-S_2}$, which leads to
 \begin{align}
-  (S_1^{\dag})^m(S_2^{\dag})^{N/2-m} \ket{0} 
+  (S_1^{+})^m(S_2^{+})^{N/2-m} \ket{0} 
   = \sqrt{\frac{(2S_1)!m!}{(2S_1-m)!}} \sqrt{\frac{(2S_2)!(N/2-m)!}{(2S_2-(N/2-m))!}}
   \ket{S_1,-S_1+m;S_2,-S_2+(N/2-m)}.
 \end{align}
@@ -2007,7 +1998,7 @@ where $q=\cos{\theta}$.
 Inserting Eq. (\ref{tan}) into Eq. (\ref{semi_wave_func_b}) with $N/2=J$,
 we reach Eq. (\ref{semi_wave_func1}).
 %\begin{align}
- % \sum_{m=0}^{J}{}_J C_m\int_0^T dt \exp{\left( i\int^t \pi(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) (S_1^{\dag})^m(S_2^{\dag})^{J-m}\ket{0}
+ % \sum_{m=0}^{J}{}_J C_m\int_0^T dt \exp{\left( i\int^t \pi(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) (S_1^{+})^m(S_2^{+})^{J-m}\ket{0}
 %\end{align}
 
 \bibliographystyle{apsrev4-1}
