@@ -137,9 +137,8 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
   {Reinhardt}},\ }\href {\doibase
   http://dx.doi.org/10.1016/0375-9474(80)90488-1} {\bibfield  {journal}
-  {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo {volume}
-  {346}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1980})}\BibitemShut
-  {NoStop}%
+  {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume} {346}},\
+  \bibinfo {pages} {1 } (\bibinfo {year} {1980})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {B\`es}\ \emph {et~al.}(1970)\citenamefont {B\`es},
   \citenamefont {Broglia}, \citenamefont {Perazzo},\ and\ \citenamefont
   {Kumar}}]{BBPK70}%
@@ -149,8 +148,8 @@
   \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Perazzo}}, \ and\
   \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Kumar}},\ }\href
   {\doibase http://dx.doi.org/10.1016/0375-9474(70)90677-9} {\bibfield
-  {journal} {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo
-  {volume} {143}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1970})}\BibitemShut
+  {journal} {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume}
+  {143}},\ \bibinfo {pages} {1 } (\bibinfo {year} {1970})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Gozdz}\ \emph {et~al.}(1985)\citenamefont {Gozdz},
   \citenamefont {Pomorski}, \citenamefont {M.Brack},\ and\ \citenamefont
@@ -174,7 +173,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {H{\"o}gaasen-Feldman}},\ }\href {\doibase
   http://dx.doi.org/10.1016/0029-5582(61)90050-5} {\bibfield  {journal}
-  {\bibinfo  {journal} {Nuclear Physics}\ }\textbf {\bibinfo {volume} {28}},\
+  {\bibinfo  {journal} {Nucl. Phys.}\ }\textbf {\bibinfo {volume} {28}},\
   \bibinfo {pages} {258 } (\bibinfo {year} {1961})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Cambiaggio}\ \emph {et~al.}(1984)\citenamefont
   {Cambiaggio}, \citenamefont {Dussel},\ and\ \citenamefont
@@ -184,17 +183,17 @@
   {Cambiaggio}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont {Dussel}},
   \ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Saraceno}},\
   }\href {\doibase https://doi.org/10.1016/0375-9474(84)90600-6} {\bibfield
-  {journal} {\bibinfo  {journal} {Nuclear Physics A}\ }\textbf {\bibinfo
-  {volume} {415}},\ \bibinfo {pages} {70 } (\bibinfo {year}
-  {1984})}\BibitemShut {NoStop}%
+  {journal} {\bibinfo  {journal} {Nucl. Phys. A}\ }\textbf {\bibinfo {volume}
+  {415}},\ \bibinfo {pages} {70 } (\bibinfo {year} {1984})}\BibitemShut
+  {NoStop}%
 \bibitem [{\citenamefont {Suzuki}\ and\ \citenamefont
   {Mizobuchi}(1988)}]{SM88}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
   {Suzuki}}\ and\ \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
   {Mizobuchi}},\ }\href {\doibase 10.1143/PTP.79.480} {\bibfield  {journal}
-  {\bibinfo  {journal} {Progress of Theoretical Physics}\ }\textbf {\bibinfo
-  {volume} {79}},\ \bibinfo {pages} {480} (\bibinfo {year} {1988})}\BibitemShut
+  {\bibinfo  {journal} {Prog. Theor. Phys,}\ }\textbf {\bibinfo {volume}
+  {79}},\ \bibinfo {pages} {480} (\bibinfo {year} {1988})}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Richardson}(1963)}]{Richardson}%
   \BibitemOpen
