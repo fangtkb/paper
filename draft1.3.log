@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  7 DEC 2017 19:17
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  8 DEC 2017 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./draft1.2.tex
-(./draft1.2.tex
+**./draft1.3.tex
+(./draft1.3.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/03/31> patch level 0)
 Babel <3.9r> and hyphenation patterns for 81 language(s) loaded.
 (c:/w32tex/share/texmf-local/tex/latex/revtex/revtex4-1.cls
@@ -266,8 +266,8 @@ Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 49.
 Class revtex4-1 Info: cite was not loaded (OK!) on input line 49.
 Class revtex4-1 Info: mcite was not loaded (OK!) on input line 49.
 Class revtex4-1 Info: multicol was not loaded (OK!) on input line 49.
- (./draft1.2.aux)
-\openout1 = `draft1.2.aux'.
+ (./draft1.3.aux)
+\openout1 = `draft1.3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
@@ -322,7 +322,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\openout3 = `draft1.2Notes.bib'.
+\openout3 = `draft1.3Notes.bib'.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
@@ -351,124 +351,122 @@ LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
  [2] [3] [4] [5] [6]
-File: images/phase.eps Graphic file (type eps)
- <images/phase.eps> [7] [8] [9] [10] [11]
+File: phase.eps Graphic file (type eps)
+ <phase.eps> [7] [8] [9] [10] [11]
 Excluding 'comment' comment. Excluding 'comment' comment. [12] [13]
-File: images/N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
+File: N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N50ex_energy_wo_adiabatic.eps>
-File: images/N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
- <images/N100ex_energy_wo_adiabatic.eps>
-[14]
-File: images/N50Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq0p5occ_wo_adiabatic.eps>
-File: images/N100Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
+<N50ex_energy_wo_adiabatic.eps>
+File: N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
+ <N100ex_energy_wo_adiabatic.eps> [14]
+File: N50Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N100Xeq0p5occ_wo_adiabatic.eps>
-File: images/N50Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq2occ_wo_adiabatic.eps>
-File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+<N50Xeq0p5occ_wo_adiabatic.eps>
+File: N100Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
+ <N100Xeq0p5occ_wo_adiabatic.eps>
+File: N50Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N100Xeq2occ_wo_adiabatic.eps> [15]
-File: images/N50Pad_CQ.eps Graphic file (type eps)
- <images/N50Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1298--1299
+<N50Xeq2occ_wo_adiabatic.eps>
+File: N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+ <N100Xeq2occ_wo_adiabatic.eps> [15]
+File: N50Pad_CQ.eps Graphic file (type eps)
+
+<N50Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1300--1301
  [] 
  []
 
-File: images/N50Pad_FD.eps Graphic file (type eps)
-<images/N50Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1304--1305
+File: N50Pad_FD.eps Graphic file (type eps)
+<N50Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1306--1307
  [] 
  []
 
-File: images/N50Pad_SPA.eps Graphic file (type eps)
-<images/N50Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1310--1311
+File: N50Pad_SPA.eps Graphic file (type eps)
+<N50Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1312--1313
  [] 
  []
 
-File: images/N100Pad_CQ.eps Graphic file (type eps)
-<images/N100Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1353--1354
+File: N100Pad_CQ.eps Graphic file (type eps)
+<N100Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1355--1356
  [] 
  []
 
-File: images/N100Pad_FD.eps Graphic file (type eps)
-<images/N100Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1359--1360
+File: N100Pad_FD.eps Graphic file (type eps)
+<N100Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1361--1362
  [] 
  []
 
-File: images/N100Pad_SPA.eps Graphic file (type eps)
-<images/N100Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1365--1366
+File: N100Pad_SPA.eps Graphic file (type eps)
+<N100Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1367--1368
  [] 
  []
 
 [16] [17]
-File: images/N8ex_energy_wo_adiabatic.eps Graphic file (type eps)
- <images/N8ex_energy_wo_adiabatic.eps>
-File: images/N8Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
+File: N8ex_energy_wo_adiabatic.eps Graphic file (type eps)
+ <N8ex_energy_wo_adiabatic.eps>
+File: N8Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
+ <N8Xeq0p5occ_wo_adiabatic.eps>
+File: N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N8Xeq0p5occ_wo_adiabatic.eps>
-File: images/N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N8Xeq2occ_wo_adiabatic.eps>
-[18] [19]
-File: images/N8Pad_CQ.eps Graphic file (type eps)
- <images/N8Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1541--1542
+<N8Xeq2occ_wo_adiabatic.eps> [18] [19]
+File: N8Pad_CQ.eps Graphic file (type eps)
+ <N8Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1543--1544
  [] 
  []
 
-File: images/N8Pad_FD.eps Graphic file (type eps)
-<images/N8Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1547--1548
+File: N8Pad_FD.eps Graphic file (type eps)
+<N8Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1549--1550
  [] 
  []
 
-File: images/N8Pad_SPA.eps Graphic file (type eps)
-<images/N8Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1553--1554
+File: N8Pad_SPA.eps Graphic file (type eps)
+<N8Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1555--1556
  [] 
  []
 
-File: images/N16ex_energy_wo_adiabatic.eps Graphic file (type eps)
-<images/N16ex_energy_wo_adiabatic.eps>
-File: images/N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N16Xeq0p5occ_wo_adiabatic.eps>
-File: images/N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+File: N16ex_energy_wo_adiabatic.eps Graphic file (type eps)
+<N16ex_energy_wo_adiabatic.eps>
+File: N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
+ <N16Xeq0p5occ_wo_adiabatic.eps>
+File: N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N16Xeq2occ_wo_adiabatic.eps> [20] [21]
-File: images/N16Pad_CQ.eps Graphic file (type eps)
- <images/N16Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1654--1655
+<N16Xeq2occ_wo_adiabatic.eps> [20] [21]
+File: N16Pad_CQ.eps Graphic file (type eps)
+ <N16Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1656--1657
  [] 
  []
 
-File: images/N16Pad_FD.eps Graphic file (type eps)
-<images/N16Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1660--1661
+File: N16Pad_FD.eps Graphic file (type eps)
+<N16Pad_FD.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1662--1663
  [] 
  []
 
-File: images/N16Pad_SPA.eps Graphic file (type eps)
-<images/N16Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1666--1667
+File: N16Pad_SPA.eps Graphic file (type eps)
+<N16Pad_SPA.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1668--1669
  [] 
  []
 
 [22]
-File: images/N8p_E.eps Graphic file (type eps)
- <images/N8p_E.eps>
-File: images/N16p_E.eps Graphic file (type eps)
- <images/N16p_E.eps> [23]
-File: images/N50Xeq2p4gap_E(2).eps Graphic file (type eps)
-
-<images/N50Xeq2p4gap_E(2).eps>
-File: images/N16Xeq2p4gap_E(2).eps Graphic file (type eps)
- <images/N16Xeq2p4gap_E(2).eps> [24] [25]
-[26] (./draft1.2.bbl
+File: N8p_E.eps Graphic file (type eps)
+ <N8p_E.eps>
+File: N16p_E.eps Graphic file (type eps)
+ <N16p_E.eps> [23]
+File: N50Xeq2p4gap_E.eps Graphic file (type eps)
+ <N50Xeq2p4gap_E.eps>
+File: N16Xeq2p4gap_E.eps Graphic file (type eps)
+ <N16Xeq2p4gap_E.eps>
+[24] [25] [26] (./draft1.3.bbl [27]
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 58.
@@ -477,18 +475,18 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 58.
 
-[27]) [28] (./draft1.2.aux)
+) [28] (./draft1.3.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5332 strings out of 493709
- 74163 string characters out of 6152372
- 162593 words of memory out of 5000000
+ 5331 strings out of 493709
+ 73943 string characters out of 6152372
+ 165593 words of memory out of 5000000
  8796 multiletter control sequences out of 15000+600000
  22093 words of font info for 87 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,11n,39p,1328b,452s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1.2.dvi (28 pages, 100888 bytes).
+Output written on draft1.3.dvi (28 pages, 101048 bytes).
