@@ -1,6 +1,6 @@
 This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2016/W32TeX)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: draft1.3.aux
+The top-level auxiliary file: draft2.1.aux
 The style file: apsrev4-1.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -9,7 +9,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Database file #1: draft1.3Notes.bib
+Database file #1: draft2.1Notes.bib
 Database file #2: ref.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
@@ -20,45 +20,45 @@ Control: production of article title (-1) disabled
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-You've used 22 entries,
+You've used 25 entries,
             5847 wiz_defined-function locations,
-            1768 strings with 17852 characters,
-and the built_in function-call counts, 19244 in all, are:
-= -- 1307
-> -- 414
-< -- 122
-+ -- 147
-- -- 90
-* -- 2845
-:= -- 1991
-add.period$ -- 22
-call.type$ -- 22
-change.case$ -- 88
-chr.to.int$ -- 21
-cite$ -- 22
-duplicate$ -- 1843
-empty$ -- 1492
-format.name$ -- 252
-if$ -- 3779
+            1787 strings with 18150 characters,
+and the built_in function-call counts, 21754 in all, are:
+= -- 1489
+> -- 460
+< -- 139
++ -- 163
+- -- 100
+* -- 3196
+:= -- 2257
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 100
+chr.to.int$ -- 24
+cite$ -- 25
+duplicate$ -- 2083
+empty$ -- 1688
+format.name$ -- 277
+if$ -- 4280
 int.to.chr$ -- 2
-int.to.str$ -- 30
-missing$ -- 228
-newline$ -- 118
-num.names$ -- 66
-pop$ -- 783
+int.to.str$ -- 33
+missing$ -- 260
+newline$ -- 127
+num.names$ -- 75
+pop$ -- 888
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 125
 quote$ -- 0
-skip$ -- 727
+skip$ -- 827
 stack$ -- 0
-substring$ -- 466
-swap$ -- 1636
-text.length$ -- 44
+substring$ -- 541
+swap$ -- 1847
+text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 8
-type$ -- 282
+type$ -- 320
 warning$ -- 0
-while$ -- 61
+while$ -- 70
 width$ -- 0
-write$ -- 225
+write$ -- 249
 is.kanji.str$ -- 0
