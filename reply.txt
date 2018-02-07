@@ -1,0 +1,53 @@
+We thank the referee for useful comments and a positive assessment of our
+paper. We have revised the manuscript according to the referee's comments.
+
+--------------------------------------------------------------------
+1. In the introduction, the authors say that TDHFB trajectories are
+classical.  I would argue that they are semi-classical as one need
+to go to the second order beyond the SPA to recover the Fock term
+according to Levit, PRC 1980.
+--------------------------------------------------------------------
+We have replaced words "classical limit" by "stationary-phase limit"
+in the introduction.
+
+In the papers [28,29,30] by Negele, Levit, and coworkers, the
+Hubbard-Stratonovich transformation of a particular choice was
+adopted, which leads to the path integral over the auxiliary fields.
+This is why the SPA corresponds to the Hartree approximation. In the
+present manuscript, we use the coherent-state representation for the
+path integral form of Eq. (III,1), similar to Refs.[31,32,39]. In this
+case, the Fock term is included in the SPA level. This is somewhat in
+details, and we think that it is not suitable for the introduction.
+Instead, we have added a footnote in Sec. III A, as
+"In this formulation, the stationary-phase approximation agrees with
+the TDHF(B) trajectories, while that to the auxiliary-field path
+integral of Refs. [28,29] leads to the TDH(B) without the Fock potentials."
+
+---------------------------------------------------------------
+2. The potential application to fission is a bit of a stretch.
+There are other problems with mean-field description of fission
+such as changing occupation number when single-particles cross
+(pairing may only partially help, see Blocki, Flocard, NPA 1976).
+---------------------------------------------------------------
+We agree with the referee that there are many problems to be solved,
+before the realistic application to the spontaneous fission phenomena.
+We have modified a sentence in the introduction as 
+"... and possibly enables us to describe large-amplitude collective
+tunneling phenomena such as spontaneous fission."
+-->
+"... and possibly enables us to describe large-amplitude collective
+tunneling phenomena."
+
+---------------------------------------------------------------
+3. The introduction would benefit to a more exhaustive discussion of
+the literature on QRPA and TDHFB studies of (pairing and normal)
+vibrations as the main motivation is to improve these approaches.
+---------------------------------------------------------------
+According to the referee's suggestion, we have extended the second
+paragraph of the introduction.
+
+In addition, we have added references, corrected several trivial
+mistakes, and made minor revisions from the previous manuscript.
+
+We hope that the revised manuscript is now acceptable for publication.
+
