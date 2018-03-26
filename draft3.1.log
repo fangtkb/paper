@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  12 MAR 2018 19:03
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  26 MAR 2018 17:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -74,10 +74,13 @@ Class revtex4-1 Info: RevTeX society APS selected on input line 31.
 Class revtex4-1 Info: Selecting journal prc on input line 7544.
 Class revtex4-1 Info: APS journal PRC selected on input line 7545.
 
-(c:/w32tex/share/texmf-local/tex/latex/revtex/aps12pt4-1.rtx
-File: aps12pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+
+Class revtex4-1 Warning: No type size specified, using default 10.
+
+(c:/w32tex/share/texmf-local/tex/latex/revtex/aps10pt4-1.rtx
+File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
 documentation)
-Class revtex4-1 Info: RevTeX pointsize 12pt selected on input line 30.
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
 )
 (c:/w32tex/share/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -304,15 +307,15 @@ Package caption Info: End \AtBeginDocument code.
 * \textheight=666.9326pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
-* \headsep=25.0pt
+* \topmargin=-42.1381pt
+* \headheight=25.0pt
+* \headsep=16.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=25.25pt plus 4.0pt minus 12.0pt
+* \marginparwidth=30.0pt
+* \marginparsep=6.0pt
+* \columnsep=18.0pt
+* \skip\footins=39.0pt plus 4.0pt minus 12.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -324,9 +327,9 @@ Package caption Info: End \AtBeginDocument code.
 
 \openout3 = `draft3.1Notes.bib'.
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
 LaTeX Font Info:    Try loading font information for U+msa on input line 93.
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -345,90 +348,111 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 93.
 
-[1]
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 95.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
- [2] [3] [4] [5] [6]
+[1] [2]
 File: phase.eps Graphic file (type eps)
- <phase.eps> [7] [8] [9] [10] [11]
-Excluding 'comment' comment. Excluding 'comment' comment. [12] [13]
+ <phase.eps> [3] [4]
+Underfull \hbox (badness 1515) in paragraph at lines 589--593
+[]\OT1/cmr/m/n/10 The en-ergy eigen-states cor-re-spond to sta-tion-ary
+ []
+
+
+Overfull \hbox (13.254pt too wide) in paragraph at lines 734--734
+[] 
+ []
+
+[5] Excluding 'comment' comment.
+Overfull \hbox (3.50703pt too wide) in paragraph at lines 965--965
+[] 
+ []
+
+[6] Excluding 'comment' comment. [7]
 File: N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
-
-<N50ex_energy_wo_adiabatic.eps>
+ <N50ex_energy_wo_adiabatic.eps>
 File: N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
- <N100ex_energy_wo_adiabatic.eps> [14]
+
+<N100ex_energy_wo_adiabatic.eps>
 File: N50Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
-
-<N50Xeq0p5occ_wo_adiabatic.eps>
+ <N50Xeq0p5occ_wo_adiabatic.eps>
 File: N100Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <N100Xeq0p5occ_wo_adiabatic.eps>
+
+<N100Xeq0p5occ_wo_adiabatic.eps>
 File: N50Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
-
-<N50Xeq2occ_wo_adiabatic.eps>
+ <N50Xeq2occ_wo_adiabatic.eps>
 File: N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
- <N100Xeq2occ_wo_adiabatic.eps> [15]
-File: N50Pad_CQ.eps Graphic file (type eps)
 
-<N50Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1315--1316
+<N100Xeq2occ_wo_adiabatic.eps> [8]
+File: N50Pad_CQ.eps Graphic file (type eps)
+ <N50Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1324--1325
  [] 
  []
 
 File: N50Pad_FD.eps Graphic file (type eps)
 <N50Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1321--1322
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1330--1331
  [] 
  []
 
 File: N50Pad_SPA.eps Graphic file (type eps)
 <N50Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1327--1328
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1336--1337
  [] 
  []
 
 File: N100Pad_CQ.eps Graphic file (type eps)
 <N100Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1370--1371
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1379--1380
  [] 
  []
 
 File: N100Pad_FD.eps Graphic file (type eps)
 <N100Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1376--1377
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1385--1386
  [] 
  []
 
 File: N100Pad_SPA.eps Graphic file (type eps)
 <N100Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1382--1383
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1391--1392
  [] 
  []
 
-[16] [17]
+[9]
 File: N8ex_energy_wo_adiabatic.eps Graphic file (type eps)
  <N8ex_energy_wo_adiabatic.eps>
 File: N8Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
  <N8Xeq0p5occ_wo_adiabatic.eps>
 File: N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<N8Xeq2occ_wo_adiabatic.eps> [18] [19]
+<N8Xeq2occ_wo_adiabatic.eps> [10]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1518.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1518.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 File: N8Pad_CQ.eps Graphic file (type eps)
- <N8Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1558--1559
+<N8Pad_CQ.eps>
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1567--1568
  [] 
  []
 
 File: N8Pad_FD.eps Graphic file (type eps)
 <N8Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1564--1565
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1573--1574
  [] 
  []
 
 File: N8Pad_SPA.eps Graphic file (type eps)
 <N8Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1570--1571
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1579--1580
  [] 
  []
 
@@ -438,35 +462,43 @@ File: N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
  <N16Xeq0p5occ_wo_adiabatic.eps>
 File: N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<N16Xeq2occ_wo_adiabatic.eps> [20] [21]
+<N16Xeq2occ_wo_adiabatic.eps> [11]
 File: N16Pad_CQ.eps Graphic file (type eps)
  <N16Pad_CQ.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1670--1671
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1650--1651
  [] 
  []
 
 File: N16Pad_FD.eps Graphic file (type eps)
 <N16Pad_FD.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1676--1677
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1656--1657
  [] 
  []
 
 File: N16Pad_SPA.eps Graphic file (type eps)
 <N16Pad_SPA.eps>
-Overfull \hbox (13.1613pt too wide) in paragraph at lines 1682--1683
+Overfull \hbox (13.1613pt too wide) in paragraph at lines 1662--1663
  [] 
  []
 
-[22]
+[12]
 File: N8p_E.eps Graphic file (type eps)
  <N8p_E.eps>
 File: N16p_E.eps Graphic file (type eps)
- <N16p_E.eps> [23]
+ <N16p_E.eps> [13]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1841.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1841.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 File: N50Xeq2p4gap_E.eps Graphic file (type eps)
- <N50Xeq2p4gap_E.eps>
+<N50Xeq2p4gap_E.eps>
 File: N16Xeq2p4gap_E.eps Graphic file (type eps)
- <N16Xeq2p4gap_E.eps>
-[24] [25] [26] (./draft3.1.bbl [27]
+ <N16Xeq2p4gap_E.eps> [14] [15] (./draft3.1.bbl
 
 LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 (Font)              using `JT1/gt/m/n' instead on input line 58.
@@ -475,18 +507,18 @@ LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
 (Font)              using `JY1/gt/m/n' instead on input line 58.
 
-[28]) [29] (./draft3.1.aux)
+[16]) [17] (./draft3.1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5419 strings out of 493709
- 75044 string characters out of 6152372
- 166844 words of memory out of 5000000
- 8884 multiletter control sequences out of 15000+600000
- 22093 words of font info for 87 fonts, out of 8000000 for 9000
+ 5422 strings out of 493709
+ 74892 string characters out of 6152372
+ 196953 words of memory out of 5000000
+ 8878 multiletter control sequences out of 15000+600000
+ 19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,11n,39p,1328b,452s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,11n,39p,1328b,497s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft3.1.dvi (29 pages, 104500 bytes).
+Output written on draft3.1.dvi (17 pages, 109176 bytes).

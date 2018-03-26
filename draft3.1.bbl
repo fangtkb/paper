@@ -140,9 +140,8 @@
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont
   {Hashimoto}},\ }\href {\doibase 10.1140/epja/i2012-12055-0} {\bibfield
-  {journal} {\bibinfo  {journal} {The European Physical Journal A}\ }\textbf
-  {\bibinfo {volume} {48}},\ \bibinfo {pages} {55} (\bibinfo {year}
-  {2012})}\BibitemShut {NoStop}%
+  {journal} {\bibinfo  {journal} {Eur. Phys. J. A}\ }\textbf {\bibinfo {volume}
+  {48}},\ \bibinfo {pages} {55} (\bibinfo {year} {2012})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Scamps}\ and\ \citenamefont
   {Lacroix}(2013{\natexlab{a}})}]{SL13-2}%
   \BibitemOpen
