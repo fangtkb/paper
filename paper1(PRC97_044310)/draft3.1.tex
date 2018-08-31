@@ -6,7 +6,7 @@ superscriptaddress,
 %unsortedaddress,
 %runinaddress,
 %frontmatterverbose,
-preprint,
+%preprint,
 showpacs,
 %preprintnumbers,
 nofootinbib,
@@ -21,7 +21,7 @@ prc,
 %rmp,
 %prstab,
 %prstper,
-%twocolumn,
+twocolumn,
 floatfix ]%
 {revtex4-1}
 
@@ -50,8 +50,8 @@ floatfix ]%
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\title{Comparative study of requantization of time-dependent mean-field
-for pairing dynamics}
+\title{Comparative study of the requantization of the time-dependent mean
+field for the dynamics of nuclear pairing}
 \author{Fang Ni}
  \affiliation{Faculty of Pure and Applied Sciences,
               University of Tsukuba, Tsukuba 305-8571, Japan}
@@ -111,7 +111,7 @@ Understanding the pairing dynamics is a key ingredient for solving
 mysteries of excited $0^+$ states.
 
 The ground states in many of even-even nuclei are well
-described by the Bardeen-Cooper-Schriefer (BCS)
+described by the Bardeen-Cooper-Schrieffer (BCS)
 and the Hartree-Fock-Bogoliubov (HFB) theories \cite{RS80,BHR03}.
 Its time-dependent version, 
 the time-dependent HFB (TDHFB) theory \cite{BR86,NMMY16},
@@ -244,11 +244,11 @@ We give a conclusion in Sec. \ref{sec:conclusion}.
 
 The Hamiltonian of the pairing model is given in terms of
 single-particle energies $\epsilon_l$ and the pairing strength $g$ as
-\begin{equation}
+\begin{align}
 %  H &= \sum_l \epsilon_l n_l - \frac{g}{4} \sum_{ll'} P_l^{\dag}P_{l'}
-	H = \sum_l \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^-
-    = \sum_l\epsilon_l(2S_l^0+\Omega_l) - g S^+ S^{-} ,
-\end{equation}
+	H &= \sum_l \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^- \nonumber \\
+    &= \sum_l\epsilon_l(2S_l^0+\Omega_l) - g S^+ S^{-} ,
+\end{align}
 where we use the SU(2) quasi-spin operators,
 $\boldsymbol{S}=\sum_l \boldsymbol{S}_l$, with
 \begin{eqnarray}
@@ -321,31 +321,32 @@ In the present case, we adopt the coherent state of Eq. (\ref{coherent}),
 $\ket{\phi(t)}=\ket{Z(t)}$.
 %Keeping the time-dependent state vector fulfills normalization $\braket{Z|Z}=1$, 
 The action $\mathcal{S}$ is
-\begin{equation}
-	\mathcal{S}  = \int \mathcal{L}(t) dt
+\begin{align}
+	\mathcal{S}  &= \int \mathcal{L}(t) dt \nonumber \\
 	%&= \int \braket{\phi(t)|i\frac{\partial}{\partial t}-H|\phi(t)}dt \\
-	= \int dt \left\{ \frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l|^2}
+	&= \int dt \left\{ \frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l|^2}
   (Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*}) - \braket{Z|H|Z} \right\} ,
 \label{S}
-\end{equation}
+\end{align}
 and
 \begin{align}
 %  \braket{Z|H|Z} &= \sum_l \epsilon_l \left\{ 2S_l\left( 1-\frac{2}{1+|Z_l|^2} \right) + \Omega_l \right\}
 %  -g \sum_l \frac{2S_l|Z_l|^2(2S_l+|Z_l|^2)}{(1+|Z_l|^2)^2}
 %  -g \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2}.
-  \braket{Z|H|Z} &= \sum_l \epsilon_l \frac{2\Omega_l |Z_l|^2}{1+|Z_l|^2}
-  -g \sum_l \frac{\Omega_l|Z_l|^2(\Omega_l+|Z_l|^2)}{(1+|Z_l|^2)^2}
-  -g \sum_{l_1 \neq l_2} \frac{\Omega_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{\Omega_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2}.
+  \braket{Z|H|Z} =& \sum_l \epsilon_l \frac{2\Omega_l |Z_l|^2}{1+|Z_l|^2}
+  -g \sum_l \frac{\Omega_l|Z_l|^2(\Omega_l+|Z_l|^2)}{(1+|Z_l|^2)^2} \nonumber \\
+  &-g \sum_{l_1 \neq l_2} \frac{\Omega_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{\Omega_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2}.
 	\label{TDHFB_Hamiltonian_1}
 \end{align}
 We transform the complex variables $Z_l$ into real variables $(q_l,\chi_l)$
 by $Z_l = \tan{\frac{\theta_l}{2}}e^{-i\chi_l}$ and $q_l=\cos{\theta_l}$ ($0\leq\theta\leq\pi$).
 The Lagrangian $\mathcal{L}$ and the expectation value of Hamiltonian become
 \begin{align}
-\mathcal{L}(t) &= \sum_l \frac{\Omega_l}{2}
-	(1-q_l)\dot{\chi_l} - \mathcal{H}(Z,Z^*) ,\\
-	\mathcal{H}(Z,Z^*) \equiv \braket{Z|H|Z} =& \sum_l \epsilon_l\Omega_l(1- q_l) - \frac{g}{4}\sum_l \Omega_l [\Omega_l(1-q_l^2)+(1-q_l)^2] \nonumber \\
-&- \frac{g}{4}\sum_{l_1\neq l_2} \Omega_{l_1}\Omega_{l_2}\sqrt{(1-q_{l_1}^2)(1-q_{l_2}^2)}e^{-i(\chi_{l_1}-\chi_{l_2})}   .
+\mathcal{L}(t) = \sum_l \frac{\Omega_l}{2}
+	(1&-q_l)\dot{\chi_l} - \mathcal{H}(Z,Z^*) ,\\
+	\mathcal{H}(Z,Z^*) \equiv \braket{Z|H|Z}& \nonumber \\
+  = \sum_l \epsilon_l\Omega_l(1- q_l)& - \frac{g}{4}\sum_l \Omega_l [\Omega_l(1-q_l^2)+(1-q_l)^2] \nonumber \\
+- \frac{g}{4}\sum_{l_1\neq l_2} \Omega_{l_1}\Omega_{l_2}&\sqrt{(1-q_{l_1}^2)(1-q_{l_2}^2)}e^{-i(\chi_{l_1}-\chi_{l_2})}   .
 \label{TDHFB_Hamiltonian_2}
 \end{align}
 Here, $\chi_l$ represents a kind of gauge angle of each level,
@@ -373,8 +374,8 @@ whose ranges are $0\leq \Phi \leq 2\pi$ and $-2\pi \leq \phi \leq 2\pi$.
 Their conjugate momenta $(J,j)$ are given by
 \begin{align}
 	J &= \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} =  \sum_{l=1}^2 \frac{\Omega_l}{2}(1-q_l), 
-\quad\quad
-j = \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \frac{\Omega_2(1-q_2) - \Omega_1(1-q_1)}{4}.
+\nonumber \\
+j &= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \frac{\Omega_2(1-q_2) - \Omega_1(1-q_1)}{4}.
 	\label{pi}
 \end{align}
 By calculating the occupation number $n_l$ in the level $l$,
@@ -386,7 +387,7 @@ the physical meaning of these conjugate momenta becomes obvious
 Therefore, $J$ corresponds to the total particle number
 $N=\sum_l n_l$,
 while $j$ corresponds to the difference of occupation number
-between upper level and lower level. 
+between upper level and lower level 
 \begin{align}
   J &= \frac{N}{2}, \hspace{5mm} j = \frac{n_{2}-n_{1}}{4} .
   \label{momentum}
@@ -399,14 +400,14 @@ between upper level and lower level.
 %Also, the expectation value of occupation number in each level is
 The Hamiltonian in terms of these canonical variables
 $(\phi,j;\Phi,J)$ is given by
-\begin{equation}
+\begin{align}
 \mathcal{H}(\phi,j;J)
-	= \sum_{l=1,2} \Omega_l \left\{ \epsilon_l(1- q_l)
-	- \frac{g}{4} [\Omega_l(1-q_l^2)+(1-q_l)^2] \right\}
-- \frac{g}{2}\Omega_1\Omega_2
+	=& \sum_{l=1,2} \Omega_l \epsilon_l(1- q_l) \nonumber \\
+	&- \frac{g}{4}\sum_{l=1,2} \Omega_l [\Omega_l(1-q_l^2)+(1-q_l)^2] \nonumber \\
+&- \frac{g}{2}\Omega_1\Omega_2
 	\sqrt{(1-q_1^2)(1-q_2^2)} \cos\phi
 \label{TDHFB_Hamiltonian_3}
-\end{equation}
+\end{align}
 with
 \begin{equation}
 	q_l=\frac{\Omega_l - J -2(-1)^l j}{\Omega_l} 
@@ -430,6 +431,18 @@ This leads to the particle number conservation, $dN/dt=0$.
 
 %The motion on $\Phi$ direction corresponds to pairing rotation. In quantum state, pairing rotational mode is labeled by quantum number $N$. The excitation states emerges in $N+2, N-2,\cdots$ system. In single-j system, the energy spectra is completely parabolic with respect to $N$. However, it contains higher order of $N$ from (\ref{hamiltonian}) in general system. \par
 %Excluding the cyclic variable, all we have to study is the one dimensional motion on $\phi$ direction, which corresponds to pairing vibration. The excitation states in pairing vibrational mode emerges in the same $N$ system. We can understand the classical picture of pairing vibration in two dimensional phase space. The classical trajectory fulfills
+
+\begin{figure*}[tp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{phase.eps}
+ \end{center}
+ \caption{Energy contour plot for $\Omega_1=\Omega_2=8$ and $N=16$.
+	The lines indicate the TDHFB trajectories fulfilling
+	the EBK quantization condition of Eq. (\ref{EBK}).
+	}
+ \label{fig:phase_space}
+\end{figure*}
+
 
 The TDHFB equation can be written in a form of
 the classical equations of motion:
@@ -487,18 +500,6 @@ at $\Omega\rightarrow\infty$.
 In the multi-$j$ case, the Hamiltonian contains higher-order
 terms in general.
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=60mm,angle=-90]{phase.eps}
- \end{center}
- \caption{Energy contour plot for $\Omega_1=\Omega_2=8$ and $N=16$.
-	The lines indicate the TDHFB trajectories fulfilling
-	the EBK quantization condition of Eq. (\ref{EBK}).
-	}
- \label{fig:phase_space}
-\end{figure}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Requantization of TDHFB for the two-level pair model}
 \label{sec:requantization}
@@ -520,14 +521,14 @@ We show results of these different approaches to the pairing model.
 
 Starting an arbitrary state $\ket{\psi(0)}$ at time $t=0$,
 the time-dependent full quantum state can be written in the path integral form
-\begin{equation}
+\begin{align}
 \ket{\psi(t)}
-	= e^{-iHt} \ket{\psi(0)}
-	= \int d\mu(Z'') \ket{Z''} \int d\mu(Z')
-	\int_{Z(0)=Z'}^{Z(t)=Z''} \mathcal{D}\mu[Z(\tau)]
+	=& e^{-iHt} \ket{\psi(0)} \nonumber \\
+	=& \int d\mu(Z'') \ket{Z''} \int d\mu(Z') \nonumber \\
+	&\times \int_{Z(0)=Z'}^{Z(t)=Z''} \mathcal{D}\mu[Z(\tau)]
 	e^{i\mathcal{S}[Z(\tau)]} \psi(Z') ,
 \label{path_integral_expression}
-\end{equation}
+\end{align}
 where $\psi(Z)\equiv \braket{Z|\psi(0)}$ and
 the invariant measure $d\mu(Z)$ is defined by 
 the unity condition,
@@ -562,24 +563,24 @@ ends at $\ket{Z'_{\rm cl}(t)}$ at time $t$.
 The action $\mathcal{S}_{\rm cl}(Z_f,Z_i)$ is calculated along this
 classical trajectory
 connecting $Z_i=Z'_{\rm cl}(0)=Z'$ and $Z_f=Z'_{\rm cl}(t)$.
-\begin{equation}
-	\mathcal{S}_{\rm cl}(Z'_{\rm cl}(t),Z') \equiv \int_{0}^{t}
+\begin{align}
+	\mathcal{S}_{\rm cl}(Z'_{\rm cl}(t),Z') &\equiv \int_{0}^{t}
 \braket{Z_{\rm cl}(t)|
 	i\frac{\partial}{\partial t} - H
-	|Z_{\rm cl}(t)} dt
-	= \mathcal{T}[Z_{\rm cl}] - \mathcal{H}(Z',Z'^*) t 
+	|Z_{\rm cl}(t)} dt \nonumber \\
+	&= \mathcal{T}[Z_{\rm cl}] - \mathcal{H}(Z',Z'^*) t 
 	,
 	\label{S_cl}
-\end{equation}
+\end{align}
 with
-\begin{equation}
-\mathcal{T}[Z_{\rm cl}]\equiv
+\begin{align}
+\mathcal{T}[Z_{\rm cl}] &\equiv
 \int_{0}^{t} \braket{Z_{\rm cl}(t)| i\frac{\partial}{\partial t}
-	|Z_{\rm cl}(t)} dt 
-	= \int_{Z'}^{Z'_{\rm cl}(t)}
+	|Z_{\rm cl}(t)} dt \nonumber \\
+	&= \int_{Z'}^{Z'_{\rm cl}(t)}
 	\frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l|^2}
   (Z_l^* dZ_l - Z_l dZ_l^*) .
-\end{equation}
+\end{align}
 In the last equation of Eq. (\ref{S_cl}),
 we used the fact that the TDHFB trajectory conserves the energy,
 $\mathcal{H}(Z_{\rm cl}(t),Z_{\rm cl}^*(t))= \mathcal{H}(Z',Z'^*)$.
@@ -595,13 +596,14 @@ a periodic TDHFB trajectory $Z_{\rm cl}^{(k)}$ as \cite{KS80,K81,SM88}
 \end{equation}
 The single-valuedness of the wave function leads to
 the quantization condition ($k$: integer)
-\begin{equation}
-	\mathcal{T}_\circ[Z_{\rm cl}^{(k)}]=
-	\oint \frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l^{(k)}|^2}
-	\left(Z_l^{(k)*} dZ_l^{(k)} - Z_l^{(k)} dZ_l^{(k)*}\right) = 2k\pi .
+\begin{align}
+	\mathcal{T}_\circ[Z_{\rm cl}^{(k)}]=&
+	\oint \frac{i}{2} \sum_l \frac{\Omega_l}{1+|Z_l^{(k)}|^2} \nonumber \\
+	&\times \left(Z_l^{(k)*} dZ_l^{(k)} - Z_l^{(k)} dZ_l^{(k)*}\right) \nonumber \\
+	=& 2k\pi .
 	\label{EBK}
-\end{equation}
-The state evolves in time as $\ket{\phi(t)}=\ket{\phi}e^{-iE_k t}$,
+\end{align}
+The state evolves in time as $\ket{\psi_k(t)}=\ket{\psi_k}e^{-iE_k t}$,
 with the energy of the $k$-th periodic trajectory,
 $E_k=\mathcal{H}(Z_{\rm cl}^{(k)},Z_{\rm cl}^{(k)*})$.
 
@@ -611,10 +613,11 @@ It is better founded and more practical
 if the classical system is completely integrable.
 In integrable systems, $M$ complex variables $Z(t)$ can be transformed into
 the action-angle variables;
-\begin{equation}
-	Z(t) = \{Z_l(t);l=1,\cdots,M \} \rightarrow
+\begin{align}
+	Z(t) &= \{Z_l(t);l=1,\cdots,M \} \nonumber \\
+	&\rightarrow
 	\{E; v_1,\cdots,v_{M-1}; \theta_1(t),\cdots,\theta_M(t)\} ,
-\end{equation}
+\end{align}
 where the variables $E$ and $v$ define an invariant torus,
 while $\theta(t)$ parameterize the coordinates on the torus.
 The integration path of Eq. (\ref{EBK}) is now taken as topologically
@@ -630,12 +633,13 @@ Using the invariant measure
   d\mu(Z) = \rho(E,v,\theta) dEdv_1\cdots dv_{M-1}d\theta_1\cdots d\theta_M,
 \end{align}
 the $k$-th semiclassical wave function can be calculated as
-\begin{equation}
-  \ket{\psi_k} \propto \oint d\theta_1\cdots \oint d\theta_M \ 
+\begin{align}
+  \ket{\psi_k} \propto \oint d\theta_1\cdots \oint d\theta_M &\ 
 	\rho(E_k,v^{(k)},\theta)
-	\ket{E_k,v^{(k)},\theta} e^{i\mathcal{T}[E_k,v^{(k)},\theta]} .
+	\ket{E_k,v^{(k)},\theta} \nonumber \\
+	&\times e^{i\mathcal{T}[E_k,v^{(k)},\theta]} .
   \label{semi_wave_func}
-\end{equation}
+\end{align}
 Here, we omit the integration with respect to the invariant variables,
 $E$ and $v$.
 
@@ -661,9 +665,9 @@ The invariant measure in SU(2)$\otimes$SU(2) is
 %	d\mu(Z) &= \prod_{l=1,2} \frac{S_l+1}{\pi}(1+|Z_l|^2)^{-2}d{\rm Re}Z_ld{\rm Im}Z_l \\
 %  &= \prod_l \frac{S_l+1}{4\pi}\sin{\theta_l}d\theta_ld\phi_l \\
 %  &= \frac{S_1+1}{4\pi}\frac{S_2+1}{4\pi}\frac{1}{S_1S_2}d\Phi d\Pi d\phi d\pi .
-d\mu(Z) &= \prod_l \frac{\Omega_l+2}{2\pi}(1+|Z_l|^2)^{-2}d{\rm Re}Z_ld{\rm Im}Z_l \\
-  &= \prod_l \frac{\Omega_l+2}{8\pi}\sin{\theta_l}d\theta_ld\phi_l \\
-	&= \left(\prod_{l=1,2} \frac{1+2\Omega_l^{-1}}{4\pi}\right)
+d\mu(Z) &= \prod_l \frac{\Omega_l+1}{\pi}(1+|Z_l|^2)^{-2}d{\rm Re}Z_ld{\rm Im}Z_l \\
+  &= \prod_l \frac{\Omega_l+1}{4\pi}d\cos{\theta_l}d\chi_l \\
+	&= \left(\prod_{l=1,2} \frac{1+\Omega_l^{-1}}{2\pi}\right)
              d\Phi dJ d\phi dj .
 \end{align}
 In the last equation, we transform the canonical coordinates
@@ -699,14 +703,14 @@ Eq. (\ref{semi_wave_func}).
 %\end{align}
 %where $E$ is total energy in classical system.
 The action integral is given by
-\begin{equation}
+\begin{align}
 	\mathcal{T}_k(\Phi,\phi;J)
 %	= \Pi\Phi + \int \pi(t) \frac{d\phi}{dt} dt .
-	= J\Phi + \int^\phi_{-\pi} j' d\phi' 
+	&= J\Phi + \int^\phi_{-\pi} j' d\phi' 
 	= \frac{N}{2}\Phi + \int^t_0   %_{\mathcal{H}(\phi,\pi)=E_k}
-	j(t') \frac{d\phi}{dt'} dt' 
-\equiv \mathcal{T}_{N,E_k}(\Phi,t) ,
-\end{equation}
+	j(t') \frac{d\phi}{dt'} dt' \nonumber \\
+	&\equiv \mathcal{T}_{N,E_k}(\Phi,t) ,
+\end{align}
 where the integration $\int j d\phi$ is performed on the $k$-th
 closed trajectory of Eq. (\ref{EBK}), and
 the variables $(\phi,j)$ are transformed into $(t,E)$.
@@ -723,8 +727,10 @@ becomes
 \end{align}
 with $S_l=\Omega_l/2$, $J=N/2$, and the coefficients
 \begin{align}
-  C_m^{(E_k,J)} &= \binom{J}{m}\int_0^T dt \exp{\left( i\int^t j(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) ,\\
-  & \hspace{5mm} A(q,S,m) = \left(\frac{1-q}{2}\right)^{m/2}\left(\frac{1+q}{2}\right)^{S-m/2}\sqrt{\frac{(2S)!m!}{(2S-m)!}}, \hspace{5mm} \nonumber
+  C_m^{(E_k,J)} =& \binom{J}{m}\int_0^T dt \nonumber \\
+ &\times \exp{\left( i\int^t j(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)} \nonumber \\ 
+ &\times A(q_1,S_1,m)A(q_2,S_2,J-m) ,\\
+  A(q,S,m) &= \left(\frac{1-q}{2}\right)^{m/2}\left(\frac{1+q}{2}\right)^{S-m/2}\sqrt{\frac{(2S)!m!}{(2S-m)!}}, \hspace{5mm} \nonumber
 \end{align}
 where $T$ is the period of the closed trajectory.
 The TDHFB-requantized wave functions (\ref{semi_wave_func1}) are
@@ -770,11 +776,11 @@ The former (latter) corresponds to $\chi_2\pm 2\pi$ ($\chi_1\pm 2\pi$)
 with $\chi_1$ ($\chi_2$) being fixed.
 For open TDHFB trajectory (e.g., Fig.~\ref{fig:phase_space}),
 the quantization condition becomes
-\begin{equation}
- \mathcal{T}_{N,E_k}(\Phi,T/2)
-	= \pm \frac{N}{2} \pi + \int_{-\pi}^\pi j d\phi
-	= 2m\pi .
-\end{equation}
+\begin{align}
+ \mathcal{T}_{N,E_k}(\Phi\pm\pi,\phi\pm 2\pi;J) &= \mathcal{T}_{N,E_k}(\Phi,\phi;J) + 2m\pi \nonumber \\
+	 \Leftrightarrow \quad\quad \pm \frac{N}{2} \pi + \int_{-\pi}^\pi j d\phi
+	&= 2m\pi .
+\end{align}
 This leads to the following:
 \begin{equation}
 	\int_{-\pi}^\pi j d\phi = 
@@ -799,7 +805,7 @@ was adopted in previous studies \cite{BBPK70,delta1,delta3}.
 Assuming magnitude and phase of the pairing gap as collective coordinates,
 a collective Hamiltonian was constructed in the second order in momenta.
 Then, the Hamiltonian was quantized by the canonical quantization
-with the Pauli's prescription.
+with Pauli's prescription.
 In this section, we apply similar quantization method to
 the TDHFB Hamiltonian (\ref{TDHFB_Hamiltonian_3}).
 The main difference is that the collective canonical variables are
@@ -815,7 +821,7 @@ itself.\par
 %The quantization method is not unique.
 %A common choice in the nuclear collective model is the Pauli's prescription.
 %However, 
-It is not straightforward to apply the Pauli's prescription
+It is not straightforward to apply Pauli's prescription
 to the present case, 
 because the TDHFB Hamiltonian (\ref{TDHFB_Hamiltonian_3})
 is not limited to the second order in momenta.
@@ -823,12 +829,12 @@ In the present study,
 we adopt a simple symmetrized ordering, as
 \begin{align}
 	H(\hat{\phi},\hat{j},\hat{J})
-	&= \sum_{l=1,2} \Omega_l \left\{ \epsilon_l (1-q_l) 
-	- \frac{g}{4} (\Omega_l(1-q_l^2)+(1-q_l)^2) \right\}
+	=& \sum_{l=1,2} \Omega_l \epsilon_l (1-q_l) \nonumber \\
+	&- \frac{g}{4} \sum_{l=1,2} \Omega_l (\Omega_l(1-q_l^2)+(1-q_l)^2)
 	\nonumber \\
 	&- \frac{g}{4}\Omega_{1}\Omega_{2}
-	\left\{ \sqrt{(1-q_{1}^2)(1-q_{2}^2)}\cos{\hat{\phi}}
-	+ \cos{\hat{\phi}}\sqrt{(1-q_{1}^2)(1-q_{2}^2)} \right\} .
+	\left\{ \sqrt{(1-q_{1}^2)(1-q_{2}^2)}\cos{\hat{\phi}} \right. \nonumber \\
+	&\left. + \cos{\hat{\phi}}\sqrt{(1-q_{1}^2)(1-q_{2}^2)} \right\} .
 \label{canonical_quantized_H}
 \end{align}
 As in Eq. (\ref{q_l}), $q_l$ contain $J$ and $j$ which
@@ -935,28 +941,29 @@ In order to estimate the two-particle transfer matrix elements,
 we construct the corresponding operators as follows.
 The classical form of matrix elements are obtained as
 \begin{align}
-  S^+(\Phi,J;\phi,j) &= \braket{Z|\hat{S}^+|Z}
- = \frac{1}{2}
+  S^+&(\Phi,J;\phi,j) = \braket{Z|\hat{S}^+|Z} \nonumber \\
+ &= \frac{1}{2}
 \left( \Omega_1\sqrt{1-q_1^2}e^{-i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{i\phi/2} \right) e^{i\Phi}
 	\label{Sp_mean_value} \\
-  S^-(\Phi,J;\phi,j) &= \braket{Z|\hat{S}^-|Z}
- = \frac{1}{2}
+  S^-&(\Phi,J;\phi,j) = \braket{Z|\hat{S}^-|Z} \nonumber \\
+ &= \frac{1}{2}
 \left( \Omega_1\sqrt{1-q_1^2}e^{i\phi/2}+\Omega_2\sqrt{1-q_2^2}e^{-i\phi/2} \right) e^{-i\Phi} .
 	\label{Sm_mean_value}
 \end{align}
 %For simplicity, we ignore the part of off-diagonal element (e.g. $\braket{Z'|\hat{S}_+|Z}$). 
 %To requantize the two-particle transition operators, 
 Again, we adopt a simple symmetrized ordering for the quantization:
-\begin{eqnarray}
+\begin{widetext}
+\begin{align}
 %  &S_+(\Phi,\Pi;\phi,\pi) \to S_+(\hat{\Phi},\hat{\Pi};\hat{\phi},\hat{\pi}) \nonumber \\
   S^\pm (\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
-	&=& \frac{1}{4}\left( \Omega_1\sqrt{1-q_1^2}e^{\mp i\hat{\phi}/2}
+	= \frac{1}{4}\left( \Omega_1\sqrt{1-q_1^2}e^{\mp i\hat{\phi}/2}
 +\Omega_2\sqrt{1-q_2^2}e^{\pm i\hat{\phi}/2} \right) e^{\pm i\hat{\Phi}} 
-	\nonumber \\
-&+ & \frac{1}{4}e^{\pm i\hat{\Phi}}\left( 
++ \frac{1}{4}e^{\pm i\hat{\Phi}}\left( 
 e^{\mp i\hat{\phi}/2}\Omega_1\sqrt{1-q_1^2}
 +e^{\pm i\hat{\phi}/2}\Omega_2\sqrt{1-q_2^2} \right) .
-\end{eqnarray}
+\end{align}
+\end{widetext}
 The exponential factors $e^{\pm i\Phi}$ change
 the total particle number $N\rightarrow N\pm 2$,
 while $e^{\pm i\phi/2}$ change the relative numbers,
@@ -964,15 +971,17 @@ $n_2-n_1 \rightarrow n_2-n_1 \pm 2$.
 %For example, the pair-additional transition strength in requantized form is
 Using these operators,
 the pair-addition transition strengths are calculated as
+\begin{widetext}
 \begin{align}
 B(P_{\rm ad};k\rightarrow k') &=
 |\braket{N',k'|S^+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})|N,k}|^2
 	\nonumber \\
-&= \left| \int_{0}^{2\pi}d\Phi \int_{-2\pi}^{2\pi}d\phi 
+&= \left| \frac{1}{2\pi} \int_{0}^{2\pi}d\Phi \int_{-2\pi}^{2\pi}d\phi 
 	\psi^{(N')*}_{k'}(\phi) e^{-i\frac{N'}{2}\Phi}
 	S^+(\hat{\Phi},\hat{J};\hat{\phi},\hat{j})
 	\psi^{(N)}_{k}(\phi)e^{i\frac{N}{2}\Phi} \right|^2,
 \end{align}
+\end{widetext}
 which automatically vanishes for $N'\neq N+2$.
 
 \begin{comment}
@@ -1089,15 +1098,15 @@ Thus, we may approximate $c_{k'}^{N+2}\approx c_k^N$,
 $E_{k'}-E_k\approx \omega_0 \Delta k$, and
 that $\braket{\phi_{k'}^{N+2}|S^\pm|\phi_k^N}\approx
 \braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}$ 
-\begin{equation}
-	S^\pm(t) \approx \sum_{N} \sum_{k} \left|c_k^N\right|^2
+\begin{align}
+	S^\pm(t) &\approx \sum_{N} \sum_{k} \left|c_k^N\right|^2
 	\sum_{\Delta k}
 	\braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}
-	e^{i\omega_0 \Delta k t} 
-	= \sum_{\Delta k}
+	e^{i\omega_0 \Delta k t}  \nonumber \\
+	&= \sum_{\Delta k}
 	\braket{\phi_{k_0+\Delta k}^{N+2}|S^\pm|\phi_{k_0}^N}
 	e^{i\omega_0 \Delta k t}  ,
-\end{equation}
+\end{align}
 where $k_0$ is a representative index value of the superposition in 
 Eq. (\ref{superposition}).
 From this classical wave packet approximation,
@@ -1180,8 +1189,9 @@ are based on the EBK quantization rule.
  \begin{center}
 %  \includegraphics[width=60mm,angle=-90]{N50ex_energy_wo_adiabatic.eps}
 %  \includegraphics[width=60mm,angle=-90]{N100ex_energy_wo_adiabatic.eps}
-(a)	 \includegraphics[height=0.46\textwidth,angle=-90]{N50ex_energy_wo_adiabatic.eps}
-(b)	 \includegraphics[height=0.46\textwidth,angle=-90]{N100ex_energy_wo_adiabatic.eps}
+(a)	 \includegraphics[height=0.44\textwidth,angle=-90]{N50ex_energy_wo_adiabatic.eps}
+\\
+(b)	 \includegraphics[height=0.44\textwidth,angle=-90]{N100ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and
 $\ket{0_4^+}$ for $\Omega=50$ systems with (a) $N=50$ and (b) $N=100$
@@ -1249,24 +1259,23 @@ Here, $m$ and $j$ are related to each other, $2j=J-2m$.
 They show excellent agreement with the exact results, not only for the
 ground state but for excited states.
 We find the SPA is even more precise than the CQ.
-\begin{figure}[t]
+\begin{figure*}[t]
  \begin{minipage}{1\hsize}
  \begin{center}
 %  \includegraphics[width=67mm,angle=-90]{N50Xeq0p5occ_wo_adiabatic.eps}
 %  \includegraphics[width=67mm,angle=-90]{N100Xeq0p5occ_wo_adiabatic.eps}
   \includegraphics[height=0.45\textwidth,angle=-90]{N50Xeq0p5occ_wo_adiabatic.eps}
   \includegraphics[height=0.45\textwidth,angle=-90]{N100Xeq0p5occ_wo_adiabatic.eps}
+  \includegraphics[height=0.45\textwidth,angle=-90]{N50Xeq2occ_wo_adiabatic.eps}
+  \includegraphics[height=0.45\textwidth,angle=-90]{N100Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
- \begin{minipage}{1\hsize}
- \begin{center}
+% \begin{minipage}{1\hsize}
+% \begin{center}
 %  \includegraphics[width=67mm,angle=-90]{N50Xeq2occ_wo_adiabatic.eps}
 %  \includegraphics[width=67mm,angle=-90]{N100Xeq2occ_wo_adiabatic.eps}
-
-\includegraphics[height=0.45\textwidth,angle=-90]{N50Xeq2occ_wo_adiabatic.eps}
-\includegraphics[height=0.45\textwidth,angle=-90]{N100Xeq2occ_wo_adiabatic.eps}
- \end{center}
- \end{minipage}
+% \end{center}
+% \end{minipage}
  \caption{
 Occupation probability in excited $0^+$ states
 as a function of $j$ for $\Omega=50$ systems
@@ -1284,7 +1293,7 @@ $(n_1,n_2)=(N-2,2)$, and so on.
 %$j=-12.5$ corresponds to 0p50h configuration, $j=-11.5$ corresponds to 2p52h configuration, and so on.
 }
  \label{fig:N50_occ}
-\end{figure}
+\end{figure*}
 
 Next, let us discuss the transition matrix elements.
 In this paper, we discuss only $k=0$ (ground state) and $k=1$
@@ -1309,7 +1318,7 @@ transitions, the trajectory satisfying the EBK condition of $k=1$ is used to
 perform the Fourier decomposition (\ref{Fourier_decomposition})
 of $\omega=2\pi/T$.
 
-\begin{figure}[t]
+\begin{figure*}[t]
  \begin{minipage}{0.3\hsize}
  \begin{center}
   \includegraphics[width=70mm,angle=-90]{N50Pad_CQ.eps}
@@ -1339,7 +1348,7 @@ while lower panels show the interband transition of
 $\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
 }
  \label{fig:N50Pad}
-\end{figure}
+\end{figure*}
 
 %\begin{figure}[htbp]
 % \begin{center}
@@ -1364,7 +1373,7 @@ $\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
 % \label{fig:N100_occ}
 %\end{figure}
 
-\begin{figure}[htbp]
+\begin{figure*}[t]
  \begin{minipage}{0.3\hsize}
  \begin{center}
   \includegraphics[width=70mm,angle=-90]{N100Pad_CQ.eps}
@@ -1388,7 +1397,7 @@ The same as Fig.~\ref{fig:N50Pad} but for $N=98\rightarrow 100$.
 %The strength of pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from $N=98$ to $N=100$ system. Dashed lines are exact solution. Upper parts are the transition of $\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$, lower parts are the transition of $\ket{0_1^+}\to\ket{0_2^+}$, $\ket{0_2^+}\to\ket{0_1^+}$. Left panels: CQ1; Middle panels: FD; Right panels: SPA.
 }
  \label{fig:N100Pad}
-\end{figure}
+\end{figure*}
 
 The calculated pair-addition strengths $B(P_{\rm ad})$ are shown in
 Fig.~\ref{fig:N50Pad} for $N=48\rightarrow 50$,
@@ -1458,7 +1467,7 @@ Again, we study systems near the closed-shell and the mid-shell configurations.
 
 \begin{figure}[t]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{N8ex_energy_wo_adiabatic.eps}
+  \includegraphics[height=0.46\textwidth,angle=-90]{N8ex_energy_wo_adiabatic.eps}
  \end{center}
  \caption{Excitation energies of $\ket{0_2^+}$, $\ket{0_3^+}$ and
 $\ket{0_4^+}$ for $\Omega=N=8$ systems as functions of $x$.
@@ -1469,8 +1478,8 @@ $\ket{0_4^+}$ for $\Omega=N=8$ systems as functions of $x$.
 \begin{figure}[htbp]
  \begin{minipage}{1\hsize}
  \begin{center}
-   \includegraphics[height=0.46\textwidth,angle=-90]{N8Xeq0p5occ_wo_adiabatic.eps}
-   \includegraphics[height=0.46\textwidth,angle=-90]{N8Xeq2occ_wo_adiabatic.eps}
+   \includegraphics[height=0.9\textwidth,angle=-90]{N8Xeq0p5occ_wo_adiabatic.eps}
+   \includegraphics[height=0.9\textwidth,angle=-90]{N8Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
  \caption{
@@ -1552,7 +1561,7 @@ CQ and the FD methods.
 %The minuscule strength of $\ket{0_2^+}\to\ket{0_1^+}$ is caused from peculiarity of two-level system. In canonical quantization, all transition strengths are failed to reproduce quantitatively. In semiclassical approach, however, both pairing rotational transition and pairing vibrational transition are reproduced quantitatively in all region. \par
 %In above case, semiclassical approach is much better than canonical quantization. The low collectivity of pairing in small $\Omega$ system influences significantly the methods of requantization. Nevertheless, semiclassical approach can still describe physical values quantitatively as in ideal case.
 
-\begin{figure}[htbp]
+\begin{figure*}[t]
  \begin{minipage}{0.3\hsize}
  \begin{center}
   \includegraphics[width=70mm,angle=-90]{N8Pad_CQ.eps}
@@ -1575,11 +1584,11 @@ CQ and the FD methods.
 	with $\Omega=8$.
 }
  \label{fig:N8Pad}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[t]
+\begin{figure}[htb]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{N16ex_energy_wo_adiabatic.eps}
+  \includegraphics[height=0.46\textwidth,,angle=-90]{N16ex_energy_wo_adiabatic.eps}
  \end{center}
 	\caption{The same as Fig.~\ref{fig:N8energy} but for
 	$N=2\Omega=16$.
@@ -1590,8 +1599,8 @@ CQ and the FD methods.
 \begin{figure}[thb]
  \begin{minipage}{1\hsize}
  \begin{center}
-   \includegraphics[height=0.46\textwidth,angle=-90]{N16Xeq0p5occ_wo_adiabatic.eps}
-   \includegraphics[height=0.46\textwidth,angle=-90]{N16Xeq2occ_wo_adiabatic.eps}
+   \includegraphics[height=0.9\textwidth,angle=-90]{N16Xeq0p5occ_wo_adiabatic.eps}
+   \includegraphics[height=0.9\textwidth,angle=-90]{N16Xeq2occ_wo_adiabatic.eps}
  \end{center}
  \end{minipage}
 	\caption{The same as Fig.~\ref{fig:N8_occ} but for
@@ -1635,6 +1644,30 @@ The similar disagreement is observed for the ground state near $x=1$.
 %The excitation energy is shown in Figure \ref{fig:N16energy}. At no pairing limit, the excitation energies are multiples of $2\Delta\epsilon$. Both requantization methods converge to exact solution in no pairing limit, while under estimate the exact solution after $x=1$. However, semiclassical approach is close to exact solution. The lowest excitation energy obtained from harmonic approximation emerges after $x>1$, and well reproduces exact result in strong pairing limit. 
 %The occupation probability in such excited states is plotted in Figure \ref{fig:N16_occ}. We can find both requantization methods reproduce well in $x=0.5$, and both methods have some disagreement of $\ket{0_2^+}$ and $\ket{0_3^+}$ in $x=2$. 
 %This disagreement is caused by large fluctuation close to phase transition point (in Figure \ref{phase_space}, the changing from closed trajectory to opened trajectory). After the phase transition, the occupation probability of $\ket{0_4^+}$ is also well reproduced in semiclassical approach. 
+\begin{figure*}[t]
+ \begin{minipage}{0.3\hsize}
+ \begin{center}
+ \includegraphics[width=70mm,angle=-90]{N16Pad_CQ.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+ \begin{minipage}{0.3\hsize}
+ \begin{center}
+ \includegraphics[width=70mm,angle=-90]{N16Pad_FD.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+ \begin{minipage}{0.3\hsize}
+ \begin{center}
+ \includegraphics[width=70mm,angle=-90]{N16Pad_SPA.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+ \end{minipage}
+	\caption{The same as Fig.~\ref{fig:N50Pad} but for $N=14\rightarrow 16$
+	with $\Omega=8$.
+}
+ \label{fig:N16Pad}
+\end{figure*}
 
 Singular behaviors near the transition points can be also observed in
 the pair-addition transition strengths ($N=14\rightarrow 16$) shown
@@ -1664,30 +1697,7 @@ pair-transfer transition strengths.
 
 %Between pairing rotational transition and pairing vibrational transition, we can find the transition strength are compareable in $x<1$, and pairing rotational transition are dominant in $x>1$. The minuscule strength of $\ket{0_2^+}\to\ket{0_1^+}$ is caused from peculiarity of two-level system.  In canonical quantization, even though the tendency of $\ket{0_1^+}\to\ket{0_1^+}$ are reproduced, all transition strengths are failed to reproduce quantitatively. In semiclassical approach, the strengths have disagreement around phase transition region, but are recovering toward no pairing and strong pairing limit. \par
 %In closed shell system, the phase transition is semiclassical approach is more quantitative than canonical approach except phase transition region.
-\begin{figure}[htbp]
- \begin{minipage}{0.3\hsize}
- \begin{center}
- \includegraphics[width=70mm,angle=-90]{N16Pad_CQ.eps}
- \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
- \end{minipage}
- \begin{minipage}{0.3\hsize}
- \begin{center}
- \includegraphics[width=70mm,angle=-90]{N16Pad_FD.eps}
- \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
- \end{minipage}
- \begin{minipage}{0.3\hsize}
- \begin{center}
- \includegraphics[width=70mm,angle=-90]{N16Pad_SPA.eps}
- \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
- \end{minipage}
-	\caption{The same as Fig.~\ref{fig:N50Pad} but for $N=14\rightarrow 16$
-	with $\Omega=8$.
-}
- \label{fig:N16Pad}
-\end{figure}
+
 %In realistic type, semiclassical approach is much better than canonical quantization in every physical values, especially in two-particle transition. The most difficult case is closed shell system with BCS phase transition. However, semiclassical approach works well in closed shell system except phase transition region. 
 
 
@@ -1748,8 +1758,9 @@ $j$ as a coordinate and $\phi$ as a momentum.
 
 \begin{figure}[tb]
  \begin{center}
-(a) \includegraphics[height=0.46\textwidth,angle=-90]{N8p_E.eps}
-(b) \includegraphics[height=0.46\textwidth,angle=-90]{N16p_E.eps}
+(a) \includegraphics[height=0.44\textwidth,angle=-90]{N8p_E.eps}
+\\
+(b) \includegraphics[height=0.44\textwidth,angle=-90]{N16p_E.eps}
  \end{center}
  \caption{Energy surfaces as functions of $j$,
  Eq. (\ref{TDHFB_Hamiltonian_3}) with $\phi=0$,
@@ -1802,7 +1813,7 @@ the maximum value of $\alpha$ ($\Delta$).
 To simulate the result of the collective model, we expand the Hamiltonian
 (\ref{TDHFB_Hamiltonian_3}) up to the second order in $\phi$,
 then, quantize it by $\hat{\phi}=i\partial/\partial j$ with
-the ordering given by the Pauli's prescription.
+the ordering given by Pauli's prescription.
 The range of the coordinate $j$ is restricted to $j_{\rm min}\leq j \leq 0$
 with the vanishing boundary condition $\psi(j_{\rm min})=\psi(0)=0$.
 Figure~\ref{fig:Delta_E} shows two examples of the relationship 
@@ -1865,12 +1876,13 @@ is not applicable to small-$\Omega$ and strong-pairing cases.
 \begin{figure}[tb]
 % \begin{minipage}{0.45\hsize}
  \begin{center}
-(a) \includegraphics[height=0.46\textwidth,angle=-90]{N50Xeq2p4gap_E.eps}
+(a) \includegraphics[height=0.4\textwidth,angle=-90]{N50Xeq2p4gap_E.eps}
+\\
 % \end{center}
 % \end{minipage}
 % \begin{minipage}{0.45\hsize}
 % \begin{center}
-(b) \includegraphics[height=0.46\textwidth,angle=-90]{N16Xeq2p4gap_E.eps}
+(b) \includegraphics[height=0.4\textwidth,angle=-90]{N16Xeq2p4gap_E.eps}
  \end{center}
 %\end{minipage}
 \caption{Potential energy surface as functions of $\alpha$ with $x=2.4$;
@@ -1979,11 +1991,13 @@ on Nuclear mass and life for unravelling mysteries of r-process.
 
 
 \appendix
+\begin{widetext}
 \section{Derivation of semiclassical wave function}
 
 We give a derivation of the semiclassical wave function
 of Eq. (\ref{semi_wave_func1}).
 The explicit form of coherent state is
+
 \begin{align}
   \ket{Z} &= \prod_{l=1}^2(1+|Z_l|^2)^{-\Omega_l/2}e^{Z_lS_l^{+}}\ket{0} \nonumber \\
   &= \prod_{l=1}^2\left(1+\tan^2{\frac{\theta_l}{2}}\right)^{-\Omega_l/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
@@ -1994,7 +2008,7 @@ The explicit form of coherent state is
   \binom{k}{m} \tan^m{\frac{\theta_1}{2}}\tan^{k-m}{\frac{\theta_2}{2}}e^{-ik\Phi}e^{-i(k/2-m)\phi}
   (S_1^{+})^m(S_2^{+})^{k-m} \ket{0}
   \label{ZZ}
-\end{align} 
+\end{align}
 Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$,
 it becomes
 \begin{align}
@@ -2028,6 +2042,7 @@ For convenience, we define coefficients
 where $q=\cos{\theta}$.
 Inserting Eq. (\ref{tan}) into Eq. (\ref{semi_wave_func_b}) with $N/2=J$,
 we reach Eq. (\ref{semi_wave_func1}).
+\end{widetext} 
 %\begin{align}
  % \sum_{m=0}^{J}{}_J C_m\int_0^T dt \exp{\left( i\int^t \pi(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)}A(q_1,S_1,m)A(q_2,S_2,J-m) (S_1^{+})^m(S_2^{+})^{J-m}\ket{0}
 %\end{align}
