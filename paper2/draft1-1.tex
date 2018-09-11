@@ -429,42 +429,67 @@ where
 \end{align}
 
 \section{Results}
+We apply ASCC + SPA to study the multi-level system in pairing model. The TDHFB degrees of freedom equals the number of single particle levels, including the constant of motion (pairing rotation). First, we confirm the dynamics is identical between ASCC + SPA and adiabatic TDHFB in two-level (one-dimensional TDHFB) system. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
+
+
 \subsection{Confirmation in one-dimensional TDHFB system}
+In two-level system, the classical Hamiltonian in (\ref{TDHFB_Hamiltonian_2}) is
+\begin{align}
+\mathcal{H} 
+  =& \sum_{l=1,2} \epsilon_l\Omega_l(1- \cos{\theta}_l)& \nonumber \\ 
+ &- \frac{g}{4}\sum_{l=1,2} \Omega_l [\Omega_l(1-\cos^2{\theta}_l)+(1-\cos{\theta}_l)^2] \nonumber \\
+- \frac{g}{2} \Omega_{1}\Omega_{2}&\sqrt{(1-\cos^2{\theta}_{l_1})(1-\cos^2{\theta}_{l_2})}\cos{(\chi_{2}-\chi_{1})}   .
+\end{align}
+If we define the canonical coordinate $\phi=\chi_2-\chi_1$, it attributes to one-dimensional system. The conjugate momentum is $j= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \{\Omega_2(1-\cos{\theta}_2) - \Omega_1(1-\cos{\theta}_1)\}/4$. The adiabatic TDHFB (ATDHFB) means that we expand the Hamiltonian with respect to $\chi$ up to second order
+\begin{align}
+  \mathcal{H}(\phi,j) &\approx V(j) + \frac{1}{2}B^{-1}(j)\phi^2,
+\end{align}
+where $V(j)=\mathcal{H}(\phi=0,j)$ and $B^{-1}(j)= \left. \frac{\partial^2\mathcal{H}}{\partial\phi^2} \right|_{\phi=0}$.
+Because the time-dependent pairing vibrational mode is explicitly decoupled from pairing rotational mode, ASCC must be identical with ATDHFB. Furthermore, the excited states from SPA are also identical from both approaches.
+
+We study the system with equal degeneracy $\Omega_1=\Omega_2=50$, $g/(\epsilon_2-\epsilon_1)=0.02$, and $N=100$. In ASCC calculation, we set the mesh size of collective coordinate $dq=0.02$. We compared the excited $0^+$ states from one-dimensional ATDHFB and ASCC with each other. Fig. \ref{fig:N100_traj} and Fig. \ref{fig:N100_tau} show the TDHFB trajectory in phase space and  action integral $\mathcal{T}$ as a function of time $t$, corresponding to $\ket{0_2^+}$, respectively. All of the mesh points obtained from ASCC are on the trajectory obtained from ATDHFB. The obtained excited $0^+$ states from SPA are shown in Fig. \ref{fig:N100_occ}. The occupation probability can be decomposed into $2n$-particle-$2n$-hole components. We can find the results from ATDHFB and ASCC are identical for all states. Therefore, the theoretical framework of ASCC + SPA has no problem.
+
+
+
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2trajectory.eps}
+ \end{center}
+\caption{aa}
+\label{fig:N100_traj}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2tau.eps}
+ \end{center}
+\caption{aa}
+\label{fig:N100_tau}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2occ.eps}
+ \end{center}
+	\caption{Occupation probability in excited $0^+$ states
+as a function of $j$ for $\Omega_1=\Omega_2=50$, $N=100$, and $x=2$ system.
+The two vertical bars at each $j$ from the left to the right represent
+the squared components of the wave functions
+from ATDHFB+SPA and ASCC+SPA calculations, respectively.
+The left end of the horizontal axis at $j=j_{\rm min}$
+corresponds to a component with $(n_1,n_2)=(N,0)$.
+The next at $j=j_{\rm min}+1$ corresponds to the one with
+$(n_1,n_2)=(N-2,2)$, and so on.
+}
+ \label{fig:N100_occ}
+\end{figure}
 
 
 \subsection{Three-level system}
+The simplest non-integrable system is three-level system. We have one trivial motion and two time-dependent degrees of freedom. We study the system with $\Omega_1=\Omega_2=\Omega_3=8$, $\epsilon_1=-1$, $\epsilon_2=0$, $\epsilon_3=1.5$, and $g=0.2$. 
 
 
 \subsection{Realistic single-particle level system}
 
-\begin{table}
-\caption{\label{tab:fonts}\LaTeXe\ and AMS-\LaTeX\ font summary.}
-\begin{ruledtabular}
-\begin{tabular}{lp{2in}}
-\m{textit} & Italics. Replaces \m{it}\\
-\m{textbf} & Bold face. Replaces \m{bf}\\
-\m{textrm} & Roman. Replaces \m{rm}\\
-\m{textsl} & Slanted. Replaces \m{sl}\\
-\m{textsc} & Small caps. Replaces \m{sc}\\
-\m{textsf} & Sans serif. Replaces \m{sf}\\
-\m{texttt} & Typewriter. Replaces \m{tt}\\
-\m{textmd} & Medium series\\
-\m{textnormal} & Normal\\
-\m{textup} & Upright\\
-\m{mathbf} & Bold face\\
-\m{mathcal} & Replaces \m{cal}\\
-\m{mathit} & Italics\\
-\m{mathnormal} & Replaces \m{mit}\\
-\m{mathsf} & Sans serif\\
-\m{mathtt} & Typewriter\\
-\m{mathfrak} & Fraktur: Requires \classoption{amsfonts} or \classoption{amssymb} class option\\
-\m{mathbb} & Bold blackboard: Requires \classoption{amsfonts} or \classoption{amssymb} class option\\
-\m{bm} & Bold Greek and other math symbols: Requires
-\verb+\usepackage{bm}+ and may require the \classoption{amsfonts} class
-option
-\end{tabular}
-\end{ruledtabular}
-\end{table}
+
 
 
 
