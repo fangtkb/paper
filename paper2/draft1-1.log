@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  14 SEP 2018 12:03
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  14 SEP 2018 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -254,7 +254,16 @@ LaTeX Warning: Label `fig:N8Pad' multiply defined.
 LaTeX Warning: Label `fig:N8Pad' multiply defined.
 
 
+LaTeX Warning: Label `ex' multiply defined.
+
+
 LaTeX Warning: Label `3levelPad' multiply defined.
+
+
+LaTeX Warning: Label `fig:N8Pad' multiply defined.
+
+
+LaTeX Warning: Label `fig:N8Pad' multiply defined.
 
 )
 \openout1 = `draft1-1.aux'.
@@ -397,21 +406,28 @@ File: intra_trans.eps Graphic file (type eps)
 File: inter_trans.eps Graphic file (type eps)
 
 <inter_trans.eps>
-No file draft1-1.bbl.
+File: Pbomega_sq.eps Graphic file (type eps)
+ <Pbomega_sq.eps> [5]
 
-Package natbib Warning: There were undefined citations.
-
-[5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 562.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 562.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
-[6] [7] [8] (./draft1-1.aux)
+File: Pbocc_number.eps Graphic file (type eps)
+<Pbocc_number.eps>
+File: Pbintra_trans.eps Graphic file (type eps)
+ <Pbintra_trans.eps>
+File: Pbinter_trans.eps Graphic file (type eps)
+ <Pbinter_trans.eps>
+No file draft1-1.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[6] [7] [8] [9] (./draft1-1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -423,12 +439,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4666 strings out of 493709
- 63565 string characters out of 6152372
+ 4675 strings out of 493709
+ 63700 string characters out of 6152372
  167726 words of memory out of 5000000
- 8161 multiletter control sequences out of 15000+600000
+ 8166 multiletter control sequences out of 15000+600000
  19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,15n,39p,911b,416s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,15n,39p,911b,418s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1-1.dvi (8 pages, 44920 bytes).
+Output written on draft1-1.dvi (9 pages, 46536 bytes).
