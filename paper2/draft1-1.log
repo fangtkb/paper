@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  3 SEP 2018 15:26
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  14 SEP 2018 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -247,6 +247,15 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 55.
 
 LaTeX Warning: Label `tau' multiply defined.
 
+
+LaTeX Warning: Label `fig:N8Pad' multiply defined.
+
+
+LaTeX Warning: Label `fig:N8Pad' multiply defined.
+
+
+LaTeX Warning: Label `3levelPad' multiply defined.
+
 )
 \openout1 = `draft1-1.aux'.
 
@@ -377,11 +386,32 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 470--471
  [] 
  []
 
+File: potential.eps Graphic file (type eps)
+<potential.eps>
+File: omega_sq.eps Graphic file (type eps)
+ <omega_sq.eps>
+File: occ_number.eps Graphic file (type eps)
+ <occ_number.eps>
+File: intra_trans.eps Graphic file (type eps)
+ <intra_trans.eps>
+File: inter_trans.eps Graphic file (type eps)
+
+<inter_trans.eps>
 No file draft1-1.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[5] [6] [7] (./draft1-1.aux)
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 562.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 562.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[6] [7] [8] (./draft1-1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -393,12 +423,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4650 strings out of 493709
- 63367 string characters out of 6152372
- 191726 words of memory out of 5000000
- 8150 multiletter control sequences out of 15000+600000
+ 4666 strings out of 493709
+ 63565 string characters out of 6152372
+ 167726 words of memory out of 5000000
+ 8161 multiletter control sequences out of 15000+600000
  19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,15n,39p,911b,390s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,15n,39p,911b,416s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1-1.dvi (7 pages, 42792 bytes).
+Output written on draft1-1.dvi (8 pages, 44920 bytes).

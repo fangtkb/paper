@@ -364,7 +364,7 @@ With the properties of the constant of motion, we discuss the practical solution
   B^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1},
   \label{LHE}
 \end{align}
-which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), the eigenvalue of spurious mode corresponding pairing rotation is exact zero. Moreover, we can skip the Step. 4 in Sec. \ref{ASCC}. After obtain the energy minimum point by solving normal HFB equation, we only use (\ref{LHE}) one after another to construct the one-dimensional collective Hamiltonian without moving-frame HFB equation (\ref{mfHFB}). It arises the uncertainty of the total gauge angle $\Phi$ during obtaining the collective path. To arrange the eigenvectors with $\Phi(q)=-\frac{1}{L} p_1\sum_l f^1_{,l}=0$, we correct the eigenvectors by
+which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), the eigenvalue of spurious mode corresponding pairing rotation is exact zero. To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_l f^1_{,l}=0$, we correct the eigenvectors by
 \begin{align}
   f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_l f^1_{,l} 
   \label{f}
@@ -484,8 +484,71 @@ $(n_1,n_2)=(N-2,2)$, and so on.
 
 
 \subsection{Three-level system}
-The simplest non-integrable system is three-level system. We have one trivial motion and two time-dependent degrees of freedom. We study the system with $\Omega_1=\Omega_2=\Omega_3=8$, $\epsilon_1=-1$, $\epsilon_2=0$, $\epsilon_3=1.5$, and $g=0.2$. 
+The simplest non-integrable system is three-level system. We have one trivial motion and two time-dependent degrees of freedom. We study the system with $\Omega_1=\Omega_2=\Omega_3=8$, $\epsilon_1=-1$, $\epsilon_2=0$, $\epsilon_3=1.5$, and $g=0.2$. The phase transition occurs at $g_c=0.058$ when $N=2\Omega_1=16$. We consider the even particle number chain from $N=14$ to $N=24$. 
 
+
+The pairing correlation is strong enough for low-lying $0^+$ states to have closed TDHFB trajectories.
+
+\begin{figure*}[t]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{potential.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+	\caption{aa.
+}
+ \label{fig:N8Pad}
+\end{figure*}
+\begin{figure*}[t]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{omega_sq.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+	\caption{aa.
+}
+ \label{fig:N8Pad}
+\end{figure*}
+\begin{figure*}[t]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{occ_number.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+	\caption{aa.
+}
+ \label{fig:N8Pad}
+\end{figure*}
+
+\begin{table}
+\begin{ruledtabular}
+\begin{tabular}{c|c|cccccc}
+            & $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
+$0_2^+$ & Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\
+&ASCC+SPA & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\ \hline
+$0_4^+$& Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$\\
+&ASCC+SPA & $7.42$ & $7.42$ & $7.60$ & $7.94$ & $8.26$ & $8.47$\\
+\end{tabular}
+\end{ruledtabular}
+\caption{\label{ex}Excitation energy.}
+\end{table}
+
+\begin{figure}[t]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{intra_trans.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+	\caption{aa.
+}
+ \label{3levelPad}
+\end{figure}
+
+\begin{figure}[t]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{inter_trans.eps}
+ \end{center}
+ \captionsetup{labelformat=empty,labelsep=none}
+	\caption{aa.
+}
+ \label{3levelPad}
+\end{figure}
 
 \subsection{Realistic single-particle level system}
 
