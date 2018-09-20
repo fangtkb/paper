@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  14 SEP 2018 18:48
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  20 SEP 2018 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -247,24 +247,6 @@ Class revtex4-1 Info: multicol was not loaded (OK!) on input line 55.
 
 LaTeX Warning: Label `tau' multiply defined.
 
-
-LaTeX Warning: Label `fig:N8Pad' multiply defined.
-
-
-LaTeX Warning: Label `fig:N8Pad' multiply defined.
-
-
-LaTeX Warning: Label `ex' multiply defined.
-
-
-LaTeX Warning: Label `3levelPad' multiply defined.
-
-
-LaTeX Warning: Label `fig:N8Pad' multiply defined.
-
-
-LaTeX Warning: Label `fig:N8Pad' multiply defined.
-
 )
 \openout1 = `draft1-1.aux'.
 
@@ -379,12 +361,8 @@ Underfull \hbox (badness 2443) in paragraph at lines 366--368
 [4]
 File: N100Xeq2trajectory.eps Graphic file (type eps)
  <N100Xeq2trajectory.eps>
-Overfull \hbox (9.0pt too wide) in paragraph at lines 456--457
- [] 
- []
-
 File: N100Xeq2tau.eps Graphic file (type eps)
-<N100Xeq2tau.eps>
+ <N100Xeq2tau.eps>
 Overfull \hbox (9.0pt too wide) in paragraph at lines 463--464
  [] 
  []
@@ -395,34 +373,36 @@ Overfull \hbox (9.0pt too wide) in paragraph at lines 470--471
  [] 
  []
 
-File: potential.eps Graphic file (type eps)
-<potential.eps>
+[5]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 490.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 490.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 File: omega_sq.eps Graphic file (type eps)
- <omega_sq.eps>
+<omega_sq.eps>
 File: occ_number.eps Graphic file (type eps)
  <occ_number.eps>
+File: potential.eps Graphic file (type eps)
+ <potential.eps>
 File: intra_trans.eps Graphic file (type eps)
  <intra_trans.eps>
 File: inter_trans.eps Graphic file (type eps)
 
 <inter_trans.eps>
 File: Pbomega_sq.eps Graphic file (type eps)
- <Pbomega_sq.eps> [5]
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
-
-
-LaTeX Warning: A float is stuck (cannot be placed) on input line 565.
-
-
-Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
-
+ <Pbomega_sq.eps>
 File: Pbocc_number.eps Graphic file (type eps)
-<Pbocc_number.eps>
+ <Pbocc_number.eps>
 File: Pbintra_trans.eps Graphic file (type eps)
  <Pbintra_trans.eps>
 File: Pbinter_trans.eps Graphic file (type eps)
- <Pbinter_trans.eps>
+
+<Pbinter_trans.eps>
 No file draft1-1.bbl.
 
 Package natbib Warning: There were undefined citations.
@@ -439,12 +419,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4675 strings out of 493709
- 63700 string characters out of 6152372
- 167726 words of memory out of 5000000
- 8166 multiletter control sequences out of 15000+600000
+ 4679 strings out of 493709
+ 63746 string characters out of 6152372
+ 177726 words of memory out of 5000000
+ 8170 multiletter control sequences out of 15000+600000
  19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,15n,39p,911b,418s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,15n,39p,911b,394s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1-1.dvi (9 pages, 46536 bytes).
+Output written on draft1-1.dvi (9 pages, 51096 bytes).

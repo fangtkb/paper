@@ -453,16 +453,16 @@ We study the system with equal degeneracy $\Omega_1=\Omega_2=50$, $g/(\epsilon_2
 
 \begin{figure}[thb]
  \begin{center}
-   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2trajectory.eps}
+   \includegraphics[height=0.45\textwidth,angle=-90]{N100Xeq2trajectory.eps}
  \end{center}
-\caption{aa}
+\caption{TDHFB trajectory of $\ket{0_2^+}$ in two-dimensional phase space. Solid line is obtained from one-dimensional ATDHFB+SPA calculation and cross points corresponding to each mesh point are obtained from ASCC+SPA. }
 \label{fig:N100_traj}
 \end{figure}
 \begin{figure}[thb]
  \begin{center}
    \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2tau.eps}
  \end{center}
-\caption{aa}
+\caption{Action integral of  $\ket{0_2^+}$ with respect to time $t$. Solid line is obtained from one-dimensional ATDHFB+SPA calculation and cross points corresponding to each mesh point are obtained from ASCC+SPA. Dashed line is $2\pi$ corresponding to $\ket{0_2^+}$ in EBK quantization condition. Based on Fig. \ref{fig:N100_traj}, we calculated the action integral from $(\phi,j)=(0,-8)$ in clockwise direction. }
 \label{fig:N100_tau}
 \end{figure}
 \begin{figure}[thb]
@@ -486,66 +486,62 @@ $(n_1,n_2)=(N-2,2)$, and so on.
 \subsection{Three-level system}
 The simplest non-integrable system is three-level system. We have one trivial motion and two time-dependent degrees of freedom. We study the system with $\Omega_1=\Omega_2=\Omega_3=8$, $\epsilon_1=-1$, $\epsilon_2=0$, $\epsilon_3=1.5$, and $g=0.2$. The phase transition occurs at $g_c=0.058$ when $N=2\Omega_1=16$. We consider the even particle number chain from $N=14$ to $N=24$. 
 
+From moving-frame QRPA equation, we obtain three modes along the collective path (Fig. \ref{omega_sq}). Except zero mode, we choose the lowest mode as collective motion. Fig. \ref{occ_number} and Fig. \ref{potential} are occupation number in each single-particle level and collective potential in the collective path, respectively. We can find the occupation numbers become to integer at both end points. Furthermore, Hartree-Fock states always emerge at one of the end point. 
 
-The pairing correlation is strong enough for low-lying $0^+$ states to have closed TDHFB trajectories.
 
-\begin{figure*}[t]
- \begin{center}
-  \includegraphics[width=40mm,angle=-90]{potential.eps}
- \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
-}
- \label{fig:N8Pad}
-\end{figure*}
 \begin{figure*}[t]
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{omega_sq.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{Eigenvalues of moving-frame QRPA equation with respect to the collective coordinate $q$, from $N=14$ to $N=24$. Purple lines are spurious modes and green lines are chosen modes corresponding to the collective coordinate. In each panel, both edges correspond to the end points of the collective coordinate.
 }
- \label{fig:N8Pad}
+ \label{omega_sq}
 \end{figure*}
 \begin{figure*}[t]
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{occ_number.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{Occupation numbers in each single-particle level with respect to the collective coordinate $q$, from $N=14$ to $N=24$. At the left end point of the collective coordinate in each panel, the configurations correspond to Hartree-Fock states.
 }
- \label{fig:N8Pad}
+ \label{occ_number}
 \end{figure*}
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{potential.eps}
+ \end{center}
+	\caption{Collective potential obtained from ASCC. We adjusted the energy minimum point as $V=0$.
+}
+ \label{potential}
+\end{figure}
 
-\begin{table}
+Based on the information from ASCC calculation, we can obtain the excited states from SPA.
+Table \ref{ex} shows the excitation energies of first and second excited states in the collective subspace. Up to the second excitation, all of the energies are in their energy pockets shown in Fig. \ref{potential}. Compare the result from ASCC+SPA with exact solution, we can find all of the values are nicely reproduced. The slightly difference is that the values from ASCC+SPA are about $5\%$ smaller than exact solution. 
+\begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|c|cccccc}
             & $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
-$0_2^+$ & Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\
-&ASCC+SPA & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\ \hline
-$0_4^+$& Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$\\
-&ASCC+SPA & $7.42$ & $7.42$ & $7.60$ & $7.94$ & $8.26$ & $8.47$\\
+$0_2^+$ one & Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\
+phonon &ASCC+SPA & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\ \hline
+$0_4^+$ two & Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$\\
+phonon &ASCC+SPA & $7.42$ & $7.42$ & $7.60$ & $7.92$ & $8.26$ & $8.47$\\
 \end{tabular}
 \end{ruledtabular}
-\caption{\label{ex}Excitation energy.}
+\caption{Excitation energies of one-phonon and two-phonon states from exact solution and ASCC+SPA calculation. In a chosen collective subspace, one-phonon and two-phonon states correspond to the first and second excitation, respectively. In the whole Hilbert space, one-phonon and two-phonon states correspond to $\ket{0_2^+}$ and $\ket{0_4^+}$, respectively.}
+\label{ex}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{intra_trans.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
-}
- \label{3levelPad}
-\end{figure}
-
-\begin{figure}[t]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{inter_trans.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{The strength of pair additional transition
+$B(P_{\rm ad};k\rightarrow k')=|\braket{N+2,k'|S^+|N,k}|^2$, from $N=14$ to $N=22$. Dashed lines are exact solution and solid lines are ASCC+SPA calculation. Horizontal line shows the particle number of the initial states. Upper panel shows the intraband transitions of
+$\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$,
+while lower panel shows the interband transition of
+$\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
 }
  \label{3levelPad}
 \end{figure}
@@ -557,10 +553,9 @@ $0_4^+$& Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$\\
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{Pbomega_sq.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
 }
- \label{fig:N8Pad}
+ \label{Pb_omega_sq}
 \end{figure*}
 
 
@@ -568,44 +563,35 @@ $0_4^+$& Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$\\
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{Pbocc_number.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
 }
- \label{fig:N8Pad}
+ \label{Pb_occ_number}
 \end{figure*}
 
-\begin{table}
+\begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|cccccc}
    & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
- Exact & $$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $$\\
+ Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$\\
 ASCC+SPA & unbound & $2.31$ & $2.21$ & $2.12$ & $2.04$ & unbound \\ 
 \end{tabular}
 \end{ruledtabular}
-\caption{\label{ex}Excitation energy.}
+\caption{The same as Fig. \ref{ex} but for Pb isotopes.}
+\label{Pb_ex}
 \end{table}
 
-\begin{figure}[t]
+\begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbintra_trans.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
-}
- \label{PbPad}
-\end{figure}
-
-\begin{figure}[t]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbinter_trans.eps}
  \end{center}
- \captionsetup{labelformat=empty,labelsep=none}
-	\caption{aa.
+	\caption{The same as Fig. \ref{3levelPad} but for Pb isotopes.
 }
  \label{PbPad}
 \end{figure}
 
-\subsection{Realistic single-particle level system}
 
 \section{Conclusion}
 
