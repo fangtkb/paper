@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  20 SEP 2018 16:08
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  21 SEP 2018 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,22 +363,22 @@ File: N100Xeq2trajectory.eps Graphic file (type eps)
  <N100Xeq2trajectory.eps>
 File: N100Xeq2tau.eps Graphic file (type eps)
  <N100Xeq2tau.eps>
-Overfull \hbox (9.0pt too wide) in paragraph at lines 463--464
+Overfull \hbox (9.0pt too wide) in paragraph at lines 470--471
  [] 
  []
 
 File: N100Xeq2occ.eps Graphic file (type eps)
 <N100Xeq2occ.eps>
-Overfull \hbox (9.0pt too wide) in paragraph at lines 470--471
+Overfull \hbox (9.0pt too wide) in paragraph at lines 477--478
  [] 
  []
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 490.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 497.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 490.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 497.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -393,21 +393,29 @@ File: intra_trans.eps Graphic file (type eps)
  <intra_trans.eps>
 File: inter_trans.eps Graphic file (type eps)
 
-<inter_trans.eps>
+<inter_trans.eps> [6] [7]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 572.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 572.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 File: Pbomega_sq.eps Graphic file (type eps)
- <Pbomega_sq.eps>
+<Pbomega_sq.eps>
 File: Pbocc_number.eps Graphic file (type eps)
  <Pbocc_number.eps>
 File: Pbintra_trans.eps Graphic file (type eps)
  <Pbintra_trans.eps>
 File: Pbinter_trans.eps Graphic file (type eps)
-
-<Pbinter_trans.eps>
+ <Pbinter_trans.eps>
 No file draft1-1.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[6] [7] [8] [9] (./draft1-1.aux)
+[8] [9] [10] (./draft1-1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -419,12 +427,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4679 strings out of 493709
- 63746 string characters out of 6152372
- 177726 words of memory out of 5000000
- 8170 multiletter control sequences out of 15000+600000
+ 4681 strings out of 493709
+ 63756 string characters out of 6152372
+ 167726 words of memory out of 5000000
+ 8172 multiletter control sequences out of 15000+600000
  19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  36i,15n,39p,911b,394s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1-1.dvi (9 pages, 51096 bytes).
+Output written on draft1-1.dvi (10 pages, 55808 bytes).

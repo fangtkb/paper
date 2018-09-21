@@ -421,12 +421,19 @@ the $k$-th excited state becomes
  =& \sum_{\{j_l\}} \oint d\Phi e^{i(J-\sum_l j_l)\Phi} \nonumber \\
  &\times \oint dt e^{i\mathcal{T}_{\rm intr}(t)} A_{j_l}(q,p) \ket{\cdots;S_l,-S_l+j_l,\cdots} \nonumber \\
  \equiv& \sum_{\{j_l\}\in (\sum_{j_l}=J)} C_{j_l} \ket{\cdots;S_l,-S_l+j_l,\cdots}
+ \label{SPA2}
 \end{align}
 where
 \begin{align}
   C_{j_l} = \oint dt e^{i\mathcal{T}_{\rm intr}(t)} A_{j_l}(q(t),p(t)).
   \label{coef}
 \end{align}
+
+The definition of wave function in SPA can also be extended into ground state. The ground state is constructed by only energy minimum point in TDHFB phase space. In the energy minimum point, $\ket{\Phi,J;q,p}=\ket{\rm HFB}$. Therefore, (\ref{SPA2}) becomes
+\begin{align}
+ \ket{\tilde{\phi}_{g.s.}} \propto& \sum_{\{j_l\}} \oint d\Phi e^{i(J-\sum_l j_l)\Phi} \ket{\rm HFB},  
+\end{align}
+which is identical to the wave function of the particle number projection for HFB state.
 
 \section{Results}
 We apply ASCC + SPA to study the multi-level system in pairing model. The TDHFB degrees of freedom equals the number of single particle levels, including the constant of motion (pairing rotation). First, we confirm the dynamics is identical between ASCC + SPA and adiabatic TDHFB in two-level (one-dimensional TDHFB) system. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
@@ -515,7 +522,9 @@ From moving-frame QRPA equation, we obtain three modes along the collective path
 \end{figure}
 
 Based on the information from ASCC calculation, we can obtain the excited states from SPA.
-Table \ref{ex} shows the excitation energies of first and second excited states in the collective subspace. Up to the second excitation, all of the energies are in their energy pockets shown in Fig. \ref{potential}. Compare the result from ASCC+SPA with exact solution, we can find all of the values are nicely reproduced. The slightly difference is that the values from ASCC+SPA are about $5\%$ smaller than exact solution. 
+Table \ref{ex} shows the excitation energies of first and second excited states in the collective subspace. Up to the second excitation, all of the energies are in their energy pockets shown in Fig. \ref{potential}. Comparing the result from ASCC+SPA with exact solution, we can find all of the values are nicely reproduced. The slightly difference is that the values from ASCC+SPA are about $5\%$ smaller than exact solution. 
+Using the wave function of excited states, the pair additional transition strength is shown in Fig. \ref{3levelPad}. For intraband transition, comparing ASCC+SPA with exact solution, $B(P_{\rm ad};0\rightarrow 0)$ are almost identical and $B(P_{\rm ad};1\rightarrow 1)$ are about $10\%\sim20\%$ small. 
+For interband transition, the strength from ASCC+SPA is much smaller than exact solution. However, because the pairing correlation is enough strong in this case, the strength of intraband transition is dominant compared with interband transition. We can find that $B(P_{\rm ad};0\rightarrow 1)$ and $B(P_{\rm ad};1\rightarrow 0)$ are only about $1\%$ of $B(P_{\rm ad};0\rightarrow 0)$ and $B(P_{\rm ad};1\rightarrow 1)$. Therefore, the interband transition can be regarded as reasonable. From all above results, we can conclude that ASCC+SPA reproduces exact solution quantitatively. 
 \begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|c|cccccc}
@@ -546,7 +555,20 @@ $\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
  \label{3levelPad}
 \end{figure}
 
-\subsection{Realistic single-particle level system}
+\subsection{Pb isotopes}
+With pairing model, we study neutron's pairing vibration in Pb isotope. We prepare the neutron's single-particle level between the magic number 82 and 126 (Table \ref{Pb}). The coupling constant $g=0.138$ is determined to reproduce the experimental pairing gap $\Delta(N)=\frac{(-1)^{N+1}}{2}(B(N+1)-2B(N)+B(N-1))$ of ${}^{192}$Pb. We consider the even-even system from ${}^{188}$Pb to ${}^{194}$Pb.
+\begin{table}[htbp]
+\begin{ruledtabular}
+\begin{tabular}{c|cccccc}
+  orbit& $h_{9/2}$ & $f_{7/2}$ & $i_{13/2}$ & $p_{3/2}$ & $f_{5/2}$ & $p_{1/2}$\\ \hline
+  energy& $-10.94$ & $-10.69$ & $-8.74$ & $-8.44$ & $-8.16$ & $-7.45$\\
+\end{tabular}
+\end{ruledtabular}
+\caption{Single-particle levels of Pb isotopes used in the calculation. The orbits are obtained from spherical Woods-Saxon potential with spin-orbit coupling. }
+\label{Pb}
+\end{table}
+
+We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows the eigenvalue of moving-frame QRPA equation. We can find there are one spurious mode and five vibrational modes. Even though the degrees of freedom increase compared with three-level system, the collective modes we focus on did not cross with other modes in all panels. It means that the collective mode is nicely decoupled from other degrees of freedom. Under the chosen mode, the occupation number is shown in Fig. \ref{Pb_occ_number}. As with three-level system, the left end points correspond to HF state in all panels. The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. In the collective path, we can find $i_{13/2}$ and $p_{3/2}$ changes significantly, while other orbits are almost constant.
 
 
 \begin{figure*}[t]
@@ -576,7 +598,7 @@ $\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
 ASCC+SPA & unbound & $2.31$ & $2.21$ & $2.12$ & $2.04$ & unbound \\ 
 \end{tabular}
 \end{ruledtabular}
-\caption{The same as Fig. \ref{ex} but for Pb isotopes.}
+\caption{The same as Table. \ref{ex} but for Pb isotopes.}
 \label{Pb_ex}
 \end{table}
 
