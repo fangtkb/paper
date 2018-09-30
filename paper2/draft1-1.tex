@@ -436,10 +436,12 @@ The definition of wave function in SPA can also be extended into ground state. T
 which is identical to the wave function of the particle number projection for HFB state.
 
 \section{Results}
-We apply ASCC + SPA to study the multi-level system in pairing model. The TDHFB degrees of freedom equals the number of single particle levels, including the constant of motion (pairing rotation). First, we confirm the dynamics is identical between ASCC + SPA and adiabatic TDHFB in two-level (one-dimensional TDHFB) system. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
+We apply ASCC+SPA to study the multi-level system in pairing model. The TDHFB degrees of freedom equals the number of single particle levels, including the constant of motion (pairing rotation). We consider various systems, two-level system, three-level system, and Pb isotope system in each subsection respectively. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
 
 
 \subsection{Confirmation in one-dimensional TDHFB system}
+The two-level system corresponds to one-dimensional TDHFB system after decoupling the global gauge angle $\Phi$. We can obtain the obvious collective path from ASCC. The dynamics is exactly identical with adiabatic TDHFB (ATDHFB). We confirm that whether ASCC is identical to one-dimensional ATDHFB, and compare the difference with TDHFB, in numerical calculation.
+
 In two-level system, the classical Hamiltonian in (\ref{TDHFB_Hamiltonian_2}) is
 \begin{align}
 \mathcal{H} 
@@ -447,47 +449,48 @@ In two-level system, the classical Hamiltonian in (\ref{TDHFB_Hamiltonian_2}) is
  &- \frac{g}{4}\sum_{l=1,2} \Omega_l [\Omega_l(1-\cos^2{\theta}_l)+(1-\cos{\theta}_l)^2] \nonumber \\
 - \frac{g}{2} \Omega_{1}\Omega_{2}&\sqrt{(1-\cos^2{\theta}_{l_1})(1-\cos^2{\theta}_{l_2})}\cos{(\chi_{2}-\chi_{1})}   .
 \end{align}
-If we define the canonical coordinate $\phi=\chi_2-\chi_1$, it attributes to one-dimensional system. The conjugate momentum is $j= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \{\Omega_2(1-\cos{\theta}_2) - \Omega_1(1-\cos{\theta}_1)\}/4$. The adiabatic TDHFB (ATDHFB) means that we expand the Hamiltonian with respect to $\chi$ up to second order
+If we define the canonical coordinate $\phi=\chi_2-\chi_1$, it attributes to one-dimensional system. The conjugate momentum is $j= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \{\Omega_2(1-\cos{\theta}_2) - \Omega_1(1-\cos{\theta}_1)\}/4$. The ATDHFB indicates that the Hamiltonian can be expanded up to second order with respect to $\phi$
 \begin{align}
   \mathcal{H}(\phi,j) &\approx V(j) + \frac{1}{2}B^{-1}(j)\phi^2,
 \end{align}
 where $V(j)=\mathcal{H}(\phi=0,j)$ and $B^{-1}(j)= \left. \frac{\partial^2\mathcal{H}}{\partial\phi^2} \right|_{\phi=0}$.
-Because the time-dependent pairing vibrational mode is explicitly decoupled from pairing rotational mode, ASCC must be identical with ATDHFB. Furthermore, the excited states from SPA are also identical from both approaches.
+We know that the BCS ground state corresponds to the potential minimum point with $\phi=0$. If the pairing correlation is strong enough to bind the excited states in the collective potential,  the adiabatic approximation is expected to be well because the states are localized in small $\phi$ region. 
 
-We study the system with equal degeneracy $\Omega_1=\Omega_2=50$, $g/(\epsilon_2-\epsilon_1)=0.02$, and $N=100$. In ASCC calculation, we set the mesh size of collective coordinate $dq=0.02$. We compared the excited $0^+$ states from one-dimensional ATDHFB and ASCC with each other. Fig. \ref{fig:N100_traj} and Fig. \ref{fig:N100_tau} show the TDHFB trajectory in phase space and  action integral $\mathcal{T}$ as a function of time $t$, corresponding to $\ket{0_2^+}$, respectively. All of the mesh points obtained from ASCC are on the trajectory obtained from ATDHFB. The obtained excited $0^+$ states from SPA are shown in Fig. \ref{fig:N100_occ}. The occupation probability can be decomposed into $2n$-particle-$2n$-hole components. We can find the results from ATDHFB and ASCC are identical for all states. Therefore, the theoretical framework of ASCC + SPA has no problem.
-
-
+We study the system with equal degeneracy $\Omega_1=\Omega_2=8$, $g/(\epsilon_2-\epsilon_1)=0.2$, and $N=16$. In ASCC calculation, we set the mesh size of collective coordinate $dq=0.01$. We compared the results of $\ket{0_2^+}$ and $\ket{0_3^+}$ in three different calculations. Fig. \ref{fig:N16_traj} and Fig. \ref{fig:N16_tau} correspond to the classical informations, which are classical trajectories in phase space and action integral $\mathcal{T}$ as a function of time $t$. All of the mesh points obtained from ASCC are on the trajectories obtained from ATDHFB. For $\ket{0_2^+}$, the closed trajectory is well localized in the phase space and TDHFB calculation is almost the same as ASCC and ATDHFB calculations. For $\ket{0_3^+}$, the trajectory is still closed but near the transition point between closed trajectory and open trajectory. We can find ASCC and ATDHFB calculations have a small deviation from TDHFB calculation. The obtained excited $0^+$ states from SPA are shown in Fig. \ref{fig:N16_occ}. We show the occupation probability which is decomposed into $2n$-particle-$2n$-hole components. The results from ATDHFB and ASCC are identical within numerical error. Also, TDHFB calculation is very close to other two calculations. 
 
 \begin{figure}[thb]
  \begin{center}
-   \includegraphics[height=0.45\textwidth,angle=-90]{N100Xeq2trajectory.eps}
+   \includegraphics[height=0.45\textwidth,angle=-90]{N16X3p2trajectory.eps}
  \end{center}
-\caption{TDHFB trajectory of $\ket{0_2^+}$ in two-dimensional phase space. Solid line is obtained from one-dimensional ATDHFB+SPA calculation and cross points corresponding to each mesh point are obtained from ASCC+SPA. }
-\label{fig:N100_traj}
+\caption{Classical trajectories of $\ket{0_2^+}$ and $\ket{0_3^+}$ in two-dimensional phase space. The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. Cross points, solid lines, and dashed lines correspond to the results from ASCC+SPA, one-dimensional ATDHFB+SPA, and one-dimensional TDHFB+SPA, respectively. In ASCC+SPA calculation, each cross point corresponds to each mesh point from ASCC calculation. }
+\label{fig:N16_traj}
 \end{figure}
 \begin{figure}[thb]
  \begin{center}
-   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2tau.eps}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2action.eps}
  \end{center}
-\caption{Action integral of  $\ket{0_2^+}$ with respect to time $t$. Solid line is obtained from one-dimensional ATDHFB+SPA calculation and cross points corresponding to each mesh point are obtained from ASCC+SPA. Dashed line is $2\pi$ corresponding to $\ket{0_2^+}$ in EBK quantization condition. Based on Fig. \ref{fig:N100_traj}, we calculated the action integral from $(\phi,j)=(0,-8)$ in clockwise direction. }
-\label{fig:N100_tau}
+\caption{Action integrals of $\ket{0_2^+}$ and $\ket{0_3^+}$ with respect to time $t$.Cross points, solid lines, and dashed lines correspond to the results from ASCC+SPA, one-dimensional ATDHFB+SPA, and one-dimensional TDHFB+SPA, respectively. Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. Based on Fig. \ref{fig:N16_traj}, we calculated the action integrals on each trajectory from $(\phi,j)=(0,j_{\rm max})$ in clockwise direction. }
+\label{fig:N16_tau}
 \end{figure}
 \begin{figure}[thb]
  \begin{center}
-   \includegraphics[height=0.5\textwidth,angle=-90]{N100Xeq2occ.eps}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2occ.eps}
  \end{center}
-	\caption{Occupation probability in excited $0^+$ states
-as a function of $j$ for $\Omega_1=\Omega_2=50$, $N=100$, and $x=2$ system.
+	\caption{Occupation probabilities of $\ket{0_2^+}$ and $\ket{0_3^+}$
+as a function of $j$.
 The two vertical bars at each $j$ from the left to the right represent
 the squared components of the wave functions
-from ATDHFB+SPA and ASCC+SPA calculations, respectively.
+from ASCC+SPA, ATDHFB+SPA and TDHFB+SPA calculations, respectively.
 The left end of the horizontal axis at $j=j_{\rm min}$
 corresponds to a component with $(n_1,n_2)=(N,0)$.
 The next at $j=j_{\rm min}+1$ corresponds to the one with
 $(n_1,n_2)=(N-2,2)$, and so on.
 }
- \label{fig:N100_occ}
+ \label{fig:N16_occ}
 \end{figure}
+
+
+Comparing with one-dimensional TDHFB calculation, we confirmed we succeed to describe the bound collective excited states by ASCC+SPA. For the bound states, whether the adiabatic approximation included or not hardly has influence. Even for the weakly bound states, the adiabatic approximation is reasonable approximation.
 
 
 \subsection{Three-level system}
@@ -523,8 +526,11 @@ From moving-frame QRPA equation, we obtain three modes along the collective path
 
 Based on the information from ASCC calculation, we can obtain the excited states from SPA.
 Table \ref{ex} shows the excitation energies of first and second excited states in the collective subspace. Up to the second excitation, all of the energies are in their energy pockets shown in Fig. \ref{potential}. Comparing the result from ASCC+SPA with exact solution, we can find all of the values are nicely reproduced. The slightly difference is that the values from ASCC+SPA are about $5\%$ smaller than exact solution. 
-Using the wave function of excited states, the pair additional transition strength is shown in Fig. \ref{3levelPad}. For intraband transition, comparing ASCC+SPA with exact solution, $B(P_{\rm ad};0\rightarrow 0)$ are almost identical and $B(P_{\rm ad};1\rightarrow 1)$ are about $10\%\sim20\%$ small. 
-For interband transition, the strength from ASCC+SPA is much smaller than exact solution. However, because the pairing correlation is enough strong in this case, the strength of intraband transition is dominant compared with interband transition. We can find that $B(P_{\rm ad};0\rightarrow 1)$ and $B(P_{\rm ad};1\rightarrow 0)$ are only about $1\%$ of $B(P_{\rm ad};0\rightarrow 0)$ and $B(P_{\rm ad};1\rightarrow 1)$. Therefore, the interband transition can be regarded as reasonable. From all above results, we can conclude that ASCC+SPA reproduces exact solution quantitatively. 
+Using the wave function of excited states, the pair additional transition strength is shown in Fig. \ref{3levelPad}. For intraband transition, comparing ASCC+SPA with exact solution, $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$ are almost identical and $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$ are about $10\%\sim20\%$ small. 
+For interband transition, the strength from ASCC+SPA is much smaller than exact solution. It is difficult to reproduce the absolute value of exact solution. However, because the pairing correlation is enough strong in this case, the strength of intraband transition is dominant compared with interband transition. We can find that $B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_1^+)$ are only about $1\%$ of $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$. Therefore, the interband transition can be regarded as reasonable. From all above results, we can conclude that ASCC+SPA reproduces exact solution quantitatively. 
+
+%We skipped the result about $\ket{0_3^+}$.
+ We need to discuss about the second excited state in the collective path corresponds to not $\ket{0_3^+}$ and others, but $\ket{0_4^+}$. In pair additional transition $B(P_{\rm ad};k\rightarrow k')$ from exact solution, $B(P_{\rm ad};0_2^+\rightarrow 0_3^+)$ is $10\sim100$ times smaller than $B(P_{\rm ad};0_1^+\rightarrow 0_3^+)$, and $B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$ is in the same order with $B(P_{\rm ad};0_1^+\rightarrow 0_3^+)$. It indicates that $\ket{0_3^+}$ is also one-phonon state which belongs to the other collective path (black line in Fig. \ref{omega_sq}). About two-phonon states, we can easily find the candidates of two-phonon states from excitation energies and $B(P_{\rm ad};0_1^+\rightarrow 0_{ex}^+)$. In the candidates, $\ket{0_4^+}$ is the lowest two-phonon state and $B(P_{\rm ad};0_2^+\rightarrow 0_4^+)$ is much larger than $B(P_{\rm ad};0_3^+\rightarrow 0_4^+)$. Therefore, $\ket{0_4^+}$ is considered to be most appropriate corresponding to the second excited state in ASCC+SPA calculation.
 \begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|c|cccccc}
@@ -556,21 +562,19 @@ $\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
 \end{figure}
 
 \subsection{Pb isotopes}
-With pairing model, we study neutron's pairing vibration in Pb isotope. We prepare the neutron's single-particle level between the magic number 82 and 126 (Table \ref{Pb}). The coupling constant $g=0.138$ is determined to reproduce the experimental pairing gap $\Delta(N)=\frac{(-1)^{N+1}}{2}(B(N+1)-2B(N)+B(N-1))$ of ${}^{192}$Pb. We consider the even-even system from ${}^{188}$Pb to ${}^{194}$Pb.
+With pairing model, we study neutron's pairing vibration in Pb isotope. We prepare the neutron's single-particle level between the magic number 82 and 126 (Table \ref{Pb}). The coupling constant $g=0.138$(MeV) is determined to reproduce the experimental pairing gap $\Delta(N)=\frac{(-1)^{N+1}}{2}(B(N+1)-2B(N)+B(N-1))$ of ${}^{192}$Pb. We consider the even-even system from ${}^{188}$Pb to ${}^{194}$Pb.
 \begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|cccccc}
   orbit& $h_{9/2}$ & $f_{7/2}$ & $i_{13/2}$ & $p_{3/2}$ & $f_{5/2}$ & $p_{1/2}$\\ \hline
-  energy& $-10.94$ & $-10.69$ & $-8.74$ & $-8.44$ & $-8.16$ & $-7.45$\\
+  energy(MeV)& $-10.94$ & $-10.69$ & $-8.74$ & $-8.44$ & $-8.16$ & $-7.45$\\
 \end{tabular}
 \end{ruledtabular}
 \caption{Single-particle levels of Pb isotopes used in the calculation. The orbits are obtained from spherical Woods-Saxon potential with spin-orbit coupling. }
 \label{Pb}
 \end{table}
 
-We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows the eigenvalue of moving-frame QRPA equation. We can find there are one spurious mode and five vibrational modes. Even though the degrees of freedom increase compared with three-level system, the collective modes we focus on did not cross with other modes in all panels. It means that the collective mode is nicely decoupled from other degrees of freedom. Under the chosen mode, the occupation number is shown in Fig. \ref{Pb_occ_number}. As with three-level system, the left end points correspond to HF state in all panels. The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. In the collective path, we can find $i_{13/2}$ and $p_{3/2}$ changes significantly, while other orbits are almost constant.
-
-
+We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows the eigenvalue of moving-frame QRPA equation. We can find there are one spurious mode and five vibrational modes. The collective modes we focus on did not cross with other modes in all panels, while the spacings of the collective modes and the second vibrational modes are small, especially for ${}^{194}$Pb. Under the chosen collective modes, the occupation number is shown in Fig. \ref{Pb_occ_number}. As with three-level system, the left end points correspond to HF state in all panels. The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. In the collective path, we can find $i_{13/2}$ and $p_{3/2}$ changes significantly, while other orbits don't change so much. The collective potential for each isotope is shown in Fig. \ref{Pb_potential}. The depths of them are about $2.5\sim3.5$(MeV) only enough to bind $\ket{0_2^+}$, one-phonon states. We can consider that the collectivity of pairing is small for excited states, even though their ground states are superfluid states.
 \begin{figure*}[t]
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{Pbomega_sq.eps}
@@ -579,8 +583,6 @@ We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows
 }
  \label{Pb_omega_sq}
 \end{figure*}
-
-
 \begin{figure*}[t]
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{Pbocc_number.eps}
@@ -589,6 +591,19 @@ We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows
 }
  \label{Pb_occ_number}
 \end{figure*}
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{Pbpotential.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{potential} but for Pb isotopes.
+}
+ \label{Pb_potential}
+\end{figure}
+
+We show the results of $\ket{0_2^+}$, one-phonon state in the collective coordinate, from SPA. Table \ref{Pb} shows the excitation energy. The value is nothing to do with experimental value because pairing model is too simple to describe realistic nuclear interaction. We are only interested in the comparison between exact solution and ASCC+SPA. We can find the excitation energy from ASCC+SPA reproduce the exact solution as well as in three-level system. The pair additional transition strength is shown in Fig. \ref{PbPad}. In this case, intraband transition is also dominant compared with interband transition. ASCC+SPA reproduces the tendency of exact solution and somewhat smaller than exact solution in all transition.  However, the largest deviation, $B(P_{\rm ad};1\rightarrow 1)$, only has about $25\%$ deficiency compared with exact solution. Therefore, ASCC+SPA is supposed to be available into complex realistic system. 
+
+In Pb isotope system, there are some problems remaining. Up to now, ASCC+SPA is only available when the excited states are bound in the collective potential. For example, we cannot calculate $\ket{0_2^+}$ in ${}^{186}$Pb because the potential is too shallow to bound the excited state. Also, the whole collective path in ${}^{196}$Pb cannot be obtained due to the complex eigenvalue of moving-frame QRPA equation in the collective path.
+
 
 \begin{table}[htbp]
 \begin{ruledtabular}
@@ -598,10 +613,9 @@ We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows
 ASCC+SPA & unbound & $2.31$ & $2.21$ & $2.12$ & $2.04$ & unbound \\ 
 \end{tabular}
 \end{ruledtabular}
-\caption{The same as Table. \ref{ex} but for Pb isotopes.}
+\caption{The same as Table. \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
 \label{Pb_ex}
 \end{table}
-
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbintra_trans.eps}
@@ -614,8 +628,24 @@ ASCC+SPA & unbound & $2.31$ & $2.21$ & $2.12$ & $2.04$ & unbound \\
  \label{PbPad}
 \end{figure}
 
+Finally, we discuss about whether the collective coordinate can be described by other physical quantities. The pairing gap $\Delta$ is the candidate of the collective coordinate, which is similar with $\alpha_{2\mu}$ in 5D Bohr Hamiltonian.
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
+ \end{center}
+	\caption{Pairing gap as a function of collective coordinate in ${}^{192}$Pb. 
+}
+ \label{192Pb_gap}
+\end{figure}
+
 
 \section{Conclusion}
+Based on the previous work which demonstrated the accuracy of SPA for the requantization of TDHFB dynamics, we combined ASCC with SPA to apply non-integrable system. We constructed the theoretical framework of ASCC+SPA for bound state, which is bound in the collective potential from ASCC. Besides the collective Hamiltonian, $Q$ operator at each point of collective path is also necessary input information from ASCC.
+
+We applied ASCC+SPA into multi-level pairing model. Because the global gauge angle $\Phi$ is a cyclic variable, the simplest non-integrable system is three level system. We investigated three level system and more realistic system, neutron's single particle levels from Pb isotope. In both cases, the low-lying excited $0^+$ states reproduce exact solution well not only excitation energies but also wave functions. The pair transition calculation has no difficulty because we don't need to requantize the pair transition operators. This point overcomes the disadvantage in canonical requantization.
+
+While the basic theoretical framework of ASCC+SPA was constructed, there are some problems remaining. 
 
 
 \end{document}
