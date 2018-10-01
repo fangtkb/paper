@@ -61,27 +61,33 @@ floatfix ]%
 \author{Fang Ni}
  \affiliation{Faculty of Pure and Applied Sciences,
               University of Tsukuba, Tsukuba 305-8571, Japan}
-\author{Takashi Nakatsukasa}
- \affiliation{Center for Computational Sciences,
-              University of Tsukuba, Tsukuba 305-8577, Japan}
+\author{Nobuo Hinohara}
  \affiliation{Faculty of Pure and Applied Sciences,
               University of Tsukuba, Tsukuba 305-8571, Japan}
+ \affiliation{Center for Computational Sciences,
+              University of Tsukuba, Tsukuba 305-8577, Japan}
+\author{Takashi Nakatsukasa}
+ \affiliation{Faculty of Pure and Applied Sciences,
+              University of Tsukuba, Tsukuba 305-8571, Japan}
+ \affiliation{Center for Computational Sciences,
+              University of Tsukuba, Tsukuba 305-8577, Japan}
  \affiliation{iTHES Research Group, RIKEN, Wako 351-0198, Japan}
 
 \begin{abstract}
-\begin{description}
-\item[Background] This part would describe the
-context needed to understand what the paper
-is about.
-\item[Purpose] This part would state the purpose
-of the present paper.
-\item[Method] This part describe the methods
-used in the paper.
-\item[Results] This part would summarize the
-results.
-\item[Conclusions] This part would state the
-conclusions of the paper.
-\end{description}
+To describe the large amplitude collective motion in nuclear pairing, stationary phase approximation to the path integral (SPA) is supposed to be the most reliable requantization approach of time-dependent mean-field dynamics. The disadvantage of SPA is that it only available in integrable system. However, we overcome the disadvantage by combining SPA with adiabatic self-consistent collective coordinate method (ASCC). We construct the theoretical framework of  ASCC+SPA and demonstrate the application to the multi-level pairing model which is non-integrable system. As with the performance in integrable system, we find that SPA also gives reasonable information about low-lying excited $0^+$ states in non-integrable system.
+%\begin{description}
+%\item[Background] This part would describe the
+%context needed to understand what the paper
+%is about.
+%\item[Purpose] This part would state the purpose
+%of the present paper.
+%\item[Method] This part describe the methods
+%used in the paper.
+%\item[Results] This part would summarize the
+%results.
+%\item[Conclusions] This part would state the
+%conclusions of the paper.
+%\end{description}
 \end{abstract}
 
 \maketitle
@@ -574,7 +580,7 @@ With pairing model, we study neutron's pairing vibration in Pb isotope. We prepa
 \label{Pb}
 \end{table}
 
-We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows the eigenvalue of moving-frame QRPA equation. We can find there are one spurious mode and five vibrational modes. The collective modes we focus on did not cross with other modes in all panels, while the spacings of the collective modes and the second vibrational modes are small, especially for ${}^{194}$Pb. Under the chosen collective modes, the occupation number is shown in Fig. \ref{Pb_occ_number}. As with three-level system, the left end points correspond to HF state in all panels. The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. In the collective path, we can find $i_{13/2}$ and $p_{3/2}$ changes significantly, while other orbits don't change so much. The collective potential for each isotope is shown in Fig. \ref{Pb_potential}. The depths of them are about $2.5\sim3.5$(MeV) only enough to bind $\ket{0_2^+}$, one-phonon states. We can consider that the collectivity of pairing is small for excited states, even though their ground states are superfluid states.
+We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows the eigenvalue of moving-frame QRPA equation. We can find there are one spurious mode and five vibrational modes. The collective modes we focus on did not cross with other modes in all panels, while the spacings of the collective modes and the second vibrational modes are small, especially for ${}^{194}$Pb. Under the chosen collective modes, the occupation number is shown in Fig. \ref{Pb_occ_number}. As with three-level system, the left end points correspond to HF state in all panels. The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. In the collective path, we can find $i_{13/2}$ and $p_{3/2}$ orbits change significantly, while other orbits don't change so much. The collective potential for each isotope is shown in Fig. \ref{Pb_potential}. The depths of them are about $2.5\sim3.5$(MeV) only enough to bind $\ket{0_2^+}$, one-phonon states. We can consider that the collectivity of pairing is small for excited states, even though their ground states are superfluid states.
 \begin{figure*}[t]
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{Pbomega_sq.eps}
@@ -600,11 +606,7 @@ We have six TDHFB degrees of freedom in the system. Fig. \ref{Pb_omega_sq} shows
  \label{Pb_potential}
 \end{figure}
 
-We show the results of $\ket{0_2^+}$, one-phonon state in the collective coordinate, from SPA. Table \ref{Pb} shows the excitation energy. The value is nothing to do with experimental value because pairing model is too simple to describe realistic nuclear interaction. We are only interested in the comparison between exact solution and ASCC+SPA. We can find the excitation energy from ASCC+SPA reproduce the exact solution as well as in three-level system. The pair additional transition strength is shown in Fig. \ref{PbPad}. In this case, intraband transition is also dominant compared with interband transition. ASCC+SPA reproduces the tendency of exact solution and somewhat smaller than exact solution in all transition.  However, the largest deviation, $B(P_{\rm ad};1\rightarrow 1)$, only has about $25\%$ deficiency compared with exact solution. Therefore, ASCC+SPA is supposed to be available into complex realistic system. 
-
-In Pb isotope system, there are some problems remaining. Up to now, ASCC+SPA is only available when the excited states are bound in the collective potential. For example, we cannot calculate $\ket{0_2^+}$ in ${}^{186}$Pb because the potential is too shallow to bound the excited state. Also, the whole collective path in ${}^{196}$Pb cannot be obtained due to the complex eigenvalue of moving-frame QRPA equation in the collective path.
-
-
+We show the results of $\ket{0_2^+}$, one-phonon state in the collective coordinate, from SPA. Table \ref{Pb} shows the excitation energy. The value is nothing to do with experimental value because pairing model is too simple to describe realistic nuclear interaction. We are only interested in the comparison between exact solution and ASCC+SPA. We can find the excitation energy from ASCC+SPA reproduce the exact solution as well as in three-level system. The pair additional transition strength is shown in Fig. \ref{PbPad}. The feature is similar to the case in three-level system, dominant intraband transition and the accuracy from ASCC+SPA. The deviation of $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$ has about $25\%$ deficiency compared with exact solution. Therefore, ASCC+SPA gives reasonable results in realistic single-particle level systems. 
 \begin{table}[htbp]
 \begin{ruledtabular}
 \begin{tabular}{c|cccccc}
@@ -628,8 +630,12 @@ ASCC+SPA & unbound & $2.31$ & $2.21$ & $2.12$ & $2.04$ & unbound \\
  \label{PbPad}
 \end{figure}
 
-Finally, we discuss about whether the collective coordinate can be described by other physical quantities. The pairing gap $\Delta$ is the candidate of the collective coordinate, which is similar with $\alpha_{2\mu}$ in 5D Bohr Hamiltonian.
-
+Finally, we discuss about the validity of the collective treatment of the pairing. We know that the 5D collective model described by the quadrupole deformation parameters $\alpha_{2\mu} (\mu=\pm2,\pm1,0)$ is widely applied to analyze experimental data. As with the 5D collective model, pairing can also be supposed as a sort of deformation. The collective model is described by the pair deformation parameters pairing gap $\Delta$ and global gauge angle $\Phi$. The utilization of the collective model for nuclear pairing dynamics was done in several references\cite{}. In our previous study, however, we find that the pairing gap $\Delta$ is not proper to be the collective coordinate in two-level pairing model \cite{}. In multi-level system, we can investigate the relations between the pairing gap and the collective coordinate. The pairing gap $\Delta$ is defined as
+\begin{align}
+  \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|S^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
+  &= g\sum_l \sqrt{j_l(\Omega_l-j_l)} .
+\end{align}
+Fig. \ref{192Pb_gap} shows the pairing gap of $\Delta$ in ${}^{192}$Pb as a function of the collective coordinate $q$. We can see that the peak is near $q=0$ and both end points have small values. Because only one orbit near the Fermi energy ($i_{13/2}$ orbit for both end points) contributes the value of pairing gap, the value at both end points are small compared with the value around the ground state. There is no one-to-one correspondence between $\Delta$ and $q$ not only in ${}^{192}$Pb, but also in all multi-level systems. Therefore, the pairing gap $\Delta$ cannot properly describe the pairing dynamics. 
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
@@ -640,12 +646,13 @@ Finally, we discuss about whether the collective coordinate can be described by 
 \end{figure}
 
 
-\section{Conclusion}
-Based on the previous work which demonstrated the accuracy of SPA for the requantization of TDHFB dynamics, we combined ASCC with SPA to apply non-integrable system. We constructed the theoretical framework of ASCC+SPA for bound state, which is bound in the collective potential from ASCC. Besides the collective Hamiltonian, $Q$ operator at each point of collective path is also necessary input information from ASCC.
+\section{Conclusion and discussion}
+Based on our previous work which demonstrated the accuracy of SPA for the requantization of TDHFB dynamics, we considered the application of SPA to non-integrable system. The one of the possible way to extend SPA into non-integrable system is to combine with ASCC. We constructed the theoretical framework of ASCC+SPA for bound states, which is bound in the collective potential from ASCC. 
+%Besides the collective Hamiltonian, $Q$ operator at each point of collective path is also necessary input information.
 
-We applied ASCC+SPA into multi-level pairing model. Because the global gauge angle $\Phi$ is a cyclic variable, the simplest non-integrable system is three level system. We investigated three level system and more realistic system, neutron's single particle levels from Pb isotope. In both cases, the low-lying excited $0^+$ states reproduce exact solution well not only excitation energies but also wave functions. The pair transition calculation has no difficulty because we don't need to requantize the pair transition operators. This point overcomes the disadvantage in canonical requantization.
+We applied ASCC+SPA into multi-level pairing model. Because the global gauge angle $\Phi$ is a cyclic variable, the simplest non-integrable system is three level system. We investigated three level system and more realistic system, neutron's single-particle levels from Pb isotope. In both cases, the low-lying excited $0^+$ states from ASCC+SPA reproduce exact solution well not only for excitation energies but also for wave functions. In ASCC+SPA, the pair transition calculation has no difficulty because we don't need to requantize the pair transition operators. This point overcomes the disadvantage in canonical requantization.
 
-While the basic theoretical framework of ASCC+SPA was constructed, there are some problems remaining. 
+While the basic theoretical framework of ASCC+SPA was constructed, there are several problems remaining. Up to now, ASCC+SPA is only available when the excited states are bound in the pocket of collective potential (See Fig. \ref{potential} and \ref{Pb_potential}). For example, we cannot calculate $\ket{0_2^+}$ in ${}^{186}$Pb because the potential is too shallow to bound the excited state. The difficulty for the application to the unbound states is that the wave function from SPA is not stationary state because the classical trajectory in phase space is not periodic. It is necessary to find some proper boundary conditions in the collective subspace. Another problem is about the crossing of the eigenvalues from moving-frame QRPA equation in the collective path. No problem occurs when two completely orthogonal modes crossing, such as rotational mode and vibrational mode (e.g. N=14,16,18,20 in Fig. \ref{omega_sq}). However, if two vibrational modes not orthogonal with each other become the same eigenvalues, the ASCC calculation stops. Actually, the two eigenvalues become complex conjugate values and the next mesh point of collective path cannot be decided properly. Such case is occurred in ${}^{196}$Pb. The eigenvalues crossing problem supposed to be the rare case because ${}^{196}$Pb system is the only case including the previous studies about the application of ASCC \cite{}.
 
 
 \end{document}

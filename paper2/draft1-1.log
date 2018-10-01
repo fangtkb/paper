@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  30 SEP 2018 18:20
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  1 OCT 2018 18:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -270,91 +270,92 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \openout3 = `draft1-1Notes.bib'.
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 73.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 73.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 87.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 87.
-LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
  (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 93.
+
 
 LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 87.
+(Font)              using `JT1/mc/m/n' instead on input line 93.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 87.
+(Font)              using `JY1/mc/m/n' instead on input line 93.
 
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 95.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 95.
 
-Underfull \hbox (badness 7963) in paragraph at lines 97--98
+Underfull \hbox (badness 7963) in paragraph at lines 103--104
 []\OT1/cmr/m/n/10 We re-view the one-dimensional adi-a-batic self-
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 100--102
+Underfull \hbox (badness 1152) in paragraph at lines 106--108
 \OT1/cmr/m/n/10 with po-ten-tial $\OML/cmm/m/it/10 V\OT1/cmr/m/n/10 (\OML/cmm/m
 /it/10 ^^X\OT1/cmr/m/n/10 )$ and re-cip-ro-cal mass pa-ram-e-ter
  []
 
 
-Underfull \hbox (badness 1184) in paragraph at lines 151--153
+Underfull \hbox (badness 1184) in paragraph at lines 157--159
 \OT1/cmr/m/n/10 The sec-ond equa-tion (II.14) is called moving-frame
  []
 
 [1]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 167.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 173.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 167.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 173.
 
 
-LaTeX Warning: Reference `scc' on page 2 undefined on input line 167.
+LaTeX Warning: Reference `scc' on page 2 undefined on input line 173.
 
 File: SPA.png Graphic file (type eps)
 <SPA.png> [2]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 227.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 233.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 227.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 233.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
 
 
 Package natbib Warning: Citation `Richardson' on page 3 undefined on input line
- 267.
+ 273.
 
 
 Package natbib Warning: Citation `Richardson2' on page 3 undefined on input lin
-e 267.
+e 273.
 
 
 Package natbib Warning: Citation `Richardson3' on page 3 undefined on input lin
-e 267.
+e 273.
 
 
-Overfull \hbox (26.4066pt too wide) in paragraph at lines 310--310
+Overfull \hbox (26.4066pt too wide) in paragraph at lines 316--316
 [] 
  []
 
 [3]
-Overfull \hbox (15.88936pt too wide) in paragraph at lines 346--346
+Overfull \hbox (15.88936pt too wide) in paragraph at lines 352--352
 [] 
  []
 
 
-Underfull \hbox (badness 2443) in paragraph at lines 366--368
+Underfull \hbox (badness 2443) in paragraph at lines 372--374
 \OT1/cmr/m/n/10 which sim-pli-fies the moving-frame QRPA equa-tion
  []
 
@@ -363,22 +364,22 @@ File: N16X3p2trajectory.eps Graphic file (type eps)
  <N16X3p2trajectory.eps>
 File: N16X3p2action.eps Graphic file (type eps)
  <N16X3p2action.eps>
-Overfull \hbox (9.0pt too wide) in paragraph at lines 470--471
+Overfull \hbox (9.0pt too wide) in paragraph at lines 476--477
  [] 
  []
 
 File: N16X3p2occ.eps Graphic file (type eps)
 <N16X3p2occ.eps>
-Overfull \hbox (9.0pt too wide) in paragraph at lines 477--478
+Overfull \hbox (9.0pt too wide) in paragraph at lines 483--484
  [] 
  []
 
 [5]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 498.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 504.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 498.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 504.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -402,10 +403,10 @@ File: Pbpotential.eps Graphic file (type eps)
  <Pbpotential.eps>
 [7]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 602.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 608.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 602.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 608.
 
 
 Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
@@ -415,12 +416,21 @@ File: Pbintra_trans.eps Graphic file (type eps)
 File: Pbinter_trans.eps Graphic file (type eps)
  <Pbinter_trans.eps> [8]
 File: 192Pbgap.eps Graphic file (type eps)
- <192Pbgap.eps>
+ <192Pbgap.eps> [9]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 654.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 654.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
 No file draft1-1.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[9] [10] (./draft1-1.aux)
+[10] (./draft1-1.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -432,12 +442,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4689 strings out of 493709
- 63852 string characters out of 6152372
+ 4690 strings out of 493709
+ 63859 string characters out of 6152372
  167726 words of memory out of 5000000
- 8178 multiletter control sequences out of 15000+600000
+ 8179 multiletter control sequences out of 15000+600000
  19722 words of font info for 78 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 36i,15n,39p,1280b,394s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 36i,15n,39p,1429b,396s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on draft1-1.dvi (10 pages, 64964 bytes).
+Output written on draft1-1.dvi (10 pages, 68800 bytes).
