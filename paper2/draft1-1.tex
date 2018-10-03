@@ -93,14 +93,27 @@ To describe the large amplitude collective motion in nuclear pairing, stationary
 \maketitle
 
 \section{Introduction}
+%pairing in nuclei
+Pairing correlation plays an important role around the surface in open-shell nuclei. The properties of pairing for the ground states are well known such as odd-even mass difference, moment of inertia of rotational bands, and the quantum numbers for spin and parity. The elementary excitations of pairing, pairing vibrations and pairing rotations, are fascinating phenomena not only for open-shell nuclei, but also for closed-shell nuclei. However, the pairing dynamics still has unclear features in low-energy region (a few MeV excitation) of nuclei, especially for excited $J^{\pi}=0^+$ states. We aim to understand the dynamics from pairing correlation in nuclei from microscopic many-body theory.\par
+%TDMF theory for pairing
+Time-dependent mean-field (TDMF) theory is the common theory to describe the dynamics of nuclei from the microscopic degrees of freedom. Including pairing correlation, time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory, corresponding to TDMF theory, is utilized for plenty of studies for both nuclear reaction and nuclear structure fields. In nuclear structure aspect, the harmonic approximation of TDHFB, quasiparticle random phase approximation (QRPA), can well describe the giant resonance of nuclei. Recently, the adiabatic approximations of TDHFB, such as adiabatic TDHFB (ATDHFB), adiabatic self-consistent collective coordinate method (ASCC), and 5D Bohr Hamiltonian constructed from microscopic degrees of freedom, is developed and start to be applied to low-lying excited states. They are expected to elucidate the large amplitude collective motions occurred in the structure, such as shape coexistence and anharmonic vibration. \par
+%previous work
+TDMF (TDHFB) theory corresponds to a stationary-limit in the path integral formulation. It lacks a part of the information about quantum fluctuation, which is remarkable in the large amplitude dynamics. To introduce the quantum fluctuation based on the TDHFB theory, the requantization process is necessary. The straightforward requantization method is canonical quantization. In 5D Bohr Hamiltonian, the canonical quantization was formulated and employed for the study of low-lying excited states in nuclei. In additional, it was also utilized to describe the large amplitude dynamics for pairing in pairing model. However, the Hilbert space which the wave function obtained from canonical quantization belongs to is quite different from the Hilbert space which the original wave function belongs to. It may cause the deviation for the requantized states. In our previous work, we studied the requantization of the TDHFB. We investigated the low-lying excited $0^+$ states in two-level pairing model by various requantization methods \cite{NN18}. Comparing with exact solution, we found that stationary phase approximation to the path integral (SPA) can give quantitatively results not only for the excitation energies, but also for the wave functions. We confirmed that SPA is superior to canonical requantization, especially for the calculation of two-particle transitional strength. The wave function obtained from SPA has two advantages: first, it is written in the (quasi)particle's degrees of freedom; second, it has good quantum number because the projection of the conservation quantities (e.g. total particle number, total angular momentum) are automatically contained. On the other hand, the disadvantage is that SPA only works in integrable systems. Due to the nuclear system is non-integrable system in general, we cannot employ SPA straightforward for the realistic system. \par
+%this work
+We discuss the application of SPA for the non-integrable system in this paper. We know that the one-dimensional system is integrable system. It is desirable that a collective motion can be described by one collective coordinate. To obtain the one-dimensional subspace, adiabatic self-consistent collective coordinate method (ASCC) is powerful tool.
+``Adiabatic'' indicates that the collective motion is slow compared with the single-particle motion. The collective degree of freedom is determined self-consistently from the TDHFB degrees of freedom without any assumption. The ASCC, which was developed from the basic idea of self-consistent collective coordinate method (SCC) \cite{MMSK80}, is flexible to deal with various collective potential, such as shape coexistence \cite{KNMM05, HNMM07, HNMM08}. A state in the collective subspace corresponds to a microscopic state in TDHFB phase space connected by $Q$ and $P$ operators in ASCC. This correspondence make us possible to apply SPA to non-integrable system. We construct the theoretical framework of ASCC+SPA, which implements SPA to non-integrable system by combing with ASCC. The first study of ASCC+SPA give us a new landscape about the large-amplitude dynamics in low-energy region.
 
+%organization of paper
+The paper is organized as follows. Sec. \ref{sec2} introduces the theoretical framework of ASCC and the combination, ASCC+SPA. Sec. \ref{sec3} is the application of ASCC+SPA in multi-level pairing model. We give the numerical results in Sec. \ref{sec4}, including two-level systems, three-level systems, and Pb isotope systems. The conclusion and the remaining problems are shown in Sec. \ref{sec5}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Theoretical framework}
+\label{sec2}
 
 \subsection{One-dimensional adiabatic self-consistent collective coordinate method}
 \label{ASCC}
-
-We review the one-dimensional adiabatic self-consistent collective coordinate method (ASCC) briefly. The classical Hamilton's equation which is identical to the TDHFB equation is described by canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. If we assume the collective motion is slow motion, it allows us to expand momenta $\pi$ up to second order. The multi-dimensional Hamiltonian is
+To discuss the application of ASCC+SPA in the later subsection, we review the one-dimensional adiabatic self-consistent collective coordinate method (ASCC) briefly \cite{N2012}. The classical Hamilton's equation which is identical to the TDHFB equation is described by canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. If we apply the adiabatic approximation which assume that the collective motion is slow compared with the single-particle motion, we can  expand the momenta $\pi$ up to second order. The multi-dimensional Hamiltonian is
 \begin{align}
   \mathcal{H} &= V(\xi) + \frac{1}{2}B^{\alpha\beta}(\xi)\pi_{\alpha}\pi_{\beta}
 \end{align}
@@ -125,7 +138,11 @@ and
  \pi_{\alpha} &= f^1_{,\alpha}p_1 ,
   \label{momenta}
 \end{align}
-where the index $1$ indicates the collective degree of freedom, and the comma indicates the partial derivative $(f^1_{,\alpha}=\partial f^1/\partial \xi^{\alpha})$. 
+where the index $1$ indicates the collective degree of freedom, and the comma indicates the partial derivative $(f^1_{,\alpha}=\partial f^1/\partial \xi^{\alpha})$. The canonical coordinates fulfill the canonicity
+\begin{align}
+  f^1_{,\alpha}g_{,1}^{\beta} = \delta^{\beta}_{\alpha}, \quad f^1_{,\alpha}g_{,1}^{\alpha} = 1.
+  \label{canonicity}
+\end{align}
 With these relations, collective potential $\bar{V}(q)$ and collective mass parameter $\bar{B}(q)$ can be transformed by
 \begin{align}
   \bar{V}(q) &= V(\xi) \\
@@ -170,15 +187,16 @@ where the affine connection is $\Gamma^{\alpha}_{\beta\gamma}=\frac{1}{2}B^{\alp
 \label{M}.
 \end{align}
 
-We discuss the practical solution to derive the one-dimensional collective coordinate. We neglect $f^{(1)1\alpha\beta}(\xi)$ because it is supposed to be negligibly small in the previous study. On the other hand, from (\ref{P_PB}) and (\ref{mfQRPA}), $f^{(1)I\alpha\beta}(\xi)$ is necessary information to promise $\tilde{B}^{\beta\gamma}V_{;\gamma\alpha}f^I_{,\beta}=0$, which means zero mode. In most of case, we know the explicit form of $\mathcal{P}(\xi,\pi)$. The procedures to obtain the collective path are (see Figure \ref{scc}): 
+We discuss the practical solution to derive the one-dimensional collective coordinate. We neglect $f^{(1)1\alpha\beta}(\xi)$ because it is supposed to be negligibly small in the previous study. On the other hand, from (\ref{P_PB}) and (\ref{mfQRPA}), $f^{(1)I\alpha\beta}(\xi)$ is necessary information to promise $\tilde{B}^{\beta\gamma}V_{;\gamma\alpha}f^I_{,\beta}=0$, which means zero mode. In most of case, we know the explicit form of $\mathcal{P}(\xi,\pi)$. The procedures to obtain the collective path are: 
 \begin{enumerate}
 \item Find the energy minimum point in energy surface by solving (\ref{mfHFB}) (normal HFB equation). We usually set $q^1=0$ at the energy minimum point.
-\item Using (\ref{M}), diagonalize (\ref{mfQRPA}) and choose the lowest mode basically\footnote{
-When eigenvalues cross on the collective path, the choice of adiabatic path or diabatic path is a critical problem}. 
+\item Using (\ref{M}), diagonalize (\ref{mfQRPA}) and choose the lowest mode basically.%\footnote{
+%When eigenvalues cross on the collective path, the choice of adiabatic path or diabatic path is a critical problem}. 
 \item The right eigenvector $g^{\alpha}_{,1}$ tell us the direction which system moves in energy surface. Use the relation $d\xi^{\alpha}=g^{\alpha}_{,1}dq^1$ to decide the neighborhood point $q^1\to q^1+dq^1$ in the collective path. 
-\item Find the non-equilibrium energy minimum point by solving (\ref{mfHFB}) at the neighborhood point, and obtain the chemical potential $\lambda_I(q)$. 
-\item Iterate (2)$\sim$(4) under the same direction in energy surface. 
-\item Do (2)$\sim$(5) for the opposite direction of the collective path in energy surface. 
+\item Using $f^1_{,\alpha}$, find the non-equilibrium energy minimum point by solving (\ref{mfHFB}) at the neighborhood point. We usually use the constraint condition $dq=f^1_{,\alpha}(\xi^{\alpha}(q)-\xi^{\alpha}(q-dq))$ from the canonicity (\ref{canonicity}). After convergence, we diagonalize (\ref{mfQRPA}) and obtain the corrected $f^1_{,\alpha}$.
+\item Iterate (4) until the convergence of $f^1_{,\alpha}$.  
+\item Iterate (2)$\sim$(5) to decide the collective path under the same direction in the energy surface. 
+\item Implement (2)$\sim$(6) for the opposite direction of the collective path in energy surface. 
 \end{enumerate}
 The scale of the collective coordinate is not unique because of the uncertainty of the eigenvectors in (\ref{mfQRPA}). To unify the scale, the simplest procedure is to keep the collective mass parameter $\bar{B}^{-1}(q)=1$ by renormalizing eigenvectors in (\ref{coll_mass}). 
 
@@ -235,7 +253,11 @@ The procedures to obtain excited states from SPA via ASCC are:
 \item Using (\ref{SPA}), obtain $k$-th excited state.
 \end{enumerate}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Application in pairing model}
+\label{sec3}
+
 We study the low-lying excited $0^+$ states in multi-level pairing model by applying SPA via ASCC. 
 The Hamiltonian of the pairing model is given in terms of
 single-particle energies $\epsilon_l$ and the pairing strength $g$ as
@@ -441,7 +463,10 @@ The definition of wave function in SPA can also be extended into ground state. T
 \end{align}
 which is identical to the wave function of the particle number projection for HFB state.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Results}
+\label{sec4}
 We apply ASCC+SPA to study the multi-level system in pairing model. The TDHFB degrees of freedom equals the number of single particle levels, including the constant of motion (pairing rotation). We consider various systems, two-level system, three-level system, and Pb isotope system in each subsection respectively. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
 
 
@@ -645,15 +670,30 @@ Fig. \ref{192Pb_gap} shows the pairing gap of $\Delta$ in ${}^{192}$Pb as a func
  \label{192Pb_gap}
 \end{figure}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusion and discussion}
+\label{sec5}
 Based on our previous work which demonstrated the accuracy of SPA for the requantization of TDHFB dynamics, we considered the application of SPA to non-integrable system. The one of the possible way to extend SPA into non-integrable system is to combine with ASCC. We constructed the theoretical framework of ASCC+SPA for bound states, which is bound in the collective potential from ASCC. 
 %Besides the collective Hamiltonian, $Q$ operator at each point of collective path is also necessary input information.
 
 We applied ASCC+SPA into multi-level pairing model. Because the global gauge angle $\Phi$ is a cyclic variable, the simplest non-integrable system is three level system. We investigated three level system and more realistic system, neutron's single-particle levels from Pb isotope. In both cases, the low-lying excited $0^+$ states from ASCC+SPA reproduce exact solution well not only for excitation energies but also for wave functions. In ASCC+SPA, the pair transition calculation has no difficulty because we don't need to requantize the pair transition operators. This point overcomes the disadvantage in canonical requantization.
 
-While the basic theoretical framework of ASCC+SPA was constructed, there are several problems remaining. Up to now, ASCC+SPA is only available when the excited states are bound in the pocket of collective potential (See Fig. \ref{potential} and \ref{Pb_potential}). For example, we cannot calculate $\ket{0_2^+}$ in ${}^{186}$Pb because the potential is too shallow to bound the excited state. The difficulty for the application to the unbound states is that the wave function from SPA is not stationary state because the classical trajectory in phase space is not periodic. It is necessary to find some proper boundary conditions in the collective subspace. Another problem is about the crossing of the eigenvalues from moving-frame QRPA equation in the collective path. No problem occurs when two completely orthogonal modes crossing, such as rotational mode and vibrational mode (e.g. N=14,16,18,20 in Fig. \ref{omega_sq}). However, if two vibrational modes not orthogonal with each other become the same eigenvalues, the ASCC calculation stops. Actually, the two eigenvalues become complex conjugate values and the next mesh point of collective path cannot be decided properly. Such case is occurred in ${}^{196}$Pb. The eigenvalues crossing problem supposed to be the rare case because ${}^{196}$Pb system is the only case including the previous studies about the application of ASCC \cite{}.
+While the basic theoretical framework of ASCC+SPA was constructed, there are several problems remaining. Up to now, ASCC+SPA is only available when the excited states are bound in the pocket of collective potential (See Fig. \ref{potential} and \ref{Pb_potential}). For example, we cannot calculate $\ket{0_2^+}$ in ${}^{186}$Pb because the potential is too shallow to bound the excited state. The difficulty for the application to the unbound states is that the wave function from SPA is not stationary state because the classical trajectory in phase space is not periodic. It is necessary to find some proper boundary conditions in the collective subspace. The second problem is about the crossing of the eigenvalues from moving-frame QRPA equation in the collective path. No problem occurs when two completely orthogonal modes crossing, such as rotational mode and vibrational mode (e.g. N=14,16,18,20 in Fig. \ref{omega_sq}). However, if two vibrational modes not orthogonal with each other become the same eigenvalues, the ASCC calculation stops. Actually, the two eigenvalues become complex conjugate values and the next mesh point of collective path cannot be decided properly. Such case is occurred in ${}^{196}$Pb. The eigenvalues crossing problem supposed to be the rare case because ${}^{196}$Pb system is the only case including the previous studies about the application of ASCC. In addition, we need to consider the multi energy minimum pockets in the collective potential \cite{HNMM07, HNMM08}. Such case doesn't appear in pairing model. When the excitation energy is below the multi minimum pocket, the EBK quantization condition is not unique. With these problems, the theoretical framework of ASCC+SPA need to be developed in the next step.
 
+\begin{acknowledgments}
+This work is supported in part
+by Interdisciplinary Computational Science Program in CCS,
+University of Tsukuba,
+and
+by JSPS-NSFC Bilateral Program for Joint Research Project
+on Nuclear mass and life for unravelling mysteries of r-process.
+%and by ImPACT Program of Council for Science,
+%Technology and Innovation (Cabinet Office, Government of Japan).
+\end{acknowledgments}
+
+\bibliographystyle{apsrev4-1}
+\bibliography{ref}
 
 \end{document}
 

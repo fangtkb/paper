@@ -1,0 +1,125 @@
+%merlin.mbs apsrev4-1.bst 2010-07-25 4.21a (PWD, AO, DPC) hacked
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{8}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{http://dx.doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Fang}\ and\ \citenamefont {Takashi}(2018)}]{NN18}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Fang}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Takashi}},\
+  }\href {\doibase 10.1103/PhysRevC.97.044310} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. C}\ }\textbf {\bibinfo {volume} {97}},\ \bibinfo
+  {pages} {044310} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Marumori}\ \emph {et~al.}(1980)\citenamefont
+  {Marumori}, \citenamefont {Maskawa}, \citenamefont {Sakata},\ and\
+  \citenamefont {Kuriyama}}]{MMSK80}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Marumori}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont {Maskawa}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Sakata}}, \ and\ \bibinfo
+  {author} {\bibfnamefont {A.}~\bibnamefont {Kuriyama}},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {Prog. Theor. Phys.}\ }\textbf
+  {\bibinfo {volume} {64}},\ \bibinfo {pages} {1294} (\bibinfo {year}
+  {1980})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Masato}\ \emph {et~al.}(2005)\citenamefont {Masato},
+  \citenamefont {Takashi}, \citenamefont {Masayuki},\ and\ \citenamefont
+  {Kenichi}}]{KNMM05}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Masato}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Takashi}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Masayuki}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kenichi}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Prog. Theor. Phys.}\ }\textbf
+  {\bibinfo {volume} {113}},\ \bibinfo {pages} {129} (\bibinfo {year}
+  {2005})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nobuo}\ \emph {et~al.}(2007)\citenamefont {Nobuo},
+  \citenamefont {Takashi}, \citenamefont {Masayuki},\ and\ \citenamefont
+  {Kenichi}}]{HNMM07}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Nobuo}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Takashi}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Masayuki}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kenichi}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Prog. Theor. Phys.}\ }\textbf
+  {\bibinfo {volume} {117}},\ \bibinfo {pages} {451} (\bibinfo {year}
+  {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nobuo}\ \emph {et~al.}(2008)\citenamefont {Nobuo},
+  \citenamefont {Takashi}, \citenamefont {Masayuki},\ and\ \citenamefont
+  {Kenichi}}]{HNMM08}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Nobuo}}, \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Takashi}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Masayuki}}, \ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Kenichi}},\ }\href@noop
+  {} {\bibfield  {journal} {\bibinfo  {journal} {Prog. Theor. Phys.}\ }\textbf
+  {\bibinfo {volume} {119}} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Richardson}(1963)}]{Richardson}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Phys. Lett.}\ }\textbf {\bibinfo {volume} {3}},\ \bibinfo {pages} {277}
+  (\bibinfo {year} {1963})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Richardson}\ and\ \citenamefont
+  {Sherman}(1964{\natexlab{a}})}]{Richardson2}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Sherman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl.
+  Phys.}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {221} (\bibinfo
+  {year} {1964}{\natexlab{a}})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Richardson}\ and\ \citenamefont
+  {Sherman}(1964{\natexlab{b}})}]{Richardson3}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~W.}\ \bibnamefont
+  {Richardson}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Sherman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Nucl.
+  Phys.}\ }\textbf {\bibinfo {volume} {52}},\ \bibinfo {pages} {353} (\bibinfo
+  {year} {1964}{\natexlab{b}})}\BibitemShut {NoStop}%
+\end{thebibliography}%
