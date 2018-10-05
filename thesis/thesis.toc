@@ -1,5 +1,5 @@
 \contentsline {chapter}{\numberline {1}Introduction}{5}
-\contentsline {section}{\numberline {1.1}First section}{5}
+\contentsline {section}{\numberline {1.1}Pairing interaction in nuclei}{5}
 \contentsline {subsection}{\numberline {1.1.1}A subsection}{5}
 \contentsline {chapter}{\numberline {2}Pairing model}{7}
 \contentsline {section}{\numberline {2.1}Exact solution}{7}
