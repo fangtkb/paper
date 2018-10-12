@@ -94,13 +94,13 @@ To describe the large amplitude collective motion in nuclear pairing, stationary
 
 \section{Introduction}
 %pairing in nuclei
-Pairing correlation plays an important role around the surface in open-shell nuclei. The properties of pairing for the ground states are well known such as odd-even mass difference, moment of inertia of rotational bands, and the quantum numbers for spin and parity. The elementary excitations of pairing, pairing vibrations and pairing rotations, are fascinating phenomena not only for open-shell nuclei, but also for closed-shell nuclei. However, the pairing dynamics still has unclear features in low-energy region (a few MeV excitation) of nuclei, especially for excited $J^{\pi}=0^+$ states. We aim to understand the dynamics from pairing correlation in nuclei from microscopic many-body theory.\par
+Pairing correlation plays an important role around the surface in open-shell nuclei. The properties of pairing for the ground states are well known such as odd-even mass difference, moment of inertia of rotational bands, and the quantum numbers for spin and parity \cite{RS80}. The elementary excitations of pairing, pairing vibrations and pairing rotations, are fascinating phenomena not only for open-shell nuclei, but also for closed-shell nuclei \cite{BB05}. However, the pairing dynamics still has unclear features in low-energy region (a few MeV excitation) of nuclei, especially for excited $J^{\pi}=0^+$ states \cite{HW11, G01}. We aim to understand the dynamics from pairing correlation in nuclei from microscopic many-body theory.\par
 %TDMF theory for pairing
-Time-dependent mean-field (TDMF) theory is the common theory to describe the dynamics of nuclei from the microscopic degrees of freedom. Including pairing correlation, time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory, corresponding to TDMF theory, is utilized for plenty of studies for both nuclear reaction and nuclear structure fields. In nuclear structure aspect, the harmonic approximation of TDHFB, quasiparticle random phase approximation (QRPA), can well describe the giant resonance of nuclei. Recently, the adiabatic approximations of TDHFB, such as adiabatic TDHFB (ATDHFB), adiabatic self-consistent collective coordinate method (ASCC), and 5D Bohr Hamiltonian constructed from microscopic degrees of freedom, is developed and start to be applied to low-lying excited states. They are expected to elucidate the large amplitude collective motions occurred in the structure, such as shape coexistence and anharmonic vibration. \par
+Time-dependent mean-field (TDMF) theory is the common theory to describe the dynamics of nuclei from the microscopic degrees of freedom. Including pairing correlation, time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory, corresponding to TDMF theory, is utilized for plenty of studies for both nuclear reaction and nuclear structure fields \cite{NMMY16}. In nuclear structure aspect, the harmonic approximation of TDHFB, quasiparticle random phase approximation (QRPA), can well describe the giant resonance of nuclei. Recently, the adiabatic approximations of TDHFB, such as adiabatic TDHFB (ATDHFB), adiabatic self-consistent collective coordinate method (ASCC), and 5D Bohr Hamiltonian constructed from microscopic degrees of freedom, is developed and start to be applied to low-lying excited states. They are expected to elucidate the large amplitude collective motions occurred in the structure, such as shape coexistence and anharmonic vibration. \par
 %previous work
-TDMF (TDHFB) theory corresponds to a stationary-limit in the path integral formulation. It lacks a part of the information about quantum fluctuation, which is remarkable in the large amplitude dynamics. To introduce the quantum fluctuation based on the TDHFB theory, the requantization process is necessary. The straightforward requantization method is canonical quantization. In 5D Bohr Hamiltonian, the canonical quantization was formulated and employed for the study of low-lying excited states in nuclei. In additional, it was also utilized to describe the large amplitude dynamics for pairing in pairing model. However, the Hilbert space which the wave function obtained from canonical quantization belongs to is quite different from the Hilbert space which the original wave function belongs to. It may cause the deviation for the requantized states. In our previous work, we studied the requantization of the TDHFB. We investigated the low-lying excited $0^+$ states in two-level pairing model by various requantization methods \cite{NN18}. Comparing with exact solution, we found that stationary phase approximation to the path integral (SPA) can give quantitatively results not only for the excitation energies, but also for the wave functions. We confirmed that SPA is superior to canonical requantization, especially for the calculation of two-particle transitional strength. The wave function obtained from SPA has two advantages: first, it is written in the (quasi)particle's degrees of freedom; second, it has good quantum number because the projection of the conservation quantities (e.g. total particle number, total angular momentum) are automatically contained. On the other hand, the disadvantage is that SPA only works in integrable systems. Due to the nuclear system is non-integrable system in general, we cannot employ SPA straightforward for the realistic system. \par
+TDMF (TDHFB) theory corresponds to a stationary-limit in the path integral formulation. It lacks a part of the information about quantum fluctuation, which is remarkable in the large amplitude dynamics. To introduce the quantum fluctuation based on the TDHFB theory, the requantization process is necessary \cite{Neg82, L80, LNP80, Rei80, KS80, K81}. The straightforward requantization method is canonical quantization. In 5D Bohr Hamiltonian, the canonical quantization was formulated and employed for the study of low-lying excited states in nuclei. In additional, it was also utilized to describe the large amplitude dynamics for pairing in pairing model \cite{BBPK70, GPBW85, ZPPRS99, P07}. However, the Hilbert space which the wave function obtained from canonical quantization belongs to is quite different from the Hilbert space which the original wave function belongs to. It may cause the deviation for the requantized states. In our previous work, we studied the requantization of the TDHFB. We investigated the low-lying excited $0^+$ states in two-level pairing model by various requantization methods \cite{NN18}. Comparing with exact solution, we found that stationary phase approximation to the path integral (SPA) \cite{SM88} can give quantitatively results not only for the excitation energies, but also for the wave functions. We confirmed that SPA is superior to canonical requantization, especially for the calculation of two-particle transitional strength. The wave function obtained from SPA has two advantages: first, it is written in the (quasi)particle's degrees of freedom; second, it has good quantum number because the projection of the conservation quantities (e.g. total particle number, total angular momentum) are automatically contained. On the other hand, the disadvantage is that SPA only works in integrable systems. Due to the nuclear system is non-integrable system in general, we cannot employ SPA straightforward for the realistic system. \par
 %this work
-We discuss the application of SPA for the non-integrable system in this paper. We know that the one-dimensional system is integrable system. It is desirable that a collective motion can be described by one collective coordinate. To obtain the one-dimensional subspace, adiabatic self-consistent collective coordinate method (ASCC) is powerful tool.
+We discuss the application of SPA for the non-integrable system in this paper. We know that the one-dimensional system is integrable system. It is desirable that a collective motion can be described by one collective coordinate. To obtain the one-dimensional subspace, adiabatic self-consistent collective coordinate method (ASCC) is powerful tool \cite{MNM00}.
 ``Adiabatic'' indicates that the collective motion is slow compared with the single-particle motion. The collective degree of freedom is determined self-consistently from the TDHFB degrees of freedom without any assumption. The ASCC, which was developed from the basic idea of self-consistent collective coordinate method (SCC) \cite{MMSK80}, is flexible to deal with various collective potential, such as shape coexistence \cite{KNMM05, HNMM07, HNMM08}. A state in the collective subspace corresponds to a microscopic state in TDHFB phase space connected by $Q$ and $P$ operators in ASCC. This correspondence make us possible to apply SPA to non-integrable system. We construct the theoretical framework of ASCC+SPA, which implements SPA to non-integrable system by combing with ASCC. The first study of ASCC+SPA give us a new landscape about the large-amplitude dynamics in low-energy region.
 
 %organization of paper
@@ -113,7 +113,7 @@ The paper is organized as follows. Sec. \ref{sec2} introduces the theoretical fr
 
 \subsection{One-dimensional adiabatic self-consistent collective coordinate method}
 \label{ASCC}
-To discuss the application of ASCC+SPA in the later subsection, we review the one-dimensional adiabatic self-consistent collective coordinate method (ASCC) briefly \cite{N2012}. The classical Hamilton's equation which is identical to the TDHFB equation is described by canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. If we apply the adiabatic approximation which assume that the collective motion is slow compared with the single-particle motion, we can  expand the momenta $\pi$ up to second order. The multi-dimensional Hamiltonian is
+To discuss the application of ASCC+SPA in the later subsection, we review the one-dimensional adiabatic self-consistent collective coordinate method (ASCC) briefly using the notation in Ref. \cite{N2012}. The classical Hamilton's equation which is identical to the TDHFB equation is described by canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. If we apply the adiabatic approximation which assume that the collective motion is slow compared with the single-particle motion, we can  expand the momenta $\pi$ up to second order. The multi-dimensional Hamiltonian is
 \begin{align}
   \mathcal{H} &= V(\xi) + \frac{1}{2}B^{\alpha\beta}(\xi)\pi_{\alpha}\pi_{\beta}
 \end{align}
@@ -351,23 +351,24 @@ and $j_l$ are related to the occupation number of each level, $2j_l=n_l$. Theref
 .
 
 \subsection{Application into ASCC}
-We construct 1D collective subspace from ASCC theory. Because the first order with respect to $\chi_l$ is zero in TDHFB Hamiltonian, we assume $j_l$ as coordinates and $\chi_l$ as conjugate momenta. The canonical variables are $(j_l,-\chi_l)$ and fulfill $\{j_l,-\chi_l'\}_{PB}=\delta_{ll'}$. We expand the classical Hamiltonian up to second order with respect to $\chi_l$. 
+In this subsection, we use ($\alpha, \beta, \cdots$) to describe the degrees of freedom instead of $l$ to synchronize the notation with in Sec. \ref{ASCC}. 
+We construct 1D collective subspace from ASCC theory. Because the first order with respect to $\chi_{\alpha}$ is zero in TDHFB Hamiltonian, we assume $j^{\alpha}$ as coordinates and $\chi_{\alpha}$ as conjugate momenta. The canonical variables are $(j^{\alpha},-\chi_{\alpha})$ and fulfill $\{j^{\alpha},-\chi_{\beta}\}_{PB}=\delta^{\alpha}_{\beta}$. We expand the classical Hamiltonian up to second order with respect to $\chi_{\alpha}$. 
 The classical Hamiltonian becomes
 \begin{align}
-  \mathcal{H}(\{\chi_l\},\{\pi_l\}) \approx& V(j) + \frac{1}{2}B^{\alpha\beta}(j)\chi_{\alpha}\chi_{\beta},
+  \mathcal{H}(j,\chi) \approx& V(j) + \frac{1}{2}B^{\alpha\beta}(j)\chi_{\alpha}\chi_{\beta},
 \end{align}
 where potential $V(j)$ and reciprocal mass parameter $B^{\alpha\beta}(j)$ are defined as
 \begin{align}
   V(j) =& \mathcal{H}(\chi=0,j) \nonumber \\
-	=& \sum_l 2\epsilon_lj_l - g\sum_l \left( \Omega_lj_l - j_l^2 +\frac{j_l^2}{\Omega_l} \right) \nonumber \\
-  &- g\sum_{l_1\ne l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-j_{l_1})(\Omega_{l_2}-j_{l_2})} 	
+	=& \sum_{\alpha} 2\epsilon_{\alpha}j^{\alpha} - g\sum_{\alpha} \left( \Omega_{\alpha}j^{\alpha} - (j^{\alpha})^2 +\frac{(j^{\alpha})^2}{\Omega_{\alpha}} \right) \nonumber \\
+  &- g\sum_{\alpha\ne \beta} \sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})} 	
 \end{align}
 \begin{align}
   B^{\alpha\beta}(j) =& \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \nonumber \\
 	=& \left\{
 	\begin{array}{c}
-	2g\sum_{l\ne \alpha} \sqrt{j_{l}j_{\alpha}(\Omega_{l}-j_{l})(\Omega_{\alpha}-j_{\alpha})} \hspace{2em} (\alpha=\beta) \\
-	-2g\sqrt{j_{\alpha}j_{\beta}(\Omega_{\alpha}-j_{\alpha})(\Omega_{\beta}-j_{\beta})} \hspace{2em} (\alpha\ne\beta)
+	2g\sum_{\gamma\ne \alpha} \sqrt{j^{\gamma}j^{\alpha}(\Omega_{\gamma}-j^{\gamma})(\Omega_{\alpha}-j^{\alpha})} \hspace{2em} (\alpha=\beta) \\
+	-2g\sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})} \hspace{2em} (\alpha\ne\beta)
 	\end{array}
 	\right. .
  \label{mass}
@@ -376,12 +377,12 @@ Using the TDHFB Hamiltonian, we can apply ASCC explained in Sec. \ref{ASCC} by r
 
 We consider the treatment for the constant of motion in pairing model. In the TDHFB Hamiltonian, there is no dependence about the total gauge angle
 \begin{align}
-  \Phi = \frac{1}{L}\sum_l \chi_l.
+  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha}.
   \label{total_gauge}
 \end{align}
 It indicates the conjugate momentum 
 \begin{align}
-  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_l j_l = \frac{N}{2}
+  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_{\alpha} j^{\alpha} = \frac{N}{2}
   \label{J}
 \end{align}
 is conserved quantity. From this equation, we can find $J$ is not dependent of $\chi$, which means $f^{(1)I\alpha\beta}$ in (\ref{P}) is zero. Therefore, $B^{\beta\gamma}V_{;\gamma\alpha}f^I_{,\beta}=0$ is promised exactly. Also, the second derivative of $J$ with respect to $j$ vanishes, which indicates $f^{I}_{,\gamma\beta}$ in (\ref{M}) is zero. It indicates the chemical potential $\lambda_I(q)$ is not necessary information to calculate the matrix element in moving-frame QRPA equation.
@@ -392,9 +393,9 @@ With the properties of the constant of motion, we discuss the practical solution
   B^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1},
   \label{LHE}
 \end{align}
-which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), the eigenvalue of spurious mode corresponding pairing rotation is exact zero. To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_l f^1_{,l}=0$, we correct the eigenvectors by
+which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), the eigenvalue of spurious mode corresponding pairing rotation is exact zero. To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_{\alpha} f^1_{,\alpha}=0$, we correct the eigenvectors by
 \begin{align}
-  f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_l f^1_{,l} 
+  f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_{\beta} f^1_{,\beta} 
   \label{f}
 \end{align}
 after solving (\ref{LHE}) at each point of $q$.
