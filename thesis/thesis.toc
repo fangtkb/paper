@@ -6,22 +6,24 @@
 \contentsline {subsection}{\numberline {2.1.1}Diagonalization in quasispin space}{8}
 \contentsline {subsection}{\numberline {2.1.2}Richardson equation}{8}
 \contentsline {section}{\numberline {2.2}TDHFB dynamics}{9}
-\contentsline {chapter}{\numberline {3}Requantization of TDHFB in integrable system}{11}
-\contentsline {section}{\numberline {3.1}TDHFB dynamics in two-level system}{11}
-\contentsline {section}{\numberline {3.2}Requantization methods}{11}
-\contentsline {subsection}{\numberline {3.2.1}Canonical quantization}{11}
-\contentsline {subsection}{\numberline {3.2.2}Fourier decomposition}{11}
-\contentsline {subsection}{\numberline {3.2.3}Stationary phase to the path integral}{11}
-\contentsline {section}{\numberline {3.3}Result}{11}
-\contentsline {section}{\numberline {3.4}Collective model treatment}{11}
-\contentsline {chapter}{\numberline {4}Requantization of TDHFB in non-integrable system}{13}
-\contentsline {section}{\numberline {4.1}Derivation of the collective subspace in adiabatic self-consistent collective coordinate method}{13}
-\contentsline {section}{\numberline {4.2}Application of SPA in non-integrable system}{13}
-\contentsline {section}{\numberline {4.3}Result}{13}
-\contentsline {chapter}{\numberline {5}Discussion}{15}
-\contentsline {chapter}{\numberline {6}Conclusion}{17}
-\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{19}
-\contentsline {section}{\numberline {A.1}Properties of the spin-coherent state}{19}
-\contentsline {section}{\numberline {A.2}Derivation of the path integral in spin-coherent state}{21}
-\contentsline {section}{\numberline {A.3}Action in canonical coordinates representation}{22}
-\contentsline {chapter}{Bibliography}{23}
+\contentsline {subsection}{\numberline {2.2.1}Hamilton's equation}{9}
+\contentsline {subsection}{\numberline {2.2.2}Constant of motion}{10}
+\contentsline {chapter}{\numberline {3}Requantization of TDHFB in integrable system}{13}
+\contentsline {section}{\numberline {3.1}TDHFB dynamics in two-level system}{13}
+\contentsline {section}{\numberline {3.2}Requantization methods}{14}
+\contentsline {subsection}{\numberline {3.2.1}Canonical quantization}{14}
+\contentsline {subsection}{\numberline {3.2.2}Fourier decomposition}{14}
+\contentsline {subsection}{\numberline {3.2.3}Stationary phase to the path integral}{14}
+\contentsline {section}{\numberline {3.3}Result}{14}
+\contentsline {section}{\numberline {3.4}Collective model treatment}{14}
+\contentsline {chapter}{\numberline {4}Requantization of TDHFB in non-integrable system}{15}
+\contentsline {section}{\numberline {4.1}Derivation of the collective subspace in adiabatic self-consistent collective coordinate method}{15}
+\contentsline {section}{\numberline {4.2}Application of SPA in non-integrable system}{15}
+\contentsline {section}{\numberline {4.3}Result}{15}
+\contentsline {chapter}{\numberline {5}Discussion}{17}
+\contentsline {chapter}{\numberline {6}Conclusion}{19}
+\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{21}
+\contentsline {section}{\numberline {A.1}Properties of the spin-coherent state}{21}
+\contentsline {section}{\numberline {A.2}Derivation of the path integral in spin-coherent state}{24}
+\contentsline {section}{\numberline {A.3}Action in canonical variables representation}{25}
+\contentsline {chapter}{Bibliography}{27}

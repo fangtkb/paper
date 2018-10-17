@@ -57,7 +57,8 @@
 
 %%% The "real" document content comes below...
 
-\title{Thesis}
+\title{Requantization of time-dependent mean field
+ for pairing collective motion in superfluid nuclei}
 \author{Fang Ni}
 %\date{} % Activate to display a given date or no date (if empty),
          % otherwise the current date is printed 
@@ -103,6 +104,7 @@ and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$ and $\Omega_l-
 In one-level system ($L=1$), the pairing dynamics is well understood. The analytic solution of the total energy is
 \begin{align}
 	E_{\nu}(N) = \epsilon N - \frac{1}{4}g(N-\nu)(2\Omega-N-\nu+2) .
+	\label{onelevel}
 \end{align}
 The pairing rotational band created by the pairing correlation is completely parabolic with the moment of inertia $2/g$. Also, the excited states in a specified $N$ is only described by the quantum number $\nu$. For example, the first excited state in even particle system is $\nu=2$ state, which correspond to one $J^{\pi}=0^+$ pair broken state.\par
 The profound dynamics occurs in multi-level pairing model ($L\ge 2$). The pairing rotational mode becomes complex due to the shell effect. In addition, several pairing vibrational modes emerge. The pairing vibration is not single particle motion specified by $\nu_l$, but a collective motion with the excitation of $J^{\pi}=0^+$ pairs. In this chapter, we explain the numerical exact solution and derive the TDHFB dynamics in multi-level pairing Hamiltonian.
@@ -119,7 +121,7 @@ We introduce SU(2) quasispin operators fulfilling the follows commutation relati
 If we set 
 \begin{align}
   S_l^0 &= \frac{1}{2}(\sum_ma_{lm}^{\dag}a_{lm}-\Omega_l)
-  \label{S0}
+  \label{S_0}
 \end{align}
 and $S_l^+, S_l^-$ are the same as in (\ref{S_+}), the commutation relation (\ref{SU2commu}) is fulfilled. Using quasispin operators, the Hamiltonian can be represented by quasispin operators
 \begin{align}
@@ -169,20 +171,111 @@ where $\ket{\phi(t)}$ is the time-dependent generalized Slater determinant (cohe
   \ket{\phi(t)} = \mathcal{R}\exp{\left( \sum_{k<k'}Z_{kk'}(t)\beta_k^{\dag}\beta_{k'}^{\dag}
     \right)}\ket{\Phi_0} .
 \end{equation}
-$\beta_k^{\dag}$ is quasiparticle creation operator and $\mathcal{R}$ is normalization factor. $\ket{\Phi_0}$ is generally chosen as ground state or vacuum state. $Z_{kk'}(t)$ is time-dependent complex number determined by TDHFB equation.\par
+$\beta_k^{\dag}$ is quasiparticle creation operator and $\mathcal{R}$ is normalization factor. $\ket{\Phi_0}$ is generally chosen as ground state or vacuum state. $Z_{kk'}(t)$ is time-dependent complex number determined by TDHFB equation.
+
+\subsection{Hamilton's equation}
 We derive the TDHFB equation in pairing model. First, we consider the time-dependent coherent state. Because the noticeable phenomenon is the dynamics for $J^{\pi}=0^+$ pairs in pairing model, we can describe the time-dependent coherent state in SU(2) quasispin space. Using Thouless' theorem, the time-dependent coherent state becomes
 \begin{equation}
 	\ket{Z(t)} = \prod_{l} \left(1+|Z_l(t)|^2\right)^{-S_l}
 	\exp [Z_l(t) S_l^{+}] \ket{0} .
  \label{coherent}
 \end{equation}
-Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In the quasispin representation, $\ket{0}=\prod_l \ket{S_l,-S_l}$.
+Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In the quasispin representation, $\ket{0}=\prod_l \ket{S_l,-S_l}$. The coherent state is the extension of BCS trail wave function, which consists of the superposition of different particle number states. $Z_l$ are complex numbers. $|Z_l|=0$ corresponds to empty occupation and $|Z_l|=\infty$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.\par
+ With the transformation $Z_l = \tan{\frac{\theta_l}{2}}e^{-i\chi_l}$ ($0\leq\theta\leq\pi$, $0\leq\chi<2\pi$), the Lagrangian and the expectation value of Hamiltonian become
+\begin{align}
+	\mathcal{L}(t) =& \braket{Z(t)|i\hbar\frac{\partial}{\partial t}-H|Z(t)}
+	=\sum_l j_l\dot{\chi_l} - \mathcal{H}(\chi,j) ,\\
+	\mathcal{H}(\chi,j) \equiv& \braket{Z(t)|H|Z(t)} \nonumber \\
+	=& \sum_l \epsilon_l\nu_l + \sum_l 2\epsilon_lj_l - g\sum_l \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	&- 2g\sum_{l_1<l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-\nu_{l_1}-j_{l_1})(\Omega_{l_2}-\nu_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   ,
+	\label{Hamiltonian}
+\end{align}
+where $\chi_l$ are the canonical coordinates and $j_l$ are the conjugate momenta defined in
+\begin{align}
+  j_l\equiv \frac{\partial\mathcal{L}}{\partial\dot{\chi}_l}=S_l(1-\cos{\theta}_l) .
+  \label{momenta}
+\end{align}
+The detailed derivations are written in Appendix \ref{derivation}. The canonical variables $(\chi,j)$ have clear physical meaning. $\chi_l$ represent a kind of gauge angle of each level, and $j_l$ correspond to the occupation number of each level
+\begin{align}
+  \braket{Z|n_l|Z} = \nu_l + 2j_l .
+  \label{occ}
+\end{align}
+From (\ref{momenta}), we can find that $0\le j_l\le 2S_l$, where $j_l=0$ corresponds to empty occupation and $j_l=2S_l$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.
+Using canonical variables, the TDHFB equations attribute to the Hamilton's equations
+\begin{equation}
+	\dot{\chi_l} = \frac{\partial\mathcal{H}}{\partial j_l}, \quad
+	\dot{j_l} = -\frac{\partial\mathcal{H}}{\partial \chi_l} .
+\end{equation}
 
+\subsection{Constant of motion}
+\label{constant}
+The number of the TDHFB degrees of freedom is same as the number of the single-particle levels. However, because the Hamiltonian depends only on the relative difference in the gauge angles, the global gauge angle 
+\begin{align}
+	\Phi = \frac{1}{L}\sum_l \chi_l
+\end{align}
+is a cyclic variable. With the definition for relative gauge angle (e.g. $\phi_l = \chi_l-\chi_1$), we can find that the conjugate momentum of $\Phi$ is the sum of $j_l$
+\begin{align}
+	J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} = \sum_l j_l .
+\end{align}
+From (\ref{occ}), $J$ is related to the total particle number
+\begin{align}
+	N = \sum_l \nu_l + 2J .
+\end{align}
+The Hamilton's equation for $J$
+\begin{align}
+	\dot{J} = -\frac{\partial\mathcal{H}}{\partial \dot{\Phi}} = 0, \quad J = {\rm const}
+\end{align}
+indicates that the total particle number is conserved in time evolution.
+The canonical variable $(\Phi,J)$ describes the pairing rotation. The pairing rotational band emerges in the particle number chain ($\cdots,N-2,N,N+2,\cdots$). The last term in (\ref{Hamiltonian}) contains the higher order terms with respect to $N$. It related to the shell effect. In single-level system, the last term in (\ref{Hamiltonian}) disappears and (\ref{Hamiltonian}) attributes to (\ref{onelevel}). The pairing rotational band is exactly parabolic. In multi-level system, the coupling constant $g$ and single-particle energy $\epsilon_l$ affects significantly to the last term in (\ref{Hamiltonian}). The parabolic structure can be broken when the shell effect is strong. 
 
+In the analysis of TDHFB classical Hamiltonian, we can decouple the pairing rotational mode. The degrees of freedom is $L-1$ in $L$ level system. Therefore, the dynamics is integrable for $L=2$ and non-integrable for $L\le 3$ in multi-level pairing model. We discuss the integrable system and non-integrable system in Chapter \ref{integrable} and \ref{non-integrable}, respectively. 
 
 \chapter{Requantization of TDHFB in integrable system}
+\label{integrable}
+As discussed in Sec. \ref{constant}, the TDHFB dynamics in two-level system is one-dimensional motion. We know that one-dimensional system must be integrable system. 
+There are two new discoveries obtained from the study of the integrable system. First, the requantization method, stationary phase approximation to the path integral, can be applied straightforward to describe the collective excited $0^+$ states. We find that SPA is superior to the other requantization methods, especially for the calculation of two-particle transition strength. Second, the collective coordinates are explicit in integrable system. Using the explicit collective coordinates, we can examine the performance of the collective model which assumes the pairing gap parameter as the collective coordinate. The conclusion is the pairing gap parameter can only describe a part of collective space, and the applicability of the collective model is limited.
 
 \section{TDHFB dynamics in two-level system}
+To describe the one-dimensional motion, we use the global gauge angle $\Phi$ and the relative gauge angle $\phi$ as canonical coordinates
+\begin{align}
+  \Phi &\equiv \frac{\chi_1 + \chi_2}{2}, \quad\quad
+  \phi\equiv \chi_2 - \chi_1.
+\label{phi}
+\end{align}
+These ranges are $0\leq \Phi \leq 2\pi$ and $-2\pi \leq \phi \leq 2\pi$. 
+Their conjugate momenta $(J,j)$ are given by
+\begin{align}
+	J = \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} =  \sum_{l=1}^2 j_l, 
+ \quad\quad
+j = \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \frac{j_2 - j_1}{2}.
+	\label{pi}
+\end{align}
+As in (\ref{occ}), $j$ corresponds to relative occupation number
+\begin{align}
+  j = \frac{\nu_{2}-\nu_{1}}{2} + \frac{n_{2}-n_{1}}{4}
+\end{align}
+The Hamiltonian in terms of these canonical variables
+$(\phi,j;\Phi,J)$ is given by
+\begin{align}
+	\mathcal{H}(\phi,j;J)
+	=& \sum_{l=1,2} \epsilon_l\nu_l + \sum_{l=1,2} 2\epsilon_lj_l - g\sum_{l=1,2} \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	&- 2g\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})}\cos{\phi} , 
+\label{Hamiltonian2}
+\end{align}
+with 
+\begin{align}
+	j_1 = \frac{J}{2} - j, \quad\quad j_2 = \frac{J}{2} + j .
+\end{align}
+Because $J$ and the total energy $E$ constants of motion, the TDHFB trajectories with given $J$ and $E$ are determined
+in the two-dimensional phase space $(\phi,j)$ with the condition
+\begin{equation}
+  \mathcal{H}(\phi(t),j(t);J) = E.
+\end{equation}
+
+For convenience, we also define a dimensionless coupling constant in two-level system
+\begin{align}
+	x = \frac{\epsilon_2 - \epsilon_1}{2\Omega}
+\end{align}.
 
 \section{Requantization methods}
 \subsection{Canonical quantization}
@@ -196,6 +289,8 @@ Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In
 \section{Collective model treatment} 
 
 \chapter{Requantization of TDHFB in non-integrable system}
+\label{non-integrable}
+
 
 \section{Derivation of the collective subspace in adiabatic self-consistent collective coordinate method}
 
@@ -211,9 +306,11 @@ Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In
 
 
 \chapter{Detailed derivation of the action in pairing model}
+\label{derivation}
 To obtain the TDHFB dynamics in pairing model, We need to derive the action $\mathcal{S}$ in explicit form. We give the detailed derivation in this chapter.
 
 \section{Properties of the spin-coherent state}
+\label{formula}
 The time-dependent coherent state classified into the spin-coherent state is employed in (\ref{coherent}). We derive the necessary formula for the spin-coherent state in this subsection. \par
 First, we consider the single-level case.
 With the commutation relation in (\ref{SU2commu}), the SU(2) quasispin operators fulfill the following relations
@@ -291,6 +388,13 @@ From the second line to the third line, we need to calculate the term $\sum_{n=0
   |Z|^2\frac{\partial}{\partial |Z|^2}|Z|^2\frac{\partial}{\partial |Z|^2}
   (1+|Z|^2)^{2S} &= \sum_{n=0}^{2S}n^2{}_{2S}\mathrm{C}_n|Z|^{2n} .
 \end{align}
+When $Z$ is time-dependent, the expectation value of $\frac{\partial}{\partial t}$ is also important quantity.
+\begin{align}
+   \braket{Z|\frac{\partial}{\partial t}|Z} &= \braket{Z|\dot{Z}\frac{\partial}{\partial Z}+\dot{Z}^*\frac{\partial}{\partial Z^*}|Z} \nonumber \\
+   &= -\frac{S}{1+|Z|^2}(Z^*\dot{Z}+Z\dot{Z^*}) + \dot{Z}\braket{Z|\hat{S}^+|Z} \nonumber \\
+   &= \frac{S}{1+|Z|^2}(Z^*\dot{Z}-Z\dot{Z^*})
+\end{align}
+From the second line to the third line, we used (\ref{S+}).
 
 Next, we consider the multi-level case. For one-body operators, the extension from the single-level case is simple because we only sum over the index $l$ for the single-particle levels. For two-body operators, we need to give the new derivations basically. For the expectation value of $\hat{S}^+\hat{S}^-$,
 \begin{align}
@@ -341,6 +445,11 @@ We conclude the useful formula for the spin-coherent state as follows.
     \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_l 2S_l|Z_l|^2\frac{2S_l+|Z_l|^2}{(1+|Z_l|^2)^2}
     + \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2}
 \end{equation}
+ \item Expectation value of $\frac{\partial}{\partial t}$
+\begin{equation}
+       \braket{Z|\frac{\partial}{\partial t}|Z} = \sum_l \frac{S_l}{1+|Z_l|^2}(Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*})
+	\label{ddt}
+\end{equation}
 \end{itemize}
 \end{framed}
 
@@ -384,15 +493,43 @@ Therefore, the propagator is written in path integral formulation
     \mathcal{S} &= \int dt \left\{ \frac{i\hbar S}{1+|Z|^2}(Z^*\dot{Z}-Z\dot{Z^*})
     -\braket{Z|H|Z} \right\}
 \end{align}
+Of course, the action $\mathcal{S}$ is identical to the definition
+\begin{align}
+  \mathcal{S} = \int dt \braket{Z|i\hbar\frac{\partial}{\partial t}-H|Z} .
+\end{align}
+It can be easily checked by using (\ref{ddt}).
 
 The extension to the multi-level system is straightforward. The action $\mathcal{S}$ becomes
 \begin{equation}
-  \mathcal{S} = \int dt \left\{ i\hbar \sum_l \frac{S_l}{1+|Z_l|^2}
-  (Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*}) - \braket{{\bf Z}|H|{\bf Z}} \right\} .
+  \mathcal{S} = \int \mathcal{L}(t) dt, \quad 
+  \mathcal{L}(t) =i\hbar \sum_l \frac{S_l}{1+|Z_l|^2}
+  (Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*}) - \braket{Z|H|Z}
 \end{equation}
 
-\section{Action in canonical coordinates representation}
-
+\section{Action in canonical variables representation}
+We derived the action in the previous section. Using the formula in Sec. \ref{formula}, the expectation value of pairing Hamiltonian is
+\begin{align}
+  \braket{Z|H|Z} =& \sum_l \epsilon_l \left\{ 2S_l\left( 1-\frac{2}{1+|Z_l|^2} \right) + \Omega_l \right\} \nonumber \\
+   &- g\sum_l 2S_l|Z_l|^2\frac{2S_l+|Z_l|^2}{(1+|Z_l|^2)^2}
+    + \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2} .
+\end{align}
+To obtain more tractable form of the action, we transform the complex variables $Z_l$ into real variables $(\theta_l,\chi_l)$
+by $Z_l = \tan{\frac{\theta_l}{2}}e^{-i\chi_l}$ ($0\leq\theta\leq\pi$, $0\leq\chi<2\pi$). The Lagrangian becomes
+\begin{align}
+\mathcal{L}(t) = \sum_l S_l
+	(1-\cos{\theta_l})\dot{\chi_l} - \braket{Z|H|Z} .
+\end{align}
+If we choose the $\chi_l$ as canonical coordinates, the conjugate momenta $j_l$ are given by
+\begin{align}
+  j_l\equiv \frac{\partial\mathcal{L}}{\partial\dot{\chi}_l}=S_l(1-\cos{\theta}_l) .
+\end{align}
+Therefore, the Lagrangian in canonical variables representation becomes
+\begin{align}
+	\mathcal{L}(t) =& \sum_l j_l\dot{\chi_l} - \mathcal{H}(\chi,j) ,\\
+	\mathcal{H}(\chi,j) \equiv& \braket{Z|H|Z} \nonumber \\
+	=& \sum_l \epsilon_l\nu_l + \sum_l 2\epsilon_lj_l - g\sum_l \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	&- g\sum_{l_1\le l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-\nu_{l_1}-j_{l_1})(\Omega_{l_2}-\nu_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   .
+\end{align}
 
 \bibliographystyle{plain}
 \bibliography{ref}
