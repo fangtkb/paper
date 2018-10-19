@@ -241,7 +241,7 @@ The conclusion and future perspectives are given in Sec. \ref{sec5}.
 
 \subsection{Adiabatic self-consistent collective coordinate method and
 1D collective subspace}
-\label{ASCC}
+\label{sec:ASCC}
 %To discuss the application of ASCC+SPA in the later subsection, 
 In this section,
 we first recapitulate the ASCC method to find a 1D collective coordinate,
@@ -278,10 +278,11 @@ depend on $p_n$.
 On the other hand, the gauge angle $p_n$ changes in time,
 which corresponds to the pair rotation, a Nambu-Goldstone (NG) mode
 associated with the breaking of the gauge (particle-number) symmetry.
-We assume the existence of 2D collective subspace $\Sigma_2$,
-described by a set of canonical variable $(q^1,q^n;p_1,p_n)$,
+We assume the existence of 2D collective subspace $\Sigma_2$
+(4D phase space),
+described by a set of canonical variable $(q^1,q^2;p_1,p_2)$,
 which is well decoupled from the rest of degrees of freedom,
-$\{q^a,p_a\}$ with $a=2,\cdots$.
+$\{q^a,p_a\}$ with $a=3,\cdots$.
 The collective Hamiltonian is given by imposing $q^a=p_a=0$,
 namely by restricing the space into the collective subspace.
 \begin{equation}
@@ -319,7 +320,8 @@ and $\xi^\alpha$ on the subspace $\Sigma_2$ is given as
 $\xi^{\alpha} = g^{\alpha}(q^1,q_n,q^a=0)$.
 The momenta on $\Sigma_2$ are transformed as
 \begin{align}
-p_1 &= g_{,1}^{\alpha}\pi_{\alpha} , \quad p_n = g_{,n}^\alpha \pi_\alpha \\
+p_1 &= g_{,1}^{\alpha}\pi_{\alpha} , \quad p_n = g_{,n}^\alpha \pi_\alpha
+	\label{coll_momenta}\\
 \pi_{\alpha} &= f^1_{,\alpha}p_1 +f^n_{,\alpha}p_n,
  \label{momenta}
 \end{align}
@@ -374,7 +376,8 @@ $f^1_{,\alpha}(\xi)$ and $g_{,1}^{\alpha}(q)$.
 \mathcal{M}^\beta_\alpha g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1} .
   \label{mfQRPA}
 \end{align}
-The first equation (\ref{mfHFB}) is called moving-frame HFB equation.
+The first equation (\ref{mfHFB}) is called moving-frame
+Hartree-Fock-Bogoliubov (HFB) equation.
 The moving-frame Hamiltonian $\mathcal{H}_M$
 %with constraints on collective coordinate and constant of motion
 is
@@ -458,6 +461,7 @@ We fix this scale by an additional condition of $\bar{B}^{11}(q^1)=1$.
 
 
 \subsection{Stationary-phase approximation to the path integral}
+\label{sec:SPA}
 
 For quantization of integrable systems,
 we can apply the stationary phase approximation (SPA)
@@ -470,6 +474,9 @@ kthe SPA is applicable to it.
 In this manner, we may apply the ASCC+SPA to
 non-integrable systems in general.
 
+
+\subsubsection{Basic idea of ASCC+SPA}
+
 Since the Hamiltonian $\mathcal{H}_{\rm coll}$ of Eq.~(\ref{coll})
 is separable,
 it is easy to find periodic trajectories on invariant tori.
@@ -481,10 +488,11 @@ the Einstein-Brillouin-Keller (EBK) quantization rule
 with a unit of $\hbar=1$,
 \begin{equation}
 	\oint_{C_k} p_1dq^1 = 2\pi k ,
+	\label{EBK}
 \end{equation}
 where $k$ is an integer number.
 
-At each point in the 4D space $(q^1,q_n; p_1,p_n)$ corresponds to
+At each point in the space $(q^1,q_n; p_1,p_n)$ corresponds to
 a generalized Slater determinant
 $\ket{q^1,q^n;p_1,p_n}=\ket{\xi,\pi}$
 where $(\xi,\pi)$ are given as
@@ -500,13 +508,15 @@ of the Hamiltonian $\mathcal{H}_{\rm coll}$.
 	e^{i\mathcal{T}[q,p]} ,
 	\label{SPA}
 \end{equation}
-where $(q,p)$ means $(q^1,q^n;p_1, p_n)$ and a weight function
+where $(q,p)$ means $(q^1,q^n;p_1, p_n)$ and the weight function
 $\rho(q,p)$ is given through an invariant meaure $d\mu(q,p)$ as
 \begin{equation}
 d\mu(q,p)=\rho(q,p) dE dt dq^n dp_n .
 \end{equation}
 The invariant measure $d\mu(q,p)$ is defined by the unity condition
 $\int d\mu(q,p) \ket{q,p}\bra{q,p} = 1$.
+An explicit form of $d\mu(q,p)$ for the present pairing model is presented
+in Eq. (\ref{dmu}).
 The action integral $\mathcal{T}$ is defined by
 \begin{align}
 \mathcal{T}[q,p] &\equiv
@@ -515,191 +525,318 @@ The action integral $\mathcal{T}$ is defined by
 \label{tau}
 \end{align}
 
-We try to combine SPA with ASCC. The key point is to find the correspondence between TDHFB phase space and collective subspace in a TDHFB trajectory (See Fig. \ref{correspondence}). We consider the time-dependent state vector $\ket{Z(t)}$ is in a collective subspace. With pairing correlation, $\ket{Z(t)}$ can be expressed as
-\begin{align}
- \ket{Z(t)} &= \ket{\Phi,J;q,p} = e^{-i\Phi \hat{J}} \ket{J;q,p} ,
- \label{GCS}
-\end{align}
-where $\Phi$ is the total gauge angle and $J=N/2$ is the conjugate momentum corresponding total particle number. The second equal sign indicates an intrinsic state $\ket{J;q,p}$ rotates in the gauge space. Since $[H,J]=0$, the classical Hamiltonian 
-becomes
-\begin{align}
- \mathcal{H} &= \braket{\Phi,J;q,p|H|\Phi,J;q,p} \nonumber \\
- &= \braket{J;q,p|H|J;q,p} \equiv \mathcal{H}_J(q,p)
-\end{align}  
-has no dependence of $\Phi$. Therefore, the classical Hamiltonian is the function of $(q,p)$ in a fixed particle number system, and correspond to (\ref{coll}). From ASCC, we can obtain the static state vector at each point of $q$, namely $\ket{J;q,p=0}$. To construct $\ket{J;q,p}$, we use (\ref{momenta}) at $(q,p)$ which we want to know in the collective phase space. Usually, we are interested in the points $(q^{(k)},p^{(k)})$ at the $k$-th TDHFB trajectory. Such $k$-th TDHFB trajectory is obtained from EBK quantization condition ($k$: integer)
-\begin{align}
-	\mathcal{T}_\circ[Z^{(k)}]=&
-	\oint \braket{Z^{(k)}(t')| i\hbar\frac{\partial}{\partial t'} |Z^{(k)}(t')} dt' \nonumber \\
-	=& \oint p^{(k)} dq^{(k)} = 2k\pi .
-	\label{EBK}
-\end{align}
+The SPA quantization is able to provide a wave function $\ket{\psi_k}$
+in microscopic degrees of freedom, which is given as a superposition
+of generalized Slater determinants $\ket{q,p}$.
+In addition, the integration with respect to $p_n$ over a circuit on torus
+automatically recover the broken symmetry, namely the good particle number.
+However, it relies on the existence of invariant tori.
+In the present approach of ASCC+SPA,
+we first derive a decoupled collective subspace $\Sigma_2$ and identify
+canonical varialbles $(q,p)$.
+Because of the cyclic nature of $(q^n,p_n)$, it is basically a 1D system
+and becomes integrable.
+In other words, we perform the torus quantization on
+approximate tori in the TDHFB phase space $(\xi,\pi)$,
+which is mapped from tori in the 2D collective subspace $(q,p)$.
 
-\begin{figure}[htbp]
- \begin{center}
-    \includegraphics[width=80mm, bb=0 0 550 180]{SPA.png}
- \end{center}
-  \caption{For a TDHFB trajectory, the correspondence between TDHFB phase space and collective subspace.}
-  \label{correspondence}
-\end{figure}
 
-The procedures to obtain excited states from SPA via ASCC are:
+
+%\begin{figure}[tb]
+% \begin{center}
+%    \includegraphics[width=80mm, bb=0 0 550 180]{SPA.png}
+% \end{center}
+%  \caption{For a TDHFB trajectory, the correspondence between TDHFB phase space and collective subspace.}
+%  \label{fig:correspondence}
+%\end{figure}
+%We try to combine SPA with ASCC. The key point is to find the correspondence between TDHFB phase space and collective subspace in a TDHFB trajectory (See Fig. \ref{fig:correspondence}). We consider the time-dependent state vector $\ket{Z(t)}$ is in a collective subspace. With pairing correlation, $\ket{Z(t)}$ can be expressed as
+
+
+\subsubsection{Notation and practical procedure for quantization}
+\label{sec:notation}
+
+For application of the ASCC+SPA method to the pairing model in Sec.~\ref{sec3},
+we summarize some notations and procedures to obtain quantized states.
+
+In Sec.~\ref{sec3}, the time-dependent generalized Slater determinants
+(coherent states) are written as $\ket{Z}$ with complex variables
+$Z_\alpha(t)$.
+The variables $Z_\alpha$ are transformed into real variables
+$(j^\alpha, -\chi_\alpha)$ that correspond to $(\xi^\alpha,\pi_\alpha)$
+in Sec.~\ref{sec2}.
+$\chi_\alpha$ and $j^\alpha$ correspond to
+the ``angle'' and the ``number'' variables, respectively.
+Although it is customary to take the angle as a coordinate,
+since the angle $\chi_\alpha$ is time-odd quantities, 
+we switch the coordinates and the momenta with minus signs
+in front of variables $\chi$.
+Similarly, the gauge angle $\Phi$ and the total particle number $J$
+correspond to variables of the pair rotation, $-p_n$ and $q^n$, respectively.
+%The collective variables $(q^1,p_1)$ in Sec.~\ref{sec2} are
+%written as $(q,p)$ in Sec.~\ref{sec3} for simplicity.
+
+
+%\begin{align}
+% \ket{Z(t)} &= \ket{\Phi,J;q,p} = e^{-i\Phi \hat{J}} \ket{J;q,p} ,
+% \label{GCS}
+%\end{align}
+%where $\Phi$ is the total gauge angle and $J=N/2$ is the conjugate momentum corresponding total particle number. The second equal sign indicates an intrinsic state $\ket{J;q,p}$ rotates in the gauge space. Since $[H,J]=0$, the classical Hamiltonian 
+%becomes
+%\begin{align}
+% \mathcal{H} &= \braket{\Phi,J;q,p|H|\Phi,J;q,p} \nonumber \\
+% &= \braket{J;q,p|H|J;q,p} \equiv \mathcal{H}_J(q,p)
+%\end{align}  
+%has no dependence of $\Phi$. Therefore, the classical Hamiltonian is the function of $(q,p)$ in a fixed particle number system, and correspond to (\ref{coll}). From ASCC, we can obtain the static state vector at each point of $q$, namely $\ket{J;q,p=0}$. To construct $\ket{J;q,p}$, we use (\ref{momenta}) at $(q,p)$ which we want to know in the collective phase space. Usually, we are interested in the points $(q^{(k)},p^{(k)})$ at the $k$-th TDHFB trajectory. Such $k$-th TDHFB trajectory is obtained from EBK quantization condition ($k$: integer)
+%\begin{align}
+%	\mathcal{T}_\circ[Z^{(k)}]=&
+%	\oint \braket{Z^{(k)}(t')| i\hbar\frac{\partial}{\partial t'} |Z^{(k)}(t')} dt' \nonumber \\
+%	=& \oint p^{(k)} dq^{(k)} = 2k\pi .
+%	\label{EBK}
+%\end{align}
+
+According to the EBK quantization rule (\ref{EBK}),
+the ground state with $k=0$ corresponds to nothing but the HFB state
+with a fixed particle number $J(=q^n)$.
+For the $k$-th excited states, we perform the following calculations:
 \begin{enumerate}
-\item Obtain the one-dimensional collective coordinate from ASCC.
-\item Using collective Hamiltonian, obtain $k$-th excitation energy and TDHFB trajectory under EBK quantization condition (\ref{EBK}).
-\item For $k$-th TDHFB trajectory, construct the state vector $\ket{J;q,p}$ by using (\ref{momenta}).
-\item Calculate action integral (\ref{tau}) in $k$-th TDHFB trajectory.
-\item Using (\ref{SPA}), obtain $k$-th excited state.
+\item Obtain the 1D collective subspace with canonical variables $(q^1,p_1)$
+	according to the ASCC in Sec.~\ref{sec:ASCC}.
+\item Find a trajectory $(q^1(t),p_1(t))$ which satisfies
+the $k$-th EBK quantization condition (\ref{EBK}).
+\item Calculate the action integral (\ref{tau}) for the $k$-th trajectory.
+\item Using Eq.~(\ref{SPA}), construct the $k$-th excited state.
 \end{enumerate}
+The ASCC provides the 2D collective subspace $(q^1,J)$
+and the generalized coherent states $\ket{\Phi=0,J;q,p=0}$.
+For finite values of momenta, we use Eq.~(\ref{momenta})
+to obtain the state $\ket{\Phi,J;q,p}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Application in pairing model}
+\section{Pairing model}
 \label{sec3}
 
-We study the low-lying excited $0^+$ states in multi-level pairing model by applying SPA via ASCC. 
+We study low-lying excited $0^+$ states
+in multi-level pairing model by applying the ASCC+SPA.
 The Hamiltonian of the pairing model is given in terms of
 single-particle energies $\epsilon_l$ and the pairing strength $g$ as
 \begin{align}
-	H &= \sum_l \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^- \nonumber \\
-    &= \sum_l\epsilon_l(2S_l^0+\Omega_l) - g S^+ S^{-} ,
+	H &= \sum_\alpha \epsilon_\alpha n_\alpha - g \sum_{\alpha,\beta} S_\alpha^+ S_{\beta}^- \nonumber \\
+    &= \sum_\alpha\epsilon_\alpha(2S_\alpha^0+\Omega_\alpha) - g S^+ S^{-} ,
 \end{align}
 where we use the SU(2) quasi-spin operators,
-$\boldsymbol{S}=\sum_l \boldsymbol{S}_l$, with
+$\boldsymbol{S}=\sum_\alpha \boldsymbol{S}_\alpha$, with
 \begin{eqnarray}
-        S_l^0 &=& \frac{1}{2}(\sum_ma_{lm}^{\dag}a_{lm}-\Omega_l) ,\\
-        S_l^{+} &=& \sum_{m>0}a_{lm}^{\dag}a_{l\overline{m}}^{\dag} ,
-\quad   S_l^{-} = S_l^{+\dag} .
+        S_\alpha^0 &=& \frac{1}{2}(\sum_ma_{j_\alpha m}^{\dag}a_{j_\alpha m}-\Omega_\alpha) ,\\
+        S_\alpha^{+} &=& \sum_{m>0}a_{j_\alpha m}^{\dag}a_{j_\alpha\overline{m}}^{\dag} ,
+\quad   S_\alpha^{-} = S_\alpha^{+\dag} .
 \end{eqnarray}
-Each single-particle energy $\epsilon_l$ possesses $(2\Omega_l)$-fold
-degeneracy ($\Omega_l=j_l+1/2$)
-and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$ and $\Omega_l-1/2$.
-The occupation number of each level $l$ is given by
+Each single-particle energy $\epsilon_\alpha$ possesses $(2\Omega_\alpha)$-fold
+degeneracy ($\Omega_\alpha=j_\alpha+1/2$)
+and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$
+and $\Omega_\alpha-1/2$.
+The occupation number of each level $\alpha$ is given by
 $
-	n_l = \sum_m a^{\dag}_{lm}a_{lm} = 2S_l^0+\Omega_l ,
+\hat{n}_\alpha = \sum_m a^{\dag}_{j_\alpha m}a_{j_\alpha m}
+=2S_\alpha^0+\Omega_\alpha
 $.
 The quasi-spin operators satisfy the commutation relations
 \begin{equation}
-  [S_l^0,S_{l'}^{\pm}] = \pm\delta_{ll'}S_{l}^{\pm},
-	\quad [S_{l}^{+},S_{l'}^{-}] = 2\delta_{ll'}S_{l}^{0} .
+  [S_\alpha^0,S_\beta^{\pm}] = \pm\delta_{\alpha\beta}S_{\alpha}^{\pm},
+\quad [S_{\alpha}^{+},S_{\beta}^{-}] = 2\delta_{\alpha\beta}S_{\alpha}^{0} .
 \end{equation}
 The magnitude of quasi-spin for each level is
-$S_l=\frac{1}{2}(\Omega_l-\nu_l)$, where $\nu_l$ is the seniority
-quantum number, namely the number of unpaired particle at each level $l$.
+$S_\alpha=\frac{1}{2}(\Omega_\alpha-\nu_\alpha)$, where $\nu_\alpha$
+is the seniority
+quantum number, namely the number of unpaired particle at the level $\alpha$.
 In the present study, we only consider seniority zero states with
-$\nu=\sum_l \nu_l=0$.
+$\nu=\sum_\alpha \nu_\alpha=0$.
 The residual two-body interaction only consists of monopole pairing
 interaction which couples two particles to zero angular momentum.
 We obtain exact solutions either by solving Richardson equation
 \cite{Richardson,Richardson2,Richardson3} or
 by diagonalizing the Hamiltonian using the quasi-spin symmetry.
 
+
 \subsection{Classical form of TDHFB Hamiltonian}
-The coherent state for the seniority $\nu=0$ states
-($S_l=\Omega_l/2$) is constructed as
+
+The time-dependent coherent state for the seniority $\nu=0$ states
+($S_\alpha=\Omega_\alpha/2$) is constructed with
+time-dependent complex variables $Z_\alpha(t)$, as
 \begin{equation}
-	\ket{Z(t)} = \prod_{l} \left(1+|Z_l(t)|^2\right)^{-\Omega_l/2}
-	\exp [Z_l(t) S_l^{+}] \ket{0}
+	\ket{Z(t)} = \prod_{\alpha} \left(1+|Z_\alpha(t)|^2\right)^{-\Omega_\alpha/2}
+	\exp [Z_\alpha(t) S_\alpha^{+}] \ket{0}
  \label{coherent}
 \end{equation}
-where $\ket{0}$ is the vacuum (zero particle) state,
-$Z_l(t)$ are time-dependent complex variables which describe
-motion of the system. 
+where $\ket{0}$ is the vacuum (zero particle) state.
+The TDHFB motion is given by the time dependence of $Z_\alpha(t)$.
 In the SU(2) quasi-spin representation,
-$\ket{0}=\prod_l \ket{S_l,-S_l}$.
+$\ket{0}=\prod_\alpha \ket{S_\alpha,-S_\alpha}$.
 The coherent state $\ket{Z(t)}$ is a superposition of
 states with different particle numbers
 without unpaired particles.
 %If $Z_l$ are all real,
 In the present pairing model,
 the coherent state is the same as the time-dependent BCS wave function
-with $Z_l(t)=v_l(t)/u_l(t)$,
-where $(u_l(t),v_l(t))$ are the time-dependent BCS $u,v$ factors.
+with $Z_\alpha(t)=v_\alpha(t)/u_\alpha(t)$,
+where $(u_\alpha(t),v_\alpha(t))$ are the time-dependent BCS $u,v$ factors.
 
 The TDHFB equation can be derived from the time-dependent variational
-principle (we set $\hbar=1$),
+principle ($\hbar=1$), $\delta \mathcal{S} = 0$, where
 \begin{equation}
-	\delta \mathcal{S} = 0,
-	\quad
 %  \delta \int \braket{\phi(t)|i\frac{\partial}{\partial t}-H|\phi(t)}dt = 0 ,
 	\mathcal{S}\equiv \int \mathcal{L}(t) dt =
 	\int \braket{Z(t)|i\frac{\partial}{\partial t}-H|Z(t)}dt.
   \label{TDHFB}
 \end{equation}
-After transformation of the complex variables $Z_l = \tan{\frac{\theta_l}{2}}e^{-i\chi_l}$  ($0\leq\theta\leq\pi$) and several steps of the derivation, the Lagrangian $\mathcal{L}$ and the expectation value of Hamiltonian become
+After transformation of the complex into real variables,
+$Z_\alpha = \tan{\frac{\theta_\alpha}{2}}e^{-i\chi_\alpha}$
+($0\leq\theta\leq\pi$),
+the Lagrangian $\mathcal{L}$ and the expectation value of the Hamiltonian
+are written as
+\begin{equation}
+\mathcal{L}(t) = \sum_\alpha \frac{\Omega_\alpha}{2}
+	(1-\cos{\theta}_\alpha)\dot{\chi_\alpha} - \mathcal{H}(Z,Z^*) ,
+\end{equation}
+with
 \begin{align}
-\mathcal{L}(t) = \sum_l \frac{\Omega_l}{2}
-	(1&-\cos{\theta}_l)\dot{\chi_l} - \mathcal{H}(Z,Z^*) ,\\
-	\mathcal{H}(Z,Z^*) \equiv \braket{Z|H|Z}& \nonumber \\
-  = \sum_l \epsilon_l\Omega_l(1- \cos{\theta}_l)& - \frac{g}{4}\sum_l \Omega_l [\Omega_l(1-\cos^2{\theta}_l)+(1-\cos{\theta}_l)^2] \nonumber \\
-- \frac{g}{4}\sum_{l_1\neq l_2} \Omega_{l_1}\Omega_{l_2}&\sqrt{(1-\cos^2{\theta}_{l_1})(1-\cos^2{\theta}_{l_2})}e^{-i(\chi_{l_1}-\chi_{l_2})}   .
+	\mathcal{H}(Z,Z^*) &\equiv \braket{Z|H|Z}& \nonumber \\
+	&= \sum_\alpha \epsilon_\alpha\Omega_\alpha(1- \cos{\theta}_\alpha)
+	\nonumber \\
+	&- \frac{g}{4}\sum_\alpha \Omega_\alpha [\Omega_\alpha(1-\cos^2{\theta}_\alpha)+(1-\cos{\theta}_\alpha)^2] \nonumber \\
+	- \frac{g}{4}\sum_{\alpha\neq \beta} \Omega_{\alpha}\Omega_{\beta}&\sqrt{(1-\cos^2{\theta}_{\alpha})(1-\cos^2{\theta}_{\beta})}e^{-i(\chi_{\alpha}-\chi_{\beta})}   .
 \label{TDHFB_Hamiltonian_2}
 \end{align}
-Here, we choose $\chi_l$ as canonical coordinates. Their conjugate momenta
+Choose $\chi_\alpha$ as canonical coordinates, their conjugate momenta
 are given by
 \begin{align}
-  j_l\equiv \frac{\partial\mathcal{L}}{\partial\dot{\chi}_l}=\frac{\Omega_l}{2}
-	(1-\cos{\theta}_l) .
+  j^\alpha\equiv
+	\frac{\partial\mathcal{L}}{\partial\dot{\chi}_\alpha}=\frac{\Omega_\alpha}{2}
+	(1-\cos{\theta}_\alpha) .
 \end{align}
-$\chi_l$ represent a kind of gauge angle of each level,
-and $j_l$ are related to the occupation number of each level, $2j_l=n_l$. Therefore, the TDHFB Hamiltonian can be represented by canonical variables $\mathcal{H}(Z,Z^*) = \mathcal{H}(\{\chi_l\},\{j_l\})$, and the TDHFB equation is equivalent to the Hamilton's equation
+$\chi_\alpha$ represent a kind of gauge angle of each level,
+and $j^\alpha$ correspond to the occupation number of each level,
+$2j^\alpha=\bra{Z} \hat{n}_\alpha\ket{Z}$. 
+As we mention in Sec.~\ref{sec:notation},
+we switch the coordinates and momenta,
+$(\chi_\alpha,j^\alpha) \rightarrow (j^\alpha,-\chi_\alpha)$,
+to make the coordinates time even.
+%Therefore, the TDHFB Hamiltonian can be represented by canonical variables
+%$\mathcal{H}(Z,Z^*) = \mathcal{H}(\{\chi_l\},\{j_l\})$, and 
+The TDHFB equation is equivalent to the classical Hamilton's equation
 \begin{equation}
-	\dot{\chi_l} = \frac{\partial\mathcal{H}}{\partial j_l}, \quad
-	\dot{j_l} = -\frac{\partial\mathcal{H}}{\partial \chi_l} .
+	-\dot{\chi_\alpha} = -\frac{\partial\mathcal{H}}{\partial j^\alpha}, \quad
+	\dot{j^\alpha} = \frac{\partial\mathcal{H}}{\partial (-\chi_\alpha)} .
 \end{equation}
-.
 
-\subsection{Application into ASCC}
-In this subsection, we use ($\alpha, \beta, \cdots$) to describe the degrees of freedom instead of $l$ to synchronize the notation with in Sec. \ref{ASCC}. 
-We construct 1D collective subspace from ASCC theory. Because the first order with respect to $\chi_{\alpha}$ is zero in TDHFB Hamiltonian, we assume $j^{\alpha}$ as coordinates and $\chi_{\alpha}$ as conjugate momenta. The canonical variables are $(j^{\alpha},-\chi_{\alpha})$ and fulfill $\{j^{\alpha},-\chi_{\beta}\}_{PB}=\delta^{\alpha}_{\beta}$. We expand the classical Hamiltonian up to second order with respect to $\chi_{\alpha}$. 
-The classical Hamiltonian becomes
+
+\subsection{Application of ASCC}
+
+%In this subsection, we use ($\alpha, \beta, \cdots$) to describe the degrees of freedom instead of $l$ to synchronize the notation with in Sec. \ref{ASCC}. 
+We construct a 2D collective subspace $\Sigma_2$ from ASCC theory.
+%Because the first order with respect to $\chi_{\alpha}$ is zero in TDHFB Hamiltonian, we assume $j^{\alpha}$ as coordinates and $\chi_{\alpha}$ as conjugate momenta.  The canonical variables are $(j^{\alpha},-\chi_{\alpha})$ and fulfill $\{j^{\alpha},-\chi_{\beta}\}_{PB}=\delta^{\alpha}_{\beta}$. 
+We expand the classical Hamiltonian up to second order with respect to
+momenta, $-\chi_{\alpha}$. 
 \begin{align}
   \mathcal{H}(j,\chi) \approx& V(j) + \frac{1}{2}B^{\alpha\beta}(j)\chi_{\alpha}\chi_{\beta},
 \end{align}
-where potential $V(j)$ and reciprocal mass parameter $B^{\alpha\beta}(j)$ are defined as
+where potential $V(j)$ and the reciprocal mass parameter
+$B^{\alpha\beta}(j)$ are given as
 \begin{align}
-  V(j) =& \mathcal{H}(\chi=0,j) \nonumber \\
+  V(j) =& \mathcal{H}(j,\chi=0) \nonumber \\
 	=& \sum_{\alpha} 2\epsilon_{\alpha}j^{\alpha} - g\sum_{\alpha} \left( \Omega_{\alpha}j^{\alpha} - (j^{\alpha})^2 +\frac{(j^{\alpha})^2}{\Omega_{\alpha}} \right) \nonumber \\
   &- g\sum_{\alpha\ne \beta} \sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})} 	
 \end{align}
-\begin{align}
-  B^{\alpha\beta}(j) =& \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \nonumber \\
-	=& \left\{
-	\begin{array}{c}
-	2g\sum_{\gamma\ne \alpha} \sqrt{j^{\gamma}j^{\alpha}(\Omega_{\gamma}-j^{\gamma})(\Omega_{\alpha}-j^{\alpha})} \hspace{2em} (\alpha=\beta) \\
-	-2g\sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})} \hspace{2em} (\alpha\ne\beta)
-	\end{array}
-	\right. .
- \label{mass}
-\end{align}
-Using the TDHFB Hamiltonian, we can apply ASCC explained in Sec. \ref{ASCC} by replacing $\xi\to j$ and $\pi\to-\chi$.
+%\begin{align}
+\begin{eqnarray}
+&&B^{\alpha\beta}(j) = \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \\
+\label{mass}
+&&=
+	\begin{cases}
+2g\sum_{\gamma\ne \alpha} \sqrt{j^{\gamma}j^{\alpha}(\Omega_{\gamma}-j^{\gamma})(\Omega_{\alpha}-j^{\alpha})}
+		& \text{for $\alpha=\beta$} \\
+-2g\sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})}
+		& \text{for $\alpha\ne\beta$}
+	\end{cases} \nonumber
+\end{eqnarray}
+%\end{align}
+We may apply the ASCC method in Sec. \ref{sec:ASCC}
+by regarding $\xi\to j$ and $\pi\to-\chi$.
 
-We consider the treatment for the constant of motion in pairing model. In the TDHFB Hamiltonian, there is no dependence about the total gauge angle
+The TDHFB conserves the average total particle number $N$.
+We adopt 
+\begin{equation}
+	J\equiv N/2=\sum_\alpha j^\alpha ,
+  \label{J}
+\end{equation}
+as a coordinate $q^n$.
+Since this is explicitly given as the expectation value of the particle
+number operator, curvature quantities,
+such as $f^n_{,\alpha\beta}$ and $f^{(1)n\alpha\beta}$,
+are explicitly calculable.
+On the other hand, the gauge angle $\Phi=-p_n$ is not given a priori.
+Since the ASCC solution provides $g^\alpha_{,n}$ as an eigenvector of
+Eq. (\ref{mfQRPA}),
+we may construct it as Eq. (\ref{coll_momenta}) in the first order
+in $\pi=-\chi$.
+We confirm that the pairing rotation corresponds to an eigenvector
+of Eq. (\ref{mfQRPA}) with the zero frequency $\omega^2=0$.
+
+%With the properties of the constant of motion, we discuss the practical solution of ASCC in pairing model. If we ignore the higher order term $f^{(1)1\alpha\beta}$, we can practice local harmonic equation (LHE)
+%\begin{align}
+%  B^{\beta\gamma}V_{;\gamma\alpha}f^1_{,\beta}  &= \omega^2 f^1_{,\alpha},\hspace{2em} 
+%  B^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1},
+%  \label{LHE}
+%\end{align}
+%which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), 
+
+%%%%%% I guess this is automatic. Check %%%%%%%%
+%To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_{\alpha} f^1_{,\alpha}=0$, we correct the eigenvectors by
+%\begin{align}
+%  f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_{\beta} f^1_{,\beta} 
+%  \label{f}
+%\end{align}
+%after solving (\ref{LHE}) at each point of $q$.
+
+In the present pairing model, 
+from Eq. (\ref{total_gauge}), we find $J$ does not dependent on $\chi$.
+This means $f^{(1)n\alpha\beta}=0$ in Eq. (\ref{P}),
+thus, $\tilde{B}^{\beta\gamma}=B^{\beta\gamma}$.
+The second derivative of $J$ with respect to $j$ also vanishes,
+which indicates $f^{I}_{,\gamma\beta}$ in Eq.~(\ref{M}) is zero. 
+%It indicates the chemical potential $\lambda_I(q)$ is not necessary information to calculate the matrix element in moving-frame QRPA equation.
+In the present model, it is easy to find an explicit expression
+for the gauge angle $\Phi$.
 \begin{align}
-  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha}.
+  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha},
   \label{total_gauge}
 \end{align}
-It indicates the conjugate momentum 
-\begin{align}
-  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_{\alpha} j^{\alpha} = \frac{N}{2}
-  \label{J}
-\end{align}
-is conserved quantity. From this equation, we can find $J$ is not dependent of $\chi$, which means $f^{(1)I\alpha\beta}$ in (\ref{P}) is zero. Therefore, $B^{\beta\gamma}V_{;\gamma\alpha}f^I_{,\beta}=0$ is promised exactly. Also, the second derivative of $J$ with respect to $j$ vanishes, which indicates $f^{I}_{,\gamma\beta}$ in (\ref{M}) is zero. It indicates the chemical potential $\lambda_I(q)$ is not necessary information to calculate the matrix element in moving-frame QRPA equation.
+where $L$ is the number of available shells $\alpha=1,\cdots,L$.
+Its conjugate variable
+${\partial\mathcal{L}}/{\partial\dot{\Phi}}$
+is indeed given by $J$ of Eq. (\ref{J}).
+Again, exchanging coordinate and momentum,
+we have $q^n=J$ and $p_n=-\Phi$.
 
-With the properties of the constant of motion, we discuss the practical solution of ASCC in pairing model. If we ignore the higher order term $f^{(1)1\alpha\beta}$, we can practice local harmonic equation (LHE)
-\begin{align}
-  B^{\beta\gamma}V_{;\gamma\alpha}f^1_{,\beta}  &= \omega^2 f^1_{,\alpha},\hspace{2em} 
-  B^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1},
-  \label{LHE}
-\end{align}
-which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), the eigenvalue of spurious mode corresponding pairing rotation is exact zero. To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_{\alpha} f^1_{,\alpha}=0$, we correct the eigenvectors by
-\begin{align}
-  f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_{\beta} f^1_{,\beta} 
-  \label{f}
-\end{align}
-after solving (\ref{LHE}) at each point of $q$.
+%We consider the treatment for the constant of motion in pairing model. In the TDHFB Hamiltonian, there is no dependence about the total gauge angle
+%\begin{align}
+%  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_{\alpha} j^{\alpha} = \frac{N}{2}
+%\end{align}
+%is conserved quantity. 
 
-\subsection{Application into SPA}
-We derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
+
+\subsection{Application of SPA}
+
+After deriving the collective subspace states $\Sigma_2$, 
+we perform the quantization according to the SPA in Sec.~\ref{sec:SPA}.
+Calculating a trajectory in the $(q^1,p_1)$ space,
+we can identify a series of states $\{\ket{\Phi,J;q^1(t),p_1(t)}\}$
+in the form of Eq. (\ref{coherent}) on the trajectory.
+
+
+
+
+derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
 \begin{align}
   \ket{\Phi,J;q,p} &= \sum_{\{j_l\}} e^{-i\Phi \sum_l j_l} \ket{J;q,p} .
 \end{align}
@@ -735,6 +872,7 @@ In SU(2) representation, the invariant measure is
  =& \left[ \prod_l \frac{-(1+\Omega_l^{-1})}{2\pi} \right] d\Phi dJ dqdp \nonumber \\
  &\times dQ_1\cdots dQ_{l-2}dP_1\cdots dP_{l-2}
 % d\Phi dJ dq dp = d\Phi dJ dE dt 
+	\label{dmu}
 \end{align}
 where $(Q_i,P_i)$ are the other canonical variables decoupled from the collective coordinates. From the third line to the forth line, we used that Jacobian equals one in canonical transformation. The part of the invariant measure which contributes to the excited states is
 \begin{align}
