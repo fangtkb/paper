@@ -831,72 +831,124 @@ After deriving the collective subspace states $\Sigma_2$,
 we perform the quantization according to the SPA in Sec.~\ref{sec:SPA}.
 Calculating a trajectory in the $(q^1,p_1)$ space,
 we can identify a series of states $\{\ket{\Phi,J;q^1(t),p_1(t)}\}$
-in the form of Eq. (\ref{coherent}) on the trajectory.
-
-
-
-
-derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
+on the trajectory,
+in the form of Eq. (\ref{coherent})
+with parameters $Z_\alpha$ given at $(\Phi,J,q^1,p_1)$ and $q^a=p_a=0$ for
+$a\geq 3$.
+%Due to $J$ is conserved quantity, the action integral can be divided into two terms
+Since the variables$(\Phi,J)$ and $(q^1,p_1)$ are separable,
+we may take closed trajectories independently in $(\Phi,J)$ and $(q^1,p_1)$
+sectors, which we denote here as $C_\Phi$ and $C_1$, respectively.
+The action integral is given by
 \begin{align}
-  \ket{\Phi,J;q,p} &= \sum_{\{j_l\}} e^{-i\Phi \sum_l j_l} \ket{J;q,p} .
-\end{align}
-Here, $\ket{J;q,p}$ can be expanded in SU(2) quasispin basis
-\begin{align}
-  \ket{J;q,p} &= \sum_{\{j_l\}} A_{j_l}(q,p) \ket{\cdots;S_l,-S_l+k_l,\cdots}, 
-\end{align}
-where 
-\begin{align}
-  A_{j_l}(q,p) =& \prod_l \left(\frac{1-\cos{\theta}_l}{2}\right)^{j_l/2}\left(\frac{1+\cos{\theta}_l}{2}\right)^{(\Omega_l-j_l)/2}
-  \nonumber \\
-  &\times\sqrt{\frac{(\Omega_l)!}{j_l!(\Omega_l-j_l)!}} e^{-ij_l\chi_l} 
-\end{align}
-is in fixed gauge angle ($\Phi=0$).
-
-Due to $J$ is conserved quantity, the action integral can be divided into two terms
-\begin{align}
-  \mathcal{T}(\Phi,J;q,p) &= \mathcal{T}_{\rm intr}(t) + J\Phi, 
-\end{align}
-where the intrinsic action integral $\mathcal{T}_{\rm intr}(t)$ becomes
-\begin{align}
-  \mathcal{T}_{\rm intr}(t) &= \int \braket{J;q,p|i\frac{\partial}{\partial t}|J;q,p} dt
-	 \nonumber \\
-	&= \int \sum_l j_l d\chi_l .
+\mathcal{T}(\Phi,J;q^1,p_1)
+&= \int_{C_\Phi} \braket{\Phi(t),J;q^1,p_1|i\frac{\partial}{\partial t}|\Phi(t),J;q^1,p_1} dt \nonumber \\
++ \int_{C_1} &\braket{\Phi,J;q^1(t),p_1(t)|i\frac{\partial}{\partial t}|\Phi,J;q^1(t),p_1(t)} dt
+ \nonumber \\
+	&=J\Phi + \int_{C_1} \sum_\alpha j^\alpha d\chi_\alpha
+	\nonumber \\
+	&\equiv \mathcal{T}_\Phi(J,\Phi) +\mathcal{T}_1(q^1,p_1;J) .
 	\label{tau}
 \end{align}
-The important point is $\mathcal{T}_{\rm intr}(t) \ne \int p dq$ at each $t$. For closed TDHFB trajectory, only $\mathcal{T}_{\rm intr}(t)$ contributes to the excited states.
-In SU(2) representation, the invariant measure is
+In fact, the gauge-angle dependence is formally given as
+\begin{equation}
+\ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_q} .
+\end{equation}
+Then, the action for the trajectory $C_1$ can be also expressed as
+$\mathcal{T}(q^1,p_1;J)=
+ \int_{C_1} \braket{J;q^1,p_1|i\frac{\partial}{\partial t}|J;q^1,p_1} dt$.
+%\begin{align}
+%  \mathcal{T}(\Phi,J;q,p) &= \mathcal{T}_{\rm intr}(t) + J\Phi, 
+%\end{align}
+%%where the intrinsic action integral $\mathcal{T}_{\rm intr}(t)$ becomes
+%The important point is $\mathcal{T}_{\rm intr}(t) \ne \int p dq$ at each $t$. For closed TDHFB trajectory, only $\mathcal{T}_{\rm intr}(t)$ contributes to the excited states.
+
+In the su(2) representation, the invariant measure is
 \begin{align}
-  d\mu(Z) &= \prod_l \frac{\Omega_l+1}{\pi} (1+|Z_l|^2)^{-2} d{\rm Re}Z d{\rm Im}Z \nonumber \\
- =& \prod_l \frac{\Omega_l+1}{4\pi} d \cos{\theta_l} d\chi_l \nonumber \\
- =& \prod_l \frac{-(1+\Omega_l^{-1})}{2\pi} d\chi_l dj_l \nonumber \\
- =& \left[ \prod_l \frac{-(1+\Omega_l^{-1})}{2\pi} \right] d\Phi dJ dqdp \nonumber \\
- &\times dQ_1\cdots dQ_{l-2}dP_1\cdots dP_{l-2}
+  d\mu(Z) &= \prod_\alpha \frac{\Omega_\alpha+1}{\pi} (1+|Z_\alpha|^2)^{-2} d{\rm Re}Z d{\rm Im}Z \nonumber \\
+=& \prod_\alpha \frac{-(\Omega_\alpha+1)}{4\pi} d \cos{\theta_\alpha} d\chi_\alpha \nonumber \\
+ =& \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} d\chi_\alpha dj^\alpha \nonumber \\
+ =& \left[ \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} \right] d\Phi dJ dq^1 dp_1 %\nonumber \\
+  \prod_a dq^a dp_a
 % d\Phi dJ dq dp = d\Phi dJ dE dt 
 	\label{dmu}
 \end{align}
-where $(Q_i,P_i)$ are the other canonical variables decoupled from the collective coordinates. From the third line to the forth line, we used that Jacobian equals one in canonical transformation. The part of the invariant measure which contributes to the excited states is
+where $(q^a,p_a)$ are the intrinsic canonical variables
+decoupled from the collective subspace $\Sigma_2$.
+For the last equation in Eq. (\ref{dmu}),
+we used the invariance of the phase space volume element
+in canonical transformation.
+%The part of the invariant measure which contributes to the excited states is
+According to (\ref{dmu}),
+the weight function $\rho(q,p)$ in Eq. (\ref{SPA}) is just a constant,
+thus, treated as the normalization of the wave function.
+%\begin{align}
+%d\mu(\Phi,J;q,p) \propto d\Phi dJ dqdp = d\Phi dJ dE dt. 
+%\end{align}
+%Under EBK quantization condition (\ref{EBK}),
+
+%derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
+%\begin{align}
+%  \ket{\Phi,J;q,p} &= \sum_{\{j_l\}} e^{-i\Phi \sum_l j_l} \ket{J;q,p} .
+%\end{align}
+The coherent state $\ket{\Phi,J;q^1,p_1}=\ket{Z}$ is
+expanded in the su(2) quasispin basis as
 \begin{align}
-d\mu(\Phi,J;q,p) \propto d\Phi dJ dqdp = d\Phi dJ dE dt. 
+\ket{Z} &= 
+\sum_{\{m_\alpha\}} A_m(Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots}, \nonumber\\
 \end{align}
-Under EBK quantization condition (\ref{EBK}),
-the $k$-th excited state becomes
+where the summation is taken over all possible combinations
+of integer values of $\{ m_\alpha\}$.
 \begin{align}
- \ket{\tilde{\phi}_k} \propto& \oint d\Phi \oint dt \ket{\Phi,J;q,p} e^{i\mathcal{T}(\Phi,J;q,p)}
+A_m(Z) =& \prod_\alpha 
+\frac{Z_\alpha^{m_\alpha}}
+	{\left(1+|Z_\alpha|^2\right)^{\Omega_\alpha/2}m_\alpha!}
+\sqrt{\frac{(\Omega_\alpha)! m_\alpha!}{(\Omega_\alpha-m_\alpha)!}} \nonumber\\
+ =& \prod_\alpha \left(\frac{1-\cos{\theta}_\alpha}{2}\right)^{m_\alpha/2}\left(\frac{1+\cos{\theta}_\alpha}{2}\right)^{(\Omega_\alpha-m_\alpha)/2}
+  \nonumber \\
+  &\times\sqrt{\frac{(\Omega_\alpha)!}{m_\alpha!(\Omega_\alpha-m_\alpha)!}} e^{-i m_\alpha\chi_\alpha}  ,
+	\label{A_m}
+\end{align}
+where the lower index $m$ indicates a combination of $\{ m_\alpha \}$.
+The integer numbers $m_\alpha$ correspond to the number of pairs
+in the level $\alpha$.
+%is in fixed gauge angle ($\Phi=0$).
+%
+
+Using Eq.~(\ref{A_m}),
+now, the $k$-th excited state is calculated as
+\begin{align}
+\ket{\psi_k} \propto& \oint_{C_\Phi} d\Phi \oint_{C_1} dt
+\ket{\Phi,J;q^1,p_1} e^{i\mathcal{T}(\Phi,J;q^1,p_1)}
  \nonumber \\
- =& \sum_{\{j_l\}} \oint d\Phi e^{i(J-\sum_l j_l)\Phi} \nonumber \\
- &\times \oint dt e^{i\mathcal{T}_{\rm intr}(t)} A_{j_l}(q,p) \ket{\cdots;S_l,-S_l+j_l,\cdots} \nonumber \\
- \equiv& \sum_{\{j_l\}\in (\sum_{j_l}=J)} C_{j_l} \ket{\cdots;S_l,-S_l+j_l,\cdots}
+	=& \sum_{\{m_\alpha\}}
+	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi} \nonumber \\
+&\times \oint dt e^{i\mathcal{T}_1}(t) B_m (Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots} \nonumber \\
+ \equiv& \sum_{\{m_\alpha\}_J} C_m \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots}
  \label{SPA2}
 \end{align}
-where
+where $B_m(Z)$ are indentical to $A_m$ in Eq.~(\ref{A_m}) but
+replacing $\chi_\alpha$ by the relative angles
+$\phi_\alpha\equiv\chi_\alpha-\Phi$.
+The coefficients $C_m$ are
 \begin{align}
-  C_{j_l} = \oint dt e^{i\mathcal{T}_{\rm intr}(t)} A_{j_l}(q(t),p(t)).
+C_m = \oint_{C_1} dt e^{i\mathcal{T}_1(t)} B_m(Z(t))
   \label{coef}
 \end{align}
+In the last line of Eq. (\ref{SPA2}), the summation is restricted to
+$\{m_\alpha\}$ that satisfy $\sum_\alpha m_\alpha=J$.
+It is easy to find that $J$ must be integer,
+according to the quantization rule (\ref{EBK}) for the $(J,\Phi)$ sector.
 
-The definition of wave function in SPA can also be extended into ground state. The ground state is constructed by only energy minimum point in TDHFB phase space. In the energy minimum point, $\ket{\Phi,J;q,p}=\ket{\rm HFB}$. Therefore, (\ref{SPA2}) becomes
+The SPA for the ground state ($k=0$) is given by the stationary point
+in the $(q^1,p_1)$ sector,
+namely, the HFB state $\ket{\Phi,J;q,p}=e^{-i\Phi\hat{N}/2}\ket{\rm HFB}$.
+Nevertheless, the rotational motion in $\Phi(t)$ is present,
+which leads to the number quantization (projection).
+Therefore, Eq.~(\ref{SPA2}) becomes
 \begin{align}
- \ket{\tilde{\phi}_{g.s.}} \propto& \sum_{\{j_l\}} \oint d\Phi e^{i(J-\sum_l j_l)\Phi} \ket{\rm HFB},  
+	\ket{\psi_{g.s.}} \propto& \sum_{\{m_\alpha\}}
+	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi} \ket{\rm HFB},  
 \end{align}
 which is identical to the wave function of the particle number projection for HFB state.
 
