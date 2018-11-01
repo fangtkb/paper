@@ -832,10 +832,12 @@ Numerically, this arbitrariness sometimes leads to a problematic bahavior
 in iterative procedure of the ASCC.
 In order to fix the parameter $c$, we adopt a condition
 called ``ETOP'' in Ref.~\cite{HNMM07}.
+We require the following condition to determine $c$:
 \begin{align}
-\sum_\alpha f^1_{,\alpha} = 0 ,
+\sum_\alpha 
+	f^1_{,\alpha} = 0 ,
 \end{align}
-with 
+where $f^1_{,\alpha}$ is replaced as
 \begin{align}
 {f}^1_{,\alpha} \to f^1_{,\alpha} + c f^n_{,\alpha} .
   \label{f}
@@ -866,7 +868,7 @@ The action integral is given by
 	&=J\Phi + \int_{C_1} \sum_\alpha j^\alpha d\chi_\alpha
 	\nonumber \\
 	&\equiv \mathcal{T}_\Phi(J,\Phi) +\mathcal{T}_1(q^1,p_1;J) .
-	\label{tau}
+%	\label{tau}
 \end{align}
 In fact, the gauge-angle dependence is formally given as
 \begin{equation}
@@ -1004,14 +1006,17 @@ In other words, the ASCC method finds the transformation.
 
 Here, we study the system with equal degeneracy,
 $\Omega_1=\Omega_2=8$, 
-the pairing strength $g/(\epsilon_2-\epsilon_1)=0.2$,
+the pairing strength $g/\epsilon_0=0.2$,
 and the particle number $N=16$. 
+In this two-level case, we use the level spacing,
+$\epsilon_0\equiv \epsilon_2-\epsilon_1$,
+as the unit of energy.
 The moving-frame QRPA produces the zero mode and another eigenvector
 with finite frequency $\omega^2\neq 0$.
 We follow the latter mode to construct the collective path.
 In the ASCC calculation, we set the increment of the
 collective coordinate, $dq=0.01$,
-in units of $1/\sqrt{\epsilon_2-\epsilon_1}$.
+in units of $1/\sqrt{\epsilon_0}$.
 We confirm that the pair rotation always has zero frequency
 on the collective path.
 On the obtained collective path, we calculate classical trajectory
@@ -1032,7 +1037,7 @@ Small deviation in large $\phi$ is due to the neglect of higher-order
 terms in $\chi_\alpha$ in the ASCC.
 In fact, if we calculate the trajectories in the variables
 $(\Phi,J;\phi,j)$ using the Hamiltonian truncated up to the
-second order in $\chi_\alpha$ (``ATDHFB trajectories''),
+second order in $\chi_\alpha$ (``TDHFB2 trajectories''),
 we obtain the solid lines in Fig. \ref{fig:N16_traj},
 which perfectly agree with the ASCC trajectories.
 
@@ -1041,18 +1046,18 @@ these closed trajectories are shown in Fig. \ref{fig:N16_tau}.
 For the $0_2^+$ state,
 all three calculations well agree
 with each other, while we see small deviation between the full TDHFB
-and the ASCC/ATDHFB calculations for the $0_3^+$ state.
+and the ASCC/TDHFB2 calculations for the $0_3^+$ state.
 
 The calculated wave functions for excited $0^+$ states 
 are shown in Fig. \ref{fig:N16_occ}. 
 We show the occupation probability which is decomposed 
 into $2n$-particle-$2n$-hole components. 
-The left end of the horizontal axis at $j=j_{\rm min}$
+The left end of the horizontal axis at $m_2-m_1=-8$
 corresponds to a state with $(m_1,m_2)=(N/2,0)$ where all the particles
-are in the lower level $\epsilon_1$.
-The next at $j=j_{\rm min}+1$ corresponds to the one with
-$(m_1,m_2)=(N-2/2,1)$, and so on.
-The results from ATDHFB+SPA and ASCC+SPA are identical to each other
+are in the lower level $\alpha=1$.
+The next at $m_2-m_1=-6$ corresponds to the one with
+$(m_1,m_2)=((N-2)/2,1)$, and so on.
+The results from TDHFB2+SPA and ASCC+SPA are identical to each other
 within numerical error, which well reproduces
 the TDHFB+SPA calculation.
 (How about exact cal.?)
@@ -1083,7 +1088,7 @@ the TDHFB+SPA calculation.
 (\ref{EBK}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
 %The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. 
 Crosses, solid and dashed lines correspond to the results
-of ASCC+SPA, ATDHFB+SPA, and TDHFB+SPA, respectively. 
+of ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively. 
 For the ASCC+SPA trajectories, we plot the crosses
 every ten(?) points of the calculation,
 namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
@@ -1096,9 +1101,9 @@ namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
  \end{center}
 \caption{Calculated action integrals for the $\ket{0_2^+}$ and $\ket{0_3^+}$ states as functions of time $t$.
 Crosses, solid and dashed lines correspond to the ASCC+SPA,
-the ATDHFB+SPA, and the TDHFB+SPA, respectively. 
+the TDHFB2+SPA, and the TDHFB+SPA, respectively. 
 %Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. 
-We calculated the action integrals on each trajectory
+We calculate the action integrals on each trajectory
 from $(\phi,j)=(0,j_{\rm max})$ in the clockwise direction
 in Fig. \ref{fig:N16_traj}.
 }
@@ -1113,7 +1118,8 @@ Occupation probabilities for the $0_2^+$ and $0_3^+$ states.
 The horizontal line indicates the $m_2-m_1$ of the quasi-spin basis
 in Eq. (\ref{SPA2}).
 The vertical bars at each $m_2-m_1$
-represent the ASCC+SPA, ATDHFB+SPA and TDHFB+SPA calculations,
+represent $|C_m|^2$ of Eq. (\ref{coef}) in
+ASCC+SPA, TDHFB2+SPA and TDHFB+SPA calculations,
 respectively, from left to right.
 }
  \label{fig:N16_occ}
@@ -1170,7 +1176,7 @@ at the both ends.
 The occupation of the level 3 ($\epsilon_3$) vanishes, while
 those of the levels 1 and 2 become either maximum or minimum.
 The left end of each panel in Fig.~\ref{occ_number} corresponds to 
-a kind of ``Hartree-Fock'' state which minimizes
+a kind of ``Hartree-Fock'' (HF) state which minimizes
 the single-particle-energiy sum, $\sum_\alpha 2j_\alpha \epsilon_\alpha$.
 The pairing correlation is weakened in both ends of the
 collective path.
@@ -1186,7 +1192,13 @@ this case.
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{omega_sq.eps}
  \end{center}
-	\caption{Eigenvalues of moving-frame QRPA equation with respect to the collective coordinate $q$, from $N=14$ to $N=24$. Purple lines are spurious modes and green lines are chosen modes corresponding to the collective coordinate. In each panel, both edges correspond to the end points of the collective coordinate.
+\caption{Eigenvalues of moving-frame QRPA equation with respect
+to the collective coordinate $q^1$, from $N=14$ to $N=24$.
+The thick (green) lines are the modes we choose as
+the collective coordinate $q^1$,
+while the dashed lines correspond to the zero modes ($q^n$).
+In each panel, both ends of the horizontal axis corresponds
+to the ending points of the collective path $q^1$.
 }
  \label{omega_sq}
 \end{figure*}
@@ -1194,7 +1206,14 @@ this case.
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{occ_number.eps}
  \end{center}
-	\caption{Occupation numbers in each single-particle level with respect to the collective coordinate $q$, from $N=14$ to $N=24$. At the left end point of the collective coordinate in each panel, the configurations correspond to Hartree-Fock (HF) states.
+\caption{Occupation numbers in each single-particle level
+with respect to the collective coordinate $q$,
+from $N=14$ to $N=24$.
+The purple, green, and blue lines correpsond to
+$\alpha=1$, 2, and 3, respectively.
+At the left end point of the collective coordinate in each panel,
+the configurations correspond to the ``HF-like'' states.
+See text for details.
 }
  \label{occ_number}
 \end{figure*}
@@ -1202,7 +1221,8 @@ this case.
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{potential.eps}
  \end{center}
-	\caption{Collective potential obtained from ASCC. We adjusted the energy minimum point as $V=0$.
+	\caption{Collective potential $V(q^1)$ obtained from ASCC.
+	We adjust the energy minimum point as $q^1=0$ and $V=0$.
 }
  \label{potential}
 \end{figure}
@@ -1309,7 +1329,7 @@ of the second excitation.
 Therefore, all the trajectories are ``closed'' in the usual sense.
 
 %We skipped the result about $\ket{0_3^+}$.
-\begin{table}[htbp]
+\begin{table}[tb]
 \begin{ruledtabular}
 \begin{tabular}{c|cccccc}
             $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
@@ -1327,7 +1347,7 @@ See text for details.}
 \label{ex}
 \end{table}
 
-\begin{figure}[htbp]
+\begin{figure}[tb]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{intra_trans.eps}
  \end{center}
@@ -1339,9 +1359,9 @@ from $N=14$ to $N=22$.
 The solid (dashed) lines correspond to the ASCC+SPA (exact) calculation.
 The horizontal line indicates the particle number of the initial states.
 The upper panel shows the intraband transitions,
-$\ket{0_1^+}\to\ket{0_1^+}$ and $\ket{0_2^+}\to\ket{0_2^+}$,
+$0_1^+\to 0_1^+$ and $0_2^+\to 0_2^+$,
 while lower panel shows the interband transitions,
-$\ket{0_1^+}\to\ket{0_2^+}$ and $\ket{0_2^+}\to\ket{0_1^+}$.
+$0_1^+ \to 0_2^+$ and $0_2^+\to 0_1^+$.
 }
  \label{3levelPad}
 \end{figure}
@@ -1392,7 +1412,8 @@ is shown in Fig. \ref{Pb_occ_number}.
 Similarly to the three-level model, 
 the end points of the collective path indicate exactly
 the integer numbers, and
-the left end of each panel corresponds to the ``HF''-like state.
+the left end of each panel corresponds to the
+``Hartree-Fock''-like state.
 On the collective path, the occupation of $i_{13/2}$, $p_{3/2}$, and
 $f_{5/2}$ mainly changes.
 %The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. 
@@ -1523,7 +1544,8 @@ to describe the pairing dynamics in the multi-level model.
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
  \end{center}
-	\caption{Pairing gap as a function of collective coordinate in ${}^{192}$Pb. 
+	\caption{Pairing gap as a function of collective coordinate $q^1$
+	in ${}^{192}$Pb. 
 }
  \label{192Pb_gap}
 \end{figure}
