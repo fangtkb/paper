@@ -384,6 +384,7 @@ is
 \begin{align}
 \mathcal{H}_M(\xi,\pi) &= \mathcal{H}(\xi,\pi)
 	-\lambda_{1} q^1(\xi) - \lambda_{n} q^n(\xi,\pi) .
+\label{H_M}
 \end{align}
 The second equation (\ref{mfQRPA}) is called moving-frame QRPA equation.
 %$\tilde{B}^{\alpha\beta}$ is the modified mass parameter
@@ -790,39 +791,56 @@ of Eq. (\ref{mfQRPA}) with the zero frequency $\omega^2=0$.
 %\end{align}
 %which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), 
 
-%%%%%% I guess this is automatic. Check %%%%%%%%
-%To guarantee the state vectors $\ket{Z(q)}$ are in the same total gauge angle $\Phi(q)=-\frac{1}{L} p_1\sum_{\alpha} f^1_{,\alpha}=0$, we correct the eigenvectors by
-%\begin{align}
-%  f^1_{,\alpha} \to f^1_{,\alpha} - \frac{1}{L}\sum_{\beta} f^1_{,\beta} 
-%  \label{f}
-%\end{align}
-%after solving (\ref{LHE}) at each point of $q$.
 
 In the present pairing model, 
 from Eq. (\ref{total_gauge}), we find $J$ does not dependent on $\chi$.
-This means $f^{(1)n\alpha\beta}=0$ in Eq. (\ref{P}),
+This means $f^{(1)n\alpha\beta}=0$ in Eq. (\ref{q^n}),
 thus, $\tilde{B}^{\beta\gamma}=B^{\beta\gamma}$.
 The second derivative of $J$ with respect to $j$ also vanishes,
-which indicates $f^{I}_{,\gamma\beta}$ in Eq.~(\ref{M}) is zero. 
+which indicates $f^n_{,\gamma\beta}$ in Eq.~(\ref{M}) is zero. 
 %It indicates the chemical potential $\lambda_I(q)$ is not necessary information to calculate the matrix element in moving-frame QRPA equation.
-In the present model, it is easy to find an explicit expression
-for the gauge angle $\Phi$.
+The gauge angle $\Phi$ is locally determined
+by the solution of Eq. (\ref{mfQRPA}).
 \begin{align}
-  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha},
+%  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha},
+\Phi = g^\alpha_{,n} \chi_{\alpha},
   \label{total_gauge}
 \end{align}
-where $L$ is the number of available shells $\alpha=1,\cdots,L$.
-Its conjugate variable
-${\partial\mathcal{L}}/{\partial\dot{\Phi}}$
-is indeed given by $J$ of Eq. (\ref{J}).
-Again, exchanging coordinate and momentum,
-we have $q^n=J$ and $p_n=-\Phi$.
+%where $L$ is the number of available shells $\alpha=1,\cdots,L$.
+%Its conjugate variable
+%${\partial\mathcal{L}}/{\partial\dot{\Phi}}$
+%is indeed given by $J$ of Eq. (\ref{J}).
+%Again, exchanging coordinate and momentum,
+%we have $q^n=J$ and $p_n=-\Phi$.
 
 %We consider the treatment for the constant of motion in pairing model. In the TDHFB Hamiltonian, there is no dependence about the total gauge angle
 %\begin{align}
 %  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_{\alpha} j^{\alpha} = \frac{N}{2}
 %\end{align}
 %is conserved quantity. 
+
+%%%%%% Gauge fixing %%%%%%
+It should be noted \cite{N2012} that the definition of the collective
+variables $(q^1,p_1)$ are not unique, because it can be arbitrarily mixed
+with the pair rotation $(q^n,p_n)$ as
+\begin{equation}
+	q^1 \rightarrow q^1 + c q^n,  \quad
+	p_n \rightarrow p_n -c p_1
+\end{equation}
+with an arbitrary constant $c$.
+Numerically, this arbitrariness sometimes leads to a problematic bahavior 
+in iterative procedure of the ASCC.
+In order to fix the parameter $c$, we adopt a condition
+called ``ETOP'' in Ref.~\cite{HNMM07}.
+\begin{align}
+\sum_\alpha f^1_{,\alpha} = 0 ,
+\end{align}
+with 
+\begin{align}
+{f}^1_{,\alpha} \to f^1_{,\alpha} + c f^n_{,\alpha} .
+  \label{f}
+\end{align}
+%after solving (\ref{LHE}) at each point of $q$.
 
 
 \subsection{Application of SPA}
@@ -852,7 +870,7 @@ The action integral is given by
 \end{align}
 In fact, the gauge-angle dependence is formally given as
 \begin{equation}
-\ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_q} .
+\ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_1} .
 \end{equation}
 Then, the action for the trajectory $C_1$ can be also expressed as
 $\mathcal{T}(q^1,p_1;J)=
@@ -1017,6 +1035,7 @@ $(\Phi,J;\phi,j)$ using the Hamiltonian truncated up to the
 second order in $\chi_\alpha$ (``ATDHFB trajectories''),
 we obtain the solid lines in Fig. \ref{fig:N16_traj},
 which perfectly agree with the ASCC trajectories.
+
 The action integrals $\mathcal{T}(t)$ corresponding to
 these closed trajectories are shown in Fig. \ref{fig:N16_tau}.
 For the $0_2^+$ state,
@@ -1353,7 +1372,8 @@ are studied.
 \caption{Single-particle energies of Pb isotopes used in the calculation
 in units of MeV.
 These are obtained from spherical Woods-Saxon potential
-with the universal parameters(?) \cite{??}. }
+with the parameters of Ref.~\cite{BM69}.
+}
 \label{Pb}
 \end{table}
 
@@ -1392,7 +1412,7 @@ in $^{188,190,192,194}$Pb.
 
 \begin{figure*}[t]
  \begin{center}
-  \includegraphics[width=50mm,angle=-90]{Pbomega_sq.eps}
+  \includegraphics[width=40mm,angle=-90]{Pbomega_sq.eps}
  \end{center}
 	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
 }
@@ -1400,7 +1420,7 @@ in $^{188,190,192,194}$Pb.
 \end{figure*}
 \begin{figure*}[t]
  \begin{center}
-  \includegraphics[width=50mm,angle=-90]{Pbocc_number.eps}
+  \includegraphics[width=40mm,angle=-90]{Pbocc_number.eps}
  \end{center}
 	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
 }
@@ -1588,7 +1608,7 @@ addressed in future.
 
 
 \begin{acknowledgments}
-This work is supported in part by JSPS KAKENHI Grants No. ????
+This work is supported in part by JSPS KAKENHI Grants No. 18H01209
 and
 by JSPS-NSFC Bilateral Program for Joint Research Project
 on Nuclear mass and life for unravelling mysteries of r-process.
