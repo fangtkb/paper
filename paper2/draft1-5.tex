@@ -86,7 +86,7 @@ by developing a requantization approach combining the SPA with the adiabatic sel
 %We overcome this difficulty by developing a requantization approach
 %combining the SPA with the adiabatic
 %self-consistent collective coordinate method (ASCC+SPA).
-We apply the theoretical framework of the ASCC+SPA to 
+We apply the ASCC+SPA to 
 multi-level pairing models, which are non-integrable systems,
 to study the nuclear pairing dynamics.
 The ASCC+SPA gives a reasonable description of low-lying excited $0^+$
@@ -1010,7 +1010,7 @@ then, to non-integrable multi-level models.
 The crosses, solid and dashed lines correspond to the results
 of the ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively.
 The crosses for the ASCC+SPA trajectories are plotted every ten calculations
-($\delta q = 10dq =0.1/\sqrt{\epsilon_2-\epsilon_1}$). 
+($\delta q = 10dq =0.1/\sqrt{\epsilon_0}$). 
 %For the ASCC+SPA trajectories, we plot the crosses
 %every ten(?) points of the calculation,
 %namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
@@ -1027,6 +1027,8 @@ the TDHFB2+SPA, and the TDHFB+SPA, respectively.
 %Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. 
 The action integrals are calculated on each trajectory in Fig. \ref{fig:N16_traj}
 from $(\phi,j)=(0,j_{\rm max})$ in the clockwise direction.
+The crosses for the ASCC+SPA trajectories are plotted every ten calculations
+($\delta q = 10dq =0.1/\sqrt{\epsilon_0}$). 
 }
 \label{fig:N16_tau}
 \end{figure}
@@ -1164,13 +1166,13 @@ to the ending points of the collective path $q^1$.
  \begin{center}
   \includegraphics[width=40mm,angle=-90]{occ_number.eps}
  \end{center}
-\caption{Occupation numbers in each single-particle level
+\caption{The occupation numbers $2j^{\alpha}$ in each single-particle level $\alpha$
 as a function of the collective coordinate $q^1$,
 from $N=14$ to $N=24$.
 The purple, green, and blue lines correspond to
 $\alpha=1$, 2, and 3, respectively.
 At the left end point of the collective coordinate in each panel,
-the configurations correspond to the ``HF-like'' states.
+the configuration corresponds to the ``HF-like'' states.
 See text for details.
 }
  \label{occ_number}
@@ -1333,6 +1335,23 @@ The ground-to-ground transitions, $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$,
 are perfectly reproduced, while
 $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$ are underestimated 
 by about $10\%\sim20\%$.
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=55mm,angle=-90]{Pbomega_sq.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
+}
+ \label{Pb_omega_sq}
+\end{figure*}
+
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=55mm,angle=-90]{Pbocc_number.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
+}
+ \label{Pb_occ_number}
+\end{figure*}
 
 It is more difficult to reproduce the absolute magnitude of
 interband transitions ($k\neq k'$), 
@@ -1380,27 +1399,9 @@ Therefore, all the trajectories are ``closed'' in the usual sense.
 
 %We skipped the result about $\ket{0_3^+}$.
 
-
-
-\begin{figure*}[tb]
- \begin{center}
-  \includegraphics[width=55mm,angle=-90]{Pbomega_sq.eps}
- \end{center}
-	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
-}
- \label{Pb_omega_sq}
-\end{figure*}
-
-\begin{figure*}[tb]
- \begin{center}
-  \includegraphics[width=55mm,angle=-90]{Pbocc_number.eps}
- \end{center}
-	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
-}
- \label{Pb_occ_number}
-\end{figure*}
 \subsection{Non-integrable case (2): Pb isotopes}
 \label{sec:Pb_isotopes}
+
 
 Finally, we apply our method to neutrons' pairing dynamics in 
 neutron-deficient Pb isotopes.
@@ -1412,7 +1413,7 @@ the experimental pairing gap given by the odd-even mass difference,
 $\Delta(N)=\frac{(-1)^{N+1}}{2}[B(N+1)-2B(N)+B(N-1)]$ of ${}^{192}$Pb.
 The even-even nuclei from ${}^{188}$Pb to ${}^{194}$Pb
 are studied.
-\begin{table}[htbp]
+\begin{table}[tb]
 \caption{Single-particle energies of Pb isotopes used in the calculation
 in units of MeV.
 These are obtained from the spherical Woods-Saxon potential
@@ -1448,7 +1449,7 @@ On the collective path, the occupation numbers of $i_{13/2}$, $p_{3/2}$, and
 $f_{5/2}$ mainly change.
 %The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. 
 
-\begin{figure}[htbp]
+\begin{figure}[bt]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbpotential.eps}
  \end{center}
@@ -1469,17 +1470,7 @@ which will be discussed in Sec.~\ref{sec5}.
 Therefore, in this paper, we calculate the first excited states
 in $^{188,190,192,194}$Pb.
 
-\begin{table}[htbp]
-\caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
-  \begin{ruledtabular}
-\begin{tabular}{c|cccccc}
-   & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
-ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
-Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
-\end{tabular}
-\end{ruledtabular}
-\label{Pb_ex}
-\end{table}
+
 We show the calculated excitation energy of the first excited state
 in Table~\ref{Pb_ex}.
 Experimentally, this pair vibrational excited $0^+$ state is
@@ -1491,7 +1482,18 @@ pairing model.
 The ASCC+SPA method quantitatively reproduces the excitation energy of
 the exact solution.
 
-\begin{figure}[htbp]
+\begin{table}[bt]
+\caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
+  \begin{ruledtabular}
+\begin{tabular}{c|cccccc}
+   & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
+ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
+Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
+\end{tabular}
+\end{ruledtabular}
+\label{Pb_ex}
+\end{table}
+\begin{figure}[htb]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbintra_trans.eps}
  \end{center}
@@ -1520,15 +1522,6 @@ We may say that the ASCC+SPA gives reasonable results for the intraband
 transitions in the realistic values of the pairing coupling constant $g$ and
 single-particle levels.
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
- \end{center}
-	\caption{Pairing gap as a function of collective coordinate $q^1$
-	in ${}^{192}$Pb. 
-}
- \label{192Pb_gap}
-\end{figure}
 Finally, we discuss the validity of the collective model approach
 assuming the pairing gap as a collective coordinate.
 The 5D collective Hamiltonian assuming the quadrupole deformation
@@ -1560,7 +1553,15 @@ to describe the pairing dynamics in the multi-level model.
 %the pair deformation parameters pairing gap $\Delta$ and global gauge angle $\Phi$. 
 %The utilization of the collective model for nuclear pairing dynamics was done in several references\cite{??}. In our previous study, however, we find that the pairing gap $\Delta$ is not proper to be the collective coordinate in two-level pairing model \cite{??}. In multi-level system, we can investigate the relations between the pairing gap and the collective coordinate. 
 
-
+\begin{figure}[t]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
+ \end{center}
+	\caption{Pairing gap as a function of collective coordinate $q^1$
+	in ${}^{192}$Pb. 
+}
+ \label{192Pb_gap}
+\end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Conclusion and discussion}
@@ -1572,8 +1573,8 @@ of the TDHFB dynamics in the two-level pairing model,
 we propose the ASCC+SPA method for non-integrable systems.
 In this approach, we use the ASCC method to extract the 2D
 collective subspace including the pair rotation.
-In other words, we map the non-integrable system to an approximate
-integrable system described by $(q^1,p_1;J,\Phi)$.
+In other words, we extract an approximate integrable system 
+in the non-integrable system described by $(q^1,p_1;J,\Phi)$.
 
 %to extend SPA into non-integrable system is to combine with ASCC. We constructed the theoretical framework of ASCC+SPA for bound states, which is bound in the collective potential from ASCC. 
 %Besides the collective Hamiltonian, $Q$ operator at each point of collective path is also necessary input information.
