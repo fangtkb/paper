@@ -272,8 +272,8 @@ the reciprocal mass parameter $B^{\alpha\beta}(\xi)$ defined by
 
 For multi-level pairing models in Sec.~\ref{sec3}, 
 there is a constant of motion in the TDHFB dynamics,
-namely the average particle number $q^n\equiv \langle N \rangle/2$.
-Since the particle number $N$ is time-even Hermitian operator, we treat
+namely the average particle number $q^n\equiv \langle \hat{N} \rangle/2$.
+Since the particle number $\hat{N}$ is time-even Hermitian operator, we treat
 this as a coordinate, and its conjugate gauge angle, $p_n$,
 as a momentum.
 Since $q^n$ is a constant of motion, the Hamiltonian does not
@@ -303,7 +303,7 @@ In the collective Hamiltonian (\ref{coll}), the variable $q^n$ is
 trivially given as the particle number, which is expanded up to
 second order in the momenta $\pi$,
 \begin{equation}
-q^n=\frac{\langle N \rangle}{2} = f^n(\xi)
+q^n=\frac{\langle \hat{N} \rangle}{2} = f^n(\xi)
 	+\frac{1}{2}f^{(1)n\alpha\beta}\pi_\alpha\pi_\beta .
 	\label{q^n}
 \end{equation}
@@ -509,7 +509,7 @@ given by $(q^1(t),p_1(t))$,
 of the Hamiltonian $\mathcal{H}_{\rm coll}$.
 \begin{equation}
 %\ket{\psi_k} = \oint_{C_k} d\mu(q,p) \ket{q,p}
-\ket{\psi_k} = \oint dp_n \oint_{C_k} \rho(q,p) dt \ket{q,p}
+\ket{\psi_k} \propto \oint dp_n \oint_{C_k} \rho(q,p) dt \ket{q,p}
 	e^{i\mathcal{T}[q,p]} ,
 	\label{SPA}
 \end{equation}
@@ -525,7 +525,7 @@ in Eq. (\ref{dmu}).
 The action integral $\mathcal{T}$ is defined by
 \begin{align}
 \mathcal{T}[q,p] &\equiv
-\int_{0}^{t} \braket{q(t'),p(t')| i\hbar\frac{\partial}{\partial t'}
+\int_{0}^{t} \braket{q(t'),p(t')| i\frac{\partial}{\partial t'}
 	|q(t'),p(t')} dt' .
 \label{tau}
 \end{align}
@@ -628,28 +628,28 @@ in the multi-level pairing model by applying the ASCC+SPA.
 The Hamiltonian of the pairing model is given in terms of
 the single-particle energies $\epsilon_l$ and the pairing strength $g$ as
 \begin{align}
-	H &= \sum_\alpha \epsilon_\alpha n_\alpha - g \sum_{\alpha,\beta} S_\alpha^+ S_{\beta}^- \nonumber \\
-    &= \sum_\alpha\epsilon_\alpha(2S_\alpha^0+\Omega_\alpha) - g S^+ S^{-} ,
+	\hat{H} &= \sum_\alpha \epsilon_\alpha \hat{n}_\alpha - g \sum_{\alpha,\beta} \hat{S}_\alpha^+ \hat{S}_{\beta}^- \nonumber \\
+    &= \sum_\alpha\epsilon_\alpha(2\hat{S}_\alpha^0+\Omega_\alpha) - g \hat{S}^+ \hat{S}^{-} ,
 \end{align}
 where we use the SU(2) quasi-spin operators,
 $\boldsymbol{S}=\sum_\alpha \boldsymbol{S}_\alpha$, with
 \begin{eqnarray}
-        S_\alpha^0 &=& \frac{1}{2}\left(\sum_ma_{j_\alpha m}^{\dag}a_{j_\alpha m}-\Omega_\alpha\right) ,\\
-        S_\alpha^{+} &=& \sum_{m>0}a_{j_\alpha m}^{\dag}a_{j_\alpha\overline{m}}^{\dag} ,
-\quad   S_\alpha^{-} = S_\alpha^{+\dag} .
+        \hat{S}_\alpha^0 &=& \frac{1}{2}\left(\sum_m\hat{a}_{j_\alpha m}^{\dag}\hat{a}_{j_\alpha m}-\Omega_\alpha\right) ,\\
+        \hat{S}_\alpha^{+} &=& \sum_{m>0}\hat{a}_{j_\alpha m}^{\dag}\hat{a}_{j_\alpha\overline{m}}^{\dag} ,
+\quad   \hat{S}_\alpha^{-} = \hat{S}_\alpha^{+\dag} .
 \end{eqnarray}
 Each single-particle energy $\epsilon_\alpha$ possesses $2\Omega_\alpha$-fold
 degeneracy ($\Omega_\alpha=j_\alpha+1/2$)
 and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$
 and $\Omega_\alpha-1/2$.
 The occupation number of each level $\alpha$ is given by
-$n_\alpha = \sum_m a^{\dag}_{j_\alpha m}a_{j_\alpha m}
-=2S_\alpha^0+\Omega_\alpha
+$\hat{n}_\alpha = \sum_m \hat{a}^{\dag}_{j_\alpha m}\hat{a}_{j_\alpha m}
+=2\hat{S}_\alpha^0+\Omega_\alpha
 $.
 The quasi-spin operators satisfy the commutation relations
 \begin{equation}
-  [S_\alpha^0,S_\beta^{\pm}] = \pm\delta_{\alpha\beta}S_{\alpha}^{\pm},
-\quad [S_{\alpha}^{+},S_{\beta}^{-}] = 2\delta_{\alpha\beta}S_{\alpha}^{0} .
+  [\hat{S}_\alpha^0,\hat{S}_\beta^{\pm}] = \pm\delta_{\alpha\beta}\hat{S}_{\alpha}^{\pm},
+\quad [\hat{S}_{\alpha}^{+},\hat{S}_{\beta}^{-}] = 2\delta_{\alpha\beta}\hat{S}_{\alpha}^{0} .
 \end{equation}
 The magnitude of quasi-spin for each level is given by
 $S_\alpha=\frac{1}{2}(\Omega_\alpha-\nu_\alpha)$, where $\nu_\alpha$
@@ -671,7 +671,7 @@ The time-dependent coherent state for the seniority $\nu=0$ states
 time-dependent complex variables $Z_\alpha(t)$ as
 \begin{equation}
 	\ket{Z(t)} = \prod_{\alpha} \left(1+|Z_\alpha(t)|^2\right)^{-\Omega_\alpha/2}
-	\exp [Z_\alpha(t) S_\alpha^{+}] \ket{0},
+	\exp [Z_\alpha(t) \hat{S}_\alpha^{+}] \ket{0},
  \label{coherent}
 \end{equation}
 where $\ket{0}$ is the vacuum (zero-particle) state.
@@ -692,7 +692,7 @@ principle, $\delta \mathcal{S} = 0$, where
 \begin{equation}
 %  \delta \int \braket{\phi(t)|i\frac{\partial}{\partial t}-H|\phi(t)}dt = 0 ,
 	\mathcal{S}\equiv \int \mathcal{L}(t) dt =
-	\int \braket{Z(t)|i\frac{\partial}{\partial t}-H|Z(t)}dt
+	\int \braket{Z(t)|i\frac{\partial}{\partial t}-\hat{H}|Z(t)}dt
   \label{TDHFB}
 \end{equation}
 ($\hbar=1$ applies hereafter).
@@ -703,11 +703,11 @@ the Lagrangian $\mathcal{L}$ and the expectation value of the Hamiltonian
 are written as
 \begin{equation}
 \mathcal{L}(t) = \sum_\alpha \frac{\Omega_\alpha}{2}
-	(1-\cos{\theta}_\alpha)\dot{\chi_\alpha} - \mathcal{H}(Z,Z^*) ,
+	(1-\cos{\theta}_\alpha)\dot{\chi}_\alpha - \mathcal{H}(Z,Z^*) ,
 \end{equation}
 with
 \begin{align}
-	\mathcal{H}( &Z,Z^*) \equiv \braket{Z|H|Z}& \nonumber \\
+	\mathcal{H}( &Z,Z^*) \equiv \braket{Z|\hat{H}|Z}& \nonumber \\
 	=& \sum_\alpha \epsilon_\alpha\Omega_\alpha(1- \cos{\theta}_\alpha)
 	\nonumber \\
 	&- \frac{g}{4}\sum_\alpha \Omega_\alpha [\Omega_\alpha(1-\cos^2{\theta}_\alpha)+(1-\cos{\theta}_\alpha)^2] \nonumber \\
@@ -723,7 +723,7 @@ are given by
 \end{align}
 $\chi_\alpha$ represents a kind of gauge angle of each level,
 and $j^\alpha$ corresponds to the occupation number of each level,
-$2j^\alpha=\bra{Z} n_\alpha\ket{Z}$. 
+$2j^\alpha=\bra{Z} \hat{n}_\alpha\ket{Z}$. 
 As we mention in Sec.~\ref{sec:notation},
 we switch the coordinates and momenta,
 $(\chi_\alpha,j^\alpha) \rightarrow (j^\alpha,-\chi_\alpha)$,
@@ -732,8 +732,8 @@ to make the coordinates time even.
 %$\mathcal{H}(Z,Z^*) = \mathcal{H}(\{\chi_l\},\{j_l\})$, and 
 The TDHFB equation is equivalent to classical Hamilton's equations
 \begin{equation}
-	-\dot{\chi_\alpha} = -\frac{\partial\mathcal{H}}{\partial j^\alpha}, \quad
-	\dot{j^\alpha} = \frac{\partial\mathcal{H}}{\partial (-\chi_\alpha)} .
+	-\dot{\chi}_\alpha = -\frac{\partial\mathcal{H}}{\partial j^\alpha}, \quad
+	\dot{j}^\alpha = \frac{\partial\mathcal{H}}{\partial (-\chi_\alpha)} .
 \end{equation}
 
 
@@ -881,7 +881,7 @@ In fact, the gauge-angle dependence is formally given as
 \begin{equation}
   \ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_1},
 \end{equation}
-where $\hat{N}=\sum_\alpha n_\alpha$.
+where $\hat{N}=\sum_\alpha \hat{n}_\alpha$.
 Then, the action for the trajectory $C_1$ can be also expressed as
 $\mathcal{T}(q^1,p_1;J)=
  \int_{C_1} \braket{J;q^1,p_1|i\frac{\partial}{\partial t}|J;q^1,p_1} dt$.
@@ -999,6 +999,54 @@ then, to non-integrable multi-level models.
 
 \subsection{Integrable case: Two-level pairing model}
 
+
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.45\textwidth,angle=-90]{N16X3p2trajectory.eps}
+ \end{center}
+\caption{Classical trajectories satisfying the EBK quantization condition
+(\ref{EBK}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
+%The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. 
+The crosses, solid and dashed lines correspond to the results
+of the ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively.
+The crosses for the ASCC+SPA trajectories are plotted every ten calculations
+($\delta q = 10dq =0.1/\sqrt{\epsilon_2-\epsilon_1}$). 
+%For the ASCC+SPA trajectories, we plot the crosses
+%every ten(?) points of the calculation,
+%namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
+}
+\label{fig:N16_traj}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2action.eps}
+ \end{center}
+\caption{Calculated action integrals for the $\ket{0_2^+}$ and $\ket{0_3^+}$ states as functions of time $t$.
+The crosses, solid and dashed lines correspond to the ASCC+SPA,
+the TDHFB2+SPA, and the TDHFB+SPA, respectively. 
+%Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. 
+The action integrals are calculated on each trajectory in Fig. \ref{fig:N16_traj}
+from $(\phi,j)=(0,j_{\rm max})$ in the clockwise direction.
+}
+\label{fig:N16_tau}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2occ.eps}
+ \end{center}
+\caption{
+Occupation probabilities for the $0_2^+$ and $0_3^+$ states.
+The horizontal line indicates the $j=(m_2-m_1)/2$ of the quasi-spin basis
+in Eq. (\ref{SPA2}).
+The vertical bars at each $m_2-m_1$ from left to right
+represent $|C_m|^2$ of Eq. (\ref{coef}) in
+the ASCC+SPA, TDHFB2+SPA and TDHFB+SPA calculations,
+respectively.
+}
+ \label{fig:N16_occ}
+\end{figure}
+
+
 The two-level pairing model corresponds to the 2D TDHFB system.
 Explicitly separating the gauge angle $\Phi$ and
 fixing the particle number $J$,
@@ -1071,7 +1119,6 @@ $(m_1,m_2)=((N-2)/2,1)$, and so on.
 The results from the TDHFB2+SPA and the ASCC+SPA are identical to each other
 within numerical error, and they reproduce
 the TDHFB+SPA calculation well.
-{\bf (How about exact cal.?)}
 
 %we can obtain the obvious collective path from ASCC.
 %The dynamics is exactly identical with adiabatic TDHFB (ATDHFB). We confirm that whether ASCC is identical to one-dimensional ATDHFB, and compare the difference with TDHFB, in numerical calculation.
@@ -1091,52 +1138,6 @@ the TDHFB+SPA calculation well.
 %We know that the BCS ground state corresponds to the potential minimum point with $\phi=0$. If the pairing correlation is strong enough to bind the excited states in the collective potential,  the adiabatic approximation is expected to be well because the states are localized in small $\phi$ region. 
 %
 
-\begin{figure}[thb]
- \begin{center}
-   \includegraphics[height=0.45\textwidth,angle=-90]{N16X3p2trajectory.eps}
- \end{center}
-\caption{Classical trajectories satisfying the EBK quantization condition
-(\ref{EBK}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
-%The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. 
-The crosses, solid and dashed lines correspond to the results
-of the ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively.
-The crosses for the ASCC+SPA trajectories are plotted every ten calculations
-($\delta q = 10dq =0.1/\sqrt{\epsilon_2-\epsilon_1}$). 
-%For the ASCC+SPA trajectories, we plot the crosses
-%every ten(?) points of the calculation,
-%namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
-}
-\label{fig:N16_traj}
-\end{figure}
-\begin{figure}[thb]
- \begin{center}
-   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2action.eps}
- \end{center}
-\caption{Calculated action integrals for the $\ket{0_2^+}$ and $\ket{0_3^+}$ states as functions of time $t$.
-The crosses, solid and dashed lines correspond to the ASCC+SPA,
-the TDHFB2+SPA, and the TDHFB+SPA, respectively. 
-%Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. 
-The action integrals are calculated on each trajectory in Fig. \ref{fig:N16_traj}
-from $(\phi,j)=(0,j_{\rm max})$ in the clockwise direction.
-}
-\label{fig:N16_tau}
-\end{figure}
-\begin{figure}[thb]
- \begin{center}
-   \includegraphics[height=0.5\textwidth,angle=-90]{N16X3p2occ.eps}
- \end{center}
-\caption{
-Occupation probabilities for the $0_2^+$ and $0_3^+$ states.
-The horizontal line indicates the $j=(m_2-m_1)/2$ of the quasi-spin basis
-in Eq. (\ref{SPA2}).
-The vertical bars at each $m_2-m_1$ from left to right
-represent $|C_m|^2$ of Eq. (\ref{coef}) in
-the ASCC+SPA, TDHFB2+SPA and TDHFB+SPA calculations,
-respectively.
-}
- \label{fig:N16_occ}
-\end{figure}
-
 By comparing with the full TDHFB calculation with the ASCC+SPA approach
 in the two-level pairing model,
 we conclude that the ASCC is reliable for description of low-lying
@@ -1145,6 +1146,35 @@ In addition to that, we should note that the pair rotation is properly separated
 %we succeed to describe the bound collective excited states by ASCC+SPA. For the bound states, whether the adiabatic approximation included or not hardly has influence. Even for the weakly bound states, the adiabatic approximation is reasonable approximation.
 
 
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{omega_sq.eps}
+ \end{center}
+ \caption{Eigenvalues of moving-frame QRPA equation as a function of
+the collective coordinate $q^1$, from $N=14$ to $N=24$.
+The thick (green) lines are the modes we choose as
+the collective coordinate $q^1$,
+while the dashed lines correspond to the zero modes ($q^n$).
+In each panel, both ends of the horizontal axis corresponds
+to the ending points of the collective path $q^1$.
+}
+ \label{omega_sq}
+\end{figure*}
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{occ_number.eps}
+ \end{center}
+\caption{Occupation numbers in each single-particle level
+as a function of the collective coordinate $q^1$,
+from $N=14$ to $N=24$.
+The purple, green, and blue lines correspond to
+$\alpha=1$, 2, and 3, respectively.
+At the left end point of the collective coordinate in each panel,
+the configurations correspond to the ``HF-like'' states.
+See text for details.
+}
+ \label{occ_number}
+\end{figure*}
 \subsection{Non-integrable case (1): Three-level pairing model}
 \label{sec:three-level-model}
 
@@ -1200,35 +1230,7 @@ The range of $q^1$ is the largest for the system with $N=16$.
 This is because the variation of $j^1$ and $j^2$ is the largest in
 this case.
 
-\begin{figure*}[t]
- \begin{center}
-  \includegraphics[width=40mm,angle=-90]{omega_sq.eps}
- \end{center}
- \caption{Eigenvalues of moving-frame QRPA equation as a function of
-the collective coordinate $q^1$, from $N=14$ to $N=24$.
-The thick (green) lines are the modes we choose as
-the collective coordinate $q^1$,
-while the dashed lines correspond to the zero modes ($q^n$).
-In each panel, both ends of the horizontal axis corresponds
-to the ending points of the collective path $q^1$.
-}
- \label{omega_sq}
-\end{figure*}
-\begin{figure*}[t]
- \begin{center}
-  \includegraphics[width=40mm,angle=-90]{occ_number.eps}
- \end{center}
-\caption{Occupation numbers in each single-particle level
-as a function of the collective coordinate $q^1$,
-from $N=14$ to $N=24$.
-The purple, green, and blue lines correspond to
-$\alpha=1$, 2, and 3, respectively.
-At the left end point of the collective coordinate in each panel,
-the configurations correspond to the ``HF-like'' states.
-See text for details.
-}
- \label{occ_number}
-\end{figure*}
+
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{potential.eps}
@@ -1237,6 +1239,42 @@ See text for details.
 	We adjust the energy minimum point as $q^1=0$ and $V=0$.
 }
  \label{potential}
+\end{figure}
+\begin{table}[htbp]
+\caption{Calculated excitation energies of the first and the second
+excited states in units of $\epsilon_0$.
+In the exact calculation, the second excited state in the ASCC+SPA
+corresponds to the $0_4^+$ state.
+See text for details.}
+\label{ex}
+\begin{ruledtabular}
+\begin{tabular}{c|cccccc}
+            $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
+ASCC+SPA (1st exc.) & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\
+    Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\ \hline
+ASCC+SPA (2nd exc.)& $7.42$ & $7.42$ & $7.60$ & $7.92$ & $8.26$ & $8.47$\\
+Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{intra_trans.eps}
+ \end{center}
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{inter_trans.eps}
+ \end{center}
+\caption{Calculated strength of pair-addition transition (\ref{BPad})
+from $N=14$ to $N=22$. 
+The solid (dashed) lines correspond to the ASCC+SPA (exact) calculation.
+The horizontal line indicates the particle number of the initial states.
+The upper panel shows the intraband transitions,
+$0_1^+\to 0_1^+$ and $0_2^+\to 0_2^+$,
+while the lower panel shows the interband transitions,
+$0_1^+ \to 0_2^+$ and $0_2^+\to 0_1^+$.
+}
+ \label{3levelPad}
 \end{figure}
 
 Based on the collective path determined by the ASCC calculation,
@@ -1255,7 +1293,7 @@ not to the $0_3^+$ state, in the exact calculation.
 We examine the interband $(k\neq k')$ pair-addition transition,
 \begin{equation}
 B(P_{\rm ad};k\rightarrow k') \equiv 
-	\left|\bra{0_{k'}^+;N+2} S^+ \ket{0_k^+;N}\right|^2 ,
+	\left|\bra{0_{k'}^+;N+2} \hat{S}^+ \ket{0_k^+;N}\right|^2 ,
 \label{BPad}
 \end{equation}
 in the exact solution.
@@ -1326,7 +1364,7 @@ the reduction to the 1D collective path is not well justified.
 %$B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_1^+)$ are only about $1\%$ of $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$. Therefore, the interband transition can be regarded as reasonable. From all above results, we can conclude that ASCC+SPA reproduces exact solution quantitatively. 
 
 We should remark here that there is a difficulty in the present ASCC+SPA
-requantization for weak paring cases.
+requantization for weak pairing cases.
 In such cases, the potential minimum is close to the left end 
 ($q^1=q_L$) of the collective path, and the potential height
 at $q^1=q_L$, $V(q_L) - V(0)$, becomes small.
@@ -1341,46 +1379,26 @@ of the second excitation.
 Therefore, all the trajectories are ``closed'' in the usual sense.
 
 %We skipped the result about $\ket{0_3^+}$.
-\begin{table}[tb]
-\caption{Calculated excitation energies of the first and the second
-excited states in units of $\epsilon_0$.
-In the exact calculation, the second excited state in the ASCC+SPA
-corresponds to the $0_4^+$ state.
-See text for details.}
-\label{ex}
-\begin{ruledtabular}
-\begin{tabular}{c|cccccc}
-            $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
-ASCC+SPA (1st exc.) & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\
-    Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\ \hline
-ASCC+SPA (2nd exc.)& $7.42$ & $7.42$ & $7.60$ & $7.92$ & $8.26$ & $8.47$\\
-Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$
-\end{tabular}
-\end{ruledtabular}
-\end{table}
 
-\begin{figure}[tb]
+
+
+\begin{figure*}[tb]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{intra_trans.eps}
+  \includegraphics[width=55mm,angle=-90]{Pbomega_sq.eps}
  \end{center}
- \begin{center}
-  \includegraphics[width=60mm,angle=-90]{inter_trans.eps}
- \end{center}
-\caption{Calculated strength of pair-addition transition (\ref{BPad})
-from $N=14$ to $N=22$. 
-The solid (dashed) lines correspond to the ASCC+SPA (exact) calculation.
-The horizontal line indicates the particle number of the initial states.
-The upper panel shows the intraband transitions,
-$0_1^+\to 0_1^+$ and $0_2^+\to 0_2^+$,
-while the lower panel shows the interband transitions,
-$0_1^+ \to 0_2^+$ and $0_2^+\to 0_1^+$.
+	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
 }
- \label{3levelPad}
-\end{figure}
+ \label{Pb_omega_sq}
+\end{figure*}
 
-
-
-
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=55mm,angle=-90]{Pbocc_number.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
+}
+ \label{Pb_occ_number}
+\end{figure*}
 \subsection{Non-integrable case (2): Pb isotopes}
 \label{sec:Pb_isotopes}
 
@@ -1430,35 +1448,6 @@ On the collective path, the occupation numbers of $i_{13/2}$, $p_{3/2}$, and
 $f_{5/2}$ mainly change.
 %The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. 
 
-The collective potentials for these isotopes are shown
-in Fig. \ref{Pb_potential}.
-The heights of the potentials at the left end, $V(q_L)-V(0)$,
-are $2\sim3.5$ MeV.
-{\bf For $^{186}$Pb, the height of the potential is not
-enough to satisfy the condition, $E<V(q_L)$,
-to have a closed trajectory for the first excited state
-(See the last paragraph in Sec.~\ref{sec:three-level-model}). }
-We encounter another kind of problem for $^{196}$Pb,
-which will be discussed in Sec.~\ref{sec5}.
-Therefore, in this paper, we calculate the first excited states
-in $^{188,190,192,194}$Pb.
-
-\begin{figure*}[t]
- \begin{center}
-  \includegraphics[width=55mm,angle=-90]{Pbomega_sq.eps}
- \end{center}
-	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
-}
- \label{Pb_omega_sq}
-\end{figure*}
-\begin{figure*}[t]
- \begin{center}
-  \includegraphics[width=55mm,angle=-90]{Pbocc_number.eps}
- \end{center}
-	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
-}
- \label{Pb_occ_number}
-\end{figure*}
 \begin{figure}[htbp]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{Pbpotential.eps}
@@ -1467,7 +1456,30 @@ in $^{188,190,192,194}$Pb.
 }
  \label{Pb_potential}
 \end{figure}
+The collective potentials for these isotopes are shown
+in Fig. \ref{Pb_potential}.
+The heights of the potentials at the left end, $V(q_L)-V(0)$,
+are $2\sim3.5$ MeV.
+For $^{186}$Pb, the height of the potential is not
+enough to satisfy the condition, $E<V(q_L)$,
+to have a closed trajectory for the first excited state
+(See the last paragraph in Sec.~\ref{sec:three-level-model}).
+We encounter another kind of problem for $^{196}$Pb,
+which will be discussed in Sec.~\ref{sec5}.
+Therefore, in this paper, we calculate the first excited states
+in $^{188,190,192,194}$Pb.
 
+\begin{table}[htbp]
+\caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
+  \begin{ruledtabular}
+\begin{tabular}{c|cccccc}
+   & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
+ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
+Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
+\end{tabular}
+\end{ruledtabular}
+\label{Pb_ex}
+\end{table}
 We show the calculated excitation energy of the first excited state
 in Table~\ref{Pb_ex}.
 Experimentally, this pair vibrational excited $0^+$ state is
@@ -1479,6 +1491,17 @@ pairing model.
 The ASCC+SPA method quantitatively reproduces the excitation energy of
 the exact solution.
 
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{Pbintra_trans.eps}
+ \end{center}
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{Pbinter_trans.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{3levelPad} but for Pb isotopes.
+}
+ \label{PbPad}
+\end{figure}
 The pair-addition transition strengths are shown in Fig. \ref{PbPad}.
 The feature that is similar to the three-level case is observed:
 dominant intraband transition and very weak interband transitions.
@@ -1497,29 +1520,15 @@ We may say that the ASCC+SPA gives reasonable results for the intraband
 transitions in the realistic values of the pairing coupling constant $g$ and
 single-particle levels.
 
-\begin{table}[htbp]
-\caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
-  \begin{ruledtabular}
-\begin{tabular}{c|cccccc}
-   & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
-ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
-Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
-\end{tabular}
-\end{ruledtabular}
-\label{Pb_ex}
-\end{table}
 \begin{figure}[htbp]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{Pbintra_trans.eps}
+  \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
  \end{center}
- \begin{center}
-  \includegraphics[width=60mm,angle=-90]{Pbinter_trans.eps}
- \end{center}
-	\caption{The same as Fig. \ref{3levelPad} but for Pb isotopes.
+	\caption{Pairing gap as a function of collective coordinate $q^1$
+	in ${}^{192}$Pb. 
 }
- \label{PbPad}
+ \label{192Pb_gap}
 \end{figure}
-
 Finally, we discuss the validity of the collective model approach
 assuming the pairing gap as a collective coordinate.
 The 5D collective Hamiltonian assuming the quadrupole deformation
@@ -1533,7 +1542,7 @@ we can transform the collective Hamiltonian in $(q^1,\Phi)$
 into the one in $(\Delta,\Phi)$.
 The pairing gap $\Delta$ is defined as
 \begin{align}
-  \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|S^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
+  \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|\hat{S}^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
   &= g\sum_\alpha \sqrt{j^\alpha(\Omega_\alpha-j^\alpha)} .
 \end{align}
 Figure \ref{192Pb_gap} shows the pairing gap $\Delta$ in ${}^{192}$Pb
@@ -1551,15 +1560,6 @@ to describe the pairing dynamics in the multi-level model.
 %the pair deformation parameters pairing gap $\Delta$ and global gauge angle $\Phi$. 
 %The utilization of the collective model for nuclear pairing dynamics was done in several references\cite{??}. In our previous study, however, we find that the pairing gap $\Delta$ is not proper to be the collective coordinate in two-level pairing model \cite{??}. In multi-level system, we can investigate the relations between the pairing gap and the collective coordinate. 
 
-\begin{figure}[htbp]
- \begin{center}
-  \includegraphics[width=60mm,angle=-90]{192Pbgap.eps}
- \end{center}
-	\caption{Pairing gap as a function of collective coordinate $q^1$
-	in ${}^{192}$Pb. 
-}
- \label{192Pb_gap}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -1599,9 +1599,9 @@ we have encountered several problems remaining to be solved.
 First, we can calculate a classical trajectory bound by the
 pocket of a potential. However, it is not trivial how to treat
 ``unbound'' trajectories that hit the end point of the collective path.
-{\bf See the potentials in Figs. \ref{potential} and \ref{Pb_potential}.
+See the potentials in Figs. \ref{potential} and \ref{Pb_potential}.
 This happens in the calculation of ${}^{186}$Pb
-(Sec.~\ref{sec:Pb_isotopes}).}
+(Sec.~\ref{sec:Pb_isotopes}).
 Probably, it is necessary to find a proper boundary condition
 in the collective subspace.
 For instance, the 5D quadrupole collective model has
