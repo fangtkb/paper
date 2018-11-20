@@ -1,10 +1,106 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
-\bibitem{Richardson1}
-R.~W. Richardson.
-\newblock A restricted class of exact eigenstates of the pairing-force
-  hamiltonian.
-\newblock {\em Phys. Lett.}, 3:277, 1963.
+\bibitem{BBPK70}
+D.R. B\`es, R.A. Broglia, R.P.J. Perazzo, and K.~Kumar.
+\newblock Collective treatment of the pairing hamiltonian.
+\newblock {\em Nucl. Phys. A}, 143(1):1 -- 33, 1970.
+
+\bibitem{BHR73}
+Ricardo~A. Broglia, Ole Hansen, and Claus Riedel.
+\newblock Two-neutron transfer reactions and the pairing model.
+\newblock {\em Adv. Nucl. Phys.}, 6:287, 1973.
+
+\bibitem{CDS84}
+M.C. Cambiaggio, G.G. Dussel, and M.~Saraceno.
+\newblock Time-dependent hartree-fock-bogoliubov description of the pairing
+  interaction.
+\newblock {\em Nucl. Phys. A}, 415(1):70 -- 92, 1984.
+
+\bibitem{Cas72}
+R.~F. Casten, E.~R. Flynn, J.~D. Garrett, O.Hansen, T.~J. Mulligan, D.~R.
+  Bessab, R.~A. Broglia, and B.~Nilsson.
+\newblock Search for $(t, p)$ transitions to excited $0^+$ states in the
+  actinide region.
+\newblock {\em Phys. Lett. B}, 40:333, 1972.
+
+\bibitem{GPBW85}
+A.~G\'{o}\'{z}d\'{z}, K.~Pomorski, M.~Brack, and E.~Werner.
+\newblock Collective pairing hamiltonian in the gcm approximation.
+\newblock {\em Nucl. Phys. A}, 442:50, 1985.
+
+\bibitem{GJV71}
+R.~E. Griffin, A.~D. Jackson, and A.~B. Volkov.
+\newblock An explanation for the $0^+$ excited pairing state in actinide
+  nuclei.
+\newblock {\em Phys. Lett. B}, 36:281, 1971.
+
+\bibitem{HN16}
+Nobuo Hinohara and Witold Nazarewicz.
+\newblock Pairing nambu-goldstone modes within nuclear density functional
+  theory.
+\newblock {\em Phys. Rev. Lett}, 116:152502, Apr 2016.
+
+\bibitem{KJJ12}
+A.~Kankainen, J.~\"{A}yst\"{o}, and A.~Jokinen.
+\newblock High-accuracy mass spectrometry of fission products with penning
+  traps.
+\newblock {\em J. Phys. G}, 39:093101, Jul 2012.
+
+\bibitem{K81}
+H.~Kuratsuji.
+\newblock A path integral formalism of collective motion.
+\newblock {\em Prog. Theor. Phys.}, 65:224, 1981.
+
+\bibitem{KS80}
+H.~Kuratsuji and T.~Suzuki.
+\newblock Path integral approach to many-nucleon systems and time-dependent
+  hartree-fock.
+\newblock {\em Phys. Lett. B}, 92:19, 1980.
+
+\bibitem{LL65}
+L.~D. Landau and E.~M. Lifshitz.
+\newblock {\em Quantum Mechanics}.
+\newblock A Course of Theoretical Physics. Pergamon Press, Oxford, 1965.
+
+\bibitem{L80}
+S.~Levit.
+\newblock Time-dependent mean-field approximation for nuclear dynamical
+  problems.
+\newblock {\em Phys. Rev. C}, 21:1594, 1980.
+
+\bibitem{MEFSS70}
+J.~V. Maher, J.~R. Erskine, A.~M. Friedman, J.~P. Schiffer, and R.~H. Siemssen.
+\newblock Unexpected strong pair correlations in excited 0+ states of actinide
+  nuclei.
+\newblock {\em Phys. Rev. Lett.}, 25:302, 1970.
+
+\bibitem{MEFSS72}
+J.~V. Maher, J.~R. Erskine, A.~M. Friedman, R.~H. Siemssen, and J.~P. Schiffer.
+\newblock Population of $0^+$ states in actinide and $a\approx 190$ nuclides by
+  the $(p,t)$ reaction.
+\newblock {\em Phys. Rev. C}, 5:1380, 1972.
+
+\bibitem{Neg82}
+J.~W. Negele.
+\newblock The mean-field theory of nuclear structure and dynamics.
+\newblock {\em Rev. Mod. Phys.}, 54:913--1015, Oct 1982.
+
+\bibitem{P07}
+K.~Pomorski.
+\newblock Pairing as a collective mode.
+\newblock {\em Int. J. Mod. Phys. E.}, 16:237, 2007.
+
+\bibitem{PF11}
+G.~Potel, F.~Barranco, F.~Marini, A.~Idini, E.~Vigezzi, and R.~A. Broglia.
+\newblock Calculation of the transition from pairing vibrational to pairing
+  rotational regimes between magic nuclei ${100}^{}$sn and ${132}^{}$sn via
+  two-nucleon transfer reactions.
+\newblock {\em Phys. Rev. Lett}, 107:092501, Aug 2011.
+
+\bibitem{RB76}
+I.~Ragnarsson and R.~A. Broglia.
+\newblock Pairing isomer.
+\newblock {\em Nucl. Phys. A}, 263:315, 1976.
 
 \bibitem{Richardson2}
 R.~W. Richardson and N.~Sherman.
@@ -15,5 +111,28 @@ R.~W. Richardson and N.~Sherman.
 R.~W. Richardson and N.~Sherman.
 \newblock Pairing model of pb$^{206}$, pb$^{204}$ and pb$^{202}$.
 \newblock {\em Nucl. Phys.}, 52:353, 1964.
+
+\bibitem{SM88}
+Toru Suzuki and Yutaka Mizobuchi.
+\newblock Semiclassical description of bound state wave functions for
+  integrable systems? r(4) model ?
+\newblock {\em Prog. Theor. Phys,}, 79(2):480--492, 1988.
+
+\bibitem{TV61}
+D.~J. Thouless and J.~G. Valatin.
+\newblock Time-dependent hartree-fock equations and rotational states of
+  nuclei.
+\newblock {\em Nucl. Phys.}, 31:211, Jul 1961.
+
+\bibitem{RK72}
+W.~I. van Rij and S.~H. Kahana.
+\newblock Low-lying $0^+$ states and $(p,t)$ strengths in the actinides.
+\newblock {\em Phys. Rev. Lett.}, 28:50, 1972.
+
+\bibitem{ZPPRS99}
+K.~Zajac, L.~Prochniak, K.~Pomorski, S.~G. Rohozinski, and J.~Srebrny.
+\newblock The low-lying quadrupole collective excitations of ru and pd
+  isotopes.
+\newblock {\em Nucl. Phys. A}, 653:71, 1999.
 
 \end{thebibliography}

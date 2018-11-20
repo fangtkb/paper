@@ -3,45 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: plain.bst
 Database file #1: ref.bib
-You've used 3 entries,
+Warning--I didn't find a database entry for "Richardson1"
+Warning--I didn't find a database entry for "delta1"
+Warning--I didn't find a database entry for "delta3"
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            517 strings with 4331 characters,
-and the built_in function-call counts, 823 in all, are:
-= -- 78
-> -- 33
+            680 strings with 7396 characters,
+and the built_in function-call counts, 7661 in all, are:
+= -- 720
+> -- 423
 < -- 0
-+ -- 14
-- -- 10
-* -- 52
-:= -- 153
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 14
++ -- 170
+- -- 142
+* -- 576
+:= -- 1371
+add.period$ -- 73
+call.type$ -- 24
+change.case$ -- 142
 chr.to.int$ -- 0
-cite$ -- 3
-duplicate$ -- 33
-empty$ -- 67
-format.name$ -- 10
-if$ -- 165
+cite$ -- 24
+duplicate$ -- 265
+empty$ -- 555
+format.name$ -- 142
+if$ -- 1534
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 8
+int.to.str$ -- 24
+missing$ -- 25
+newline$ -- 123
+num.names$ -- 48
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 119
 quote$ -- 0
-skip$ -- 23
+skip$ -- 175
 stack$ -- 0
-substring$ -- 43
-swap$ -- 3
+substring$ -- 404
+swap$ -- 24
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 94
 warning$ -- 0
-while$ -- 9
-width$ -- 4
-write$ -- 35
+while$ -- 72
+width$ -- 26
+write$ -- 267
 is.kanji.str$ -- 0
+(There were 3 warnings)
