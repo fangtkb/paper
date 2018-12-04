@@ -1,46 +1,57 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Pairing correlation in theoretical and experimental aspects}{1}
 \contentsline {subsection}{\numberline {1.1.1}Superfluid nuclei}{1}
-\contentsline {subsection}{\numberline {1.1.2}Pairing collective motion}{3}
-\contentsline {section}{\numberline {1.2}Motivation of this study}{4}
-\contentsline {subsection}{\numberline {1.2.1}Mysterious excited $0^+$ states and pairing dynamics}{4}
-\contentsline {subsection}{\numberline {1.2.2}Theoretical problem}{6}
-\contentsline {subsection}{\numberline {1.2.3}Our idea}{6}
-\contentsline {subsection}{\numberline {1.2.4}Outline of this thesis}{6}
-\contentsline {chapter}{\numberline {2}Pairing model}{7}
-\contentsline {section}{\numberline {2.1}Exact solution}{7}
-\contentsline {subsection}{\numberline {2.1.1}Diagonalization in quasispin space}{8}
-\contentsline {subsection}{\numberline {2.1.2}Richardson equation}{8}
-\contentsline {section}{\numberline {2.2}TDHFB dynamics}{9}
-\contentsline {subsection}{\numberline {2.2.1}Hamilton's equation}{9}
-\contentsline {subsection}{\numberline {2.2.2}Constant of motion}{10}
-\contentsline {chapter}{\numberline {3}Requantization of TDHFB in integrable system}{13}
-\contentsline {section}{\numberline {3.1}Classical dynamics in two-level system}{13}
-\contentsline {subsection}{\numberline {3.1.1}TDHFB dynamics}{13}
-\contentsline {subsection}{\numberline {3.1.2}Adiabatic TDHFB (ATDHFB) dynamics}{14}
-\contentsline {section}{\numberline {3.2}Requantization methods}{15}
-\contentsline {subsection}{\numberline {3.2.1}Stationary phase approximation to the path integral}{16}
-\contentsline {subsection}{\numberline {3.2.2}Canonical quantization}{18}
-\contentsline {subsection}{\numberline {3.2.3}Fourier decomposition}{19}
-\contentsline {section}{\numberline {3.3}Result}{20}
-\contentsline {subsection}{\numberline {3.3.1}Large-$\Omega $ cases}{21}
-\contentsline {subsection}{\numberline {3.3.2}Small-$\Omega $ cases}{23}
-\contentsline {subsubsection}{Mid-shell configuration}{23}
-\contentsline {subsubsection}{Closed-shell configuration}{25}
-\contentsline {section}{\numberline {3.4}Collective model treatment}{27}
+\contentsline {subsection}{\numberline {1.1.2}Pairing collective motion}{2}
+\contentsline {subsection}{\numberline {1.1.3}Mysterious excited $0^+$ states and pairing dynamics}{4}
+\contentsline {section}{\numberline {1.2}Motivation of this study}{5}
+\contentsline {subsection}{\numberline {1.2.1}Theoretical problem}{6}
+\contentsline {subsection}{\numberline {1.2.2}Our approach}{7}
+\contentsline {section}{\numberline {1.3}Outline of this thesis}{8}
+\contentsline {chapter}{\numberline {2}Pairing model}{9}
+\contentsline {section}{\numberline {2.1}Exact solution}{9}
+\contentsline {subsection}{\numberline {2.1.1}Diagonalization in quasispin space}{10}
+\contentsline {subsection}{\numberline {2.1.2}Richardson equation}{10}
+\contentsline {section}{\numberline {2.2}TDHFB dynamics}{11}
+\contentsline {subsection}{\numberline {2.2.1}Hamilton's equation}{11}
+\contentsline {subsection}{\numberline {2.2.2}Constant of motion}{12}
+\contentsline {chapter}{\numberline {3}Requantization of TDHFB in integrable system}{15}
+\contentsline {section}{\numberline {3.1}Classical dynamics in two-level system}{15}
+\contentsline {subsection}{\numberline {3.1.1}TDHFB dynamics}{15}
+\contentsline {subsection}{\numberline {3.1.2}TDHFB dynamics in adiabatic\FN@sf@gobble@opt {In this subsection, the word ``adiabatic'' means that the collective velocity is small.} limit}{16}
+\contentsline {section}{\numberline {3.2}Requantization methods}{17}
+\contentsline {subsection}{\numberline {3.2.1}Stationary phase approximation to the path integral}{18}
+\contentsline {subsection}{\numberline {3.2.2}Canonical quantization}{20}
+\contentsline {subsection}{\numberline {3.2.3}Fourier decomposition}{22}
+\contentsline {section}{\numberline {3.3}Result}{23}
+\contentsline {subsection}{\numberline {3.3.1}Large-$\Omega $ cases}{23}
+\contentsline {subsection}{\numberline {3.3.2}Small-$\Omega $ cases}{25}
+\contentsline {subsubsection}{Mid-shell configuration}{25}
+\contentsline {subsubsection}{Closed-shell configuration}{26}
 \contentsline {chapter}{\numberline {4}Requantization of TDHFB in non-integrable system}{31}
 \contentsline {section}{\numberline {4.1}Theoretical framework of ASCC+SPA in non-integrable system}{31}
-\contentsline {section}{\numberline {4.2}Result}{31}
-\contentsline {chapter}{\numberline {5}Discussion}{33}
-\contentsline {chapter}{\numberline {6}Conclusion}{35}
-\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{37}
-\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{37}
-\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{40}
-\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{41}
-\contentsline {section}{\numberline {A.4}Action in pairing model}{42}
-\contentsline {chapter}{\numberline {B}Properties of superfluid ground state in pairing model}{43}
-\contentsline {section}{\numberline {B.1}Two-level system}{43}
-\contentsline {chapter}{\numberline {C}Adiabatic self-consistent collective coordinate method}{45}
-\contentsline {section}{\numberline {C.1}Theoretical framework}{45}
-\contentsline {section}{\numberline {C.2}Matrix elements of local harmonic approximation in pairing model}{45}
-\contentsline {chapter}{Bibliography}{47}
+\contentsline {subsection}{\numberline {4.1.1}Adiabatic self-consistent collective coordinate method and 1D collective subspace}{31}
+\contentsline {subsection}{\numberline {4.1.2}Stationary-phase approximation to path integral}{33}
+\contentsline {subsubsection}{Basic idea of ASCC+SPA}{33}
+\contentsline {subsubsection}{Notation and practical procedure for quantization}{34}
+\contentsline {section}{\numberline {4.2}Application of ASCC+SPA in pairing model}{34}
+\contentsline {subsection}{\numberline {4.2.1}Application of ASCC}{34}
+\contentsline {subsection}{\numberline {4.2.2}Application of SPA}{35}
+\contentsline {section}{\numberline {4.3}Result}{37}
+\contentsline {subsection}{\numberline {4.3.1}Integrable case: Two-level pairing model}{37}
+\contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{39}
+\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{43}
+\contentsline {chapter}{\numberline {5}Collective model treatment}{45}
+\contentsline {section}{\numberline {5.1}Integrable system}{45}
+\contentsline {section}{\numberline {5.2}non-integrable system}{47}
+\contentsline {chapter}{\numberline {6}Conclusion}{49}
+\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{51}
+\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{51}
+\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{54}
+\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{55}
+\contentsline {section}{\numberline {A.4}Action in pairing model}{56}
+\contentsline {chapter}{\numberline {B}Properties of superfluid ground state in pairing model}{57}
+\contentsline {section}{\numberline {B.1}Two-level system}{57}
+\contentsline {chapter}{\numberline {C}Adiabatic self-consistent collective coordinate method}{59}
+\contentsline {section}{\numberline {C.1}Theoretical framework}{59}
+\contentsline {section}{\numberline {C.2}Matrix elements of local harmonic approximation in pairing model}{59}
+\contentsline {chapter}{Bibliography}{61}

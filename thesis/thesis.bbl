@@ -5,6 +5,16 @@ D.R. B\`es, R.A. Broglia, R.P.J. Perazzo, and K.~Kumar.
 \newblock Collective treatment of the pairing hamiltonian.
 \newblock {\em Nucl. Phys. A}, 143(1):1 -- 33, 1970.
 
+\bibitem{BM69}
+A.~Bohr and B.~R. Mottelson.
+\newblock {\em Nuclear Structure, Vol.1: Single-Particle Motion}.
+\newblock W. A. Benjamin, 1969.
+
+\bibitem{BM75}
+A.~Bohr and B.~R. Mottelson.
+\newblock {\em Nuclear Structure, Vol. II}.
+\newblock W. A. Benjamin, New York, 1975.
+
 \bibitem{BHR73}
 Ricardo~A. Broglia, Ole Hansen, and Claus Riedel.
 \newblock Two-neutron transfer reactions and the pairing model.
@@ -23,6 +33,25 @@ R.~F. Casten, E.~R. Flynn, J.~D. Garrett, O.Hansen, T.~J. Mulligan, D.~R.
   actinide region.
 \newblock {\em Phys. Lett. B}, 40:333, 1972.
 
+\bibitem{Eba10}
+Shuichiro Ebata, Takashi Nakatsukasa, Tsunenori Inakura, Kenichi Yoshida, Yukio
+  Hashimoto, and Kazuhiro Yabana.
+\newblock Canonical-basis time-dependent hartree-fock-bogoliubov theory and
+  linear-response calculations.
+\newblock {\em Phys. Rev. C}, 82:034306, Sep 2010.
+
+\bibitem{G01}
+P.~E. Garrett.
+\newblock Characterization of the $\beta$ vibration and $0_2^+$ states in
+  deformed nuclei.
+\newblock {\em J. Phys. G: Nucl. Part. Phys.}, 27:R1, 2001.
+
+\bibitem{GW10}
+P.~E. Garrett and J.~L. Wood.
+\newblock On the robustness of surface vibrational modes: case studies in the
+  cd region.
+\newblock {\em J. Phys. G: Nucl. Part. Phys.}, 37:064028, 2010.
+
 \bibitem{GPBW85}
 A.~G\'{o}\'{z}d\'{z}, K.~Pomorski, M.~Brack, and E.~Werner.
 \newblock Collective pairing hamiltonian in the gcm approximation.
@@ -33,6 +62,11 @@ R.~E. Griffin, A.~D. Jackson, and A.~B. Volkov.
 \newblock An explanation for the $0^+$ excited pairing state in actinide
   nuclei.
 \newblock {\em Phys. Lett. B}, 36:281, 1971.
+
+\bibitem{HW11}
+Kris Heyde and John~L. Wood.
+\newblock Shape coexistence in atomic nuclei.
+\newblock {\em Rev. Mod. Phys.}, 83:1467--1521, Nov 2011.
 
 \bibitem{HN16}
 Nobuo Hinohara and Witold Nazarewicz.
@@ -45,6 +79,18 @@ A.~Kankainen, J.~\"{A}yst\"{o}, and A.~Jokinen.
 \newblock High-accuracy mass spectrometry of fission products with penning
   traps.
 \newblock {\em J. Phys. G}, 39:093101, Jul 2012.
+
+\bibitem{Kulp08}
+W.~D. Kulp, J.~L. Wood, P.~E. Garrett, C.~Y. Wu, D.~Cline, J.~M. Allmond,
+  D.~Bandyopadhyay, D.~Dashdorj, S.~N. Choudry, A.~B. Hayes, H.~Hua, M.~G.
+  Mynk, M.~T. McEllistrem, C.~J. McKay, J.~N. Orce, R.~Teng, and S.~W. Yates.
+\newblock Search for intrinsic collective excitations in ${}^{152}$ sm.
+\newblock {\em Phys. Rev. C}, 77:061301(R), 2008.
+
+\bibitem{KB67}
+Krishna Kumar and Michel Baranger.
+\newblock Complete numerical solution of bohr's collective hamiltonian.
+\newblock {\em Nucl. Phys. A}, 92:608, 1967.
 
 \bibitem{K81}
 H.~Kuratsuji.
@@ -68,6 +114,11 @@ S.~Levit.
   problems.
 \newblock {\em Phys. Rev. C}, 21:1594, 1980.
 
+\bibitem{LNP80}
+S.~Levit, J.~W. Negele, and Z.~Paltiel.
+\newblock Time-dependent mean-field theory and quantized bound states.
+\newblock {\em Phys. Rev. C}, 21:1603, 1980.
+
 \bibitem{MEFSS70}
 J.~V. Maher, J.~R. Erskine, A.~M. Friedman, J.~P. Schiffer, and R.~H. Siemssen.
 \newblock Unexpected strong pair correlations in excited 0+ states of actinide
@@ -80,10 +131,46 @@ J.~V. Maher, J.~R. Erskine, A.~M. Friedman, R.~H. Siemssen, and J.~P. Schiffer.
   the $(p,t)$ reaction.
 \newblock {\em Phys. Rev. C}, 5:1380, 1972.
 
+\bibitem{MNM00}
+M.~Matsuo, T.~Nakatsukasa, and K.~Matsuyanagi.
+\newblock Adiabatic selfconsistent collective coordinate method for large
+  amplitude collective motion in pairing correlations.
+\newblock {\em Prog. Theor. Phys.}, 103:959, 2000.
+
+\bibitem{N2012}
+T.~Nakatsukasa.
+\newblock Density functional approaches to collective phenomena in nuclei:
+  Time-dependent density functional theory for perturbative and
+  non-perturbative nuclear dynamics.
+\newblock {\em Prog. Theor. Exp. Phys.}, 01A207, 2012.
+
+\bibitem{Na07}
+Takashi Nakatsukasa, Tsunenori Inakura, and Kazuhiro Yabana.
+\newblock Finite amplitude method for the solution of the random-phase
+  approximation.
+\newblock {\em Phys. Rev. C}, 76:024318, Aug 2007.
+
+\bibitem{NMMY16}
+Takashi Nakatsukasa, Kenichi Matsuyanagi, Masayuki Matsuo, and Kazuhiro Yabana.
+\newblock Time-dependent density-functional description of nuclear dynamics.
+\newblock {\em Rev. Mod. Phys.}, 88:045004, Nov 2016.
+
 \bibitem{Neg82}
 J.~W. Negele.
 \newblock The mean-field theory of nuclear structure and dynamics.
 \newblock {\em Rev. Mod. Phys.}, 54:913--1015, Oct 1982.
+
+\bibitem{NN18}
+Fang Ni and Takashi Nakatsukasa.
+\newblock Comparative study of the requantization of the time-dependent mean
+  field for the dynamics of nuclear pairing.
+\newblock {\em Phys. Rev. C}, 97:044310, Apr 2018.
+
+\bibitem{HNMM07}
+Hinohara Nobuo, Nakatsukasa Takashi, Matsuo Masayuki, and Matsuyanagi Kenichi.
+\newblock Gauge-invariant formulation of the adiabatic self-consistent
+  collective coordinate method.
+\newblock {\em Prog. Theor. Phys.}, 117(3):451, 2007.
 
 \bibitem{P07}
 K.~Pomorski.
@@ -102,6 +189,28 @@ I.~Ragnarsson and R.~A. Broglia.
 \newblock Pairing isomer.
 \newblock {\em Nucl. Phys. A}, 263:315, 1976.
 
+\bibitem{Rei80}
+H.~Reinhardt.
+\newblock Semiclassical theory of large amplitude collective excitations.
+\newblock {\em Nucl. Phys. A}, 346(1):1 -- 69, 1980.
+
+\bibitem{Richardson1}
+R.~W. Richardson.
+\newblock A restricted class of exact eigenstates of the pairing-force
+  hamiltonian.
+\newblock {\em Phys. Lett.}, 3:277, 1963.
+
+\bibitem{Richardson5}
+R.~W. Richardson.
+\newblock Exact eigenstates of the pairing-force hamiltonian, ii.
+\newblock {\em J. Math. Phys.}, 6:1034, 1965.
+
+\bibitem{Richardson4}
+R.~W. Richardson.
+\newblock Numerical study of the 8-32-particle eigenstates of the pairing
+  hamiltonian.
+\newblock {\em Phys. Rev.}, 141:949, 1966.
+
 \bibitem{Richardson2}
 R.~W. Richardson and N.~Sherman.
 \newblock Exact eigenstates of the pairing-force hamiltonian.
@@ -110,13 +219,39 @@ R.~W. Richardson and N.~Sherman.
 \bibitem{Richardson3}
 R.~W. Richardson and N.~Sherman.
 \newblock Pairing model of pb$^{206}$, pb$^{204}$ and pb$^{202}$.
-\newblock {\em Nucl. Phys.}, 52:353, 1964.
+\newblock {\em Nucl. Phys.}, 52:253, 1964.
+
+\bibitem{RS80}
+P.~Ring and P.~Schuck.
+\newblock {\em The nuclear many-body problems}.
+\newblock Texts and monographs in physics. Springer-Verlag, New York, 1980.
+
+\bibitem{SL13-2}
+Guillaume Scamps and Denis Lacroix.
+\newblock Systematics of isovector and isoscalar giant quadrupole resonances in
+  normal and superfluid spherical nuclei.
+\newblock {\em Phys. Rev. C}, 88:044310, Oct 2013.
+
+\bibitem{SS11}
+J.~F. Sharpey-Schafer, S.~M. Mullins, R.~A. Bark, J.~Kau, F.~Komati, E.~A.
+  Lawrie, J.~J. Lawrie, T.~E. Madiba, P.~Maine, A.~Minkova, S.~H.~T. Murray,
+  N.~J. Ncapayi, and P.~A. Vymers.
+\newblock Congruent band structures in ${}^{154}$gd: Configuration-dependent
+  pairing, a double vacuum and lack of $\beta$-vibrations.
+\newblock {\em Eur. Phys. J. A}, 47::5, 2011.
 
 \bibitem{SM88}
 Toru Suzuki and Yutaka Mizobuchi.
 \newblock Semiclassical description of bound state wave functions for
   integrable systems? r(4) model ?
 \newblock {\em Prog. Theor. Phys,}, 79(2):480--492, 1988.
+
+\bibitem{TE11}
+J.~Terasaki and J.~Engel.
+\newblock Testing skyrme energy-density functionals with the quasiparticle
+  random-phase approximation in low-lying vibrational states of rare-earth
+  nuclei.
+\newblock {\em Phys. Rev. C}, 83:021304(R), Jul 2011.
 
 \bibitem{TV61}
 D.~J. Thouless and J.~G. Valatin.
@@ -128,6 +263,16 @@ D.~J. Thouless and J.~G. Valatin.
 W.~I. van Rij and S.~H. Kahana.
 \newblock Low-lying $0^+$ states and $(p,t)$ strengths in the actinides.
 \newblock {\em Phys. Rev. Lett.}, 28:50, 1972.
+
+\bibitem{YN11}
+Kenichi Yoshida and Takashi Nakatsukasa.
+\newblock Dipole responses in nd and sm isotopes with shape transitions.
+\newblock {\em Phys. Rev. C}, 83:021304, Feb 2011.
+
+\bibitem{YN13}
+Kenichi Yoshida and Takashi Nakatsukasa.
+\newblock Shape evolution of giant resonances in nd and sm isotopes.
+\newblock {\em Phys. Rev. C}, 88:034309, Sep 2013.
 
 \bibitem{ZPPRS99}
 K.~Zajac, L.~Prochniak, K.~Pomorski, S.~G. Rohozinski, and J.~Srebrny.

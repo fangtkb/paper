@@ -35,13 +35,17 @@
 \usepackage{amsmath,amssymb}
 \usepackage{framed}
 \usepackage{braket}
+\usepackage[stable]{footmisc}
 
 %%% HEADERS & FOOTERS
 \usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
 \pagestyle{fancy} % options: empty , plain , fancy
-\renewcommand{\headrulewidth}{0pt} % customise the layout...
-\lhead{}\chead{}\rhead{}
+\renewcommand{\headrulewidth}{1pt} % customise the layout...
+\rhead[]{\rightmark}
+\lhead[\leftmark]{}
 \lfoot{}\cfoot{\thepage}\rfoot{}
+\renewcommand{\chaptermark}[1]{\markboth{Chapter\ \thechapter\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{Section\ \thesection\ #1}{}}
 
 %%% SECTION TITLE APPEARANCE
 \usepackage{sectsty}
@@ -67,8 +71,17 @@
 \begin{document}
 \maketitle
 
+\chapter*{Absract}
+
+In most of nuclei, the structure of low-lying excited $0^+$ states, which had been called as $\beta$ vibration or two-phonon excitation, are complicate and mysterious from plenty of recent experimental data. The common suggestion from those experimentalists is that the pairing correlation plays an important role in such excited $0^+$ states because they found strange cross sections of two-nucleon transfer reactions. From theoretical viewpoint, excited $0^+$ states correspond to pairing vibrational mode, the elementary mode of excitation of pairing collective motions, in superfluid nuclei. 
+Because quantum fluctuation is large in low-lying region, To understand such excited $0^+$ states, extend to the large-amplitude regime, but also pairing correlation. 
+
+
+
+
 \pagenumbering{roman}
 \tableofcontents
+\thispagestyle{empty}
 
 \chapter{Introduction}
 \pagenumbering{arabic}
@@ -77,12 +90,9 @@
 
 \subsection{Superfluid nuclei}
 
-Mean field model is standard tool to describe the structure of atomic nuclei. The idea of mean field model is based on the primary theoretical framework of shell model introduced by Mayer and Jensen in 1949. Mean field picture indicates that the nucleon can be described in single-particle motion in the mean field potential created by the whole nucleons in the nucleus. Although the many-body correlation between the nucleons is extremely complicate, the single-particle motion picture can well reproduce the basic properties (e.g. radius, binding energy, separation energy, magic number) in most of nuclide. %%The most popular mean field potential is Woods-Saxon potential with spin-orbit coupling. Because 
+Mean-field model is standard tool to describe the structure of atomic nuclei. The idea of mean-field model is based on the primary theoretical framework of shell model introduced by Mayer and Jensen in 1949. Mean field picture indicates that the nucleon can be described in single-particle motion in the mean field potential created by the whole nucleons in the nucleus. Although the many-body correlation between the nucleons is extremely complicate, the single-particle motion picture can well reproduce the basic properties (e.g. radius, binding energy, separation energy, magic number) in most of nuclide. %%The most popular mean field potential is Woods-Saxon potential with spin-orbit coupling. Because 
 
-Of course, single-particle motion picture cannot describe the nuclear system perfectly. To describe the nuclear structure more precisely, the residual interaction, the deviation between single-particle interaction and many body correlation, needs to be taken account. In 1950s, nuclear physicists found one of the most important residual interaction, pairing correlation. One of the clear evidences for pairing correlation detected from experiment is the separation energy difference between odd nuclei and even nuclei. Fig. \ref{S_n} shows the separation energies for Sn, Sb, and Te isotopes as a function of neutron number. The isotopes in even neutron number have about $2\sim3$ MeV larger separation energies than the isotopes in odd neutron number.
-It is odd-even staggering (OES) effect, which is detected in whole mass region of nuclei ( Fig. \ref{gap}). In this figure, $2\Delta$ corresponds to the separation energy difference between even-even nuclei and odd mass number nuclei. The approximate value is $2\Delta \approx 24A^{-1/2}$ MeV. It indicates a two-body attractive interaction should be included based on single-particle motion picture. In addition, if we examine the spin-parity of the ground states, we can find all of the even-even nuclei are $J^{\pi}=0^+$ states and most of the odd mass number nuclei have the same spin-parity as their single-particle orbital which the last nucleon fulfills in.
-To explain these phenomena, it is natural to consider that the ground state of even-even nuclei consist of coupled $J^{\pi}=0^+$ pairs and the ground state of odd mass number nuclei consist of coupled $J^{\pi}=0^+$ pairs except one unpaired nucleon in last single-particle orbit. The two-body attractive interaction which couples two identical nucleons into $J^{\pi}=0^+$ state is called pairing correlation.
-\begin{figure}[htbp]
+\begin{figure}[tb]
  \begin{center}
     \includegraphics[width=100mm]{images/S_n.eps}
  \end{center}
@@ -90,7 +100,11 @@ To explain these phenomena, it is natural to consider that the ground state of e
   \label{S_n}
 \end{figure}
 
-\begin{figure}[htbp]
+Of course, single-particle motion picture cannot describe the nuclear system perfectly. To describe the nuclear structure more precisely, the residual interaction, the deviation between single-particle interaction and many body correlation, needs to be taken account. In 1950s, nuclear physicists found one of the most important residual interaction, pairing correlation. One of the clear evidences for pairing correlation detected from experiment is the separation energy difference between odd nuclei and even nuclei. Fig. \ref{S_n} shows the separation energies for Sn, Sb, and Te isotopes as a function of neutron number. The isotopes in even neutron number have about $2\sim3$ MeV larger separation energies than the isotopes in odd neutron number.
+It is odd-even staggering (OES) effect, which is detected in whole mass region of nuclei (Fig. \ref{gap}). In this figure, $2\Delta$ corresponds to the separation energy difference between even-even nuclei and odd mass number nuclei. The approximate value is $2\Delta \approx 24A^{-1/2}$ MeV. It indicates a two-body attractive interaction should be included based on single-particle motion picture. In addition, if we examine the spin-parity of the ground states, we can find all of the even-even nuclei are $J^{\pi}=0^+$ states and most of the odd mass number nuclei have the same spin-parity as their single-particle orbital which the last nucleon fulfills in.
+To explain these phenomena, it is natural to consider that the ground state of even-even nuclei consist of coupled $J^{\pi}=0^+$ pairs and the ground state of odd mass number nuclei consist of coupled $J^{\pi}=0^+$ pairs except one unpaired nucleon in last single-particle orbit. The two-body attractive interaction which couples two identical nucleons into $J^{\pi}=0^+$ state is called pairing correlation.
+
+\begin{figure}[tb]
  \begin{center}
     \includegraphics[width=120mm]{images/gap.eps}
  \end{center}
@@ -98,9 +112,9 @@ To explain these phenomena, it is natural to consider that the ground state of e
   \label{gap}
 \end{figure}
 
-Because pairing correlation is two-body interaction, a theoretical framework beyond the mean field model seems to be necessary. However, there is a tricky approximated theory, BCS theory, enable us to describe pairing correlation within mean field model. In BCS theory, the ground state is superposed by the states with different particle number. It indicates that the ground state breaks symmetry in a space, namely U(1) gauge space. With symmetry breaking, the corresponding order parameter, pairing gap $\Delta$, has finite value. Based on BCS theory, because the energy of each particle in a $J^{\pi}=0^+$ pair is $E_k=\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}$, where $\epsilon_k$ is single particle energy, $\lambda$ is Fermi energy, the minimum excitation energy is $2\Delta$. In fact, pairing gap corresponds to the separation energy difference between even-even nuclei and odd mass number nuclei discussed in previous paragraph. As same as superconductivity in condensed matter physics, the superfluid nucleus is defined when $\Delta\neq0$ in ground state. Thus, the OES detected from experiment caused from pairing correlation can be well explained by BCS theory.
+Because pairing correlation is two-body interaction, a theoretical framework beyond the mean-field model seems to be necessary. However, there is a tricky approximated theory, BCS theory, enable us to describe pairing correlation within mean-field model. In BCS theory, the ground state is superposed by the states with different particle number. It indicates that the ground state breaks symmetry in a space, namely U(1) gauge space. With symmetry breaking, the corresponding order parameter, pairing gap $\Delta$, has finite value. Based on BCS theory, because the energy of each particle in a $J^{\pi}=0^+$ pair is $E_k=\sqrt{(\epsilon_k-\lambda)^2+\Delta^2}$, where $\epsilon_k$ is single particle energy, $\lambda$ is Fermi energy, the lowest single-particle excited state corresponds to one-pair broken state with minimum excitation energy $2\Delta$ In fact, pairing gap corresponds to the separation energy difference between even-even nuclei and odd mass number nuclei discussed in previous paragraph. As same as superconductivity in condensed matter physics, the superfluid nucleus is defined when $\Delta\neq0$ in ground state. Thus, the OES detected from experiment caused from pairing correlation can be well explained by BCS theory.
 
-After BCS theory was firstly introduced by J. Bardeen, L. Cooper, and J. R. Schrieffer in 1957, it was immediately generalized to Hartree-Fock-Bogoliubov (HFB) theory. HFB theory is the naturally extension of Hartree-Fock (HF) theory by introducing Bogoliubov transformation. Under Bogoliubov transformation, the particles become to quasiparticles, and the mean field potential is extended to generalized form including pairing field. After HFB theory had been applied to nuclear physics in 1958, the structure of ground states in nuclei was examined by plenty of studies. Up to now, HFB theory is the standard mean field theory to describe nuclear structure including pairing correlation.
+After BCS theory was firstly introduced by J. Bardeen, L. Cooper, and J. R. Schrieffer in 1957, it was immediately generalized to Hartree-Fock-Bogoliubov (HFB) theory. HFB theory is the naturally extension of Hartree-Fock (HF) theory by introducing Bogoliubov transformation. Under Bogoliubov transformation, the particles become to quasiparticles, and the mean-field potential is extended to generalized form including pairing field. After HFB theory had been applied to nuclear physics in 1958, the structure of ground states in nuclei was examined by plenty of studies. Up to now, HFB theory is the standard mean-field theory to describe nuclear structure including pairing correlation.
 
 % Recently, nuclear density functional theory has been developed based on HFB theory. and the computational codes are well developed. The properties of ground states in even-even nuclei are well studied by HFB theory.
 
@@ -120,29 +134,16 @@ After BCS theory was firstly introduced by J. Bardeen, L. Cooper, and J. R. Schr
 
 \subsection{Pairing collective motion}
 \label{1-1-2}
-Due to the superfluid state breaks the symmetry in U(1) gauge space, we expect that there are two types of elementary modes of excitation for pairing collective motion in nuclei. Two types of elementary modes of excitation are Nambu-Goldstone (NG) mode, pairing rotation, recovering the broken symmetry in U(1) gauge space, and Higgs mode, pairing vibration, fluctuating around the energy minimum point.
 
-\begin{figure}[htbp]
+\begin{figure}[bt]
  \begin{center}
     \includegraphics[width=100mm]{images/pair_coll.eps}
  \end{center}
   \caption{Schematic picture of pairing collective motion with superfluid ground state. Red  bi-direction arrow indicates pairing rotation, which rotates in $\Phi$ direction along the energy minimum circle degenerating at an absolute value of pairing gap $|\Delta|\neq 0$, in U(1) gauge space. Green bi-direction arrow indicates pairing vibration, which vibrates in $|\Delta|$ direction around one of the degenerated energy minimum points.}
   \label{Pair_coll}
 \end{figure}
-First, we discuss about pairing rotation. In classical picture, pairing rotation is the motion which the system rotates in the U(1) gauge space (red bi-direction arrow in Fig. \ref{pair_rot}). The motion is described by the coordinate, gauge angle $\Phi$, and the corresponding momentum, total particle number $N$. 
-%It is similar to normal rotation in 3D space which described by the angles ($\theta_x, \theta_y, \theta_z$) and their conjugate angular momenta ($J_x, J_y, J_z$). 
-Because the total particle number is unchanged in time evolution, the momentum $N$ is conserved quantity. In quantum picture, if we assume the ground state in a particle number $N_0$ as the ``ground state'', the ground states in $N=N_0\pm2, N_0\pm4,\cdots$ correspond to the ``excited states'' of pairing rotational mode. The excitation energy is $E_{\rm rot}^{\rm pair}=\frac{(N-N_0)^2}{2\mathcal{J}}$, where $\mathcal{J}$ is the pairing-rotational moment of inertia which characterizes the pairing rotation. In experiment, the pairing rotational band is expected to be observed in even-even isotope chain or even-even isotone chain between two magic numbers. One clear observation is found in Sn isotopes shown in Fig. \ref{pair_rot}. Except  a constant value and linear term with respect to mass number $A$, we can find the energies of ground states consist of a parabolic line - pairing rotational band. Recently, the systematic study for the pairing-rotational moment of inertia has been done in Ref. \cite{HN16}. The experimental moments of inertia obtained from two neutron(proton) separation energies have excellent correspondence with the theoretical moments of inertia obtained from NG mode in quasiparticle random phase approximation (QRPA) \cite{TV61} based on HFB mean field theory, not only for the spherical nuclei, but also for the deformed nuclei. Because the pairing-rotational moments of inertia are free from ambiguities caused from odd-even system, they are supposed to be excellent indicators of pairing correlation rather than pairing gaps.
 
-Next, we discuss about pairing vibration. We emphasize that there are two types of pairing vibrations, one which vibrates around normal ground state ($\Delta\approx 0$), and another one which vibrates around superfluid ground state ($\Delta\neq 0$). The structures between two vibrational modes are quite different. 
-%The former one is well understood because the structure of the excited $0^+$ states are $2np2nh$ configurations, detected from the energy spectra around ${}^{208}$Pb. 
-Here, we only focus on the later one.
-In classical picture, the later one vibrates around one of the degenerated energy minimum points. Depending on the intrinsic structure, various pairing vibrations can exist in one nucleus. 
-%In general, the motion is supposed to be described by the coordinate, pairing gap $\Delta$, and its corresponding momentum\footnote{Because $\Delta$ is order parameter, it is naturally supposed to be the coordinate to describe the pairing vibration in previous studies. However, we found $\Delta$ is not proper coordinate in most of case from our study. The detail is discussed in Chapter 3 and 4.}.
-In quantum picture, if we assume the ground state in a particle number $N_0$ as the ``ground state'', the excited states in $N=N_0, N_0\pm2, N_0\pm4,\cdots$ correspond to the ``excited states'' of pairing vibrational mode. The excitation energy is $E_{\rm vib}^{\rm pair}=n_{\alpha}\hbar\omega$, where $n_{\alpha}$ is the number of phonon and $\alpha$ is the label to distinguish different pairing vibrational modes. Because $2\Delta$ is the minimum energy to break one-pair, the collectivity is supposed to be strong when $E_{\rm vib}^{\rm pair}<2\Delta$. Thus, low-lying excited $0^+$ states in even-even nuclei are possible to be pairing vibrational states. Except the region around the magic number, excited $0^+$ states below $2\Delta$ exist in most of even-even nuclei. However, it is difficult to observe the signatures for pairing vibration directly from experiment. The properties of pairing vibration in nuclei are not well understood up to now.
-
-The signatures for pairing collective motion can also be observed from the two-neutron(proton) transfer reaction \cite{BHR73}, such as $(p, t)$, $(t, p)$, and $({}^3{\rm He}, n)$. The cross sections of two particle transfer reaction strongly depend on the matrix elements of $J^{\pi}=0^+$ pair-transition operators (e.g. pair-additional transition: $\sigma( P_{ad};0_{\alpha}^+(N) \to 0_{\beta}^+(N+2))\sim |\braket{N+2,\beta|\sum_k a^{\dag}_k a^{\dag}_{\bar{k}}|N,\alpha}|^2$). From theoretical prediction, the pairing correlation is known to enhance $\sigma(g.s.\to g.s.)$ and decrease $\sigma(g.s.\to 0_{ex}^+)$ significantly, hence, $\sigma(g.s.\to 0_{ex}^+)/\sigma(g.s.\to g.s.)\ll 1$ is expected in superfluid system. One example of $(p, t)$ reactions is demonstrated in Fig. \ref{pair_rot}. As mentioned in previous paragraph, the ground states of even-even Sn isotopes consist of a pairing rotational band. In such situation, we can find intraband transition is dominant with respect to interband transition. Therefore, the cross sections of two-neutron transfer reaction is consistent with theoretical prediction. In general, the ratio $\sigma(g.s.\to 0_{ex}^+)/\sigma(g.s.\to g.s.)$ for two-neutron(proton) transfer reaction are excellent indicators to describe the collectivity of pairing dynamics.
-
-\begin{figure}[htbp]
+\begin{figure}[tb]
  \begin{center}
     \includegraphics[width=100mm]{images/pair_rot.eps}
  \end{center}
@@ -163,38 +164,103 @@ normalized with respect to the ground state cross sections are in parenthesis. T
   \label{pair_rot}
 \end{figure}
 
-\section{Motivation of this study}
+
+Due to the superfluid state breaks the symmetry in U(1) gauge space, we expect that there are two types of elementary modes of excitation for pairing collective motion in nuclei. The elementary modes of excitation are Nambu-Goldstone (NG) mode, pairing rotational mode, recovering the broken symmetry in U(1) gauge space, and Higgs mode, pairing vibrational mode, fluctuating around the energy minimum point.
+
+First, we discuss about pairing rotation. In classical picture, pairing rotation is the motion which the system rotates in the U(1) gauge space (red bi-direction arrow in Fig. \ref{pair_rot}). The motion is described by the coordinate, gauge angle $\Phi$, and the corresponding momentum, total particle number $N$. 
+%It is similar to normal rotation in 3D space which described by the angles ($\theta_x, \theta_y, \theta_z$) and their conjugate angular momenta ($J_x, J_y, J_z$). 
+Because the total particle number is unchanged in time evolution, pairing rotation corresponds to constant of motion. In quantum picture, if we assume the ground state of $N_0$ particle system as the ``ground state'', the ground states in $N=N_0\pm2, N_0\pm4,\cdots$ correspond to the ``excited states'' of pairing rotational mode. The excitation energy is $E_{\rm rot}^{\rm pair}=\frac{(N-N_0)^2}{2\mathcal{J}}$, where $\mathcal{J}$ is the pairing-rotational moment of inertia. In experiment, the pairing rotational band is expected to be observed in even-even isotope chain or even-even isotone chain in open-shell nuclei. A clear observation is found in Sn isotopes shown in Fig. \ref{pair_rot}. Except a constant value and linear term with respect to mass number $A$, we can find the energies of ground states consist of a parabolic line - pairing rotational band. Recently, the systematic study for the pairing-rotational moment of inertia has been done in Ref. \cite{HN16}. The experimental moments of inertia obtained from two neutron(proton) separation energies have excellent correspondence with the theoretical moments of inertia obtained from NG mode in quasiparticle random phase approximation (QRPA) \cite{TV61} based on HFB mean-field theory, not only for the spherical nuclei, but also for the deformed nuclei. Because the pairing-rotational moments of inertia are free from ambiguities caused from odd-even system, they are supposed to be excellent indicators of pairing correlation rather than pairing gaps.
+
+Next, we discuss about pairing vibration. We emphasize that there are two types of pairing vibrations, one which vibrates around normal ground state ($\Delta\approx 0$), and another one which vibrates around superfluid ground state ($\Delta\neq 0$). The structures of two vibrational modes are quite different. 
+%The former one is well understood because the structure of the excited $0^+$ states are $2np2nh$ configurations, detected from the energy spectra around ${}^{208}$Pb. 
+Here, we only focus on the later case.
+In classical picture, the system vibrates around one of the degenerated energy minimum points. Depending on the intrinsic structure, various pairing vibrations are able to exist in one nucleus. 
+%In general, the motion is supposed to be described by the coordinate, pairing gap $\Delta$, and its corresponding momentum\footnote{Because $\Delta$ is order parameter, it is naturally supposed to be the coordinate to describe the pairing vibration in previous studies. However, we found $\Delta$ is not proper coordinate in most of case from our study. The detail is discussed in Chapter 3 and 4.}.
+In quantum picture, if we assume the ground state of $N_0$ particle system as the ``ground state'', the excited states in $N=N_0, N_0\pm2, N_0\pm4,\cdots$ correspond to the ``excited states'' of pairing vibrational mode. The excitation energy is $E_{\rm vib}^{\rm pair}=n_{\alpha}\hbar\omega$, where $n_{\alpha}$ is the number of phonon and $\alpha$ is the label to distinguish different pairing vibrational modes. Because $2\Delta$ is the minimum energy to break one-pair, the collectivity is supposed to be strong when $E_{\rm vib}^{\rm pair}<2\Delta$. Thus, low-lying excited $0^+$ states in even-even nuclei are possible to be pairing vibrational states. Except the region around the magic number, excited $0^+$ states below $2\Delta$ exist in most of even-even nuclei. However, it is difficult to observe the signatures for pairing vibration directly from experiment. The properties of pairing vibration in nuclei are not well understood up to now.
+% because the multipole correlations interfere the pairing correlation significantly
+
+The signatures for pairing collective motion can also be observed from the two-neutron(proton) transfer reaction \cite{BHR73}, such as $(p, t)$, $(t, p)$, and $({}^3{\rm He}, n)$. The cross sections of two particle transfer reaction strongly depend on the matrix elements of $J^{\pi}=0^+$ pair-transition operators (e.g. pair-additional transition: $\sigma( P_{ad};0_{\alpha}^+(N) \to 0_{\beta}^+(N+2))\sim |\braket{N+2,\beta|\sum_k a^{\dag}_k a^{\dag}_{\bar{k}}|N,\alpha}|^2$). From theoretical prediction, the pairing correlation is known to enhance $\sigma(g.s.\to g.s.)$ and decrease $\sigma(g.s.\to 0_{ex}^+)$ significantly, hence, $\sigma(g.s.\to 0_{ex}^+)/\sigma(g.s.\to g.s.)\ll 1$ is expected in superfluid system. One example of $(p, t)$ reactions is demonstrated in Fig. \ref{pair_rot}. As mentioned in previous paragraph, the ground states of even-even Sn isotopes consist of a pairing rotational band. In such situation, we can find intraband transition is dominant with respect to interband transition. Therefore, the cross sections of two-neutron transfer reaction is consistent with theoretical prediction. In general, the ratio $\sigma(g.s.\to 0_{ex}^+)/\sigma(g.s.\to g.s.)$ for two-neutron(proton) transfer reaction are excellent indicators to describe the collectivity of pairing dynamics.
 
 \subsection{Mysterious excited $0^+$ states and pairing dynamics}
-In most of nuclei, the structure of excited $0^+$ states is complicate and unclear. The reason is that not only pairing correlation but also deformations and multipole correlations influence the excited $0^+$ states significantly. The various correlations competing with each other construct plenty of mysterious excited $0^+$ states.
+In most of nuclei, the structure of excited $0^+$ states in a low-lying region (a few MeV excitation) is complicate and unclear \cite{HW11}. The reason is that not only pairing correlation but also deformations and multipole correlations influence the excited $0^+$ states significantly. The various correlations competing with each other construct plenty of mysterious excited $0^+$ states. We present several examples for these excited $0^+$ states observed from experiment.
 
-After the concept of pairing vibration was introduced, it encountered the problem for the large asymmetry cross sections between $(p, t)$ and $(t, p)$ reaction in actinide region observed from experiment. In low-lying energy region, the cross section of $\sigma(g.s.\to 0_{ex}^+)$ is about $15\%$ of $\sigma(g.s.\to g.s.)$ for $(p, t)$ reaction \cite{MEFSS70, MEFSS72}, while the signal of $\sigma(g.s.\to 0_{ex}^+)$ is extremely weak for $(t, p)$ reaction \cite{Cas72}. To explain such phenomena, the coexistence of both oblate shape and prolate shape in one state, and the mixing of pairing correlations between oblate and prolate shape was suggested \cite{GJV71,RK72}. Another interpretation for such phenomena is using microscopic interaction, including multipole pairing correlations and quadrupole particle-hole interactions \cite{RB76}. Although the approaches are different, they succeeded to reproduce the asymmetry cross section of two-neutron transfer reaction in actinide region.
+After the concept of pairing vibration was introduced, it encountered the problem for the large asymmetry cross sections between $(p, t)$ and $(t, p)$ reaction in actinide region (e.g. Th, U, Pu, Cm) observed from experiment. In low-lying energy region, the cross section of $\sigma(g.s.\to 0_{ex}^+)$ is about $15\%$ of $\sigma(g.s.\to g.s.)$ for $(p, t)$ reaction \cite{MEFSS70, MEFSS72}, while the signal of $\sigma(g.s.\to 0_{ex}^+)$ is extremely weak for $(t, p)$ reaction \cite{Cas72}. To explain such phenomena, the coexistence of both oblate shape and prolate shape in one state, and the mixing of pairing correlations between oblate and prolate shape was suggested \cite{GJV71,RK72}. Another interpretation for such phenomena is using microscopic interaction, including multipole pairing correlations and quadrupole particle-hole interactions \cite{RB76}. Although the approaches are different, they reproduced the asymmetry cross sections of two-neutron transfer reaction in actinide region. These studies hinted the importance of the quadrupole deformation and interactions in low-lying excited $0^+$ states. 
 
-$\beta$ vibration
-Collective motion is the essential idea to explain the excited states in nuclei. The quadrupole collective motion described by the quadrupole deformation parameters $\alpha_{2\mu} (\mu=\pm2,\pm1,0)$ is known as the most typical collective motion. In the framework of quadrupole collective motion, the low-lying excited $0^+$ states can be roughly categorized into two types: quadrupole vibration emerging above two-phonon excitation in spherical nuclei, and $\beta$ vibration emerging in quadrupole deformed nuclei. The excitation energies and $B(E2)$ transition strength is well understood under harmonic approximation.
+We can consider the excited $0^+$ states from common viewpoint, liquid drop with surface vibration. Bohr collective model, which is well-known and successful model describing the quadrupole collective motions in nuclei \cite{BM75} has been constructed based on the idea of liquid drop. The $0_2^+$ states in the model correspond to $\beta$ vibration and the first $2^+$ state in $K=2$ bands correspond to $\gamma$ vibration, in quadrupole deformed nuclei. Also, their rotational bands exist in each vibrational mode. The nuclei in rare earth region (e.g. Sm, Gd, Dy, Er, Yb, Hf, W), well deformed nuclei, had been supposed to be the typical examples of quadrupole collective motions in the early days. 
+With the development for extracting $B(E2)$ values from experiment, however, the doubt whether $0_2^+$ states in rare earth region is $\beta$ vibration arose in the last decades \cite{G01, Kulp08, SS11}. They found that only a part of $B(E2)$ values related to the $0_2^+$ states agree with the predicted $B(E2)$ values in pure $\beta$ vibration picture. Moreover, for $E0$ transition, very few $0_2^+$ states satisfies the range of $\rho^2(E0)$ values which the $\beta$ vibrational picture is good. On the other hand, they detected strong cross sections $\sigma(g.s.\to 0_{2}^+)$ in both $(t, p)$ and $(p, t)$ reactions. These results suggest that $0_2^+$ states in rare earth region are not pure $\beta$ vibrational states, but some mixed states with the importance of pairing correlation.
+
+\begin{figure}[tb]
+ \begin{center}
+    \includegraphics[width=100mm]{images/phonon.eps}
+ \end{center}
+ \begin{center}
+    \includegraphics[width=100mm]{images/112Cd.eps}
+ \end{center}
+  \caption{$B(E2)$ values, relative to the $B(E2; 2_1^+\to 0_1^+)$ value, and energy spectra in phonon excitation picture. Upper panel: expected $B(E2)$ values for a quadrupole harmonic vibrator. Lower panel: data observed for ${}^{112}$Cd. Dashed transitions indicate an unobserved transition. Detailed information is discussed in Ref. \cite{GW10}.}
+  \label{112Cd}
+\end{figure}
+The mystery of excited $0^+$ states exist not only in deformed nuclei, but also in spherical nuclei. A best example is the structure of $0_2^+$ or $0_3^+$ states in Cd isotopes observed in recent experiment \cite{GW10}. The lower part of Fig. \ref{112Cd} shows the excitation energy and $B(E2)$ transition strength in ${}^{112}$Cd. Comparing with the typical values for the ideal quadrupole harmonic vibration in spherical nuclei shown in the upper part of Fig. \ref{112Cd}, we can find that the observed excitation energy spectra have good coincidence with phonon excitation picture. The $0_2^+$ or $0_3^+$ states seem to can be interpreted as two-phonon or three-phonon excitation. However, the $B(E2)$ values are very different comparing with each other, especially for the no observed decay from $0_{2ph}^+$ to $2_1^+$ state. Such phenomena are also seen in other Cd isotopes. The configuration of these $0^+$ states are supposed to be not pure phonon excitation, but proton pair-excitation between $2p_{1/2}$ and $1g_{9/2}$ orbits from the hint of the ground state configurations of Ag isotopes \cite{HW11}. The pairing should plays an important role if the excited $0^+$ states are described by pair-excitation.
+
+%Collective motion is the essential idea to explain the excited states in nuclei. The quadrupole collective motion described by the quadrupole deformation parameters $\alpha_{2\mu} (\mu=\pm2,\pm1,0)$ is known as the most typical collective motion. In the framework of quadrupole collective motion, the low-lying excited $0^+$ states can be roughly categorized into two types: quadrupole vibration emerging above two-phonon excitation in spherical nuclei, and $\beta$ vibration emerging in quadrupole deformed nuclei. The excitation energies and $B(E2)$ transition strength is well understood under harmonic approximation.
+
+\section{Motivation of this study}
+We aim to understand the low-lying excited $0^+$ states ($\sim$ a few MeV excitation) from nuclear many-body theory. As mentioned above, pairing correlation is supposed to play a significant role in such excited $0^+$ states. We discuss the theoretical approach  to describe the pairing dynamics in the following.
 
 \subsection{Theoretical problem}
-%As discussed in previous section, the low-lying excited $0^+$ states are not be understood in general. 
-We aim to understand the mysterious excited $0^+$ states discussed in previous section based on mean field approach. In low-energy region, the pairing correlation supposed to be important as the quadrupole correlation. The most well-known and successful model is Bohr model, which was introduced to describe low-energy nuclear collective motion in quadrupole degrees of freedom with the deformation parameters $(\beta,\gamma)$ and the Euler angles $(\phi,\theta,\psi)$. However, the pairing degrees of freedom is not included in the Bohr model. As discussed in Sec. \ref{1-1-2}, the pairing vibrational degrees of freedom supposed to be a key ingredient to understand the low-lying  excited $0^+$ states.
- the pairing vibrational degrees of freedom is necessary to include in the collective model. the role of pairing correlation is hardly discussed up to now.
-The degrees of freedom for pairing collective motion are supposed to be necessary including the collective model.
 
-The study about the collective model for pairing collective motion was firstly introduced by Bes. et al. \cite{BBPK70}. They constructed phenomenological pairing collective model  by two degrees of freedom, the pair deformation parameter (pairing gap) $\Delta$ and the global gauge angle $\Phi$. After the pairing collective model was formulated, it was applied to several studies for nuclear structure \cite{GPBW85, ZPPRS99, P07}. 
-In Ref. \cite{ZPPRS99}, the $B(E2)$ transition improved by introducing pairing degrees of freedom. On the other hand, the wave function of ground state from collective model looks like unusual because the pairing gap $\Delta_{vib}$ at the peak of the wave function is smaller than the pairing gap $\Delta_{eq}$ obtained from BCS equation. 
+Time-dependent mean-field (TDMF) theory is a standard theory to describe the nuclear dynamics. In principle, TDMF enables us to describe the collective motions from the microscopic degrees of freedom without any artificial parameters. Inclusion of the pairing correlation leads to the time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory, which has been utilized for plenty of nuclear structure and reaction studies \cite{NMMY16}.
 
-It is supposed to be important to find the collective coordinates describing the pairing collective motions from the microscopic degrees of freedom without any assumption. 
+%QRPA
+Quasiparticle random phase approximation (QRPA) theory, which correspond to the small amplitude approximation of TDHFB, is known as the most common approach to describe the structure of collective excited states. From a number of studies, we can find that the giant resonances (locating at a few MeV$\sim$dozens of MeV excitation with broad width) can be well described by the QRPA \cite{Eba10, YN11, YN13, SL13-2}. With density functional formalism, recently, QRPA equation can be solved in finite amplitude method (FAM) \cite{Na07}.  FAM, which reduce the computational time significantly, enables the linear response calculation for deformed nuclei in allowable computational time. 
+%and is becoming the standard way to solve the QRPA equation numerically. 
+The QRPA is not only useful to predict the collective motions which have not been observed such as exotic nuclei, but also can become the basic concept to construct a theoretical framework beyond the linear regime. On the other hand, the QRPA description for the low-lying collective excited states is not as good as the giant resonances. The effects of anharmonic vibration and shape coexistence are often important in low-energy region \cite{HW11}, while QRPA is nothing but harmonic approximation. For example, the excitation energies of $0_2^+$ states in rare-earth region have large deviation between QRPA calculations and experimental data \cite{TE11}. 
 
-The difficult point is the requantization of the pairing collective motion. Such difficulty is not found in quadrupole collective motion.
+%Large amplitude motion, Adiabatic approach
+To describe the low-lying excited states, especially for the excited $0^+$ states, we need to introduce the large-amplitude motions beyond the linear regime.
+Collective model, which is designed by a couple of collective coordinates and their collective potential and mass parameters, is useful for the large-amplitude dynamics. The most popular phenomenological collective model is Bohr collective model, five-dimensional collective Hamiltonian (5DCH) with the quadrupole deformation parameters $(\beta,\gamma)$ and the Euler angles $(\phi,\theta,\psi)$. It has been applied to describe the low-lying excited states in realistic nuclei, with the construction of the collective potential and mass parameters from the microscopic degrees of freedom. However, the pairing degrees of freedom are not explicitly included in the Bohr collective model. As discussed in Sec. \ref{1-1-2}, the pairing vibrational degrees of freedom supposed to be a key ingredient to understand the low-lying  excited $0^+$ states. We have great interest for the collective coordinates describing the pairing corrective motions.
 
-\subsection{Our idea}
+The discussion for the collective model describing the pairing collective motions is not so much. The first study was introduced by Bes. et al. \cite{BBPK70}. They constructed phenomenological pairing collective model by two degrees of freedom, the pair deformation parameter (pairing gap) $\Delta$ and the global gauge angle $\Phi$. After the pairing collective model was formulated, it was combined with the Bohr collective Hamiltonian and applied to describe the nuclear structure \cite{GPBW85, ZPPRS99, P07}. 
+In Ref. \cite{ZPPRS99}, the excitation energy and $B(E2)$ transition are improved by introducing pairing degrees of freedom. On the other hand, the wave function of ground state from collective model looks like unusual because the gap parameter $\Delta_{vib}$ at the peak of the pairing collective wave function is smaller than the pairing gap $\Delta_{eq}$ obtained from BCS equation. 
+%There is no further discussion about the unusual behaviors. Also, two-particle transition strength is hardly discussed in the collective model.
+%The problem is supposed to be the phenomenological degrees of freedom for pairing collective motion. 
 
-\subsection{Outline of this thesis}
-In this study, we concentrate in the pairing model which only contains pairing interaction in two-body interaction to construct the theoretical framework of the requantization.
+The question is that whether the pair deformation parameter $\Delta$ is proper to describe the pairing vibration, as the quadrupole deformation parameters $Q_{2\mu} (\mu=\pm2,\pm1,0)$ describing the quadrupole surface vibration. From the nature viewpoint, the time evolution of $Q_{2\mu}$ correspond to nuclear vibrations in liquid drop picture, while the time evolution of $\Delta$ is difficult to be imagined as a shape vibration. We need to explore more to understand the nature of pairing dynamics in large-amplitude regime. 
+
+\subsection{Our approach}
+
+To understand pairing dynamics in large-amplitude regime, we think that it is important to find the collective coordinates describing the pairing collective motions from the TDHFB dynamics itself without any assumption. Apart from the realistic nuclear system, as the first step, we study the pairing collective motions in pairing model, which only contains the monopole pairing correlation in two-body interaction. In this model, the collective motions obtained from TDHFB degrees of freedom are pure pairing collective motions.
+
+In fact, the TDHFB degrees of freedom equal to the number of single-particle levels, in pairing model. Furthermore, the TDHFB degrees of freedom consist of one constant of motion, pairing rotation, and other intrinsic degrees of freedom. One-level system, which contains only one pairing rotational mode, is well understood (seniority scheme in the textbook \cite{RS80}). All we have to do is to study the multi-level system. We categorize two types of multi-level system, two-level system and the system more than three-level. The former one is two-dimensional integrable system. We have two explicit coordinates to describe pairing rotation and pairing vibration, respectively. Thus, the pairing collective motions can be properly described in such coordinates. The later one is non-integrables system. The collective coordinate describing the pairing vibrational mode is not explicit. However, we can find such collective coordinate decoupled from other intrinsic degrees of freedom by using adiabatic self-consistent collective coordinate (ASCC) method \cite{MNM00, N2012}. 
+
+With these collective coordinates, we quantize them to obtain the collective excited states. We call this procedure as ``requantization''. The typical requantization method is Pauli's prescription, a type of canonical quantization, which has been applied to requantize the collective Hamiltonian, such as 5DCH \cite{KB67} and pairing collective Hamiltonian \cite{BBPK70}. However, there is no guarantee whether Pauli's prescription is proper. In addition, Pauli's prescription is not available for the general collective Hamiltonian including the higher-oder terms of momenta. 
+Such requantization problems are arisen to describe the pairing collective motions at the beginning of our study. 
+To examine the proper requantization procedure, we introduce other possible requantization methods. The surprising point is that the value of two-particle transition strength, a indicator of pairing collective motions, depends on the requantization method significantly (See Chap. \ref{integrable} for the detailed discussion).
+After trial and error, eventually, we found a reasonable requantization method, stationary-phase approximation (SPA) to the path integral to describe the pairing collective motions. 
+Actually, SPA itself is available only for the integrable system. In order to apply SPA to the general non-integrable system, we constructed a new requantization theoretical framework, ASCC+SPA. This requantization method can describe the pairing dynamics properly. Moreover, ASCC+SPA supposed to be available for any collective motions based on TDMF theory. In this thesis, the keyword ``SPA'' emerges frequently.
+
+%Based on this method, we also constructed the theoretical framework for the general TDHFB dynamics.
+
+%Because pairing model is exact solvable model, we can the collective excited states from requantization compare with the exact solution. 
+%We hope that we can understand the pairing collective motion 
+
+\section{Outline of this thesis}
+This thesis is organized as follows. Chap. \ref{chap2} is the preparation for the main discussion of the thesis. We show the pairing model in this chapter. Because pairing model is exact solvable model, we give the recipe for the exact solution in the former part. In the later part, we derive the TDHFB equation for the pairing Hamiltonian in explicit form. 
+%The constant of motion, pairing rotation, is also 
+
+The main achievements of our study are shown in Chap. \ref{integrable} and Chap. \ref{non-integrable}. Chap. \ref{integrable} discuss the pairing collective motions in integrable system (two-level system). We applied three different requantization methods, canonical quantization, Fourier decomposition, and SPA. The obtained excitation energies and wave functions from each method are compared with exact solution. Also, we discuss the validity of pairing gap parameter as a collective coordinate. Chap. \ref{non-integrable} discuss the pairing collective motions in non-integrable system. We introduce a new requantization method, ASCC+SPA, proposed by us. We explain the theoretical framework of ASCC+SPA in the former part, and discuss the result for pairing collective motions from ASCC+SPA in the later part.
+
+There are several remaining problems from our study. In Chap. \ref{discussion}, we point out these problems and give some possible approaches for them. Because SPA is the theory of great elegance, we also discuss the perspective for the large-amplitude dynamics by using SPA or beyond SPA. We conclude our study in Chap. \ref{conclusion}.
+
+%The detailed derivations 
 
 
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Pairing model}
+\label{chap2}
 
-To examine the pairing dynamics influencing the structure of nuclei, we can only concentrate the nucleons near the Fermi energy. The Hamiltonian of pairing model is
+We introduce the pairing model in this chapter. The Hamiltonian of pairing model is
 \begin{align}
 	H &= \sum_{l=1}^L \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^- ,
 \end{align}
@@ -213,8 +279,8 @@ In one-level system ($L=1$), the pairing dynamics is well understood. The analyt
 	E_{\nu}(N) = \epsilon N - \frac{1}{4}g(N-\nu)(2\Omega-N-\nu+2) .
 	\label{onelevel}
 \end{align}
-The pairing rotational band created by the pairing correlation is completely parabolic with the moment of inertia $2/g$. Also, the excited states in a specified $N$ is only described by the quantum number $\nu$. For example, the first excited state in even particle system is $\nu=2$ state, which correspond to one $J^{\pi}=0^+$ pair broken state.\par
-The profound dynamics occurs in multi-level pairing model ($L\ge 2$). The pairing rotational mode becomes complex due to the shell effect. In addition, several pairing vibrational modes emerge. The pairing vibration is not single particle motion specified by $\nu_l$, but a collective motion with the excitation of $J^{\pi}=0^+$ pairs. In this chapter, we explain the numerical exact solution and derive the TDHFB dynamics in multi-level pairing Hamiltonian.
+The pairing rotational band created by the pairing correlation is completely parabolic with the pairing-rotational moment of inertia $2/g$. Also, the excited states in a specified $N$ is only described by the quantum number $\nu$. For example, the first excited state in even particle system is $\nu=2$ state, which correspond to one $J^{\pi}=0^+$ pair broken state.\par
+The non-explicit dynamics arises in multi-level pairing model ($L\ge 2$). The pairing rotational mode includes higher order terms of $N$ due to the shell effect. In addition, several pairing vibrational modes emerge. The pairing vibration is not single particle motion specified by $\nu_l$, but a collective motion arisen from $J^{\pi}=0^+$ pairs. In order to solve the multi-level pairing Hamiltonian, we explain the numerical exact solution. Also, we derive the TDHFB equation to study the mean-field picture of pairing collective motions.
 
 \section{Exact solution}
 The eigenvalues and eigenvectors can be solved exactly in pairing model. There are two major methods to obtain the exact solutions, diagonalization in quasispin space and Richardson equation.
@@ -230,7 +296,7 @@ If we set
   S_l^0 &= \frac{1}{2}(\sum_ma_{lm}^{\dag}a_{lm}-\Omega_l)
   \label{S_0}
 \end{align}
-and $S_l^+, S_l^-$ are the same as in (\ref{S_+}), the commutation relation (\ref{SU2commu}) is fulfilled. Using quasispin operators, the Hamiltonian can be represented by quasispin operators
+and $S_l^+, S_l^-$ as in (\ref{S_+}), the commutation relation (\ref{SU2commu}) is fulfilled. Using quasispin operators, the Hamiltonian can be represented by quasispin operators
 \begin{align}
 	H &= \sum_l \epsilon_l (2S_l^0+\Omega_l) - g \sum_{l,l'} S_l^+ S_{l'}^- .
 \end{align}
@@ -239,7 +305,7 @@ Therefore, any states $\ket{\psi}$ belong to SU(2)$\otimes\cdots\otimes$SU(2) Hi
   \ket{\psi} = \sum_{S_1^0,\cdots\,S_l^0,\cdots}c_{S_1^0,\cdots\,S_l^0,\cdots}\ket{S_1,S_1^0;\cdots;S_l,S_l^0;\cdots} .
 \end{equation}
 
-We discuss the physical meaning of the quasispin space. Because $S_l^+$ and $S_l^-$ correspond to the creation and annihilation operators with respect to the $J^{\pi}=0^+$ pairs in each level, the quasispin space is decoupled from the space which the unpaired particles belong to. 
+We consider the physical meaning of the quasispin space. Because $S_l^+$ and $S_l^-$ correspond to the creation and annihilation operators with respect to the $J^{\pi}=0^+$ pairs in each level, the quasispin space is decoupled from the space which the unpaired particles belong to. 
 Also, $S_l^0$ is related to the occupation number in each level. $S_l^0=-S_l$ is the minimum value corresponding no $J^{\pi}=0^+$ pair in the level and $S_l^0=S_l$ is the maximum value corresponding full of $J^{\pi}=0^+$ pairs in the level. Because $\nu_l$ plays a part in Pauli blocking effect in the level, the absolute value of quasispin $S_l$ is
 \begin{equation}
   S_l = \frac{1}{2}(\Omega_l-\nu_l).
@@ -253,8 +319,8 @@ For example, we consider the dimension of the single particle levels between the
 
 \subsection{Richardson equation}
 As mentioned above, diagonalizing the Hamiltonian is simple method to obtain the exact solution.
-However, diagonalization is time consuming when the model space becomes large. The calculation time is proportional to the cubes of the dimension of the model space For example, there are 16 single particle levels between the magic number 50 and 82 in deformed nuclei. Because the dimension for the system is $D=2^{16}=65536$, the calculation time in deformed system is $\sim 10^5$ times as much as the case in spherical system. \par
-The alternative method to obtain the exact solution is to solve Richardson equation. The idea was introduced by R. W. Richardson \cite{Richardson1, Richardson2, Richardson3}. We divide the total energy into two parts
+However, diagonalization is time consuming when the model space becomes large. The calculation time is proportional to the cubes of the dimension of the model space. For example, there are 16 single particle levels between the magic number 50 and 82 in deformed nuclei. Because the dimension for the system is $D=2^{16}=65536$, the calculation time in deformed system is $\sim 10^5$ times as much as the case in spherical system. \par
+The alternative method to obtain the exact solution is to solve Richardson equation. The idea was introduced by R. W. Richardson \cite{Richardson1, Richardson2, Richardson3, Richardson4, Richardson5}. We divide the total energy into two parts
 \begin{align}
   E &= \braket{\psi|H|\psi} \\
   &= \sum_l \epsilon_l \nu_l + \sum_{\alpha=1}^M E_{\alpha} .
@@ -265,9 +331,17 @@ The first term is the energy of unpaired particle, and the second term is the to
 \end{equation}
 $M$ indicates the number of $J^{\pi}=0^+$ pairs in the system, and equals to the numbers of the non-linear equations. $E_{\alpha}$ can become not only real numbers, but also complex conjugate pairs when $M\ge 2$. 
 
+We solved the non-linear equations numerically in general. If we input a set of initial values $E_{\alpha}^{0}$ into the equations, the values will converge by using proper numerical algorithm such as Newton-Raphson method. The difficult point is that we cannot directly specify the number of excitation from the obtained excitation energy because the converged excitation energy $\sum_{\alpha=1}^M E_{\alpha}$ can be any number of excitation. To specify the number of excitation, we can use the idea in Ref. \cite{Richardson4}, which discussed the behavior of the $E_{\alpha}$ as a function of $g$ for ground and each low-lying excitation energy. 
+
+The eigenvalues can be also calculated numerically by using the obtained $E_{\alpha}$. Actually, we need to calculate the matrix elements for specific operators we interest (e.g. number operator, two-particle transition operator), without obtaining the explicit eigenvectors. For example, the occupation number can be obtained in the following non-linear equations
+\begin{align}
+n.
+\end{align}
+%However, the equation 
+
 \section{TDHFB dynamics}
 %In realistic nuclear system with nuclear effective interaction, the necessary model space is huge. To diagonalize the effective Hamiltonian is extremely difficult task. Such study is done by shell model calculation. In alternative way, we only prepare a limited model space, which supposed to be reproduce the important parts of nuclear properties. The time-dependent mean-field theory 
-To understand the classical picture of the pairing dynamics, time-dependent mean-field (TDMF) theory is useful tool. With pairing correlation, TDMF theory attributes to TDHFB theory.
+We apply time-dependent mean-field (TDMF) theory to examine the classical picture of the pairing dynamics. With pairing correlation, TDMF theory attributes to TDHFB theory.
 The TDHFB equation can be derived from the time-dependent variational principle,
 \begin{equation}
   \delta\mathcal{S}=0, \quad 
@@ -317,35 +391,39 @@ Using canonical variables, the TDHFB equations attribute to the Hamilton's equat
 
 \subsection{Constant of motion}
 \label{constant}
-The number of the TDHFB degrees of freedom is same as the number of the single-particle levels. However, because the Hamiltonian depends only on the relative difference in the gauge angles, the global gauge angle 
+The number of the TDHFB degrees of freedom is same as the number of the single-particle levels. However, there is one constant of motion, pairing rotation. Using (\ref{occ}), the total particle number can be written in
 \begin{align}
-	\Phi = \frac{1}{L}\sum_l \chi_l
+	N = \braket{Z|\hat{N}|Z} = \nu + 2J ,
 \end{align}
-is a cyclic variable. With the definition for relative gauge angle (e.g. $\phi_l = \chi_l-\chi_1$), we can find that the conjugate momentum of $\Phi$ is the sum of $j_l$
+where $J$ is defined in
 \begin{align}
-	J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} = \sum_l j_l .
+	J \equiv \sum_l j_l .
 \end{align}
-From (\ref{occ}), $J$ is related to the total particle number
+Because $\nu$ is nothing but quantum number, the total particle number can be specified by $J$.
+We can confirm that the total particle number is conserved by checking the Poisson Bracket
 \begin{align}
-	N = \nu + 2J .
-\end{align}
-The Hamilton's equation for $J$
-\begin{align}
-	\dot{J} = -\frac{\partial\mathcal{H}}{\partial \dot{\Phi}} = 0, \quad J = {\rm const}
-\end{align}
-indicates that the total particle number is conserved in time evolution.
-The canonical variable $(\Phi,J)$ describes the pairing rotation. The pairing rotational band emerges in the particle number chain ($\cdots,N-2,N,N+2,\cdots$). The last term in (\ref{Hamiltonian}) contains the higher order terms with respect to $N$. It related to the shell effect. In single-level system, the last term in (\ref{Hamiltonian}) disappears and (\ref{Hamiltonian}) attributes to (\ref{onelevel}). The pairing rotational band is exactly parabolic. In multi-level system, the coupling constant $g$ and single-particle energy $\epsilon_l$ affects significantly to the last term in (\ref{Hamiltonian}). The parabolic structure can be broken when the shell effect is strong. 
+	\{\mathcal{H},J\}_{PB} &= \sum_l \left(
+	\frac{\partial\mathcal{H}}{\partial\chi_l}\frac{\partial J}{\partial j_l}
+	- \frac{\partial\mathcal{H}}{\partial j_l}\frac{\partial J}{\partial \chi_l} \right) \nonumber \\
+	&= \sum_l \frac{\partial\mathcal{H}}{\partial\chi_l} \nonumber \\
+	&= \sum_l 2g \sum_{l'\neq l} \sqrt{j_{l}j_{l'}(\Omega_{l}-\nu_{l}-j_{l})(\Omega_{l'}-\nu_{l'}-j_{l'})}\sin{(\chi_{l}-\chi_{l'})} \nonumber \\
+	&= 0 .
+\end{align} 
+Actually, $J$ correspond to a conjugate momentum with respect to a global gauge angle $\Phi$. We note that $\Phi$ is not necessarily becoming $\Phi=\sum_l \chi_l/L$ because the explicit form of $\Phi$ depends on the coordinate transformation. In other words, the condition of total particle number conservation cannot determine the form of $\Phi$ uniquely.
 
-In the analysis of TDHFB classical Hamiltonian, we can decouple the pairing rotational mode. The degrees of freedom is $L-1$ in $L$ level system. Therefore, the dynamics is integrable for $L=2$ and non-integrable for $L\le 3$ in multi-level pairing model. We discuss the integrable system and non-integrable system in Chapter \ref{integrable} and \ref{non-integrable}, respectively. 
+The canonical variable $(\Phi,J)$ describes the pairing rotation. The pairing rotational band emerges in the particle number chain ($\cdots,N-2,N,N+2,\cdots$). The last term in (\ref{Hamiltonian}) contains the higher order terms with respect to $N$. It related to the shell effect. In single-level system, the last term in (\ref{Hamiltonian}) disappears and (\ref{Hamiltonian}) attributes to (\ref{onelevel}). The pairing rotational band is exactly parabolic. In multi-level system, the coupling constant $g$ and single-particle energy $\epsilon_l$ affects significantly to the last term in (\ref{Hamiltonian}). The parabolic structure will be broken when the shell effect is strong. 
 
+In order to analyze the time-dependent dynamics, we decouple the pairing rotational mode. The degrees of freedom is $L-1$ in $L$ level system. In multi-level pairing model, therefore, the dynamics is integrable for $L=2$ and non-integrable for $L\le 3$. We discuss the integrable system and non-integrable system in Chapter \ref{integrable} and \ref{non-integrable}, respectively. 
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Requantization of TDHFB in integrable system}
 \label{integrable}
-As discussed in Sec. \ref{constant}, the TDHFB dynamics in two-level system is one-dimensional motion. We know that one-dimensional system must be integrable system. 
-There are two new discoveries obtained from the study of the integrable system. First, the requantization method, stationary phase approximation to the path integral, can be applied straightforward to describe the collective excited $0^+$ states. We find that SPA is superior to the other requantization methods, especially for the calculation of two-particle transition strength. Second, the collective coordinates are explicit in integrable system. Using the explicit collective coordinates, we can examine the performance of the collective model which assumes the pairing gap parameter as the collective coordinate. The conclusion is the pairing gap parameter can only describe a part of collective space, and the applicability of the collective model is limited.
+As discussed in Sec. \ref{constant}, there is only one time-dependent degree of freedom in two-level system. We know that one-dimensional system must be integrable system.
+We obtained two achievements from the study for the integrable system. First, the requantization method, stationary-phase approximation to the path integral, can be applied straightforward to describe the collective excited $0^+$ states. We find that SPA is superior to the other requantization methods, especially for the calculation of two-particle transition strength. Second, the collective coordinates are explicit in integrable system. Using the explicit collective coordinates, we can examine the performance of the collective model which assumes the pairing gap parameter as the collective coordinate. The conclusion is the pairing gap parameter can only describe a part of collective space, and the applicability of the collective model is limited.
 
 \section{Classical dynamics in two-level system}
 \subsection{TDHFB dynamics}
-To describe the one-dimensional motion, we introduce the global gauge angle $\Phi$ and the relative gauge angle $\phi$ as canonical coordinates
+To describe the one-dimensional time-dependent motion, pairing vibration, by an explicit coordinate, we introduce a global gauge angle $\Phi$ and a relative gauge angle $\phi$ as canonical coordinates
 \begin{align}
   \Phi &\equiv \frac{\chi_1 + \chi_2}{2}, \quad\quad
   \phi\equiv \chi_2 - \chi_1.
@@ -361,9 +439,10 @@ j = \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \frac{j_2 - j_1}{2}.
 \end{align}
 As in (\ref{occ}), $j$ corresponds to relative occupation number
 \begin{align}
-  j = \frac{\nu_{2}-\nu_{1}}{2} + \frac{n_{2}-n_{1}}{4}
+  j = \frac{\nu_{2}-\nu_{1}}{2} + \frac{n_{2}-n_{1}}{4} .
 \end{align}
-The Lagrangian and Hamiltonian in terms of these canonical variables
+As discussed in \ref{constant}, we note that $\Phi \equiv c_1\chi_1 + c_2\chi_2, \ \phi\equiv \chi_2 - \chi_1 \ (c_1+c_2=1,\ 0<c_1,c_2<1)$ can decouple the pairing rotational mode. One of the choice, $c_1=c_2=1/2$ as in (\ref{phi}), is the simplest transformation.
+After the coordinate transformation, the Lagrangian and Hamiltonian in terms of these canonical variables
 $(\phi,j;\Phi,J)$ are given by
 \begin{align}
 	\mathcal{L} =& J\dot{\Phi} + j\dot{\phi} - \mathcal{H}(\phi,j;J) \label{Lagrangian2}\\
@@ -386,7 +465,7 @@ the classical equations of motion:
 \frac{dj}{dt} = -\frac{\partial\mathcal{H}}{\partial \phi} .
 \label{TDHFB_equation}
 \end{eqnarray}
-Because $J$ and the total energy $E$ constants of motion, the TDHFB trajectories with given $J$ and $E$ are determined
+Because $J$ and the total energy $E$ are constants of motion, the TDHFB trajectories with given $J$ and $E$ are determined
 in the two-dimensional phase space $(\phi,j)$ with the condition
 \begin{equation}
   \mathcal{H}(\phi(t),j(t);J) = E.
@@ -406,15 +485,15 @@ in the two-dimensional phase space $(\phi,j)$ with the condition
 
 We show an example of the classical trajectories in two-level system. Fig. \ref{fig:phase_space} is the contour lines fulfilling (\ref{contour}), which correspond to the classical trajectories, with $\Omega_1=\Omega_2=\Omega=8$, $\nu=0$, and $N=2\Omega=16$ with various coupling constant $g$. The dimensionless coupling constant $x$ is defined as $x=2g\Omega/(\epsilon_2-\epsilon_1)$ (See Appendix \ref{two-level}). The phase transition from normal state to superfluid state occurs at $x=1$ in closed shell ($N=2\Omega$). At $x<1$ corresponding the left panel in Fig. \ref{fig:phase_space}, the trajectory of ground state is $j=-4$ independent from $\phi$. It is consistent with the fully occupied lower level $n_1=N$ and the empty upper level $n_2=0$. For the dynamical states, the trajectories are open with gentle slopes. At $x>1$ corresponding the middle and right panels in Fig. \ref{fig:phase_space}, the trajectory of ground state becomes a point at $\phi=0$, $j=j_0$ $(-4<j_0<4)$. With superfluid ground state, the dynamical states have two types, closed trajectory and open trajectory. The closed trajectory appears around $(\phi,j)=(0,j_0)$ at low-energy region. On the other hand, the open trajectory with steep slope appears at high-energy region relatively. The stronger pairing correlation, the higher excitation energy of the transition point from closed trajectory to open trajectory. The structure of the excited states between closed trajectory and open trajectory is quite different. They influence the matrix element of two-particle transfer reaction significantly. We will discuss the feature of the excited states in the following sections.
 
-\subsection{Adiabatic TDHFB (ATDHFB) dynamics}
+\subsection{TDHFB dynamics in adiabatic\footnote{In this subsection, the word ``adiabatic'' means that the collective velocity is small.} limit}
 \label{ATDHFB}
-In general collective motion, the frequency in the collective motion is much smaller than the frequency in single particle motion ($\hbar\omega\ll\epsilon_m-\epsilon_i$). The slow velocity of the collective motion enable us to expand the collective Hamiltonian up to second order with respect to the collective momentum (adiabatic approximation). We discuss the behavior of TDHFB dynamics in adiabatic approximation.\par
-From (\ref{Hamiltonian2}), we find that the classical Hamiltonian is even function with respect to $\phi$. With time reversal $t\to-t$, (\ref{TDHFB_equation}) is invariant under $j\to j, \phi\to -\phi$, which indicates that $j$ is time even and $\phi$ is time odd. Thus, we switch the coordinate and momentum 
+In general collective motion, the frequency of the collective motion is much smaller than the frequency in single particle motion ($\hbar\omega\ll\epsilon_m-\epsilon_i$). The slow velocity of the collective motion enable us to expand the TDHFB Hamiltonian up to second order with respect to the collective momentum. We discuss the behavior of TDHFB dynamics in adiabatic approximation.\par
+From (\ref{Hamiltonian2}), we find that the classical Hamiltonian is even function with respect to $\phi$. With time reversal $t\to-t$, (\ref{TDHFB_equation}) is invariant under $j\to j, \phi\to -\phi$, which indicates that $j$ is time-even and $\phi$ is time-odd. Thus, we switch the coordinate and momentum 
 \begin{equation}
 	(\phi,j)\to(j,-\phi) ,
 	\label{switch}
 \end{equation}
-to make the coordinate time even. The classical Hamiltonian under adiabatic approximation becomes
+to make the coordinate time-even. The classical Hamiltonian under adiabatic approximation becomes
 \begin{align}
   \mathcal{H}(j,\phi) &\approx V(j) + \frac{1}{2}B^{-1}(j)\phi^2,
   \label{ATDHFB_Hamiltonian}
@@ -428,8 +507,8 @@ where
 	=& 2g\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})} .
 	\label{mass_two_level}
 \end{align}
-It is obvious that $V(j)$ is potential and $B(j)$ is mass parameter. Because the closed trajectories appear around the energy minimum point $(\phi,j)=(0,j_0)$, we can expect that adiabatic approximation performs excellent for closed trajectories.
-\begin{figure}[htbp]
+It is obvious that $V(j)$ is potential and $B(j)$ is mass parameter. We define a classical trajectory obtained from (\ref{ATDHFB_Hamiltonian}) as adiabatic TDHFB (ATDHFB) trajectory. Because the closed trajectories appear around the energy minimum point $(\phi,j)=(0,j_0)$, we expect that adiabatic approximation performs excellent for closed trajectories.
+\begin{figure}[tb]
  \begin{center}
   \includegraphics[width=60mm,angle=-90]{images/phase_compare.eps}
  \end{center}
@@ -438,14 +517,32 @@ It is obvious that $V(j)$ is potential and $B(j)$ is mass parameter. Because the
  \label{fig:phase_compare}
 \end{figure}
 
-We compare the difference of the classical trajectories between TDHFB and ATDHFB. Fig. \ref{fig:phase_compare} shows both TDHFB and ATDHFB trajectories in the same system as in Fig. \ref{fig:phase_space}. For weak pairing correlation ($x<1$), both results are similar, especially at the low-energy region. For strong pairing correlation ($x>1$), both results are almost identical for closed trajectories. The opened trajectories are also well reproduced near the closed trajectories. The deviation becomes large at the high-energy region. In conclusion, ATDHFB is excellent approximation at low-energy region, regardless of the type of the trajectories.
+We compare the difference of the classical trajectories between TDHFB and ATDHFB. Fig. \ref{fig:phase_compare} shows both TDHFB and ATDHFB trajectories in the same system as in Fig. \ref{fig:phase_space}. For weak pairing correlation ($x<1$), both results are similar, especially at the low-energy region. For strong pairing correlation ($x>1$), both results are almost identical for closed trajectories. The opened trajectories are also well reproduced near the closed trajectories. The deviation becomes large at the high-energy region. In conclusion, ATDHFB is excellent approximation at low-energy region for both open and closed trajectories.
 
 
 \section{Requantization methods}
-To obtain the excited states, quantization of the TDHFB trajectory, namely, requantization is necessary procedure. The straightforward requantization method is canonical quantization, which is commonly applied into nuclear collective model. We expected canonical quantization gives reasonable result and we applied it at first. However, we find that canonical quantization has serious problem to describe the pairing dynamics. To solve or avoid the problem, alternative requantization methods, Fourier decomposition and stationary phase approximation to the path integral, are also introduced. In this section, we explain each requantization method in detail, respectively.
+To obtain quantum states from TDHFB dynamics, quantization of the TDHFB trajectories, namely, requantization is necessary procedure. We emphasize that there are infinite quantum pictures corresponding to one classical picture. Different quantization methods lead different quantum states. The straightforward requantization method is canonical quantization, which is commonly applied into nuclear collective model. Here, we apply the canonical quantization to describe the excited states. However, we find that canonical quantization has serious problems to describe the pairing dynamics. Such problems are discussed in Sec. \ref{3-3}. To solve or avoid the problems, alternative requantization methods, Fourier decomposition and stationary-phase approximation to the path integral, are also introduced. In this section, we explain each requantization method in detail, respectively.
 
 \subsection{Stationary phase approximation to the path integral}
-At first, we introduce the idea of stationary phase approximation to the path integral (SPA). Starting an arbitrary state $\ket{\psi(0)}$ at time $t=0$,
+TDHFB trajectory corresponds to a stationary-phase limit of the path integral formulation. The idea for constructing excited states from TDHFB trajectories based on the path integral formulation was proposed in Ref. \cite{Neg82,L80,LNP80,KS80,K81,Rei80}. 
+It recovers quantum fluctuations missing in the mean-field
+level, and possibly enables us to describe large-amplitude collective
+tunneling phenomena.
+%such as spontaneous fission \cite{Neg82}.
+The requantization of the TDHFB is particularly feasible
+for integrable systems, because the system is described by separable
+action-angle variables $(I_k, \phi_k)$, leading to
+the Einstein-Brillouin-Keller (EBK) quantization condition.
+However, for nonintegrable systems in general, it is difficult to find
+suitable periodic orbits to quantize.
+A possible solution to this difficulty is to find a decoupled collective
+subspace spanned by
+a single coordinate and its conjugate momentum \cite{NMMY16}.
+Since the one-dimensional system is integrable, the quantization is
+practicable.
+
+Here, we formulate the stationary-phase approximation to the path integral (SPA). 
+Starting an arbitrary state $\ket{\psi(0)}$ at time $t=0$,
 the time-dependent full quantum state can be written in the path integral form
 \begin{align}
 \ket{\psi(t)}
@@ -652,14 +749,14 @@ where $m$, $k$ and $n>0$ are integer numbers.
 
 \subsection{Canonical quantization}
 \label{sec:canonical}
-In the pairing collective model, the canonical quantization
-was adopted in previous studies \cite{BBPK70,delta1,delta3}.
+In the pairing collective model, the canonical quantization with Pauli's prescription
+was adopted in previous studies \cite{BBPK70,GPBW85, ZPPRS99, P07}.
 Assuming magnitude and phase of the pairing gap as collective coordinates,
 a collective Hamiltonian was constructed in the second order in momenta.
 Then, the Hamiltonian was quantized by the canonical quantization
 with Pauli's prescription.
 In this section, we apply similar quantization method to
-the TDHFB Hamiltonian (\ref{TDHFB_Hamiltonian_3}).
+the TDHFB Hamiltonian (\ref{Hamiltonian2}).
 The main difference is that the collective canonical variables are
 not assumed in the present case, but are obtained from the TDHFB dynamics
 itself.\par
@@ -667,6 +764,7 @@ It is not straightforward to apply Pauli's prescription
 to the present case, 
 because the TDHFB Hamiltonian (\ref{Hamiltonian2})
 is not limited to the second order in momenta.
+%We need to keep the Hamiltonian Hermitian after 
 In the present study, 
 we adopt a simple symmetrized ordering, as
 \begin{align}
@@ -861,6 +959,7 @@ It is not trivial to justify the approximation for small values of $\Omega$
 and for transitions around the ground state.
 
 \section{Result}
+\label{3-3}
 In this section, we study the seniority-zero states ($\nu_1=\nu_2=0$) in
 the two-level system with equal degeneracy, $\Omega_1=\Omega_2=\Omega$.
 Since all the properties are scaled with the ratio, $g/\Delta\epsilon$,
@@ -1329,13 +1428,1158 @@ the SPA and the FD methods provide reasonable description for the
 pair-transfer transition strengths.
 
 
-\section{Collective model treatment} 
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\chapter{Requantization of TDHFB in non-integrable system}
+\label{non-integrable}
+
+\section{Theoretical framework of ASCC+SPA in non-integrable system}
+\subsection{Adiabatic self-consistent collective coordinate method and
+1D collective subspace}
+\label{sec:ASCC}
+%To discuss the application of ASCC+SPA in the later subsection, 
+In this section,
+we first recapitulate the ASCC method to find a 1D collective coordinate,
+following the notation of Ref. \cite{N2012}.
+
+As is seen in Sec.~\ref{sec3}, the TDHFB equations can be
+interpreted as the classical Hamilton's equations of motion
+%The classical Hamilton's equation which is identical to the TDHFB equation is described by
+with canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. 
+Each point in the phase space $(\xi^{\alpha},\pi_{\alpha})$
+corresponds to a generalized Slater determinant (coherent state).
+Assuming slow collective motion,
+we expand the Hamiltonian $\mathcal{H}(\xi,\pi)$ with respect to
+the momenta $\pi$ up to second order.
+The TDHFB Hamiltonian is written as
+\begin{align}
+ \mathcal{H} &= V(\xi) + \frac{1}{2}B^{\alpha\beta}(\xi)\pi_{\alpha}\pi_{\beta}
+\end{align}
+with the potential $V(\xi)$ and
+the reciprocal mass parameter $B^{\alpha\beta}(\xi)$ defined by
+\begin{align}
+  V(\xi) &= \mathcal{H}(\xi,\pi=0) , \\
+  B^{\alpha\beta}(\xi) &= \left. \frac{\partial^2\mathcal{H}(\xi,\pi)}{\partial\pi_{\alpha}\partial\pi_{\beta}} \right|_{\pi=0}.
+\end{align}
+
+For multi-level pairing models in Sec.~\ref{sec3}, 
+there is a constant of motion in the TDHFB dynamics,
+namely the average particle number $q^n\equiv \langle \hat{N} \rangle/2$.
+Since the particle number $\hat{N}$ is time-even Hermitian operator, we treat
+this as a coordinate, and its conjugate gauge angle, $p_n$,
+as a momentum.
+Since $q^n$ is a constant of motion, the Hamiltonian does not
+depend on $p_n$.
+On the other hand, the gauge angle $p_n$ changes in time,
+which corresponds to the pair rotation, a Nambu-Goldstone (NG) mode
+associated with the breaking of the gauge (particle-number) symmetry.
+We assume the existence of 2D collective subspace $\Sigma_2$
+(4D phase space),
+described by a set of canonical variable $(q^1,q^2=q^n;p_1,p_2=p_n)$,
+which is well decoupled from the rest of degrees of freedom,
+$\{q^a,p_a\}$ with $a=3,\cdots$.
+The collective Hamiltonian is given by imposing $q^a=p_a=0$,
+namely by restricting the space into the collective subspace
+\begin{equation}
+%\mathcal{H}_{\rm coll}(q,p) &= \bar{V}(q) + \frac{1}{2}\bar{B}^{-1}(q)p^2 .
+\mathcal{H}_{\rm coll}(q,p;q^n)
+= \bar{V}(q^1,q^n) + \frac{1}{2}\bar{B}^{11}(q^1,q^n)p_1^2 .
+  \label{coll}
+\end{equation}
+Since there exist two conserved quantities, $q^n$ and $\mathcal{H}_{\rm coll}$,
+this 2D system is integrable.
+We can treat the collective motion of $(q^1,p_1)$ separately from
+the pair rotation $(q^n, p_n)$.
+
+In the collective Hamiltonian (\ref{coll}), the variable $q^n$ is
+trivially given as the particle number, which is expanded up to
+second order in the momenta $\pi$,
+\begin{equation}
+q^n=\frac{\langle \hat{N} \rangle}{2} = f^n(\xi)
+	+\frac{1}{2}f^{(1)n\alpha\beta}\pi_\alpha\pi_\beta .
+	\label{q^n}
+\end{equation}
+To obtain the non-trivial collective variables
+$(q^1,p_1)$, we assume the point transformation\footnote{
+We may lift the restriction to the point transformation,
+as Eq. (\ref{q^n}) \cite{Sat18}.
+In this paper, we neglect these higher-order terms, such as
+$f^{(1)1\alpha\beta}\pi_\alpha\pi_\beta/2$.
+},
+\begin{equation}
+%  q = q^1 &= f^1(\xi) + \frac{1}{2}f^{(1)1\alpha\beta}(\xi)\pi_{\alpha}\pi_{\beta}  \label{point}\\
+  q^1 = f^1(\xi) \label{point} ,
+% \xi^{\alpha} &= g^{\alpha}(q) + \frac{1}{2}g^{(1)\alpha 1 1}(\xi)p_{1}p_{1}
+\end{equation}
+and $\xi^\alpha$ on the subspace $\Sigma_2$ is given as
+$\xi^{\alpha} = g^{\alpha}(q^1,q^n,q^a=0)$.
+The momenta on $\Sigma_2$ are transformed as
+\begin{align}
+p_1 &= g_{,1}^{\alpha}\pi_{\alpha} , \quad p_n = g_{,n}^\alpha \pi_\alpha,
+	\label{coll_momenta}\\
+\pi_{\alpha} &= f^1_{,\alpha}p_1 +f^n_{,\alpha}p_n,
+ \label{momenta}
+\end{align}
+where the comma indicates the partial derivative
+$(f^1_{,\alpha}=\partial f^1/\partial \xi^{\alpha})$. 
+The Einstein's convention for summation with respect to the repeated
+upper and lower indices is assumed hereafter.
+The canonical variable condition leads to
+\begin{align}
+ %f^1_{,\alpha}g_{,1}^{\beta} = \delta^{\beta}_{\alpha}, \quad 
+f^i_{,\alpha}g_{,j}^{\alpha} = \delta^i_j,
+  \label{canonicity}
+\end{align}
+where $i,j=1$ and $n$.
+The collective potential $\bar{V}(q^1,q^n)$ and
+the collective mass parameter
+$\bar{B}_{11}(q^1,q^n)=[\bar{B}^{11}(q^1,q^n)]^{-1}$ can be given by
+\begin{align}
+\bar{V}(q^1,q^n) &= V(\xi=g(q^1,q^n,q^a=0)), \\
+\bar{B}^{11}(q^1,q^n) &= f^1_{,\alpha}\tilde{B}^{\alpha\beta}(\xi)f^1_{,\beta} ,
+  \label{coll_mass}
+\end{align}
+where $\tilde{B}^{\alpha\beta}$ are defined as
+\begin{align}
+ \tilde{B}^{\alpha\beta}(\xi)
+%&= \frac{\partial^2 \mathcal{H}_M}{\partial\pi_{\alpha}\partial\pi_{\beta}}  \nonumber \\
+&= B^{\alpha\beta}(\xi) - \bar{V}_{,n} f^{(1)n\alpha\beta}(\xi)
+%- \lambda_1 f^{(1)1\alpha\beta}(\xi) 
+\label{tildeB}.
+\end{align} 
+
+%Before showing the ASCC basic equations, we consider the constants of motion in TDHFB dynamics. Since nuclei is self-bound systems without external potential, the ground state obtained from mean-field theory violates the symmetry (e.g. deformation, pairing). In such system, the constants of motion corresponding the Nambu-Goldstone (NG) mode emerges in TDHFB dynamics. Therefore, we are mostly interested in the systems with collective motion separated from NG mode.\par
+%We know that the most of conserved quantities, such as total angular momentum $J$ and total particle number $N$, are not only expressed by one-body Hermitian operators, but also has real matrix elements in the quasi-particle basis. Such classical variable $\mathcal{P}$ corresponding to the conserved quantity can be expanded as
+%\begin{align}
+%  \mathcal{P}(\xi,\pi) = f^I(\xi) + \frac{1}{2}f^{(1)I\alpha\beta}(\xi)\pi_{\alpha}\pi_{\beta} . \label{P}
+%\end{align}
+%The index $I$ indicates the degree of freedom for NG mode. Since the conserved quantity must fulfill $\{\mathcal{P},\mathcal{H}\}_{PB}=0$, it leads
+%\begin{align}
+%  f^{I}_{,\alpha}B^{\alpha\beta} - f^{(1)I\alpha\beta}V_{,\alpha} = 0.
+%  \label{P_PB}
+%\end{align}
+
+Decoupling conditions for the collective subspace $\Sigma_2$ lead to
+the basic equations of the ASCC method \cite{MNM00,N2012},
+which determine tangential vectors,
+$f^1_{,\alpha}(\xi)$ and $g_{,1}^{\alpha}(q)$.
+\begin{align}
+  \delta H_M(\xi,\pi) = 0, \label{mfHFB}
+  \end{align}\begin{align}
+%  \tilde{B}^{\beta\gamma}V_{;\gamma\alpha}f^1_{,\beta}  &= \omega^2 f^1_{,\alpha},\hspace{2em} 
+%  \tilde{B}^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1} .
+ \mathcal{M}^\beta_\alpha f^1_{,\beta}  = \omega^2 f^1_{,\alpha},\hspace{2em} 
+\mathcal{M}^\beta_\alpha g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1} .
+  \label{mfQRPA}
+\end{align}
+The first equation (\ref{mfHFB}) is called moving-frame
+Hartree-Fock-Bogoliubov (HFB) equation.
+The moving-frame Hamiltonian $\mathcal{H}_M$
+%with constraints on collective coordinate and constant of motion
+is
+\begin{align}
+\mathcal{H}_M(\xi,\pi) &= \mathcal{H}(\xi,\pi)
+	-\lambda_{1} q^1(\xi) - \lambda_{n} q^n(\xi,\pi) .
+\label{H_M}
+\end{align}
+The second equation (\ref{mfQRPA}) is called moving-frame QRPA equation.
+%$\tilde{B}^{\alpha\beta}$ is the modified mass parameter
+%\begin{align}
+% \tilde{B}^{\alpha\beta}(\xi) &= \frac{\partial^2 \mathcal{H}_M}{\partial\pi_{\alpha}\partial\pi_{\beta}}  \nonumber \\
+%&= B^{\alpha\beta}(\xi) - \bar{V}_{,n} f^{(1)n\alpha\beta}(\xi)
+%- \lambda_1 f^{(1)1\alpha\beta}(\xi) 
+%\label{tildeB}.
+%\end{align} 
+%and the covariant derivative $V_{;\gamma\alpha}$ is defined by
+%\begin{align}
+% V_{;\alpha\beta} = V_{,\alpha\beta} - \Gamma^{\gamma}_{\alpha\beta}V_{,\gamma} , \label{covariant}
+%\end{align}
+%where the affine connection is
+%\begin{equation}
+%\Gamma^{\alpha}_{\beta\gamma}=\frac{1}{2}B^{\alpha\delta}(B_{\delta\beta,\gamma}+B_{\delta\gamma,\beta}-B_{\beta\gamma,\delta}).
+%\end{equation}
+%If we assume that the collective coordinate $q$ is geodesic, 
+The matrix $\mathcal{M}^\beta_\alpha$ in the moving-frame QRPA
+equation (\ref{mfQRPA}) can be rewritten as 
+ \begin{align}
+\mathcal{M}^{\beta}_{\alpha} =
+	 \tilde{B}^{\beta\gamma}
+	 \left(V_{,\gamma\alpha}-\lambda_{n}f^n_{,\gamma\alpha}\right)
+	+ \frac{1}{2}\tilde{B}^{\beta\gamma}_{,\alpha}V_{,\gamma} 
+\label{M}.
+\end{align}
+The NG mode, $f^n_{,\alpha}$ and $g^\alpha_{,n}$, corresponds to
+the zero mode with $\omega^2=0$.
+Therefore, the collective mode of our interest corresponds to
+the mode with the lowest frequency squared except for the zero mode.
+
+%We discuss the practical solution to derive the one-dimensional collective coordinate. We neglect $f^{(1)1\alpha\beta}(\xi)$ because it is supposed to be negligibly small in the previous study. On the other hand, from (\ref{P_PB}) and (\ref{mfQRPA}), $f^{(1)I\alpha\beta}(\xi)$ is necessary information to promise $\tilde{B}^{\beta\gamma}V_{;\gamma\alpha}f^I_{,\beta}=0$, which means zero mode. In most of case, we know the explicit form of $\mathcal{P}(\xi,\pi)$. 
+In practice, we obtain the collective path according to the following procedure:
+\begin{enumerate}
+\item Find the HFB minimum point $\xi^\alpha_i$ ($i=0$)
+	by solving Eq. (\ref{mfHFB}) with $\lambda_1=0$.
+	Let us assume that this corresponds to $q^1_i=0$.
+\item \label{step-2}
+	Diagonalize the matrix $\mathcal{M}^{\beta}_{\alpha}$
+to solve Eq.~(\ref{mfQRPA}) using Eq.~(\ref{M}).
+%Then, choose a mode with the lowest frequency $\omega^2$
+%as $f^1_{,\alpha}$ and $g^\alpha_{,1}$.
+%\footnote{
+%When eigenvalues cross on the collective path, the choice of adiabatic path or diabatic path is a critical problem}. 
+\item \label{step-3}
+%The right eigenvector $g^{\alpha}_{,1}$ tell us the direction which system moves in energy surface. 
+Move to the next neighboring point
+$\xi^\alpha_{i+1}=\xi^\alpha_{i}+d\xi^\alpha$
+with $d\xi^{\alpha}=g^{\alpha}_{,1}dq^1$.
+This corresponds to the collective coordinate, $q^1_{i+1}=q^1_i+dq^1$.
+\item \label{step-4}
+At $\xi_{i+1}^\alpha$ $(q^1_{i+1})$,
+obtain a self-consistent solution of
+Eqs. (\ref{mfHFB}) and (\ref{mfQRPA})
+to determine
+$\xi^\alpha_{i+1}$, $f^1_{,\alpha}$, and $g^\alpha_{,1}$.
+\item Go back to Step \ref{step-3} to determine the next point
+on the collective path.
+%\item Iterate (2)$\sim$(5) to decide the collective path under the same direction in the energy surface. 
+%\item Implement (2)$\sim$(6) for the opposite direction of the collective path in energy surface. 
+\end{enumerate}
+We repeat this procedure with $dq^1 > 0$ and $dq^1<0$, and
+construct the collective path.
+In Steps~\ref{step-2} and \ref{step-4}, we choose a mode
+with the lowest frequency squared $\omega^2$.
+Note that $\omega^2$ can be negative.
+In Step \ref{step-4}, when we solve Eq.~(\ref{mfHFB}), we use
+a constraint on the magnitude of $dq^1=f^1_{,\alpha}d\xi^{\alpha}$.
+Since the normalization of $f^1_{,\alpha}$ and $g^\alpha_{,1}$ is
+arbitrary as far as they satisfy Eq. (\ref{canonicity}),
+we fix this scale by an additional condition of $\bar{B}^{11}(q^1)=1$.
+
+%The scale of the collective coordinate is not unique because of the uncertainty of the eigenvectors in (\ref{mfQRPA}). To unify the scale, the simplest procedure is to keep the collective mass parameter $\bar{B}^{-1}(q)=1$ by renormalizing eigenvectors in (\ref{coll_mass}). 
+
+
+\subsection{Stationary-phase approximation to path integral}
+\label{sec:SPA}
+
+For quantization of integrable systems,
+we can apply the stationary-phase approximation (SPA)
+to the path integral.
+In our former study \cite{NN18},
+we have proposed and tested the SPA for an integrable pairing model.
+Since the collective Hamiltonian (\ref{coll}) that is
+extracted from the TDHFB degrees of freedom is integrable,
+the SPA is applicable to it.
+In this manner, we may apply the ASCC+SPA to
+non-integrable systems in general.
+
+
+\subsubsection{Basic idea of ASCC+SPA}
+
+Because the Hamiltonian $\mathcal{H}_{\rm coll}$ of Eq.~(\ref{coll})
+is separable,
+it is easy to find periodic trajectories on invariant tori.
+Since the pair rotation corresponds to the motion of $p_n$
+with a constant $q^n$,
+all we need to do is to find classical periodic trajectories $C_k$ in
+the $(q^1,p_1)$ space (with a fixed $q^n$) which satisfy
+the Einstein-Brillouin-Keller (EBK) quantization rule
+with a unit of $\hbar=1$,
+\begin{equation}
+	\oint_{C_k} p_1dq^1 = 2\pi k ,
+	\label{EBK}
+\end{equation}
+where $k$ is an integer number.
+
+At each point in the space $(q^1,q^n; p_1,p_n)$ corresponds to
+a generalized Slater determinant
+$\ket{q^1,q^n;p_1,p_n}=\ket{\xi,\pi}$
+where $(\xi,\pi)$ are given as
+$\xi^\alpha=g^\alpha(q^1,q^n,q^a=0)$ and
+$\pi_\alpha=f^1_{,\alpha}p_1+f^n_{,\alpha}p_n$.
+According to the SPA, the $k$-th excited state $\ket{\psi_k}$
+is constructed from the $k$-th periodic trajectory $C_k$,
+given by $(q^1(t),p_1(t))$,
+of the Hamiltonian $\mathcal{H}_{\rm coll}$.
+\begin{equation}
+%\ket{\psi_k} = \oint_{C_k} d\mu(q,p) \ket{q,p}
+\ket{\psi_k} \propto \oint dp_n \oint_{C_k} \rho(q,p) dt \ket{q,p}
+	e^{i\mathcal{T}[q,p]} ,
+	\label{SPA}
+\end{equation}
+where $(q,p)$ means $(q^1,q^n;p_1, p_n)$, and the weight function
+$\rho(q,p)$ is given through an invariant measure $d\mu(q,p)$ as
+\begin{equation}
+d\mu(q,p)=\rho(q,p) dE dt dq^n dp_n .
+\end{equation}
+The invariant measure $d\mu(q,p)$ is defined by the unity condition
+$\int d\mu(q,p) \ket{q,p}\bra{q,p} = 1$.
+An explicit form of $d\mu(q,p)$ for the present pairing model is shown
+in Eq. (\ref{dmu}).
+The action integral $\mathcal{T}$ is defined by
+\begin{align}
+\mathcal{T}[q,p] &\equiv
+\int_{0}^{t} \braket{q(t'),p(t')| i\frac{\partial}{\partial t'}
+	|q(t'),p(t')} dt' .
+\label{tau}
+\end{align}
+
+The SPA quantization is able to provide a wave function $\ket{\psi_k}$
+in microscopic degrees of freedom, which is given as a superposition
+of generalized Slater determinants $\ket{q,p}$.
+In addition, the integration with respect to $p_n$ over a circuit on a torus
+automatically recovers the broken symmetry, namely the good particle number.
+However, it relies on the existence of invariant tori.
+In the present approach of the ASCC+SPA,
+we first derive a decoupled collective subspace $\Sigma_2$ and identify
+canonical variables $(q,p)$.
+Because of the cyclic nature of $(q^n,p_n)$, it is basically a 1D system
+and becomes integrable.
+In other words, we perform the torus quantization on
+approximate tori in the TDHFB phase space $(\xi,\pi)$,
+which is mapped from tori in the 2D collective subspace $(q,p)$.
+
+
+
+%\begin{figure}[tb]
+% \begin{center}
+%    \includegraphics[width=80mm, bb=0 0 550 180]{SPA.png}
+% \end{center}
+%  \caption{For a TDHFB trajectory, the correspondence between TDHFB phase space and collective subspace.}
+%  \label{fig:correspondence}
+%\end{figure}
+%We try to combine SPA with ASCC. The key point is to find the correspondence between TDHFB phase space and collective subspace in a TDHFB trajectory (See Fig. \ref{fig:correspondence}). We consider the time-dependent state vector $\ket{Z(t)}$ is in a collective subspace. With pairing correlation, $\ket{Z(t)}$ can be expressed as
+
+
+\subsubsection{Notation and practical procedure for quantization}
+\label{sec:notation}
+
+For the application of the ASCC+SPA method to the pairing model in Sec.~\ref{sec3},
+we summarize some notations and procedures to obtain quantized states.
+
+In Sec.~\ref{sec3}, the time-dependent generalized Slater determinants
+(coherent states) are written as $\ket{Z}$ with complex variables
+$Z_\alpha(t)$.
+The variables $Z_\alpha$ are transformed into real variables
+$(j^\alpha, -\chi_\alpha)$ that correspond to $(\xi^\alpha,\pi_\alpha)$
+in Sec.~\ref{sec2}.
+$\chi_\alpha$ and $j^\alpha$ correspond to
+the ``angle'' and the ``number'' variables, respectively.
+%Although it is customary to take the angle as a coordinate,
+%since the angle $\chi_\alpha$ is time-odd quantities, 
+%we switch the coordinates and the momenta with minus signs
+%in front of variables $\chi$.
+Although it is customary to take the time-odd angle $\chi_\alpha$ as a coordinate,
+we take the number $j^\alpha$ as a coordinate and the angle $-\chi_\alpha$ as a momentum with an additional minus sign.
+Similarly, the gauge angle $\Phi$ and the total particle number $J$
+correspond to variables of the pair rotation, $-p_n$ and $q^n$, respectively.
+According to the EBK quantization rule (\ref{EBK}),
+the ground state with $k=0$ corresponds to nothing but the HFB state
+with a fixed particle number $J(=q^n)$.
+For the $k$-th excited states, we perform the following calculations:
+\begin{enumerate}
+\item Obtain the 1D collective subspace with canonical variables $(q^1,p_1)$
+	according to the ASCC in Sec.~\ref{sec:ASCC}.
+\item Find a trajectory $(q^1(t),p_1(t))$ which satisfies
+the $k$-th EBK quantization condition (\ref{EBK}).
+\item Calculate the action integral (\ref{tau}) for the $k$-th trajectory.
+\item Construct the $k$-th excited state using Eq.~(\ref{SPA}).
+\end{enumerate}
+The ASCC provides the 2D collective subspace $(q^1,J)$
+and the generalized coherent states $\ket{\Phi=0,J;q,p=0}$.
+For finite values of momenta, we use Eq.~(\ref{momenta})
+to obtain the state $\ket{\Phi,J;q,p}$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Application of ASCC+SPA in pairing model}
+
+\subsection{Application of ASCC}
+
+%In this subsection, we use ($\alpha, \beta, \cdots$) to describe the degrees of freedom instead of $l$ to synchronize the notation with in Sec. \ref{ASCC}. 
+We construct a 2D collective subspace $\Sigma_2$ from the ASCC method.
+%Because the first order with respect to $\chi_{\alpha}$ is zero in TDHFB Hamiltonian, we assume $j^{\alpha}$ as coordinates and $\chi_{\alpha}$ as conjugate momenta.  The canonical variables are $(j^{\alpha},-\chi_{\alpha})$ and fulfill $\{j^{\alpha},-\chi_{\beta}\}_{PB}=\delta^{\alpha}_{\beta}$. 
+We expand the classical Hamiltonian up to second order with respect to
+the momenta, $-\chi_{\alpha}$
+\begin{align}
+  \mathcal{H}(j,\chi) \approx& V(j) + \frac{1}{2}B^{\alpha\beta}(j)\chi_{\alpha}\chi_{\beta},
+\end{align}
+where the potential $V(j)$ and the reciprocal mass parameter
+$B^{\alpha\beta}(j)$ are given as
+\begin{align}
+  V(j) =& \mathcal{H}(j,\chi=0) \nonumber \\
+	=& \sum_{\alpha} 2\epsilon_{\alpha}j^{\alpha} - g\sum_{\alpha} \left[ \Omega_{\alpha}j^{\alpha} - (j^{\alpha})^2 +\frac{(j^{\alpha})^2}{\Omega_{\alpha}} \right] \nonumber \\
+  &- g\sum_{\alpha\ne \beta} \sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})}, 	
+\end{align}
+%\begin{align}
+\begin{eqnarray}
+&&B^{\alpha\beta}(j) = \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \\
+\label{mass}
+&&=
+	\begin{cases}
+2g\sum_{\gamma\ne \alpha} \sqrt{j^{\gamma}j^{\alpha}(\Omega_{\gamma}-j^{\gamma})(\Omega_{\alpha}-j^{\alpha})}
+		& \text{for $\alpha=\beta$} \\
+-2g\sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})}
+		& \text{for $\alpha\ne\beta$}
+	\end{cases}. \nonumber
+\end{eqnarray}
+%\end{align}
+We may apply the ASCC method in Sec. \ref{sec:ASCC}
+by regarding $\xi\to j$ and $\pi\to-\chi$.
+
+The TDHFB conserves the average total particle number $N$.
+We adopt 
+\begin{equation}
+	J\equiv N/2=\sum_\alpha j^\alpha, 
+  \label{J}
+\end{equation}
+as a coordinate $q^n$.
+Since this is explicitly given as the expectation value of the particle-number
+operator, curvature quantities,
+such as $f^n_{,\alpha\beta}$ and $f^{(1)n\alpha\beta}$,
+are explicitly calculable.
+On the other hand, the gauge angle $\Phi=-p_n$ is not given a priori.
+Since the ASCC solution provides $g^\alpha_{,n}$ as an eigenvector of
+Eq. (\ref{mfQRPA}),
+we may construct it as Eq. (\ref{coll_momenta}) in the first order
+in $\pi=-\chi$.
+We confirm that the pair rotation corresponds to an eigenvector
+of Eq. (\ref{mfQRPA}) with the zero frequency $\omega^2=0$.
+
+%With the properties of the constant of motion, we discuss the practical solution of ASCC in pairing model. If we ignore the higher order term $f^{(1)1\alpha\beta}$, we can practice local harmonic equation (LHE)
+%\begin{align}
+%  B^{\beta\gamma}V_{;\gamma\alpha}f^1_{,\beta}  &= \omega^2 f^1_{,\alpha},\hspace{2em} 
+%  B^{\beta\gamma}V_{;\gamma\alpha}g^{\alpha}_{,1} = \omega^2 g^{\beta}_{,1},
+%  \label{LHE}
+%\end{align}
+%which simplifies the moving-frame QRPA equation (\ref{mfQRPA}) by replacing $\tilde{B}^{\beta\gamma}$ into $B^{\beta\gamma}$. Under (\ref{LHE}), 
+
+
+In the present pairing model, 
+from Eq. (\ref{J}), we find $J$ does not depend on $\chi$.
+This means $f^{(1)n\alpha\beta}=0$ in Eq. (\ref{q^n}),
+thus, $\tilde{B}^{\alpha\beta}=B^{\alpha\beta}$.
+The second derivative of $J$ with respect to $j$ also vanishes,
+which indicates $f^n_{,\gamma\alpha}$ in Eq.~(\ref{M}) is zero. 
+%It indicates the chemical potential $\lambda_I(q)$ is not necessary information to calculate the matrix element in moving-frame QRPA equation.
+The gauge angle $\Phi$ is locally determined
+by the solution of Eq. (\ref{mfQRPA}).
+\begin{align}
+%  \Phi = \frac{1}{L}\sum_{\alpha} \chi_{\alpha},
+\Phi = g^\alpha_{,n} \chi_{\alpha},
+  \label{total_gauge}
+\end{align}
+%where $L$ is the number of available shells $\alpha=1,\cdots,L$.
+%Its conjugate variable
+%${\partial\mathcal{L}}/{\partial\dot{\Phi}}$
+%is indeed given by $J$ of Eq. (\ref{J}).
+%Again, exchanging coordinate and momentum,
+%we have $q^n=J$ and $p_n=-\Phi$.
+
+%We consider the treatment for the constant of motion in pairing model. In the TDHFB Hamiltonian, there is no dependence about the total gauge angle
+%\begin{align}
+%  J \equiv \frac{\partial\mathcal{L}}{\partial\dot{\Phi}}=\sum_{\alpha} j^{\alpha} = \frac{N}{2}
+%\end{align}
+%is conserved quantity. 
+
+%%%%%% Gauge fixing %%%%%%
+It should be noted \cite{N2012} that the definition of the collective
+variables $(q^1,p_1)$ is not unique, because it can be arbitrarily mixed
+with the pair rotation $(q^n,p_n)$ as
+\begin{equation}
+	q^1 \rightarrow q^1 + c q^n,  \quad
+	p_n \rightarrow p_n -c p_1 \label{eq:pairrotmix}
+\end{equation}
+with an arbitrary constant $c$.
+Numerically, this arbitrariness sometimes leads to a problematic behavior 
+in iterative procedure of the ASCC.
+In order to fix the parameter $c$, we adopt a condition
+called ``ETOP'' in Ref.~\cite{HNMM07}.
+We require the following condition to determine $c$:
+\begin{align}
+\sum_\alpha 
+	f^1_{,\alpha} = 0 ,
+\end{align}
+where $f^1_{,\alpha}$ is replaced as
+\begin{align}
+{f}^1_{,\alpha} \to f^1_{,\alpha} + c f^n_{,\alpha}
+  \label{f}
+\end{align}
+with Eq. (\ref{eq:pairrotmix}).
+%after solving (\ref{LHE}) at each point of $q$.
+
+
+\subsection{Application of SPA}
+
+After deriving the collective subspace $\Sigma_2$, 
+we perform the quantization according to the SPA in Sec.~\ref{sec:SPA}.
+Calculating a trajectory in the $(q^1,p_1)$ space,
+we can identify a series of states $\{\ket{\Phi,J;q^1(t),p_1(t)}\}$
+on the trajectory,
+in the form of Eq. (\ref{coherent})
+with parameters $Z_\alpha$ given at $(\Phi,J,q^1,p_1)$ and $q^a=p_a=0$ for
+$a\geq 3$.
+%Due to $J$ is conserved quantity, the action integral can be divided into two terms
+Since the variables $(\Phi,J)$ and $(q^1,p_1)$ are separable,
+we may take closed trajectories independently in $(\Phi,J)$ and $(q^1,p_1)$
+sectors, which we denote here as $C_\Phi$ and $C_1$, respectively.
+The action integral is given by
+\begin{align}
+\mathcal{T}(\Phi,J;q^1,p_1)
+&= \int_{C_\Phi} \braket{\Phi(t),J;q^1,p_1|i\frac{\partial}{\partial t}|\Phi(t),J;q^1,p_1} dt \nonumber \\
++ \int_{C_1} &\braket{\Phi,J;q^1(t),p_1(t)|i\frac{\partial}{\partial t}|\Phi,J;q^1(t),p_1(t)} dt
+ \nonumber \\
+	&=J\Phi + \int_{C_1} \sum_\alpha j^\alpha d\chi_\alpha
+	\nonumber \\
+	&\equiv \mathcal{T}_\Phi(J,\Phi) +\mathcal{T}_1(q^1,p_1;J) .
+%	\label{tau}
+\end{align}
+In fact, the gauge-angle dependence is formally given as
+\begin{equation}
+  \ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_1},
+\end{equation}
+where $\hat{N}=\sum_\alpha \hat{n}_\alpha$.
+Then, the action for the trajectory $C_1$ can be also expressed as
+$\mathcal{T}(q^1,p_1;J)=
+ \int_{C_1} \braket{J;q^1,p_1|i\frac{\partial}{\partial t}|J;q^1,p_1} dt$.
+%\begin{align}
+%  \mathcal{T}(\Phi,J;q,p) &= \mathcal{T}_{\rm intr}(t) + J\Phi, 
+%\end{align}
+%%where the intrinsic action integral $\mathcal{T}_{\rm intr}(t)$ becomes
+%The important point is $\mathcal{T}_{\rm intr}(t) \ne \int p dq$ at each $t$. For closed TDHFB trajectory, only $\mathcal{T}_{\rm intr}(t)$ contributes to the excited states.
+
+In the SU(2) representation, the invariant measure is
+\begin{align}
+  d\mu(Z) &= \prod_\alpha \frac{\Omega_\alpha+1}{\pi} (1+|Z_\alpha|^2)^{-2} d({\rm Re}\,Z) d({\rm Im}\,Z) \nonumber \\
+=& \prod_\alpha \frac{-(\Omega_\alpha+1)}{4\pi} d(\cos{\theta_\alpha}) d\chi_\alpha \nonumber \\
+ =& \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} d\chi_\alpha dj^\alpha \nonumber \\
+ =& \left[ \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} \right] d\Phi dJ dq^1 dp_1 %\nonumber \\
+  \prod_a dq^a dp_a,
+% d\Phi dJ dq dp = d\Phi dJ dE dt 
+	\label{dmu}
+\end{align}
+where $(q^a,p_a)$ are the intrinsic canonical variables
+decoupled from the collective subspace $\Sigma_2$.
+In the last line in Eq. (\ref{dmu}),
+we used the invariance of the phase-space volume element
+in the canonical transformation.
+%The part of the invariant measure which contributes to the excited states is
+According to Eq. (\ref{dmu}),
+the weight function $\rho(q,p)$ in Eq. (\ref{SPA}) is just a constant,
+thus, treated as the normalization of the wave function.
+%\begin{align}
+%d\mu(\Phi,J;q,p) \propto d\Phi dJ dqdp = d\Phi dJ dE dt. 
+%\end{align}
+%Under EBK quantization condition (\ref{EBK}),
+
+%derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
+%\begin{align}
+%  \ket{\Phi,J;q,p} &= \sum_{\{j_l\}} e^{-i\Phi \sum_l j_l} \ket{J;q,p} .
+%\end{align}
+The coherent state $\ket{\Phi,J;q^1,p_1}=\ket{Z}$ is
+expanded in the SU(2) quasispin basis as
+\begin{align}
+\ket{Z} &= 
+\sum_{\{m_\alpha\}} A_m(Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots}, \nonumber\\
+\end{align}
+where the summation is taken over all possible combinations
+of integer values of $\{ m_\alpha\}$ with
+\begin{align}
+A_m(Z) =& \prod_\alpha 
+\frac{Z_\alpha^{m_\alpha}}
+	{\left(1+|Z_\alpha|^2\right)^{\Omega_\alpha/2}m_\alpha!}
+\sqrt{\frac{\Omega_\alpha! m_\alpha!}{(\Omega_\alpha-m_\alpha)!}} \nonumber\\
+ =& \prod_\alpha \left(\frac{1-\cos{\theta}_\alpha}{2}\right)^{m_\alpha/2}\left(\frac{1+\cos{\theta}_\alpha}{2}\right)^{(\Omega_\alpha-m_\alpha)/2}
+  \nonumber \\
+  &\times\sqrt{\frac{\Omega_\alpha!}{m_\alpha!(\Omega_\alpha-m_\alpha)!}} e^{-i m_\alpha\chi_\alpha}  ,
+	\label{A_m}
+\end{align}
+where the lower index $m$ indicates a combination of $\{ m_\alpha \}$.
+The integer number $m_\alpha$ corresponds to the number of pairs
+in the level $\alpha$.
+%is in fixed gauge angle ($\Phi=0$).
+%
+
+Using Eq.~(\ref{A_m}),
+the $k$-th excited state is calculated as
+\begin{align}
+\ket{\psi_k} \propto& \oint_{C_\Phi} d\Phi \oint_{C_1} dt
+\ket{\Phi,J;q^1,p_1} e^{i\mathcal{T}(\Phi,J;q^1,p_1)}
+ \nonumber \\
+	=& \sum_{\{m_\alpha\}}
+	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi} \nonumber \\
+&\times \oint dt e^{i\mathcal{T}_1}(t) B_m (Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots} \nonumber \\
+ \equiv& \sum_{\{m_\alpha\}_J} C_m \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots},
+ \label{SPA2}
+\end{align}
+where $B_m(Z)$ are identical to $A_m$ in Eq.~(\ref{A_m}) except for
+replacing $\chi_\alpha$ with the relative angles
+$\phi_\alpha\equiv\chi_\alpha-\Phi$.
+The coefficients $C_m$ are given by
+\begin{align}
+C_m = \oint_{C_1} dt e^{i\mathcal{T}_1(t)} B_m(Z(t)).
+  \label{coef}
+\end{align}
+In the last line of Eq. (\ref{SPA2}), the summation is restricted to
+$\{m_\alpha\}$ that satisfy $\sum_\alpha m_\alpha=J$.
+It is easy to find that $J$ must be integer,
+according to the quantization rule (\ref{EBK}) for the $(J,\Phi)$ sector.
+
+The SPA for the ground state ($k=0$) is given by the stationary point
+in the $(q^1,p_1)$ sector,
+namely, the HFB state $\ket{\Phi,J;q,p}=e^{-i\Phi\hat{N}/2}\ket{\rm HFB}$.
+Nevertheless, the rotational motion in $\Phi(t)$ is present,
+which leads to the number quantization (projection).
+Therefore, Eq.~(\ref{SPA2}) becomes
+\begin{align}
+	\ket{\psi_{\rm g.s.}} \propto& \sum_{\{m_\alpha\}}
+	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi}
+	\ket{\rm HFB},  
+	\label{SPA3}
+\end{align}
+which is identical to the wave function of the particle-number projected HFB state.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Result}
+In the pairing model in Sec.~\ref{sec3},
+the number of TDHFB degrees of freedom equals that of single-particle levels.
+% including the constant of motion (pair rotation). We consider various systems, two-level system, three-level system, and Pb isotope system in each subsection respectively. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
+As there are two constants of motion, that is, the particle number and 
+the energy, the system is integrable for one- and two-level models.
+We first apply the ASCC+SPA method to an integrable two-level model,
+then, to non-integrable multi-level models.
+
+
+\subsection{Integrable case: Two-level pairing model}
+
+
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.45\textwidth,angle=-90]{images/N16X3p2trajectory.eps}
+ \end{center}
+\caption{Classical trajectories satisfying the EBK quantization condition
+(\ref{EBK}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
+%The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. 
+The crosses, solid and dashed lines correspond to the results
+of the ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively.
+The crosses for the ASCC+SPA trajectories are plotted every ten calculations
+($\delta q = 10dq =0.1/\sqrt{\epsilon_0}$). 
+%For the ASCC+SPA trajectories, we plot the crosses
+%every ten(?) points of the calculation,
+%namely $\delta q=0.1/\sqrt{\epsilon_2-\epsilon_1}$.
+}
+\label{fig:N16_traj}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{images/N16X3p2action.eps}
+ \end{center}
+\caption{Calculated action integrals for the $\ket{0_2^+}$ and $\ket{0_3^+}$ states as functions of time $t$.
+The crosses, solid and dashed lines correspond to the ASCC+SPA,
+the TDHFB2+SPA, and the TDHFB+SPA, respectively. 
+%Dotted lines are the values correspond to EBK quantization condition for $\ket{0_2^+}$ and $\ket{0_3^+}$. 
+The action integrals are calculated on each trajectory in Fig. \ref{fig:N16_traj}
+from $(\phi,j)=(0,j_{\rm max})$ in the clockwise direction.
+The crosses for the ASCC+SPA trajectories are plotted every ten calculations
+($\delta q = 10dq =0.1/\sqrt{\epsilon_0}$). 
+}
+\label{fig:N16_tau}
+\end{figure}
+\begin{figure}[thb]
+ \begin{center}
+   \includegraphics[height=0.5\textwidth,angle=-90]{images/N16X3p2occ.eps}
+ \end{center}
+\caption{
+Occupation probabilities for the $0_2^+$ and $0_3^+$ states.
+The horizontal line indicates the $j=(m_2-m_1)/2$ of the quasi-spin basis
+in Eq. (\ref{SPA2}).
+The vertical bars at each $m_2-m_1$ from left to right
+represent $|C_m|^2$ of Eq. (\ref{coef}) in
+the ASCC+SPA, TDHFB2+SPA and TDHFB+SPA calculations,
+respectively.
+}
+ \label{fig:N16_occ}
+\end{figure}
+
+
+The two-level pairing model corresponds to the 2D TDHFB system.
+Explicitly separating the gauge angle $\Phi$ and
+fixing the particle number $J$,
+the 2D TDHFB is reduced to the 1D system
+with the relative angle $\phi\equiv \chi_2-\chi_1$ and the relative
+occupation $j\equiv (j_2-j_1)/2$ as canonical variables.
+In Ref.~\cite{NN18}, using the explicit transformation to these
+separable variables,
+we examined the performance of the SPA requantization
+for the two-level model.
+In this section, we discuss the same model as in Ref.~\cite{NN18},
+but we determine the transformation using the ASCC method and then apply the
+SPA (ASCC+SPA).
+%In this section, we apply the ASCC+SPA method to the same model.
+%In other words, the ASCC method finds the transformation.
+
+Here, we study the system with the equal degeneracy,
+$\Omega_1=\Omega_2=8$, 
+the pairing strength $g/\epsilon_0=0.2$,
+and the particle number $N=16$. 
+In this two-level case, we use the level spacing,
+$\epsilon_0\equiv \epsilon_2-\epsilon_1$,
+as the unit of energy.
+The moving-frame QRPA produces the zero mode and another eigenvector
+with a finite frequency squared $\omega^2\neq 0$.
+We follow the latter mode to construct the collective path.
+In the ASCC calculation, we set the increment of the
+collective coordinate, $dq=0.01$,
+in units of $1/\sqrt{\epsilon_0}$.
+We confirm that the pair rotation always has a zero frequency
+on the collective path.
+On the obtained collective path, we calculate a classical trajectory
+for the Hamiltonian
+\begin{equation}
+\mathcal{H}_{\rm coll}(q^1,p_1;J)=\frac{1}{2} p_1^2 + V(q^1,J)
+\end{equation}
+with $J=N/2=8$.
+Calculated trajectories that satisfy the EBK quantization condition
+(\ref{EBK}) for the first and second excited states ($0_2^+$ and $0_3^+$)
+are mapped onto the $(\phi,j)$ plane and
+shown in Fig. \ref{fig:N16_traj}.
+We also calculate the trajectories using the explicit transformation
+of the variables to $(\Phi,J;\phi,j)$, which
+are shown by dashed lines in Fig. \ref{fig:N16_traj}.
+We call this ``TDHFB trajectories''.
+Small deviation in large $\phi$ is due to the absence of the higher-order
+terms in $\chi_\alpha$ in the ASCC.
+In fact, if we calculate the trajectories in the variables
+$(\Phi,J;\phi,j)$ using the Hamiltonian truncated up to the
+second order in $\chi_\alpha$ (``TDHFB2 trajectories''),
+we obtain the solid lines in Fig. \ref{fig:N16_traj},
+which perfectly agree with the ASCC trajectories.
+
+The action integrals $\mathcal{T}(t)$ corresponding to
+these closed trajectories are shown in Fig. \ref{fig:N16_tau}.
+For the $0_2^+$ state,
+all three calculations agree well
+with each other, while we see small deviation between the full TDHFB
+and the ASCC/TDHFB2 calculations for the $0_3^+$ state.
+
+The calculated wave functions for the excited $0^+$ states 
+are shown in Fig. \ref{fig:N16_occ}. 
+We show the occupation probabilities which are decomposed 
+into the $2n$-particle-$2n$-hole components. 
+The left end of the horizontal axis at $m_2-m_1=-8$ $(j=-4)$
+corresponds to a state with $(m_1,m_2)=(N/2,0)$ where all the particles
+are in the lower level $\alpha=1$.
+The next one at $m_2-m_1=-6$ $(j=-3)$ corresponds to the one with
+$(m_1,m_2)=((N-2)/2,1)$, and so on.
+The results from the TDHFB2+SPA and the ASCC+SPA are identical to each other
+within numerical error, and they reproduce
+the TDHFB+SPA calculation well.
+
+%we can obtain the obvious collective path from ASCC.
+%The dynamics is exactly identical with adiabatic TDHFB (ATDHFB). We confirm that whether ASCC is identical to one-dimensional ATDHFB, and compare the difference with TDHFB, in numerical calculation.
+%
+%In two-level system, the classical Hamiltonian in (\ref{TDHFB_Hamiltonian_2}) is
+%\begin{align}
+%\mathcal{H} 
+%  =& \sum_{l=1,2} \epsilon_l\Omega_l(1- \cos{\theta}_l)& \nonumber \\ 
+% &- \frac{g}{4}\sum_{l=1,2} \Omega_l [\Omega_l(1-\cos^2{\theta}_l)+(1-\cos{\theta}_l)^2] \nonumber \\
+%- \frac{g}{2} \Omega_{1}\Omega_{2}&\sqrt{(1-\cos^2{\theta}_{l_1})(1-\cos^2{\theta}_{l_2})}\cos{(\chi_{2}-\chi_{1})}   .
+%\end{align}
+%If we define the canonical coordinate $\phi=\chi_2-\chi_1$, it attributes to one-dimensional system. The conjugate momentum is $j= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \{\Omega_2(1-\cos{\theta}_2) - \Omega_1(1-\cos{\theta}_1)\}/4$. The ATDHFB indicates that the Hamiltonian can be expanded up to second order with respect to $\phi$
+%\begin{align}
+%  \mathcal{H}(\phi,j) &\approx V(j) + \frac{1}{2}B^{-1}(j)\phi^2,
+%\end{align}
+%where $V(j)=\mathcal{H}(\phi=0,j)$ and $B^{-1}(j)= \left. \frac{\partial^2\mathcal{H}}{\partial\phi^2} \right|_{\phi=0}$.
+%We know that the BCS ground state corresponds to the potential minimum point with $\phi=0$. If the pairing correlation is strong enough to bind the excited states in the collective potential,  the adiabatic approximation is expected to be well because the states are localized in small $\phi$ region. 
+%
+
+By comparing with the full TDHFB calculation with the ASCC+SPA approach
+in the two-level pairing model,
+we conclude that the ASCC is reliable for description of low-lying
+collective states, for which the adiabatic approximation is justifiable.
+In addition to that, we should note that the pair rotation is properly separated.
+%we succeed to describe the bound collective excited states by ASCC+SPA. For the bound states, whether the adiabatic approximation included or not hardly has influence. Even for the weakly bound states, the adiabatic approximation is reasonable approximation.
+
+
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{images/omega_sq.eps}
+ \end{center}
+ \caption{Eigenvalues of moving-frame QRPA equation as a function of
+the collective coordinate $q^1$, from $N=14$ to $N=24$.
+The thick (green) lines are the modes we choose as
+the collective coordinate $q^1$,
+while the dashed lines correspond to the zero modes ($q^n$).
+In each panel, both ends of the horizontal axis corresponds
+to the ending points of the collective path $q^1$.
+}
+ \label{omega_sq}
+\end{figure*}
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=40mm,angle=-90]{images/occ_number.eps}
+ \end{center}
+\caption{The occupation numbers $2j^{\alpha}$ in each single-particle level $\alpha$
+as a function of the collective coordinate $q^1$,
+from $N=14$ to $N=24$.
+The purple, green, and blue lines correspond to
+$\alpha=1$, 2, and 3, respectively.
+At the left end point of the collective coordinate in each panel,
+the configuration corresponds to the ``HF-like'' states.
+See text for details.
+}
+ \label{occ_number}
+\end{figure*}
+\subsection{Non-integrable case (1): Three-level pairing model}
+\label{sec:three-level-model}
+
+In contrast to the two-level model,
+the TDHFB for the three-level model is non integrable.
+%The simplest non-integrable system is three-level system. We have one trivial motion and two time-dependent degrees of freedom. 
+We set the parameters of the system as follows:
+$\Omega_1=\Omega_2=\Omega_3=\Omega=8$,
+$\epsilon_1=-\epsilon_0$, $\epsilon_2=0$, $\epsilon_3=1.5\epsilon_0$,
+and $g=0.2\epsilon_0$.
+We use the parameter $\epsilon_0$ as the unit energy.
+For the sub-shell closed configuration of $N=2\Omega=16$,
+the HFB ground state changes from the normal phase to
+the superfluid phase at $g_c=0.058\epsilon_0$.
+We calculate a chain of systems with even particle numbers
+from $N=14$ to $N=24$. 
+
+We obtain three eigen frequencies for the moving-frame QRPA equation, 
+on the collective path (Fig. \ref{omega_sq}). 
+First of all, we clearly identify the zero mode with $\omega^2=0$
+everywhere along the collective path.
+This means that the pair rotation is separated from the other
+degrees of freedom in the ASCC.
+The frequency could become imaginary ($\omega^2<0$).
+Except for the case of sub-shell closure ($N=2\Omega_1=16$),
+the frequency rapidly increases near the end points.
+The end points are given by points where the search for the next point
+on the collective path in Sec.~\ref{sec:ASCC} fails.
+
+We choose the lowest frequency squared mode, except for the zero mode,
+as a generator of the collective path ($q^1$).
+Figure~\ref{occ_number} shows variation of the occupation probability
+of each single-particle state, as functions of the collective
+coordinate $q^1$ on the collective path.
+The most striking feature is that the collective path terminates
+with special configurations which are given by the integer number
+of occupation.
+This is the reason why the search for the collective path fails
+at both the ends.
+At the end points,
+the occupation of the level 3 ($\epsilon_3$) vanishes, while
+those of the levels 1 and 2 become either maximum or minimum.
+The left end of each panel in Fig.~\ref{occ_number} corresponds to 
+a kind of ``Hartree-Fock'' (HF) state which minimizes
+the single-particle-energy sum, $\sum_\alpha 2j_\alpha \epsilon_\alpha$.
+The pairing correlation is weakened in both ends of the
+collective path.
+
+The collective mass with respect to the coordinate $q^1$ is normalized
+to unity.
+The collective potential is shown in Fig.~\ref{potential}.
+The range of $q^1$ is the largest for the system with $N=16$.
+This is because the variation of $j^1$ and $j^2$ is the largest in
+this case.
+
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/potential.eps}
+ \end{center}
+	\caption{Collective potential $V(q^1)$ obtained from the ASCC.
+	We adjust the energy minimum point as $q^1=0$ and $V=0$.
+}
+ \label{potential}
+\end{figure}
+\begin{table}[htbp]
+\caption{Calculated excitation energies of the first and the second
+excited states in units of $\epsilon_0$.
+In the exact calculation, the second excited state in the ASCC+SPA
+corresponds to the $0_4^+$ state.
+See text for details.}
+\label{ex}
+\begin{tabular}{c|cccccc}
+            $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
+ASCC+SPA (1st exc.) & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\
+    Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\ \hline
+ASCC+SPA (2nd exc.)& $7.42$ & $7.42$ & $7.60$ & $7.92$ & $8.26$ & $8.47$\\
+Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$
+\end{tabular}
+\end{table}
+
+\begin{figure}[htbp]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/intra_trans.eps}
+ \end{center}
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/inter_trans.eps}
+ \end{center}
+\caption{Calculated strength of pair-addition transition (\ref{BPad})
+from $N=14$ to $N=22$. 
+The solid (dashed) lines correspond to the ASCC+SPA (exact) calculation.
+The horizontal line indicates the particle number of the initial states.
+The upper panel shows the intraband transitions,
+$0_1^+\to 0_1^+$ and $0_2^+\to 0_2^+$,
+while the lower panel shows the interband transitions,
+$0_1^+ \to 0_2^+$ and $0_2^+\to 0_1^+$.
+}
+ \label{3levelPad}
+\end{figure}
+
+Based on the collective path determined by the ASCC calculation,
+we perform the requantization according to the SPA.
+Table \ref{ex} shows the excitation energies of the first and second
+excited states, determined by the EBK quantization condition (\ref{EBK}).
+Comparing the result of the ASCC+SPA with that of the exact calculation,
+we find that the excitation energies are reasonably well reproduced. 
+The ASCC+SPA underestimates the excitation energies only by about 5 \%.
+%The difference is that the values from ASCC+SPA are 
+%about $5\%$ smaller than exact solution. 
+
+It should be noted that the second excited state in the collective path
+corresponds to the $0_4^+$ state,
+not to the $0_3^+$ state, in the exact calculation. 
+We examine the interband $(k\neq k')$ pair-addition transition,
+\begin{equation}
+B(P_{\rm ad};k\rightarrow k') \equiv 
+	\left|\bra{0_{k'}^+;N+2} \hat{S}^+ \ket{0_k^+;N}\right|^2 ,
+\label{BPad}
+\end{equation}
+in the exact solution.
+$B(P_{\rm ad};0_2^+\rightarrow 0_3^+)$ 
+is $10\sim100$ times smaller than $B(P_{\rm ad};0_1^+\rightarrow 0_3^+)$,
+while $B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$ and
+$B(P_{\rm ad};0_1^+\rightarrow 0_3^+)$ are in the same order.
+The ASCC+SPA produces states in the same family,
+namely, those belonging to the same collective subspace (path).
+In the phonon-like picture,
+we expect similar magnitude of the strengths for
+$B(P_{\rm ad};{\rm g.s.}\rightarrow \omega_{\rm phon})$
+and
+$B(P_{\rm ad};\omega_{\rm phon}\rightarrow 2\omega_{\rm phon})$,
+but smaller values of
+$B(P_{\rm ad};{\rm g.s.}\rightarrow 2\omega_{\rm phon})$.
+Thus, the $0_4^+$ state in the exact calculation
+corresponds to the two-phonon state in the ASCC+SPA.
+The $0_3^+$ state in the exact calculation may correspond to
+a collective path associated with another solution of the moving-frame QRPA
+(thin black line in Fig.~\ref{omega_sq}).
+
+%It indicates that $\ket{0_3^+}$ is also one-phonon state which belongs to the other collective path (black line in Fig. \ref{omega_sq}). About two-phonon states, we can easily find the candidates of two-phonon states from excitation energies and $B(P_{\rm ad};0_1^+\rightarrow 0_{ex}^+)$. In the candidates, $\ket{0_4^+}$ is the lowest two-phonon state and $B(P_{\rm ad};0_2^+\rightarrow 0_4^+)$ is much larger than $B(P_{\rm ad};0_3^+\rightarrow 0_4^+)$. Therefore, $\ket{0_4^+}$ is considered to be most appropriate corresponding to the second excited state in ASCC+SPA calculation.
+
+Next, we calculate the wave functions,
+according to Eqs.~(\ref{SPA2}) and (\ref{SPA3}).
+The ground state corresponds to the number-projected HFB state
+(variation before projection).
+In contrast, the excited states are given as superposition of
+generalized Slater determinants in the collective subspace,
+The pair-addition transition strengths
+computed using these wave functions of the excited states
+are shown in Fig. \ref{3levelPad}.
+For the intraband transition ($k=k'$ in Eq. (\ref{BPad})),
+the ASCC+SPA method well reproduces the strengths of the exact calculation.
+The ground-to-ground transitions, $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$, 
+are perfectly reproduced, while
+$B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$ are underestimated 
+by about $10\%\sim20\%$.
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=55mm,angle=-90]{images/Pbomega_sq.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{omega_sq} but for Pb isotopes.
+}
+ \label{Pb_omega_sq}
+\end{figure*}
+
+\begin{figure*}[tb]
+ \begin{center}
+  \includegraphics[width=55mm,angle=-90]{images/Pbocc_number.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{occ_number} but for Pb isotopes.
+}
+ \label{Pb_occ_number}
+\end{figure*}
+
+It is more difficult to reproduce the absolute magnitude of
+interband transitions ($k\neq k'$), 
+which are far smaller than the intraband transitions.
+Although the increasing (decreasing) trend for
+$B(P_{\rm ad};0_2^+\rightarrow 0_1^+)$
+($B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$)
+as a function of the particle number is properly reproduced,
+the absolute magnitude is significantly underestimated in the ASCC+SPA.
+This is due to extremely small collectivity in the interband transitions.
+Almost all the strengths are absorbed in the intraband transitions.
+Even in the exact calculation, the pair addition strength is
+about two orders of magnitude smaller than the intraband strength.
+Remember that the non-collective limit ($g\rightarrow 0$) of this
+value is $B(P_{\rm ad};0_1^+\rightarrow 0_2^+)=\Omega$.
+Therefore, the pairing correlation hinders the interband transitions
+by about one order of magnitude.
+For such tiny quantities, perhaps, 
+the reduction to the 1D collective path is not well justified.
+%In our previous study on the two-level case, we found that
+%the SPA reasonably well reproduces interband transitions \cite{NN18}.
+%The present case corresponds to a strong pairing case with
+%the strongly hindered interband transitions.
+
+
+%It is difficult to reproduce the absolute value of exact solution.
+%However, because the pairing correlation is enough strong in this case, the strength of intraband transition is dominant compared with interband transition.
+%We can find that 
+%$B(P_{\rm ad};0_1^+\rightarrow 0_2^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_1^+)$ are only about $1\%$ of $B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$ and $B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$. Therefore, the interband transition can be regarded as reasonable. From all above results, we can conclude that ASCC+SPA reproduces exact solution quantitatively. 
+
+We should remark here that there is a difficulty in the present ASCC+SPA
+requantization for weak pairing cases.
+In such cases, the potential minimum is close to the left end 
+($q^1=q_L$) of the collective path, and the potential height
+at $q^1=q_L$, $V(q_L) - V(0)$, becomes small.
+Then, a classical trajectory with $E>V(q_L)$ hits this boundary ($q^1=q_L$).
+In construction of wave functions,
+the boundary condition at $q^1=q_L$ significantly influences the result.
+In the present study, we choose a strong pairing case to avoid
+such a situation.
+As in Fig.~\ref{potential}, the potential height at $q^1=q_L$ has
+about $10\epsilon_0$ which is larger than the excitation energies
+of the second excitation.
+Therefore, all the trajectories are ``closed'' in the usual sense.
+
+%We skipped the result about $\ket{0_3^+}$.
+
+\subsection{Non-integrable case (2): Pb isotopes}
+\label{sec:Pb_isotopes}
+
+
+Finally, we apply our method to neutrons' pairing dynamics in 
+neutron-deficient Pb isotopes.
+The spherical single-particle levels of neutrons
+between the magic numbers 82 and 126 are adopted and
+their energies are presented in Table \ref{Pb}. 
+The coupling constant $g=0.138$ MeV is determined to reproduce
+the experimental pairing gap given by the odd-even mass difference,
+$\Delta(N)=\frac{(-1)^{N+1}}{2}[B(N+1)-2B(N)+B(N-1)]$ of ${}^{192}$Pb.
+The even-even nuclei from ${}^{188}$Pb to ${}^{194}$Pb
+are studied.
+\begin{table}[tb]
+\caption{Single-particle energies of Pb isotopes used in the calculation
+in units of MeV.
+These are obtained from the spherical Woods-Saxon potential
+with the parameters of Ref.~\cite{BM69}.
+}
+\begin{tabular}{c|cccccc}
+  orbit& $h_{9/2}$ & $f_{7/2}$ & $i_{13/2}$ & $p_{3/2}$ & $f_{5/2}$ & $p_{1/2}$\\ \hline
+  energy(MeV)& $-10.94$ & $-10.69$ & $-8.74$ & $-8.44$ & $-8.16$ & $-7.45$\\
+\end{tabular}
+\label{Pb}
+\end{table}
+
+The TDHFB dynamics is described by six degrees of freedom.
+Figure \ref{Pb_omega_sq} shows eigenvalues of the
+moving-frame QRPA equation.
+Again, we find that there is a zero mode corresponding to
+the neutron pair rotation.
+Among the five vibrational modes, we choose the lowest one to
+construct the collective path in the ASCC.
+This lowest mode never crosses with other modes,
+though the spacing between the lowest to the next lowest mode
+can be very small, especially for ${}^{194}$Pb.
+The evolution of the occupation numbers along the collective path
+is shown in Fig. \ref{Pb_occ_number}.
+Similarly to the three-level model, 
+the end points of the collective path indicate exactly
+the integer numbers, and
+the left end of each panel corresponds to the
+``Hartree-Fock''-like state.
+On the collective path, the occupation numbers of $i_{13/2}$, $p_{3/2}$, and
+$f_{5/2}$ mainly change.
+%The last neutrons are in $i_{13/2}$ from ${}^{188}$Pb to ${}^{194}$Pb. 
+
+\begin{figure}[bt]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/Pbpotential.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{potential} but for Pb isotopes.
+}
+ \label{Pb_potential}
+\end{figure}
+The collective potentials for these isotopes are shown
+in Fig. \ref{Pb_potential}.
+The heights of the potentials at the left end, $V(q_L)-V(0)$,
+are $2\sim3.5$ MeV.
+For $^{186}$Pb, the height of the potential is not
+enough to satisfy the condition, $E<V(q_L)$,
+to have a closed trajectory for the first excited state
+(See the last paragraph in Sec.~\ref{sec:three-level-model}).
+We encounter another kind of problem for $^{196}$Pb,
+which will be discussed in Sec.~\ref{sec5}.
+Therefore, in this paper, we calculate the first excited states
+in $^{188,190,192,194}$Pb.
+
+
+We show the calculated excitation energy of the first excited state
+in Table~\ref{Pb_ex}.
+Experimentally, this pair vibrational excited $0^+$ state is
+fragmented into several $0^+$ states due to other correlations,
+such as quadrupole correlation, not taken into account in the present model.
+%The value is nothing to do with experimental value because pairing model is too simple to describe realistic nuclear interaction. 
+We make a comparison with the exact solution of the multi-level
+pairing model.
+The ASCC+SPA method quantitatively reproduces the excitation energy of
+the exact solution.
+
+\begin{table}[bt]
+\caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
+\begin{tabular}{c|cccccc}
+   & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
+ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
+Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
+\end{tabular}
+\label{Pb_ex}
+\end{table}
+\begin{figure}[htb]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/Pbintra_trans.eps}
+ \end{center}
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/Pbinter_trans.eps}
+ \end{center}
+	\caption{The same as Fig. \ref{3levelPad} but for Pb isotopes.
+}
+ \label{PbPad}
+\end{figure}
+The pair-addition transition strengths are shown in Fig. \ref{PbPad}.
+The feature that is similar to the three-level case is observed:
+dominant intraband transition and very weak interband transitions.
+The accuracy from the ASCC+SPA method well reproduces
+$B(P_{\rm ad};0_1^+\rightarrow 0_1^+)$
+and qualitatively reproduces
+$B(P_{\rm ad};0_2^+\rightarrow 0_2^+)$ as well.
+The deviation for the latter is about $25\%$.
+The interband transitions are smaller than the intraband transitions
+by more than two orders of magnitude.
+This is also similar to the three-level model discussed
+in Sec.~\ref{sec:three-level-model}.
+For such weak transitions, the ASCC+SPA significantly
+underestimates the strengths.
+We may say that the ASCC+SPA gives reasonable results for the intraband
+transitions in the realistic values of the pairing coupling constant $g$ and
+single-particle levels.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\chapter{Collective model treatment}
+\label{collective}
+
 The collective model has been proposed
 and utilized for the nuclear pairing dynamics
-\cite{BBPK70,delta1,delta3}.
-For those studies, the pairing gap parameter (or equivalent quantities)
+\cite{BBPK70,GPBW85, ZPPRS99, P07}.
+For those studies, the pairing gap parameter $\Delta$ (or equivalent quantities)
 is assumed to be the collective coordinates.
-This is analogous to the five-dimensional (5D) collective (Bohr) model,
+This is analogous to the Bohr collective model,
 in which the collective coordinates are assumed to be the
 quadrupole deformation parameters, $\alpha_{2\mu}$.
 The 5D collective model has been 
@@ -1343,7 +2587,7 @@ extensively applied to analysis on numerous experimental data.
 On the contrary, there have been very few applications of
 the pairing collective model
 in comparison with experimental data.
-In this section, we examine the validity of
+In this chapter, we examine the validity of
 the collective treatment of the pairing.
 
 Although the global gauge angle $\Phi$ is arbitrary,
@@ -1360,7 +2604,10 @@ leads to $\phi=0$.
 \end{align}
 The parameter $\alpha$ is equivalent to the pairing gap $\Delta$,
 since the relation, $\Delta=G\alpha$,
-guarantees one-to-one correspondence between $\alpha$ and $\Delta$. In Sec.~\ref{sec:canonical}, we treat $\phi$ as a collective coordinate
+guarantees one-to-one correspondence between $\alpha$ and $\Delta$. 
+
+\section{Integrable system}
+In Sec.~\ref{sec:canonical}, we treat $\phi$ as a collective coordinate
 and $j$ as its conjugate momentum.
 The collective model treatment is based on the opposite choice,
 $j$ as a coordinate and $\phi$ as a momentum, as discussed in Sec. \ref{ATDHFB}.
@@ -1465,20 +2712,59 @@ obtained with the CQ method
  \label{fig:Delta_E}
 \end{figure}
 
+\section{non-integrable system}
+Finally, we discuss the validity of the collective model approach
+assuming the pairing gap as a collective coordinate.
+The 5D collective Hamiltonian assuming the quadrupole deformation
+parameters $\alpha_{2\mu} (\mu=\pm2,\pm1,$ and $0)$ as the collective coordinates
+is widely utilized to analyze experimental data of quadrupole states.
+Similarly, we may construct the pairing collective Hamiltonian
+in terms of the pairing gap $\Delta$ and the gauge angle $\Phi$. 
+As far as there is a one-to-one correspondence between $\Delta$ 
+and the collective variable $q^1$ we obtained in the present study,
+we can transform the collective Hamiltonian in $(q^1,\Phi)$
+into the one in $(\Delta,\Phi)$.
+The pairing gap $\Delta$ is defined as
+\begin{align}
+  \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|\hat{S}^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
+  &= g\sum_\alpha \sqrt{j^\alpha(\Omega_\alpha-j^\alpha)} .
+\end{align}
+Figure \ref{192Pb_gap} shows the pairing gap $\Delta$ in ${}^{192}$Pb
+as a function of the collective coordinate $q^1$.
+The peak in $\Delta$ is near $q^1=0$ and it is not a monotonic
+function of $q^1$, thus no one-to-one correspondence exists.
+The same behavior is observed for other Pb isotopes too.
+Therefore, the pairing gap $\Delta$ is not a suitable collective coordinate
+to describe the pairing dynamics in the multi-level model.
 
-\chapter{Requantization of TDHFB in non-integrable system}
-\label{non-integrable}
+%Because only one orbit near the Fermi energy ($i_{13/2}$ orbit for both end points) contributes the value of pairing gap, the value at both end points are small compared with the value around the ground state. There is no one-to-one correspondence between $\Delta$ and $q$ not only in ${}^{192}$Pb, but also in all multi-level systems. 
 
-\section{Theoretical framework of ASCC+SPA in non-integrable system}
 
-\section{Result}
+%As with the 5D collective model, pairing can also be supposed as a sort of deformation. The collective model is described by
+%the pair deformation parameters pairing gap $\Delta$ and global gauge angle $\Phi$. 
+%The utilization of the collective model for nuclear pairing dynamics was done in several references\cite{??}. In our previous study, however, we find that the pairing gap $\Delta$ is not proper to be the collective coordinate in two-level pairing model \cite{??}. In multi-level system, we can investigate the relations between the pairing gap and the collective coordinate. 
 
-\chapter{Discussion}
+\begin{figure}[t]
+ \begin{center}
+  \includegraphics[width=60mm,angle=-90]{images/192Pbgap.eps}
+ \end{center}
+	\caption{Pairing gap as a function of collective coordinate $q^1$
+	in ${}^{192}$Pb. 
+}
+ \label{192Pb_gap}
+\end{figure}
 
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Conclusion}
+\label{conclusion}
 
+We studied the low-lying excited $0^+$ states in multi-level pairing model. We constructed theoretical framework to describe pairing collective motion in large-amplitude regime. The approach roughly consists of two steps: (1) solve the TDHFB equation to obtain the classical trajectories; (2) requantize the TDHFB trajectories to obtain the excited states. The TDHFB degrees of freedom equal to the number of single-particle level. More specifically, the TDHFB degrees of freedom consists of one constant of motion, pairing rotation, and $L-1$ time-dependent degrees of freedom in $L$ single-particle level system. Therefore, we divided the pairing system into two classes, two-level system corresponding to the integrable system and the system more than three-level corresponding to the non-integrable system. 
+
+In two-level system, integrable system, we studied three different methods of requantization of TDHFB, the stationary-phase approximation (SPA) of the path integral, the canonical quantization (CQ), and the Fourier decomposition(FD) of the time-dependent observables. 
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \appendix
-
 
 \chapter{Detailed derivation of the action in pairing model}
 \label{derivation}
@@ -1733,6 +3019,7 @@ The Lagrangian in $(\chi,j)$ representation becomes
 	&- 2g\sum_{l_1\le l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-\nu_{l_1}-j_{l_1})(\Omega_{l_2}-\nu_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   .
 \end{align}
 
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Properties of superfluid ground state in pairing model}
 The superfluid ground state correspond to the local minimum point in energy surface. The time-dependent coherent state described in (\ref{coherent}) attributes to BCS trail wave function in $\chi_l=0$. For the simplicity, here, we only consider the even-particle system with $\nu=0$ (without Pauli blocking).
 
@@ -1790,6 +3077,7 @@ We can find the phase transition occurs at
 \end{align}
 The last approximation performs well for $\Omega>>1$. We often use the dimensionless coupling constant $x$ in the text. 
 
+\clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Adiabatic self-consistent collective coordinate method}
 
 \section{Theoretical framework}

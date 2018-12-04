@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.4.24)  20 NOV 2018 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.4.24)  4 DEC 2018 12:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,6 +552,20 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \FrameSep=\dimen148
 )
 (c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty)
+(c:/w32tex/share/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks27
+\footnotemargin=\dimen149
+\c@pp@next@reset=\count115
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
 (c:/w32tex/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip58
 \f@ncyO@elh=\skip59
@@ -619,6 +633,18 @@ Package tocloft Info: The document has chapter divisions on input line 44.
 \cftsubtabnumwidth=\skip106
 ) (./thesis.aux
 
+LaTeX Warning: Label `momenta' multiply defined.
+
+
+LaTeX Warning: Label `EBK' multiply defined.
+
+
+LaTeX Warning: Label `SPA' multiply defined.
+
+
+LaTeX Warning: Label `fig:N16_occ' multiply defined.
+
+
 LaTeX Warning: Label `S_0' multiply defined.
 
 
@@ -627,18 +653,18 @@ LaTeX Warning: Label `coherent' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -722,11 +748,11 @@ Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 72.
  (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 72.
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -740,17 +766,38 @@ Non-PDF special ignored!
 Non-PDF special ignored!{c:/w32tex/share/texmf-dist/fonts/map/pdftex/updmap/pdf
 tex.map}
 Non-PDF special ignored!
-Non-PDF special ignored!] (./thesis.toc [1
+Non-PDF special ignored!]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
+Non-PDF special ignored!
+Non-PDF special ignored!] [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [2
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] (./thesis.toc [3
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [2
+ [4
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -765,27 +812,33 @@ Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
 Non-PDF special ignored!]
 File: images/pair_coll.eps Graphic file (type eps)
- <images/pair_coll.eps> [3
+ <images/pair_coll.eps>
+File: images/pair_rot.eps Graphic file (type eps)
+ <images/pair_rot.eps> [2
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [3
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [4
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -797,12 +850,13 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-File: images/pair_rot.eps Graphic file (type eps)
- <images/pair_rot.eps> [4
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [5
+File: images/phonon.eps Graphic file (type eps)
+ <images/phonon.eps>
+File: images/112Cd.eps Graphic file (type eps)
+ <images/112Cd.eps>
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+ [5
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -817,25 +871,37 @@ Non-PDF special ignored!] [6
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [7
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!]
-Chapter 2.
-[7
-Non-PDF special ignored!
-Non-PDF special ignored!
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
-
-LaTeX Warning: Citation `Richardson1' on page 8 undefined on input line 257.
+LaTeX Warning: Reference `discussion' on page 8 undefined on input line 251.
 
 [8
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [9
+Non-PDF special ignored!]
+Chapter 2.
+[9
 Non-PDF special ignored!
 Non-PDF special ignored!
+
+
+
+
 Non-PDF special ignored!
 Non-PDF special ignored!] [10
 Non-PDF special ignored!
@@ -848,18 +914,31 @@ Non-PDF special ignored!
 Non-PDF special ignored!] [12
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [13
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [14
+Non-PDF special ignored!
+Non-PDF special ignored!
+
 
 
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Chapter 3.
-[13
+[15
 Non-PDF special ignored!
 Non-PDF special ignored!
+
+
 Non-PDF special ignored!
 Non-PDF special ignored!]
 File: images/phase.eps Graphic file (type eps)
- <images/phase.eps> [14
+ <images/phase.eps> [16
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -878,7 +957,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 File: images/phase_compare.eps Graphic file (type eps)
- <images/phase_compare.eps> [15
+ <images/phase_compare.eps> [17
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -891,31 +970,9 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [16
+Non-PDF special ignored!] [18
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [17
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
-
-LaTeX Warning: Reference `sec:results' on page 18 undefined on input line 620.
-
-
-LaTeX Warning: Citation `delta1' on page 18 undefined on input line 656.
-
-
-LaTeX Warning: Citation `delta3' on page 18 undefined on input line 656.
-
-
-LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 18 undefined on input li
-ne 662.
-
-[18
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -925,16 +982,8 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 
-LaTeX Warning: Reference `sec:requantization' on page 20 undefined on input lin
-e 871.
+LaTeX Warning: Reference `sec:results' on page 20 undefined on input line 716.
 
-
-LaTeX Warning: Reference `sec:SPA' on page 20 undefined on input line 873.
-
-File: images/N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
-<images/N50ex_energy_wo_adiabatic.eps>
-File: images/N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
- <images/N100ex_energy_wo_adiabatic.eps>
 [20
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -943,72 +992,71 @@ Non-PDF special ignored!] [21
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+Non-PDF special ignored!] [22
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
+
+LaTeX Warning: Reference `sec:requantization' on page 23 undefined on input lin
+e 969.
+
+File: images/N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
+<images/N50ex_energy_wo_adiabatic.eps>
+File: images/N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
+ <images/N100ex_energy_wo_adiabatic.eps>
 File: images/N50Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq0p5occ_wo_adiabatic.eps>
+
+<images/N50Xeq0p5occ_wo_adiabatic.eps>
 File: images/N100Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
-
-<images/N100Xeq0p5occ_wo_adiabatic.eps>
+ <images/N100Xeq0p5occ_wo_adiabatic.eps>
 File: images/N50Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq2occ_wo_adiabatic.eps>
-File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N100Xeq2occ_wo_adiabatic.eps>
+<images/N50Xeq2occ_wo_adiabatic.eps>
+File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+ <images/N100Xeq2occ_wo_adiabatic.eps>
+[23
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
 File: images/N50Pad_CQ.eps Graphic file (type eps)
  <images/N50Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1001--1002
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1099--1100
  [] 
  []
 
 File: images/N50Pad_FD.eps Graphic file (type eps)
 <images/N50Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1007--1008
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1105--1106
  [] 
  []
 
 File: images/N50Pad_SPA.eps Graphic file (type eps)
 <images/N50Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1013--1014
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1111--1112
  [] 
  []
 
 File: images/N100Pad_CQ.eps Graphic file (type eps)
 <images/N100Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1033--1034
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1131--1132
  [] 
  []
 
 File: images/N100Pad_FD.eps Graphic file (type eps)
 <images/N100Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1039--1040
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1137--1138
  [] 
  []
 
 File: images/N100Pad_SPA.eps Graphic file (type eps)
 <images/N100Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1045--1046
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1143--1144
  [] 
  []
 
-[22
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+[24
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1032,40 +1080,7 @@ File: images/N8Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
 <images/N8Xeq0p5occ_wo_adiabatic.eps>
 File: images/N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
  <images/N8Xeq2occ_wo_adiabatic.eps>
-[23
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [24
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+[25
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1090,19 +1105,19 @@ Non-PDF special ignored!
 Non-PDF special ignored!]
 File: images/N8Pad_CQ.eps Graphic file (type eps)
  <images/N8Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1204--1205
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1302--1303
  [] 
  []
 
 File: images/N8Pad_FD.eps Graphic file (type eps)
 <images/N8Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1210--1211
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1308--1309
  [] 
  []
 
 File: images/N8Pad_SPA.eps Graphic file (type eps)
 <images/N8Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1216--1217
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1314--1315
  [] 
  []
 
@@ -1112,19 +1127,7 @@ File: images/N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
  <images/N16Xeq0p5occ_wo_adiabatic.eps>
 File: images/N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N16Xeq2occ_wo_adiabatic.eps> [25
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+<images/N16Xeq2occ_wo_adiabatic.eps> [26
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1150,72 +1153,21 @@ Non-PDF special ignored!
 Non-PDF special ignored!]
 File: images/N16Pad_CQ.eps Graphic file (type eps)
  <images/N16Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1284--1285
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1382--1383
  [] 
  []
 
 File: images/N16Pad_FD.eps Graphic file (type eps)
 <images/N16Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1290--1291
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1388--1389
  [] 
  []
 
 File: images/N16Pad_SPA.eps Graphic file (type eps)
 <images/N16Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1296--1297
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1394--1395
  [] 
  []
-
-
-LaTeX Warning: Citation `delta1' on page 26 undefined on input line 1335.
-
-
-LaTeX Warning: Citation `delta3' on page 26 undefined on input line 1335.
-
-
-Underfull \vbox (badness 2865) has occurred while \output is active []
-
- [26
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
-File: images/N8p_E.eps Graphic file (type eps)
- <images/N8p_E.eps>
-File: images/N16p_E.eps Graphic file (type eps)
- <images/N16p_E.eps>
-
-LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 27 undefined on input li
-ne 1379.
-
-
-LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 27 undefined on input li
-ne 1379.
-
-
-LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 27 undefined on input li
-ne 1404.
 
 [27
 Non-PDF special ignored!
@@ -1240,12 +1192,35 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]
-File: images/N50Xeq2p4gap_E.eps Graphic file (type eps)
- <images/N50Xeq2p4gap_E.eps>
-File: images/N16Xeq2p4gap_E.eps Graphic file (type eps)
-
-<images/N16Xeq2p4gap_E.eps> [28
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [28
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1277,38 +1252,123 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!] [30
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
+
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Chapter 4.
+
+LaTeX Warning: Reference `sec3' on page 31 undefined on input line 1443.
+
+
+LaTeX Warning: Reference `sec3' on page 31 undefined on input line 1463.
+
+
+LaTeX Warning: Citation `Sat18' on page 31 undefined on input line 1506.
+
 [31
 Non-PDF special ignored!
 Non-PDF special ignored!
+
+
 Non-PDF special ignored!
 Non-PDF special ignored!] [32
 Non-PDF special ignored!
 Non-PDF special ignored!
-
-
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Chapter 5.
+Overfull \hbox (25.10016pt too wide) in paragraph at lines 1690--1700
+[]\OT1/cmr/m/n/10.95 At each point in the space $(\OML/cmm/m/it/10.95 q[]; q[]\
+OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 p[]; p[]\OT1/cmr/m/n/10.95 )$ cor-re-sp
+onds to a gen-er-al-ized Slater de-ter-mi-nant $[] =
+ []
+
+
+LaTeX Warning: Reference `sec3' on page 33 undefined on input line 1753.
+
 [33
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [34
 Non-PDF special ignored!
 Non-PDF special ignored!
-
-
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Chapter 6.
+
+LaTeX Warning: Reference `sec3' on page 34 undefined on input line 1756.
+
+
+LaTeX Warning: Reference `sec2' on page 34 undefined on input line 1761.
+
+
+Overfull \hbox (26.72426pt too wide) in paragraph at lines 1784--1788
+\OT1/cmr/m/n/10.95 The ASCC pro-vides the 2D col-lec-tive sub-space $(\OML/cmm/
+m/it/10.95 q[]; J\OT1/cmr/m/n/10.95 )$ and the gen-er-al-ized co-her-ent states
+ $[]$.
+ []
+
+[34
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (22.01358pt too wide) in paragraph at lines 1910--1923
+\OT1/cmr/m/n/10.95 Sec. 4.1.2[]. Cal-cu-lat-ing a tra-jec-tory in the $(\OML/cm
+m/m/it/10.95 q[]; p[]\OT1/cmr/m/n/10.95 )$ space, we can iden-tify a se-ries of
+ states $\OMS/cmsy/m/n/10.95 f[]g$
+ []
+
 [35
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1316,33 +1376,60 @@ Non-PDF special ignored!
 Non-PDF special ignored!] [36
 Non-PDF special ignored!
 Non-PDF special ignored!
-
-
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Appendix A.
-[37
+
+LaTeX Warning: Reference `sec3' on page 37 undefined on input line 2041.
+
+File: images/N16X3p2trajectory.eps Graphic file (type eps)
+<images/N16X3p2trajectory.eps>
+File: images/N16X3p2action.eps Graphic file (type eps)
+ <images/N16X3p2action.eps>
+File: images/N16X3p2occ.eps Graphic file (type eps)
+
+<images/N16X3p2occ.eps> [37
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-Overfull \hbox (28.83289pt too wide) in paragraph at lines 1560--1560
-[] 
- []
+Underfull \vbox (badness 1127) has occurred while \output is active []
 
-[38
+ [38
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1591
-.
- (c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1591.
-
+File: images/omega_sq.eps Graphic file (type eps)
+ <images/omega_sq.eps>
+File: images/occ_number.eps Graphic file (type eps)
+ <images/occ_number.eps>
 [39
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1359,8 +1446,20 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [40
 Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: images/potential.eps Graphic file (type eps)
+ <images/potential.eps>
+File: images/intra_trans.eps Graphic file (type eps)
+ <images/intra_trans.eps>
+File: images/inter_trans.eps Graphic file (type eps)
+
+<images/inter_trans.eps> [40
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1381,37 +1480,299 @@ Non-PDF special ignored!] [41
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!] [42
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: images/Pbomega_sq.eps Graphic file (type eps)
+ <images/Pbomega_sq.eps>
+Overfull \hbox (6.54837pt too wide) in paragraph at lines 2388--2389
+ [] 
+ []
+
+File: images/Pbocc_number.eps Graphic file (type eps)
+<images/Pbocc_number.eps>
+Overfull \hbox (6.54837pt too wide) in paragraph at lines 2397--2398
+ [] 
+ []
+
+[42
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: images/Pbpotential.eps Graphic file (type eps)
+ <images/Pbpotential.eps>
+
+LaTeX Warning: Reference `sec5' on page 43 undefined on input line 2515.
+
+[43
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: images/Pbintra_trans.eps Graphic file (type eps)
+ <images/Pbintra_trans.eps>
+File: images/Pbinter_trans.eps Graphic file (type eps)
+
+<images/Pbinter_trans.eps> [44
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Chapter 5.
+File: images/N8p_E.eps Graphic file (type eps)
+<images/N8p_E.eps>
+File: images/N16p_E.eps Graphic file (type eps)
+ <images/N16p_E.eps>
+
+LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 45 undefined on input li
+ne 2625.
+
+
+LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 45 undefined on input li
+ne 2625.
+
+[45
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+LaTeX Warning: Reference `TDHFB_Hamiltonian_3' on page 46 undefined on input li
+ne 2650.
+
+File: images/N50Xeq2p4gap_E.eps Graphic file (type eps)
+<images/N50Xeq2p4gap_E.eps>
+File: images/N16Xeq2p4gap_E.eps Graphic file (type eps)
+ <images/N16Xeq2p4gap_E.eps> [46
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+File: images/192Pbgap.eps Graphic file (type eps)
+ <images/192Pbgap.eps> [47
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [48
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Chapter 6.
+[49
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [50
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Appendix A.
+[51
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Overfull \hbox (28.83289pt too wide) in paragraph at lines 2845--2845
+[] 
+ []
+
+[52
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2876
+.
+ (c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2876.
+
+[53
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [54
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [55
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!] [56
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Appendix B.
-[43
+[57
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
+
+
 Non-PDF special ignored!
-Non-PDF special ignored!] [44
+Non-PDF special ignored!] [58
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Appendix C.
-(./thesis.bbl [45
+(./thesis.bbl [59
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!] [60
 Non-PDF special ignored!
 Non-PDF special ignored!
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [46
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [47
+Non-PDF special ignored!] [61
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1445,9 +1806,63 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
+Non-PDF special ignored!] [62
 Non-PDF special ignored!
 Non-PDF special ignored!
-Non-PDF special ignored!]) [48
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!]) [63
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1476,37 +1891,40 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5216 strings out of 493026
- 74266 string characters out of 6136275
- 151883 words of memory out of 5000000
- 8602 multiletter control sequences out of 15000+600000
- 20402 words of font info for 77 fonts, out of 8000000 for 9000
+ 5435 strings out of 493026
+ 77250 string characters out of 6136275
+ 153159 words of memory out of 5000000
+ 8800 multiletter control sequences out of 15000+600000
+ 20710 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,18n,43p,1695b,381s stack positions out of 5000i,500n,10000p,500000b,80000s
 <c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/w32
-tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/w32tex/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/w32tex/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/w32tex/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><c:/w32tex/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/w
-32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/w32tex/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/w32tex/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/w32tex/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmss12.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmss17.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/w
-32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/w32tex/shar
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/w32tex/share/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/w32tex/share/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/w32tex/share/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (51 pages, 379681 bytes).
+tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/w32tex/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/w32tex/share/texmf-dis
+t/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/w32tex/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi6.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+<c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/w32tex
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/w32tex/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/w32tex/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><c:/w32tex/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c
+:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/w32tex/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/w32tex/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/w32tex/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msam10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msbm7.pfb>
+Output written on thesis.pdf (69 pages, 483123 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 328 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
