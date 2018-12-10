@@ -25,33 +25,32 @@
 \contentsline {section}{\numberline {3.3}Result}{23}
 \contentsline {subsection}{\numberline {3.3.1}Large-$\Omega $ cases}{23}
 \contentsline {subsection}{\numberline {3.3.2}Small-$\Omega $ cases}{25}
-\contentsline {subsubsection}{Mid-shell configuration}{25}
-\contentsline {subsubsection}{Closed-shell configuration}{26}
+\contentsline {subsubsection}{(a) Mid-shell configuration}{25}
+\contentsline {subsubsection}{(b) Closed-shell configuration}{26}
 \contentsline {chapter}{\numberline {4}Requantization of TDHFB in non-integrable system}{31}
 \contentsline {section}{\numberline {4.1}Theoretical framework of ASCC+SPA in non-integrable system}{31}
 \contentsline {subsection}{\numberline {4.1.1}Adiabatic self-consistent collective coordinate method and 1D collective subspace}{31}
 \contentsline {subsection}{\numberline {4.1.2}Stationary-phase approximation to path integral}{33}
-\contentsline {subsubsection}{Basic idea of ASCC+SPA}{33}
-\contentsline {subsubsection}{Notation and practical procedure for quantization}{34}
-\contentsline {section}{\numberline {4.2}Application of ASCC+SPA in pairing model}{34}
-\contentsline {subsection}{\numberline {4.2.1}Application of ASCC}{34}
-\contentsline {subsection}{\numberline {4.2.2}Application of SPA}{35}
+\contentsline {subsubsection}{(a) Basic idea of ASCC+SPA}{34}
+\contentsline {subsubsection}{(b) Notation and practical procedure for quantization}{34}
+\contentsline {section}{\numberline {4.2}Application of ASCC+SPA in pairing model}{35}
+\contentsline {subsection}{\numberline {4.2.1}Application of ASCC}{35}
+\contentsline {subsection}{\numberline {4.2.2}Application of SPA}{36}
 \contentsline {section}{\numberline {4.3}Result}{37}
-\contentsline {subsection}{\numberline {4.3.1}Integrable case: Two-level pairing model}{37}
+\contentsline {subsection}{\numberline {4.3.1}Integrable case: Two-level pairing model}{38}
 \contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{39}
-\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{43}
-\contentsline {chapter}{\numberline {5}Collective model treatment}{45}
-\contentsline {section}{\numberline {5.1}Integrable system}{45}
-\contentsline {section}{\numberline {5.2}non-integrable system}{47}
-\contentsline {chapter}{\numberline {6}Conclusion}{49}
-\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{51}
-\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{51}
-\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{54}
-\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{55}
-\contentsline {section}{\numberline {A.4}Action in pairing model}{56}
-\contentsline {chapter}{\numberline {B}Properties of superfluid ground state in pairing model}{57}
-\contentsline {section}{\numberline {B.1}Two-level system}{57}
-\contentsline {chapter}{\numberline {C}Adiabatic self-consistent collective coordinate method}{59}
-\contentsline {section}{\numberline {C.1}Theoretical framework}{59}
-\contentsline {section}{\numberline {C.2}Matrix elements of local harmonic approximation in pairing model}{59}
-\contentsline {chapter}{Bibliography}{61}
+\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{44}
+\contentsline {chapter}{\numberline {5}Collective model treatment}{47}
+\contentsline {section}{\numberline {5.1}Integrable system}{47}
+\contentsline {section}{\numberline {5.2}Non-integrable system}{49}
+\contentsline {chapter}{\numberline {6}Conclusion}{51}
+\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{53}
+\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{53}
+\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{56}
+\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{57}
+\contentsline {section}{\numberline {A.4}Action in pairing model}{58}
+\contentsline {chapter}{\numberline {B}Properties of superfluid ground state in pairing model}{59}
+\contentsline {section}{\numberline {B.1}Two-level system}{59}
+\contentsline {chapter}{\numberline {C}Detailed derivation of semiclassical wave function in SPA}{61}
+\contentsline {section}{\numberline {C.1}Derivation of Eq. (3.27\relax )}{61}
+\contentsline {chapter}{Bibliography}{63}

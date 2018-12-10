@@ -62,26 +62,78 @@
 
 %%% The "real" document content comes below...
 
-\title{Requantization of time-dependent mean field
- for pairing collective motion in superfluid nuclei}
-\author{Fang Ni}
-%\date{} % Activate to display a given date or no date (if empty),
-         % otherwise the current date is printed 
-
 \begin{document}
-\maketitle
+\begin{titlepage}
+\begin{center}
+\vspace*{100truept}
+{\huge Requantization of time-dependent mean field}\\
+\vspace{5truept}
+{\huge for pairing collective motion in superfluid nuclei}\\
+\vspace*{120truept}
+{\LARGE Fang Ni}\\
+\vspace*{280truept}
+{\LARGE February 2019}\\ 
+\end{center}
+\end{titlepage} 
+\newpage
 
-\chapter*{Absract}
+\thispagestyle{empty}
+\newpage
 
-In most of nuclei, the structure of low-lying excited $0^+$ states, which had been called as $\beta$ vibration or two-phonon excitation, are complicate and mysterious from plenty of recent experimental data. The common suggestion from those experimentalists is that the pairing correlation plays an important role in such excited $0^+$ states because they found strange cross sections of two-nucleon transfer reactions. From theoretical viewpoint, excited $0^+$ states correspond to pairing vibrational mode, the elementary mode of excitation of pairing collective motions, in superfluid nuclei. 
-Because quantum fluctuation is large in low-lying region, To understand such excited $0^+$ states, extend to the large-amplitude regime, but also pairing correlation. 
+\begin{titlepage}
+\begin{center}
+\vspace*{100truept}
+{\huge Requantization of time-dependent mean field}\\
+\vspace{5truept}
+{\huge for pairing collective motion in superfluid nuclei}\\
+\vspace*{120truept}
+{\LARGE Fang Ni}\\
+\vspace{5truept}
+{\LARGE Doctral Program in Physics}\\
+\vspace*{200truept}
+{\LARGE Submitted to the Graduate School of}\\
+\vspace{5truept}
+{\LARGE Pure and Applied Sciences}\\
+\vspace{5truept}
+{\LARGE in Partial Fulfillment of the Requirements} \\
+\vspace{5truept}
+{\LARGE for the Degree of Doctor of Philosophy in}\\
+\vspace{5truept}
+{\LARGE Science}\\
+\vspace*{15truept}
+{\LARGE at the}\\
+\vspace{5truept}
+{\LARGE University of Tsukuba}\\ 
+\end{center}
+\end{titlepage} 
+\thispagestyle{empty}
 
+\chapter*{Abstract}
+\thispagestyle{empty}
 
+In most of nuclei, the structure of low-lying excited $0^+$ states, which had been called as $\beta$ vibration or two-phonon excitation, are complicate and mysterious from plenty of recent experimental data. The common suggestion from those experimentalists is that the pairing correlation plays an important role in such excited $0^+$ states because they found strange cross sections of two-nucleon transfer reactions. From theoretical viewpoint, 
+%excited $0^+$ states in superfluid nuclei correspond to not only quadrupole vibrational mode, the elementary mode of excitation of quadrupole collective motions, but also pairing vibrational mode, the elementary mode of excitation of pairing collective motions. 
+the competition between quadrupole correlation and pairing correlation causes complicate structure of low-lying excited $0^+$ states. 
+We aim to understand such excited $0^+$ states based on time-dependent mean-field (TDMF) theory. Because quantum fluctuation is large in low-lying excitation region, theoretical framework in large-amplitude regime is necessary. However, the theoretical framework to describe pairing collective motions in large-amplitude regime is not developed. The nature of pairing collective motions in low-lying excitation region is still unclear.
 
+We consider the theoretical framework to describe large-amplitude collective motions associated with nuclear pairing. In general, the low-lying excited states can be obtained in two steps: (1) solve TDMF equation to obtain classical trajectories; (2) quantize such classical trajectories to obtain the excited states. The step 2 is called ``requantization''. In this thesis, we focus on step 2 and discuss the requantization method in detail. To simplify the system, apart from realistic nuclear system, we consider the pairing collective motions in multi-level pairing model. We divide the pairing system into two classes, integrable system and non-integrable system. The former one corresponds to two-level system and the later one corresponds to the system more than three-level. Because the description of requantization is different between the two, we consider the requantization methods for each case, respectively.
+
+In integrable system, the requantization of TDMF is particular feasible because we can easily find the periodic orbits. We apply three different requantization methods, canonical quantization, Fourier decomposition of the time-dependent observables, and stationary phase approximation (SPA) to the path integral. Comparing each requantization method with exact solution in various two-level system, respectively, SPA turns out to be most accurate between the three and can describe the excited states quantitatively, especially for the calculation of two-particle transition strength. Because the requantized wave functions from SPA are given in terms of the microscopic degrees of freedom, the transition matrix elements can be calculated directly.
+
+Actually, SPA cannot be applied to non-integrable system straightforwardly because finding the periodic orbits is extremely difficult task. We propose a new theoretical approach which enables SPA to apply to non-integrable system, namely, combining SPA with adiabatic self-consistent collective coordinate (ASCC) method (ASCC+SPA). The concept is that we employ ASCC to extract an integrable subspace from TDMF phase space, and apply SPA to obtain the excited states. The detailed derivation is shown in the text.
+From the application to the low-lying excited $0^+$ states in three-level system and Pb isotopes system, we find ASCC+SPA gives a reasonable description. 
+
+We also examine the performance of the pairing collective model which phenomenologically assumes pairing gap parameter and gauge angle as collective coordinates. We check the one-to-one correspondence between the collective coordinates from TDMF dynamics itself and those in collective model. We find the collective coordinate describing pairing vibration has no one-to-one correspondence between the two, in both integrable and non-integrable system. The applicability of the collective model is limited for the nuclear pairing.
+
+We summarize the achievements in this thesis. We find a reasonable requantization method, SPA, from the study in integrable system. Using SPA, we construct a theoretical framework of ASCC+SPA to requantize the pairing collective motions in non-integrable system. Also, we demonstrate that to describe pairing vibration properly, it is necessary to employ the collective coordinate extracted from TDMF degrees of freedom itself, instead of the phenomenological collective coordinate, pairing gap parameter. With the development of computational power, we think 
+ASCC+SPA is promising tool to elucidate the structure of mysterious low-lying excited $0^+$ states in nuclei.
+
+\thispagestyle{empty}
 
 \pagenumbering{roman}
+\setcounter{page}{-1}
 \tableofcontents
-\thispagestyle{empty}
+%\thispagestyle{empty}
 
 \chapter{Introduction}
 \pagenumbering{arabic}
@@ -262,25 +314,25 @@ There are several remaining problems from our study. In Chap. \ref{discussion}, 
 
 We introduce the pairing model in this chapter. The Hamiltonian of pairing model is
 \begin{align}
-	H &= \sum_{l=1}^L \epsilon_l n_l - g \sum_{l,l'} S_l^+ S_{l'}^- ,
+	H &= \sum_{\alpha=1}^L \epsilon_{\alpha} n_{\alpha} - g \sum_{\alpha\beta} S_{\alpha}^+ S_{\beta}^- ,
 \end{align}
 where
 \begin{align}
-	n_l &= \sum_m a^{\dag}_{lm}a_{lm} \\
-        S_l^{+} &= \sum_{m>0}a_{lm}^{\dag}a_{l\overline{m}}^{\dag} ,
-\quad   S_l^{-} = S_l^{+\dag} .
+	n_{\alpha} &= \sum_m a^{\dag}_{j_\alpha m}a_{j_\alpha m} \\
+        S_{\alpha}^{+} &= \sum_{m>0}a_{j_\alpha m}^{\dag}a_{j_\alpha \overline{m}}^{\dag} ,
+\quad   S_{\alpha}^{-} = S_{\alpha}^{+\dag} .
 \label{S_+}
 \end{align}
-In $L$ single-particle level system, each single-particle energy $\epsilon_l$ possesses $(2\Omega_l)$-fold
-degeneracy ($\Omega_l=j_l+1/2$)
-and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$ and $\Omega_l-1/2$. $\overline{m}$ indicates the time reversal quantum number with respect to $m$. The strength of pairing correlation is represented by coupling constant $g$. We also define a seniority $\nu_l$, which is the number of unpaired particles in each level. The total number of unpaired particles is $\nu=\sum_l\nu_l$. The unpaired particles have no pairing interaction, and play a part in Pauli blocking effect.\par
+In $L$ single-particle level system, each single-particle energy $\epsilon_{\alpha}$ possesses $(2\Omega_{\alpha})$-fold
+degeneracy ($\Omega_{\alpha}=j_{\alpha}+1/2$)
+and $\sum_{m>0}$ indicates the summation over $m=1/2,3/2,\cdots,$ and $\Omega_{\alpha}-1/2$. $\overline{m}$ indicates the time reversal quantum number with respect to $m$. The strength of pairing correlation is represented by coupling constant $g$. We also define a seniority $\nu_{\alpha}$, which is the number of unpaired particles in each level. The total number of unpaired particles is $\nu=\sum_{\alpha}\nu_{\alpha}$. The unpaired particles have no pairing interaction, and play a part in Pauli blocking effect.\par
 In one-level system ($L=1$), the pairing dynamics is well understood. The analytic solution of the total energy is
 \begin{align}
 	E_{\nu}(N) = \epsilon N - \frac{1}{4}g(N-\nu)(2\Omega-N-\nu+2) .
 	\label{onelevel}
 \end{align}
 The pairing rotational band created by the pairing correlation is completely parabolic with the pairing-rotational moment of inertia $2/g$. Also, the excited states in a specified $N$ is only described by the quantum number $\nu$. For example, the first excited state in even particle system is $\nu=2$ state, which correspond to one $J^{\pi}=0^+$ pair broken state.\par
-The non-explicit dynamics arises in multi-level pairing model ($L\ge 2$). The pairing rotational mode includes higher order terms of $N$ due to the shell effect. In addition, several pairing vibrational modes emerge. The pairing vibration is not single particle motion specified by $\nu_l$, but a collective motion arisen from $J^{\pi}=0^+$ pairs. In order to solve the multi-level pairing Hamiltonian, we explain the numerical exact solution. Also, we derive the TDHFB equation to study the mean-field picture of pairing collective motions.
+The non-explicit dynamics arises in multi-level pairing model ($L\ge 2$). The pairing rotational mode includes higher order terms of $N$ due to the shell effect. In addition, several pairing vibrational modes emerge. The pairing vibration is not single particle motion specified by $\nu_{\alpha}$, but a collective motion arisen from $J^{\pi}=0^+$ pairs. In order to solve the multi-level pairing Hamiltonian, we explain the numerical exact solution. Also, we derive the TDHFB equation to study the mean-field picture of pairing collective motions.
 
 \section{Exact solution}
 The eigenvalues and eigenvectors can be solved exactly in pairing model. There are two major methods to obtain the exact solutions, diagonalization in quasispin space and Richardson equation.
@@ -288,34 +340,34 @@ The eigenvalues and eigenvectors can be solved exactly in pairing model. There a
 \subsection{Diagonalization in quasispin space}
 We introduce SU(2) quasispin operators fulfilling the follows commutation relation
 \begin{equation}
-  [S_l^0,S_{l'}^{+}] = \delta_{ll'}S_{l}^{+},\hspace{20pt}[S_{l}^{+},S_{l'}^{-}] = 2\delta_{ll'}S_{l}^{0}. 
+  [S_{\alpha}^0,S_{\beta}^{+}] = \delta_{\alpha\beta}S_{\alpha}^{+},\hspace{20pt}[S_{\alpha}^{+},S_{\beta}^{-}] = 2\delta_{\alpha\beta}S_{\alpha}^{0}. 
   \label{SU2commu}
 \end{equation}
 If we set 
 \begin{align}
-  S_l^0 &= \frac{1}{2}(\sum_ma_{lm}^{\dag}a_{lm}-\Omega_l)
+  S_{\alpha}^0 &= \frac{1}{2}(\sum_ma_{j_\alpha m}^{\dag}a_{j_\alpha m}-\Omega_{\alpha})
   \label{S_0}
 \end{align}
-and $S_l^+, S_l^-$ as in (\ref{S_+}), the commutation relation (\ref{SU2commu}) is fulfilled. Using quasispin operators, the Hamiltonian can be represented by quasispin operators
+and $S_{\alpha}^+, S_{\alpha}^-$ as in (\ref{S_+}), the commutation relation (\ref{SU2commu}) is fulfilled. Using quasispin operators, the Hamiltonian can be represented by quasispin operators
 \begin{align}
-	H &= \sum_l \epsilon_l (2S_l^0+\Omega_l) - g \sum_{l,l'} S_l^+ S_{l'}^- .
+	H &= \sum_{\alpha} \epsilon_{\alpha} (2S_{\alpha}^0+\Omega_{\alpha}) - g \sum_{\alpha\beta} S_{\alpha}^+ S_{\beta}^- .
 \end{align}
-Therefore, any states $\ket{\psi}$ belong to SU(2)$\otimes\cdots\otimes$SU(2) Hilbert space, and can be expanded in the basis $\ket{S_1,S_1^0;\cdots;S_l,S_l^0;\cdots}$
+Therefore, any states $\ket{\psi}$ belong to SU(2)$\otimes\cdots\otimes$SU(2) Hilbert space, and can be expanded in the basis $\ket{S_1,S_1^0;\cdots;S_{\alpha},S_{\alpha}^0;\cdots}$
 \begin{equation}
-  \ket{\psi} = \sum_{S_1^0,\cdots\,S_l^0,\cdots}c_{S_1^0,\cdots\,S_l^0,\cdots}\ket{S_1,S_1^0;\cdots;S_l,S_l^0;\cdots} .
+  \ket{\psi} = \sum_{S_1^0,\cdots\,S_{\alpha}^0,\cdots}c_{S_1^0,\cdots\,S_{\alpha}^0,\cdots}\ket{S_1,S_1^0;\cdots;S_{\alpha},S_{\alpha}^0;\cdots} .
 \end{equation}
 
-We consider the physical meaning of the quasispin space. Because $S_l^+$ and $S_l^-$ correspond to the creation and annihilation operators with respect to the $J^{\pi}=0^+$ pairs in each level, the quasispin space is decoupled from the space which the unpaired particles belong to. 
-Also, $S_l^0$ is related to the occupation number in each level. $S_l^0=-S_l$ is the minimum value corresponding no $J^{\pi}=0^+$ pair in the level and $S_l^0=S_l$ is the maximum value corresponding full of $J^{\pi}=0^+$ pairs in the level. Because $\nu_l$ plays a part in Pauli blocking effect in the level, the absolute value of quasispin $S_l$ is
+We consider the physical meaning of the quasispin space. Because $S_{\alpha}^+$ and $S_{\alpha}^-$ correspond to the creation and annihilation operators with respect to the $J^{\pi}=0^+$ pairs in each level, the quasispin space is decoupled from the space which the unpaired particles belong to. 
+Also, $S_{\alpha}^0$ is related to the occupation number in each level. $S_{\alpha}^0=-S_{\alpha}$ is the minimum value corresponding no $J^{\pi}=0^+$ pair in the level and $S_{\alpha}^0=S_{\alpha}$ is the maximum value corresponding full of $J^{\pi}=0^+$ pairs in the level. Because $\nu_{\alpha}$ plays a part in Pauli blocking effect in the level, the absolute value of quasispin $S_{\alpha}$ is
 \begin{equation}
-  S_l = \frac{1}{2}(\Omega_l-\nu_l).
+  S_{\alpha} = \frac{1}{2}(\Omega_{\alpha}-\nu_{\alpha}).
 \end{equation}
 
-The dimension of the model space is $D=\prod_l(2S_l+1)$. However, $[H,N]=0$ indicates that the Hamiltonian is block diagonal with respect to the total particle number $N$. The model space can be reduced after we extract the combination of $\{S_l^0\}$ fulfilling
+The dimension of the model space is $D=\prod_{\alpha}(2S_{\alpha}+1)$. However, $[H,N]=0$ indicates that the Hamiltonian is block diagonal with respect to the total particle number $N$. The model space can be reduced after we extract the combination of $\{S_{\alpha}^0\}$ fulfilling
 \begin{equation}
-  N = \sum_l (2S_l^0+2S_l+\nu_l) .
+  N = \sum_{\alpha} (2S_{\alpha}^0+2S_{\alpha}+\nu_{\alpha}) .
 \end{equation} 
-For example, we consider the dimension of the single particle levels between the magic number 50 and 82. Under spherical symmetry, we have five single particle levels, $d_{5/2}$, $g_{7/2}$, $s_{1/2}$, $d_{3/2}$, and $h_{11/2}$. The corresponding degeneracy is $\{\Omega_l\}=\{3,4,1,2,6\}$. If we only consider the case for$\nu_l=0$, the dimension for the system is $D=840$. On the other hand, under a specified $N$, the dimensions are 105 for $N=14$ and 91 for $N=20$.
+For example, we consider the dimension of the single particle levels between the magic number 50 and 82. Under spherical symmetry, we have five single particle levels, $d_{5/2}$, $g_{7/2}$, $s_{1/2}$, $d_{3/2}$, and $h_{11/2}$. The corresponding degeneracy is $\{\Omega_{\alpha}\}=\{3,4,1,2,6\}$. If we only consider the case for$\nu_{\alpha}=0$, the dimension for the system is $D=840$. On the other hand, under a specified $N$, the dimensions are 105 for $N=14$ and 91 for $N=20$.
 
 \subsection{Richardson equation}
 As mentioned above, diagonalizing the Hamiltonian is simple method to obtain the exact solution.
@@ -323,23 +375,24 @@ However, diagonalization is time consuming when the model space becomes large. T
 The alternative method to obtain the exact solution is to solve Richardson equation. The idea was introduced by R. W. Richardson \cite{Richardson1, Richardson2, Richardson3, Richardson4, Richardson5}. We divide the total energy into two parts
 \begin{align}
   E &= \braket{\psi|H|\psi} \\
-  &= \sum_l \epsilon_l \nu_l + \sum_{\alpha=1}^M E_{\alpha} .
+  &= \sum_{\alpha} \epsilon_{\alpha} \nu_{\alpha} + \sum_{m=1}^M E_{m} .
 \end{align}
 The first term is the energy of unpaired particle, and the second term is the total energy of $J^{\pi}=0^+$ pairs. The pair-energy $E_{\alpha}$ is derived from the non-linear equations
 \begin{equation}
-  1 - g\sum_l \frac{\Omega_l-\nu_l}{2\epsilon_l-E_{\alpha}} + 2g\sum_{\beta(\neq\alpha)}^M \frac{1}{E_{\beta}-E_{\alpha}} = 0 .
+  1 - g\sum_{\alpha} \frac{\Omega_{\alpha}-\nu_{\alpha}}{2\epsilon_{\alpha}-E_{\alpha}} + 2g\sum_{n(\neq m)}^M \frac{1}{E_{n}-E_{m}} = 0 .
 \end{equation}
-$M$ indicates the number of $J^{\pi}=0^+$ pairs in the system, and equals to the numbers of the non-linear equations. $E_{\alpha}$ can become not only real numbers, but also complex conjugate pairs when $M\ge 2$. 
+$M$ indicates the number of $J^{\pi}=0^+$ pairs in the system, and equals to the numbers of the non-linear equations. $E_{m}$ can become not only real numbers, but also complex conjugate pairs when $M\ge 2$. 
 
-We solved the non-linear equations numerically in general. If we input a set of initial values $E_{\alpha}^{0}$ into the equations, the values will converge by using proper numerical algorithm such as Newton-Raphson method. The difficult point is that we cannot directly specify the number of excitation from the obtained excitation energy because the converged excitation energy $\sum_{\alpha=1}^M E_{\alpha}$ can be any number of excitation. To specify the number of excitation, we can use the idea in Ref. \cite{Richardson4}, which discussed the behavior of the $E_{\alpha}$ as a function of $g$ for ground and each low-lying excitation energy. 
+We solved the non-linear equations numerically in general. If we input a set of initial values $E_{m}^{0}$ into the equations, the values will converge by using proper numerical algorithm such as Newton-Raphson method. The difficult point is that we cannot directly specify the number of excitation from the obtained excitation energy because the converged excitation energy $\sum_{m=1}^M E_{m}$ can be any number of excitation. To specify the number of excitation, we can use the idea in Ref. \cite{Richardson4}, which discussed the behavior of the $E_{m}$ as a function of $g$ for ground and each low-lying excitation energy. 
 
-The eigenvalues can be also calculated numerically by using the obtained $E_{\alpha}$. Actually, we need to calculate the matrix elements for specific operators we interest (e.g. number operator, two-particle transition operator), without obtaining the explicit eigenvectors. For example, the occupation number can be obtained in the following non-linear equations
+The eigenvalues can be also calculated numerically by using the obtained $E_{m}$. Actually, we need to calculate the matrix elements for specific operators we interest (e.g. number operator, two-particle transition operator), without obtaining the explicit eigenvectors. For example, the occupation number can be obtained in the following non-linear equations
 \begin{align}
 n.
 \end{align}
 %However, the equation 
 
 \section{TDHFB dynamics}
+\label{2-2}
 %In realistic nuclear system with nuclear effective interaction, the necessary model space is huge. To diagonalize the effective Hamiltonian is extremely difficult task. Such study is done by shell model calculation. In alternative way, we only prepare a limited model space, which supposed to be reproduce the important parts of nuclear properties. The time-dependent mean-field theory 
 We apply time-dependent mean-field (TDMF) theory to examine the classical picture of the pairing dynamics. With pairing correlation, TDMF theory attributes to TDHFB theory.
 The TDHFB equation can be derived from the time-dependent variational principle,
@@ -358,35 +411,35 @@ $\beta_k^{\dag}$ is quasiparticle creation operator and $\mathcal{R}$ is normali
 \subsection{Hamilton's equation}
 We derive the TDHFB equation in pairing model. First, we consider the time-dependent coherent state. Because the noticeable phenomenon is the dynamics for $J^{\pi}=0^+$ pairs in pairing model, we can describe the time-dependent coherent state in SU(2) quasispin space. Using Thouless' theorem, the time-dependent coherent state becomes
 \begin{equation}
-	\ket{Z(t)} = \prod_{l} \left(1+|Z_l(t)|^2\right)^{-S_l}
-	\exp [Z_l(t) S_l^{+}] \ket{0} .
+	\ket{Z(t)} = \prod_{\alpha} \left(1+|Z_{\alpha}(t)|^2\right)^{-S_{\alpha}}
+	\exp [Z_{\alpha}(t) S_{\alpha}^{+}] \ket{0} .
  \label{coherent}
 \end{equation}
-Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In the quasispin representation, $\ket{0}=\prod_l \ket{S_l,-S_l}$. The coherent state is the extension of BCS trail wave function, which consists of the superposition of different particle number states. $Z_l$ are complex numbers. $|Z_l|=0$ corresponds to empty occupation and $|Z_l|=\infty$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.\par
- With the transformation $Z_l = \tan{\frac{\theta_l}{2}}e^{-i\chi_l}$ ($0\leq\theta\leq\pi$, $0\leq\chi<2\pi$), the Lagrangian and the expectation value of Hamiltonian become
+Here, we choose $\ket{\Phi_0}=\ket{0}$ which is vacuum (zero particle) state. In the quasispin representation, $\ket{0}=\prod_{\alpha} \ket{S_{\alpha},-S_{\alpha}}$. The coherent state is the extension of BCS trail wave function, which consists of the superposition of different particle number states. $Z_{\alpha}$ are complex numbers. $|Z_{\alpha}|=0$ corresponds to empty occupation and $|Z_{\alpha}|=\infty$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.\par
+ With the transformation $Z_{\alpha} = \tan{\frac{\theta_{\alpha}}{2}}e^{-i\chi_{\alpha}}$ ($0\leq\theta\leq\pi$, $0\leq\chi<2\pi$), the Lagrangian and the expectation value of Hamiltonian become
 \begin{align}
 	\mathcal{L}(t) =& \braket{Z(t)|i\hbar\frac{\partial}{\partial t}-H|Z(t)}
-	=\sum_l j_l\dot{\chi_l} - \mathcal{H}(\chi,j) ,\\
+	=\sum_{\alpha} j_{\alpha}\dot{\chi_{\alpha}} - \mathcal{H}(\chi,j) ,\\
 	\mathcal{H}(\chi,j) \equiv& \braket{Z(t)|H|Z(t)} \nonumber \\
-	=& \sum_l \epsilon_l\nu_l + \sum_l 2\epsilon_lj_l - g\sum_l \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
-	&- 2g\sum_{l_1<l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-\nu_{l_1}-j_{l_1})(\Omega_{l_2}-\nu_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   ,
+	=& \sum_{\alpha} \epsilon_{\alpha}\nu_{\alpha} + \sum_{\alpha} 2\epsilon_{\alpha}j_{\alpha} - g\sum_{\alpha} \left( (\Omega_{\alpha}-\nu_{\alpha}) j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{\Omega_{\alpha}-\nu_{\alpha}} \right) \nonumber \\
+	&- 2g\sum_{\alpha<\beta} \sqrt{j_{\alpha}j_{\beta}(\Omega_{\alpha}-\nu_{\alpha}-j_{\alpha})(\Omega_{\beta}-\nu_{\beta}-j_{\beta})}\cos{(\chi_{\alpha}-\chi_{\beta})}   ,
 	\label{Hamiltonian}
 \end{align}
-where $\chi_l$ are the canonical coordinates and $j_l$ are the conjugate momenta defined in
+where $\chi_{\alpha}$ are the canonical coordinates and $j_{\alpha}$ are the conjugate momenta defined in
 \begin{align}
-  j_l\equiv \frac{\partial\mathcal{L}}{\partial\dot{\chi}_l}=S_l(1-\cos{\theta}_l) .
+  j_{\alpha}\equiv \frac{\partial\mathcal{L}}{\partial\dot{\chi}_{\alpha}}=S_{\alpha}(1-\cos{\theta}_{\alpha}) .
   \label{momenta}
 \end{align}
-The detailed derivations are written in Appendix \ref{derivation}. The canonical variables $(\chi,j)$ have clear physical meaning. $\chi_l$ represent a kind of gauge angle of each level, and $j_l$ correspond to the occupation number of each level
+The detailed derivations are written in Appendix \ref{derivation}. The canonical variables $(\chi,j)$ have clear physical meaning. $\chi_{\alpha}$ represent a kind of gauge angle of each level, and $j_{\alpha}$ correspond to the occupation number of each level
 \begin{align}
-  \braket{Z|n_l|Z} = \nu_l + 2j_l .
+  \braket{Z|n_{\alpha}|Z} = \nu_{\alpha} + 2j_{\alpha} .
   \label{occ}
 \end{align}
-From (\ref{momenta}), we can find that $0\le j_l\le 2S_l$, where $j_l=0$ corresponds to empty occupation and $j_l=2S_l$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.
+From (\ref{momenta}), we can find that $0\le j_{\alpha}\le 2S_{\alpha}$, where $j_{\alpha}=0$ corresponds to empty occupation and $j_{\alpha}=2S_{\alpha}$ corresponds to full occupation for $J^{\pi}=0^+$ pairs.
 Using canonical variables, the TDHFB equations attribute to the Hamilton's equations
 \begin{equation}
-	\dot{\chi_l} = \frac{\partial\mathcal{H}}{\partial j_l}, \quad
-	\dot{j_l} = -\frac{\partial\mathcal{H}}{\partial \chi_l} .
+	\dot{\chi_{\alpha}} = \frac{\partial\mathcal{H}}{\partial j_{\alpha}}, \quad
+	\dot{j_{\alpha}} = -\frac{\partial\mathcal{H}}{\partial \chi_{\alpha}} .
 \end{equation}
 
 \subsection{Constant of motion}
@@ -397,23 +450,23 @@ The number of the TDHFB degrees of freedom is same as the number of the single-p
 \end{align}
 where $J$ is defined in
 \begin{align}
-	J \equiv \sum_l j_l .
+	J \equiv \sum_{\alpha} j_{\alpha} .
 \end{align}
 Because $\nu$ is nothing but quantum number, the total particle number can be specified by $J$.
 We can confirm that the total particle number is conserved by checking the Poisson Bracket
 \begin{align}
-	\{\mathcal{H},J\}_{PB} &= \sum_l \left(
-	\frac{\partial\mathcal{H}}{\partial\chi_l}\frac{\partial J}{\partial j_l}
-	- \frac{\partial\mathcal{H}}{\partial j_l}\frac{\partial J}{\partial \chi_l} \right) \nonumber \\
-	&= \sum_l \frac{\partial\mathcal{H}}{\partial\chi_l} \nonumber \\
-	&= \sum_l 2g \sum_{l'\neq l} \sqrt{j_{l}j_{l'}(\Omega_{l}-\nu_{l}-j_{l})(\Omega_{l'}-\nu_{l'}-j_{l'})}\sin{(\chi_{l}-\chi_{l'})} \nonumber \\
+	\{\mathcal{H},J\}_{PB} &= \sum_{\alpha} \left(
+	\frac{\partial\mathcal{H}}{\partial\chi_{\alpha}}\frac{\partial J}{\partial j_{\alpha}}
+	- \frac{\partial\mathcal{H}}{\partial j_{\alpha}}\frac{\partial J}{\partial \chi_{\alpha}} \right) \nonumber \\
+	&= \sum_{\alpha} \frac{\partial\mathcal{H}}{\partial\chi_{\alpha}} \nonumber \\
+	&= \sum_{\alpha} 2g \sum_{\beta\neq \alpha} \sqrt{j_{\alpha}j_{\beta}(\Omega_{\alpha}-\nu_{\alpha}-j_{\alpha})(\Omega_{\beta}-\nu_{\beta}-j_{\beta})}\sin{(\chi_{\alpha}-\chi_{\beta})} \nonumber \\
 	&= 0 .
 \end{align} 
-Actually, $J$ correspond to a conjugate momentum with respect to a global gauge angle $\Phi$. We note that $\Phi$ is not necessarily becoming $\Phi=\sum_l \chi_l/L$ because the explicit form of $\Phi$ depends on the coordinate transformation. In other words, the condition of total particle number conservation cannot determine the form of $\Phi$ uniquely.
+Actually, $J$ correspond to a conjugate momentum with respect to a global gauge angle $\Phi$. We note that $\Phi$ is not necessarily becoming $\Phi=\sum_{\alpha} \chi_{\alpha}/L$ because the explicit form of $\Phi$ depends on the coordinate transformation. In other words, the condition of total particle number conservation cannot determine the form of $\Phi$ uniquely.
 
-The canonical variable $(\Phi,J)$ describes the pairing rotation. The pairing rotational band emerges in the particle number chain ($\cdots,N-2,N,N+2,\cdots$). The last term in (\ref{Hamiltonian}) contains the higher order terms with respect to $N$. It related to the shell effect. In single-level system, the last term in (\ref{Hamiltonian}) disappears and (\ref{Hamiltonian}) attributes to (\ref{onelevel}). The pairing rotational band is exactly parabolic. In multi-level system, the coupling constant $g$ and single-particle energy $\epsilon_l$ affects significantly to the last term in (\ref{Hamiltonian}). The parabolic structure will be broken when the shell effect is strong. 
+The canonical variable $(\Phi,J)$ describes the pairing rotation. The pairing rotational band emerges in the particle number chain ($\cdots,N-2,N,N+2,\cdots$). The last term in (\ref{Hamiltonian}) contains the higher order terms with respect to $N$. It related to the shell effect. In single-level system, the last term in (\ref{Hamiltonian}) disappears and (\ref{Hamiltonian}) attributes to (\ref{onelevel}). The pairing rotational band is exactly parabolic. In multi-level system, the coupling constant $g$ and single-particle energy $\epsilon_{\alpha}$ affects significantly to the last term in (\ref{Hamiltonian}). The parabolic structure will be broken when the shell effect is strong. 
 
-In order to analyze the time-dependent dynamics, we decouple the pairing rotational mode. The degrees of freedom is $L-1$ in $L$ level system. In multi-level pairing model, therefore, the dynamics is integrable for $L=2$ and non-integrable for $L\le 3$. We discuss the integrable system and non-integrable system in Chapter \ref{integrable} and \ref{non-integrable}, respectively. 
+In order to analyze the time-dependent dynamics, we decouple the pairing rotational mode. The degrees of freedom is $L-1$ in $L$ level system. In multi-level pairing model, therefore, the dynamics is integrable for $L=2$ and non-integrable for $L\ge 3$. We discuss the integrable system and non-integrable system in Chapter \ref{integrable} and \ref{non-integrable}, respectively. 
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Requantization of TDHFB in integrable system}
@@ -432,7 +485,7 @@ To describe the one-dimensional time-dependent motion, pairing vibration, by an 
 These ranges are $0\leq \Phi \leq 2\pi$ and $-2\pi \leq \phi \leq 2\pi$. 
 Their conjugate momenta $(J,j)$ are given by
 \begin{align}
-	J = \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} =  \sum_{l=1}^2 j_l, 
+	J = \frac{\partial\mathcal{L}}{\partial\dot{\Phi}} =  \sum_{\alpha=1}^2 j_{\alpha}, 
  \quad\quad
 j = \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \frac{j_2 - j_1}{2}.
 	\label{pi}
@@ -447,7 +500,7 @@ $(\phi,j;\Phi,J)$ are given by
 \begin{align}
 	\mathcal{L} =& J\dot{\Phi} + j\dot{\phi} - \mathcal{H}(\phi,j;J) \label{Lagrangian2}\\
 	\mathcal{H}(\phi,j;J)
-	=& \sum_{l=1,2} \epsilon_l\nu_l + \sum_{l=1,2} 2\epsilon_lj_l - g\sum_{l=1,2} \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	=& \sum_{\alpha=1,2} \epsilon_{\alpha}\nu_{\alpha} + \sum_{\alpha=1,2} 2\epsilon_{\alpha}j_{\alpha} - g\sum_{\alpha=1,2} \left( (\Omega_{\alpha}-\nu_{\alpha}) j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{\Omega_{\alpha}-\nu_{\alpha}} \right) \nonumber \\
 	&- 2g\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})}\cos{\phi} , 
 \label{Hamiltonian2}
 \end{align}
@@ -501,7 +554,8 @@ to make the coordinate time-even. The classical Hamiltonian under adiabatic appr
 where 
 \begin{align}
 	V(j) = \mathcal{H}(\phi=0,j) 
-	=& \sum_{l=1,2} \epsilon_l\nu_l + \sum_{l=1,2} 2\epsilon_lj_l - g\sum_{l=1,2} \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	=& \sum_{\alpha=1,2} \epsilon_{\alpha}\nu_{\alpha} + \sum_{\alpha=1,2} 2\epsilon_{\alpha}j_{\alpha} - g\sum_{\alpha=1,2} \left( (\Omega_{\alpha}-\nu_{\alpha}) j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{\Omega_{\alpha}-\nu_{\alpha}} \right) \nonumber 
+	\label{potential_two_level} \\
 	&- 2g\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})} \\
 	B^{-1}(j) = \left. \frac{\partial^2\mathcal{H}}{\partial\phi^2} \right|_{\phi=0}
 	=& 2g\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})} .
@@ -521,7 +575,8 @@ We compare the difference of the classical trajectories between TDHFB and ATDHFB
 
 
 \section{Requantization methods}
-To obtain quantum states from TDHFB dynamics, quantization of the TDHFB trajectories, namely, requantization is necessary procedure. We emphasize that there are infinite quantum pictures corresponding to one classical picture. Different quantization methods lead different quantum states. The straightforward requantization method is canonical quantization, which is commonly applied into nuclear collective model. Here, we apply the canonical quantization to describe the excited states. However, we find that canonical quantization has serious problems to describe the pairing dynamics. Such problems are discussed in Sec. \ref{3-3}. To solve or avoid the problems, alternative requantization methods, Fourier decomposition and stationary-phase approximation to the path integral, are also introduced. In this section, we explain each requantization method in detail, respectively.
+\label{3-2}
+To obtain quantum states from TDHFB dynamics, quantization of the TDHFB trajectories, namely, requantization is necessary procedure. We emphasize that there are infinite quantum pictures corresponding to one classical picture. Different quantization methods lead to different quantum states. The straightforward requantization method is canonical quantization, which is commonly applied into nuclear collective model. Here, we apply the canonical quantization to describe the excited states. However, we find that canonical quantization has serious problems to describe the pairing dynamics. Such problems are discussed in Sec. \ref{3-3}. To solve or avoid the problems, alternative requantization methods, Fourier decomposition and stationary-phase approximation to the path integral, are also introduced. In this section, we explain each requantization method in detail, respectively.
 
 \subsection{Stationary phase approximation to the path integral}
 TDHFB trajectory corresponds to a stationary-phase limit of the path integral formulation. The idea for constructing excited states from TDHFB trajectories based on the path integral formulation was proposed in Ref. \cite{Neg82,L80,LNP80,KS80,K81,Rei80}. 
@@ -575,7 +630,7 @@ leads to the TDH(B) without the Fock potentials.
 \begin{equation}
 	\ket{\psi(t)} \approx \int d\mu(Z') \ket{Z'_{\rm cl}(t)}
 	e^{i\mathcal{S}_{\rm cl}(Z'_{\rm cl}(t),Z')} \psi(Z') ,
-	\label{SPA}
+%	\label{SPA}
 \end{equation}
 where the TDHFB trajectory starting from $\ket{Z'}$
 ends at $\ket{Z'_{\rm cl}(t)}$ at time $t$.
@@ -630,7 +685,7 @@ if the classical system is completely integrable.
 In integrable systems, $M$ complex variables $Z(t)$ can be transformed into
 the action-angle variables;
 \begin{align}
-	Z(t) &= \{Z_l(t);l=1,\cdots,M \} \nonumber \\
+	Z(t) &= \{Z_{\alpha}(t);\alpha=1,\cdots,M \} \nonumber \\
 	&\rightarrow
 	\{E; v_1,\cdots,v_{M-1}; \theta_1(t),\cdots,\theta_M(t)\} ,
 \end{align}
@@ -662,12 +717,9 @@ $E$ and $v$.
 We apply the SPA approach to the two-level pairing model.
 The invariant measure in SU(2)$\otimes$SU(2) is 
 \begin{align}
-%	d\mu(Z) &= \prod_{l=1,2} \frac{S_l+1}{\pi}(1+|Z_l|^2)^{-2}d{\rm Re}Z_ld{\rm Im}Z_l \\
-%  &= \prod_l \frac{S_l+1}{4\pi}\sin{\theta_l}d\theta_ld\phi_l \\
-%  &= \frac{S_1+1}{4\pi}\frac{S_2+1}{4\pi}\frac{1}{S_1S_2}d\Phi d\Pi d\phi d\pi .
-d\mu(Z) &= \prod_l \frac{\Omega_l+1}{\pi}(1+|Z_l|^2)^{-2}d{\rm Re}Z_ld{\rm Im}Z_l \\
-  &= \prod_l \frac{\Omega_l+1}{4\pi}d\cos{\theta_l}d\chi_l \\
-	&= \left(\prod_{l=1,2} \frac{1+\Omega_l^{-1}}{2\pi}\right)
+d\mu(Z) &= \prod_{\alpha=1,2} \frac{\Omega_{\alpha}+1}{\pi}(1+|Z_{\alpha}|^2)^{-2}d({\rm Re}Z_{\alpha})d({\rm Im}Z_{\alpha}) \nonumber \\
+  &= \prod_{\alpha=1,2} \frac{\Omega_{\alpha}+1}{4\pi}d(\cos{\theta_{\alpha}})d\chi_{\alpha} \nonumber \\
+	&= \left(\prod_{\alpha=1,2} \frac{1+\Omega_{\alpha}^{-1}}{2\pi}\right)
              d\Phi dJ d\phi dj .
 \end{align}
 In the last equation, we transform the canonical coordinates
@@ -696,7 +748,7 @@ becomes
   &\propto \sum_{m=0}^{J}C_m^{(E_k,J)}\ket{S_1,-S_1+m;S_2,-S_2+(J-m)} ,
 	\label{semi_wave_func1}
 \end{align}
-with $S_l=(\Omega_l-\nu_l)/2$ and the coefficients
+with $S_{\alpha}=(\Omega_{\alpha}-\nu_{\alpha})/2$ and the coefficients
 \begin{align}
   C_m^{(E_k,J)} =& \binom{J}{m}\int_0^T dt \nonumber \\
  &\times \exp{\left( i\int^t j(t') \dot{\phi}(t') dt'-i(J/2-m)\phi(t) \right)} \nonumber \\ 
@@ -709,12 +761,12 @@ eigenstates of the total particle number.
 This is due to the integration over the global gauge angle $\Phi$,
 which makes the particle number projection not only for the ground state
 but also for excited states.
-See Appendix for detailed derivation of Eq.~(\ref{semi_wave_func1}). 
+See Appendix \ref{wave_func1} for detailed derivation of Eq.~(\ref{semi_wave_func1}). 
 
 Since we obtain the microscopic wave function of every eigenstate,
 the expectation values and the transition matrix elements for any operator
 can be calculated in a straightforward manner.
-In Sec.~\ref{sec:results}, we show those of the pair-addition operator
+In Sec.~\ref{3-3}, we show those of the pair-addition operator
 $S^+$ which characterize properties of the pair condensates.
 
 Before ending this section, let us note the periodic conditions
@@ -769,7 +821,7 @@ In the present study,
 we adopt a simple symmetrized ordering, as
 \begin{align}
 	\mathcal{H}(\hat{\phi},\hat{j};\hat{J})
-	=& \sum_{l=1,2} \epsilon_l\nu_l + \sum_{l=1,2} 2\epsilon_lj_l - g\sum_{l=1,2} \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
+	=& \sum_{\alpha=1,2} \epsilon_{\alpha}\nu_{\alpha} + \sum_{\alpha=1,2} 2\epsilon_{\alpha}j_{\alpha} - g\sum_{\alpha=1,2} \left( (\Omega_{\alpha}-\nu_{\alpha}) j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{\Omega_{\alpha}-\nu_{\alpha}} \right) \nonumber \\
 	&- g \left\{ \sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})}\cos{\hat{\phi}} \right. \nonumber \\
 	&\left. + \cos{\hat{\phi}}\sqrt{j_1j_2(\Omega_{1}-\nu_{1}-j_{1})(\Omega_{2}-\nu_{2}-j_{2})} \right\} .
 \label{canonical_quantized_H}
@@ -778,7 +830,7 @@ To fulfill the canonical quantization condition
 \begin{align}
  [\hat{\Phi},\hat{J}]=i, \quad\quad [\hat{\phi},\hat{j}]=i ,
 \end{align}
-as in (\ref{j_l}), $j_l$ contain $J$ and $j$ which
+as in (\ref{j_l}), $j_{\alpha}$ contain $J$ and $j$ which
 are replaced by
 \begin{equation}
 	\hat{J} = -i\frac{\partial}{\partial\Phi},\quad\quad
@@ -830,7 +882,7 @@ with integer $n$.
 This is consistent with the quantization condition (\ref{EBK_2}).
 The coupling term with different $j$
 in Eq. (\ref{canonical_quantized_H}) vanishes
-for $j_l=0$ and $j_l=\Omega_l-\nu_l$,
+for $j_{\alpha}=0$ and $j_{\alpha}=\Omega_{\alpha}-\nu_{\alpha}$,
 which restricts values of $j$ in a finite range of
 $j_{\rm min}\leq j \leq j_{\rm max}$.
 
@@ -967,7 +1019,7 @@ where $\Delta\epsilon$ is the level spacing
 $\Delta\epsilon=\epsilon_2-\epsilon_1$,
 we use the dimensionless parameter $x$ defined in Appendix (\ref{x}) to control the strength of the pairing correlation.
 
-We apply the requantization methods in Sec.~\ref{sec:requantization}.
+We apply the requantization methods in Sec.~\ref{3-2}.
 In the following, the stationary-phase approximation to the path
 integral in Sec.~\ref{sec:SPA} is denoted as ``SPA'',
 the Fourier decomposition method (Sec.~\ref{sec:Fourier}) as ``FD'',
@@ -1241,7 +1293,7 @@ See also the caption of Fig.~\ref{fig:N50_occ}.
 \end{figure}
 
 
-\subsubsection{Mid-shell configuration}
+\subsubsection{(a) Mid-shell configuration}
 
 The calculated excitation energies are shown in Fig.~\ref{fig:N8energy}
 for the $N=8$ case.
@@ -1345,7 +1397,7 @@ CQ and the FD methods.
  \label{fig:N16_occ}
 \end{figure}
 
-\subsubsection{Closed-shell configuration}
+\subsubsection{(b) Closed-shell configuration}
 
 
 In the closed shell with $N=16$,
@@ -1432,16 +1484,62 @@ pair-transfer transition strengths.
 \chapter{Requantization of TDHFB in non-integrable system}
 \label{non-integrable}
 
+From the study of various requantization methods for the two-level pairing model,
+canonical quantization and Fourier decomposition often fail to produce an approximate value to the exact solution.
+In contrast,
+the stationary-phase approximation (SPA) to the path integral \cite{SM88} 
+can give quantitative results not only for the excitation energies, 
+but also for the wave functions and two-particle-transfer strengths.
+The quantized states obtained in the SPA have two advantages;
+first, the wave functions are given directly in terms of
+the microscopic degrees of freedom, and second,
+the restoration of the broken symmetries are automatic.
+In the pairing model, the quantized states are eigenstates of the particle-number
+operator.
+On the other hand, applications of the SPA have been limited to
+integrable systems.
+This is because we need to find separable periodic trajectories on a classical
+torus.
+Since the nuclear systems, of course, correspond to non-integrable systems,
+a straightforward application of the SPA is not possible.
+
+%this work
+In this chapter,
+we propose a new approach of the SPA applicable to the non-integrable systems,
+which is based on the extraction of the one-dimensional (1D)
+collective coordinate
+using the adiabatic self-consistent collective coordinate (ASCC) method.
+Since the 1D system is integrable,
+the collective subspace can be quantized with the SPA.
+The optimal degree of freedom associated with a slow collective motion
+is determined self-consistently
+inside the TDHFB space, without any assumption. 
+Thus, our approach of the ASCC+SPA to the pairing model
+basically consists of two steps:
+(1) find a decoupled 1D collective coordinate of the pair vibration,
+in addition to the pair rotational degrees of freedom.
+(2) apply the SPA independently to each collective mode.
+
+We introduce the theoretical framework of the ASCC, SPA,
+and their combination, ASCC+SPA in Sec. \ref{4-1}. 
+In Sec. \ref{4-2}, we provide some details in the application
+of the ASCC+SPA to the multi-level pairing model.
+We give the numerical results in Sec. \ref{4-3}, including
+neutron pair vibrations in Pb isotopes.
+
 \section{Theoretical framework of ASCC+SPA in non-integrable system}
+\label{4-1}
 \subsection{Adiabatic self-consistent collective coordinate method and
 1D collective subspace}
 \label{sec:ASCC}
 %To discuss the application of ASCC+SPA in the later subsection, 
-In this section,
-we first recapitulate the ASCC method to find a 1D collective coordinate,
+ASCC was developed from the basic idea of the self-consistent collective coordinate (SCC) method \cite{MMSK80}, which can maximum decouple a collective subspace from TDMF phase space.
+Because the collective coordinates are obtained from TDMF dynamics itself without any assumption in ASCC, they are superior than the phenomenological collective coordinates in the collective models.
+In this subsection,
+we recapitulate the ASCC method to find a 1D collective coordinate,
 following the notation of Ref. \cite{N2012}.
 
-As is seen in Sec.~\ref{sec3}, the TDHFB equations can be
+As is seen in Sec.~\ref{4-3}, the TDHFB equations can be
 interpreted as the classical Hamilton's equations of motion
 %The classical Hamilton's equation which is identical to the TDHFB equation is described by
 with canonical variables $\{\xi^{\alpha},\pi_{\alpha}\}$. 
@@ -1460,8 +1558,10 @@ the reciprocal mass parameter $B^{\alpha\beta}(\xi)$ defined by
   V(\xi) &= \mathcal{H}(\xi,\pi=0) , \\
   B^{\alpha\beta}(\xi) &= \left. \frac{\partial^2\mathcal{H}(\xi,\pi)}{\partial\pi_{\alpha}\partial\pi_{\beta}} \right|_{\pi=0}.
 \end{align}
+The Einstein's convention for summation with respect to the repeated
+upper and lower indices is assumed hereafter.
 
-For multi-level pairing models in Sec.~\ref{sec3}, 
+For multi-level pairing models in Sec.~\ref{4-2}, 
 there is a constant of motion in the TDHFB dynamics,
 namely the average particle number $q^n\equiv \langle \hat{N} \rangle/2$.
 Since the particle number $\hat{N}$ is time-even Hermitian operator, we treat
@@ -1502,7 +1602,7 @@ To obtain the non-trivial collective variables
 $(q^1,p_1)$, we assume the point transformation\footnote{
 We may lift the restriction to the point transformation,
 as Eq. (\ref{q^n}) \cite{Sat18}.
-In this paper, we neglect these higher-order terms, such as
+In this chapter, we neglect these higher-order terms, such as
 $f^{(1)1\alpha\beta}\pi_\alpha\pi_\beta/2$.
 },
 \begin{equation}
@@ -1517,12 +1617,10 @@ The momenta on $\Sigma_2$ are transformed as
 p_1 &= g_{,1}^{\alpha}\pi_{\alpha} , \quad p_n = g_{,n}^\alpha \pi_\alpha,
 	\label{coll_momenta}\\
 \pi_{\alpha} &= f^1_{,\alpha}p_1 +f^n_{,\alpha}p_n,
- \label{momenta}
+ \label{momenta2}
 \end{align}
 where the comma indicates the partial derivative
 $(f^1_{,\alpha}=\partial f^1/\partial \xi^{\alpha})$. 
-The Einstein's convention for summation with respect to the repeated
-upper and lower indices is assumed hereafter.
 The canonical variable condition leads to
 \begin{align}
  %f^1_{,\alpha}g_{,1}^{\beta} = \delta^{\beta}_{\alpha}, \quad 
@@ -1662,8 +1760,6 @@ we fix this scale by an additional condition of $\bar{B}^{11}(q^1)=1$.
 For quantization of integrable systems,
 we can apply the stationary-phase approximation (SPA)
 to the path integral.
-In our former study \cite{NN18},
-we have proposed and tested the SPA for an integrable pairing model.
 Since the collective Hamiltonian (\ref{coll}) that is
 extracted from the TDHFB degrees of freedom is integrable,
 the SPA is applicable to it.
@@ -1671,7 +1767,7 @@ In this manner, we may apply the ASCC+SPA to
 non-integrable systems in general.
 
 
-\subsubsection{Basic idea of ASCC+SPA}
+\subsubsection{(a) Basic idea of ASCC+SPA}
 
 Because the Hamiltonian $\mathcal{H}_{\rm coll}$ of Eq.~(\ref{coll})
 is separable,
@@ -1684,13 +1780,13 @@ the Einstein-Brillouin-Keller (EBK) quantization rule
 with a unit of $\hbar=1$,
 \begin{equation}
 	\oint_{C_k} p_1dq^1 = 2\pi k ,
-	\label{EBK}
+	\label{EBK2}
 \end{equation}
 where $k$ is an integer number.
 
 At each point in the space $(q^1,q^n; p_1,p_n)$ corresponds to
-a generalized Slater determinant
-$\ket{q^1,q^n;p_1,p_n}=\ket{\xi,\pi}$
+a generalized Slater determinant \\
+$\ket{q^1,q^n;p_1,p_n}=\ket{\xi,\pi}$, 
 where $(\xi,\pi)$ are given as
 $\xi^\alpha=g^\alpha(q^1,q^n,q^a=0)$ and
 $\pi_\alpha=f^1_{,\alpha}p_1+f^n_{,\alpha}p_n$.
@@ -1748,20 +1844,19 @@ which is mapped from tori in the 2D collective subspace $(q,p)$.
 %We try to combine SPA with ASCC. The key point is to find the correspondence between TDHFB phase space and collective subspace in a TDHFB trajectory (See Fig. \ref{fig:correspondence}). We consider the time-dependent state vector $\ket{Z(t)}$ is in a collective subspace. With pairing correlation, $\ket{Z(t)}$ can be expressed as
 
 
-\subsubsection{Notation and practical procedure for quantization}
+\subsubsection{(b) Notation and practical procedure for quantization}
 \label{sec:notation}
 
-For the application of the ASCC+SPA method to the pairing model in Sec.~\ref{sec3},
+For the application of the ASCC+SPA method to the pairing model in Sec.~\ref{4-2},
 we summarize some notations and procedures to obtain quantized states.
 
-In Sec.~\ref{sec3}, the time-dependent generalized Slater determinants
+In Sec.~\ref{4-2}, the time-dependent generalized Slater determinants
 (coherent states) are written as $\ket{Z}$ with complex variables
 $Z_\alpha(t)$.
 The variables $Z_\alpha$ are transformed into real variables
 $(j^\alpha, -\chi_\alpha)$ that correspond to $(\xi^\alpha,\pi_\alpha)$
-in Sec.~\ref{sec2}.
-$\chi_\alpha$ and $j^\alpha$ correspond to
-the ``angle'' and the ``number'' variables, respectively.
+in Sec.~\ref{4-1}.
+The definition and physical meaning of $\chi_\alpha$ and $j^\alpha$ are explained in Sec. \ref{2-2}.
 %Although it is customary to take the angle as a coordinate,
 %since the angle $\chi_\alpha$ is time-odd quantities, 
 %we switch the coordinates and the momenta with minus signs
@@ -1770,7 +1865,7 @@ Although it is customary to take the time-odd angle $\chi_\alpha$ as a coordinat
 we take the number $j^\alpha$ as a coordinate and the angle $-\chi_\alpha$ as a momentum with an additional minus sign.
 Similarly, the gauge angle $\Phi$ and the total particle number $J$
 correspond to variables of the pair rotation, $-p_n$ and $q^n$, respectively.
-According to the EBK quantization rule (\ref{EBK}),
+According to the EBK quantization rule (\ref{EBK2}),
 the ground state with $k=0$ corresponds to nothing but the HFB state
 with a fixed particle number $J(=q^n)$.
 For the $k$-th excited states, we perform the following calculations:
@@ -1778,18 +1873,20 @@ For the $k$-th excited states, we perform the following calculations:
 \item Obtain the 1D collective subspace with canonical variables $(q^1,p_1)$
 	according to the ASCC in Sec.~\ref{sec:ASCC}.
 \item Find a trajectory $(q^1(t),p_1(t))$ which satisfies
-the $k$-th EBK quantization condition (\ref{EBK}).
+the $k$-th EBK quantization condition (\ref{EBK2}).
 \item Calculate the action integral (\ref{tau}) for the $k$-th trajectory.
 \item Construct the $k$-th excited state using Eq.~(\ref{SPA}).
 \end{enumerate}
 The ASCC provides the 2D collective subspace $(q^1,J)$
-and the generalized coherent states $\ket{\Phi=0,J;q,p=0}$.
-For finite values of momenta, we use Eq.~(\ref{momenta})
+and the generalized coherent states \\
+$\ket{\Phi=0,J;q,p=0}$.
+For finite values of momenta, we use Eq.~(\ref{momenta2})
 to obtain the state $\ket{\Phi,J;q,p}$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Application of ASCC+SPA in pairing model}
+\label{4-2}
 
 \subsection{Application of ASCC}
 
@@ -1802,17 +1899,15 @@ the momenta, $-\chi_{\alpha}$
   \mathcal{H}(j,\chi) \approx& V(j) + \frac{1}{2}B^{\alpha\beta}(j)\chi_{\alpha}\chi_{\beta},
 \end{align}
 where the potential $V(j)$ and the reciprocal mass parameter
-$B^{\alpha\beta}(j)$ are given as
-\begin{align}
-  V(j) =& \mathcal{H}(j,\chi=0) \nonumber \\
-	=& \sum_{\alpha} 2\epsilon_{\alpha}j^{\alpha} - g\sum_{\alpha} \left[ \Omega_{\alpha}j^{\alpha} - (j^{\alpha})^2 +\frac{(j^{\alpha})^2}{\Omega_{\alpha}} \right] \nonumber \\
-  &- g\sum_{\alpha\ne \beta} \sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})}, 	
-\end{align}
+$B^{\alpha\beta}(j)$ are given as\footnote{In this thesis, $j^{\alpha}$ and $j_{\alpha}$ are identical. Defining the upper index in $j^{\alpha}$ is nothing but to utilize Einstein summation convention.}
 %\begin{align}
 \begin{eqnarray}
-&&B^{\alpha\beta}(j) = \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \\
+  V(j) &=& \mathcal{H}(j,\chi=0) \nonumber \\
+	&=& \sum_{\alpha} 2\epsilon_{\alpha}j^{\alpha} - g\sum_{\alpha} \left[ \Omega_{\alpha}j^{\alpha} - (j^{\alpha})^2 +\frac{(j^{\alpha})^2}{\Omega_{\alpha}} \right] \nonumber \\
+  &&- g\sum_{\alpha\ne \beta} \sqrt{j^{\alpha}j^{\beta}(\Omega_{\alpha}-j^{\alpha})(\Omega_{\beta}-j^{\beta})}, \\	
+B^{\alpha\beta}(j) &=& \left. \frac{\partial^2\mathcal{H}}{\partial\chi_{\alpha}\partial\chi_{\beta}} \right|_{\chi=0} \\
 \label{mass}
-&&=
+&=&
 	\begin{cases}
 2g\sum_{\gamma\ne \alpha} \sqrt{j^{\gamma}j^{\alpha}(\Omega_{\gamma}-j^{\gamma})(\Omega_{\alpha}-j^{\alpha})}
 		& \text{for $\alpha=\beta$} \\
@@ -1923,19 +2018,22 @@ sectors, which we denote here as $C_\Phi$ and $C_1$, respectively.
 The action integral is given by
 \begin{align}
 \mathcal{T}(\Phi,J;q^1,p_1)
-&= \int_{C_\Phi} \braket{\Phi(t),J;q^1,p_1|i\frac{\partial}{\partial t}|\Phi(t),J;q^1,p_1} dt \nonumber \\
-+ \int_{C_1} &\braket{\Phi,J;q^1(t),p_1(t)|i\frac{\partial}{\partial t}|\Phi,J;q^1(t),p_1(t)} dt
+=& \int_{C_\Phi} \braket{\Phi(t),J;q^1,p_1|i\frac{\partial}{\partial t}|\Phi(t),J;q^1,p_1} dt \nonumber \\
+&+ \int_{C_1} \braket{\Phi,J;q^1(t),p_1(t)|i\frac{\partial}{\partial t}|\Phi,J;q^1(t),p_1(t)} dt
  \nonumber \\
-	&=J\Phi + \int_{C_1} \sum_\alpha j^\alpha d\chi_\alpha
+	=& J\Phi + \int_{C_1} \sum_\alpha j^\alpha d\chi_\alpha
 	\nonumber \\
-	&\equiv \mathcal{T}_\Phi(J,\Phi) +\mathcal{T}_1(q^1,p_1;J) .
+	\equiv& \mathcal{T}_\Phi(J,\Phi) +\mathcal{T}_1(q^1,p_1;J) .
 %	\label{tau}
 \end{align}
 In fact, the gauge-angle dependence is formally given as
 \begin{equation}
-  \ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{N}/2} \ket{J;q^1,p_1},
+  \ket{\Phi,J;q^1,p_1} = e^{-i\Phi \hat{J}} \ket{J;q^1,p_1},
 \end{equation}
-where $\hat{N}=\sum_\alpha \hat{n}_\alpha$.
+where 
+\begin{align}
+	\hat{J} = \frac{\hat{N}-\nu}{2} .
+\end{align}
 Then, the action for the trajectory $C_1$ can be also expressed as
 $\mathcal{T}(q^1,p_1;J)=
  \int_{C_1} \braket{J;q^1,p_1|i\frac{\partial}{\partial t}|J;q^1,p_1} dt$.
@@ -1948,9 +2046,9 @@ $\mathcal{T}(q^1,p_1;J)=
 In the SU(2) representation, the invariant measure is
 \begin{align}
   d\mu(Z) &= \prod_\alpha \frac{\Omega_\alpha+1}{\pi} (1+|Z_\alpha|^2)^{-2} d({\rm Re}\,Z) d({\rm Im}\,Z) \nonumber \\
-=& \prod_\alpha \frac{-(\Omega_\alpha+1)}{4\pi} d(\cos{\theta_\alpha}) d\chi_\alpha \nonumber \\
- =& \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} d\chi_\alpha dj^\alpha \nonumber \\
- =& \left[ \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} \right] d\Phi dJ dq^1 dp_1 %\nonumber \\
+&= \prod_\alpha \frac{-(\Omega_\alpha+1)}{4\pi} d(\cos{\theta_\alpha}) d\chi_\alpha \nonumber \\
+ &= \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} d\chi_\alpha dj^\alpha \nonumber \\
+ &= \left[ \prod_\alpha \frac{1+\Omega_\alpha^{-1}}{2\pi} \right] d\Phi dJ dq^1 dp_1 %\nonumber \\
   \prod_a dq^a dp_a,
 % d\Phi dJ dq dp = d\Phi dJ dE dt 
 	\label{dmu}
@@ -1971,13 +2069,13 @@ thus, treated as the normalization of the wave function.
 
 %derive the explicit form of excited states in (\ref{SPA}). From (\ref{GCS}) and (\ref{J}), the state vector $\ket{\Phi,J;q,p}$ becomes
 %\begin{align}
-%  \ket{\Phi,J;q,p} &= \sum_{\{j_l\}} e^{-i\Phi \sum_l j_l} \ket{J;q,p} .
+%  \ket{\Phi,J;q,p} &= \sum_{\{j_{\alpha}\}} e^{-i\Phi \sum_{\alpha} j_{\alpha}} \ket{J;q,p} .
 %\end{align}
 The coherent state $\ket{\Phi,J;q^1,p_1}=\ket{Z}$ is
 expanded in the SU(2) quasispin basis as
 \begin{align}
 \ket{Z} &= 
-\sum_{\{m_\alpha\}} A_m(Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots}, \nonumber\\
+\sum_{\{m_\alpha\}} A_m(Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots},
 \end{align}
 where the summation is taken over all possible combinations
 of integer values of $\{ m_\alpha\}$ with
@@ -1987,8 +2085,7 @@ A_m(Z) =& \prod_\alpha
 	{\left(1+|Z_\alpha|^2\right)^{\Omega_\alpha/2}m_\alpha!}
 \sqrt{\frac{\Omega_\alpha! m_\alpha!}{(\Omega_\alpha-m_\alpha)!}} \nonumber\\
  =& \prod_\alpha \left(\frac{1-\cos{\theta}_\alpha}{2}\right)^{m_\alpha/2}\left(\frac{1+\cos{\theta}_\alpha}{2}\right)^{(\Omega_\alpha-m_\alpha)/2}
-  \nonumber \\
-  &\times\sqrt{\frac{\Omega_\alpha!}{m_\alpha!(\Omega_\alpha-m_\alpha)!}} e^{-i m_\alpha\chi_\alpha}  ,
+\sqrt{\frac{\Omega_\alpha!}{m_\alpha!(\Omega_\alpha-m_\alpha)!}} e^{-i m_\alpha\chi_\alpha}  ,
 	\label{A_m}
 \end{align}
 where the lower index $m$ indicates a combination of $\{ m_\alpha \}$.
@@ -2004,8 +2101,7 @@ the $k$-th excited state is calculated as
 \ket{\Phi,J;q^1,p_1} e^{i\mathcal{T}(\Phi,J;q^1,p_1)}
  \nonumber \\
 	=& \sum_{\{m_\alpha\}}
-	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi} \nonumber \\
-&\times \oint dt e^{i\mathcal{T}_1}(t) B_m (Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots} \nonumber \\
+	\int_0^{2\pi} d\Phi e^{i(J-\sum_\alpha m_\alpha)\Phi} \oint dt e^{i\mathcal{T}_1}(t) B_m (Z) \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots} \nonumber \\
  \equiv& \sum_{\{m_\alpha\}_J} C_m \ket{\cdots;S_\alpha,-S_\alpha+m_\alpha,\cdots},
  \label{SPA2}
 \end{align}
@@ -2020,11 +2116,11 @@ C_m = \oint_{C_1} dt e^{i\mathcal{T}_1(t)} B_m(Z(t)).
 In the last line of Eq. (\ref{SPA2}), the summation is restricted to
 $\{m_\alpha\}$ that satisfy $\sum_\alpha m_\alpha=J$.
 It is easy to find that $J$ must be integer,
-according to the quantization rule (\ref{EBK}) for the $(J,\Phi)$ sector.
+according to the quantization rule (\ref{EBK2}) for the $(J,\Phi)$ sector.
 
 The SPA for the ground state ($k=0$) is given by the stationary point
 in the $(q^1,p_1)$ sector,
-namely, the HFB state $\ket{\Phi,J;q,p}=e^{-i\Phi\hat{N}/2}\ket{\rm HFB}$.
+namely, the HFB state $\ket{\Phi,J;q,p}=e^{-i\Phi\hat{J}}\ket{\rm HFB}$.
 Nevertheless, the rotational motion in $\Phi(t)$ is present,
 which leads to the number quantization (projection).
 Therefore, Eq.~(\ref{SPA2}) becomes
@@ -2039,7 +2135,8 @@ which is identical to the wave function of the particle-number projected HFB sta
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Result}
-In the pairing model in Sec.~\ref{sec3},
+\label{4-3}
+In the pairing model in Chap.~\ref{chap2},
 the number of TDHFB degrees of freedom equals that of single-particle levels.
 % including the constant of motion (pair rotation). We consider various systems, two-level system, three-level system, and Pb isotope system in each subsection respectively. Next, we discuss the dynamics in non-integrable (more than three-level) system.  
 As there are two constants of motion, that is, the particle number and 
@@ -2056,7 +2153,7 @@ then, to non-integrable multi-level models.
    \includegraphics[height=0.45\textwidth,angle=-90]{images/N16X3p2trajectory.eps}
  \end{center}
 \caption{Classical trajectories satisfying the EBK quantization condition
-(\ref{EBK}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
+(\ref{EBK2}) with $k=1$ and 2 in the $(\phi,j)$ phase space.
 %The domain of phase space is $-\pi\le\phi<\pi$, $-4\le j\le4$. 
 The crosses, solid and dashed lines correspond to the results
 of the ASCC+SPA, TDHFB2+SPA, and TDHFB+SPA, respectively.
@@ -2096,7 +2193,7 @@ represent $|C_m|^2$ of Eq. (\ref{coef}) in
 the ASCC+SPA, TDHFB2+SPA and TDHFB+SPA calculations,
 respectively.
 }
- \label{fig:N16_occ}
+ \label{fig:N16_occ2}
 \end{figure}
 
 
@@ -2138,7 +2235,7 @@ for the Hamiltonian
 \end{equation}
 with $J=N/2=8$.
 Calculated trajectories that satisfy the EBK quantization condition
-(\ref{EBK}) for the first and second excited states ($0_2^+$ and $0_3^+$)
+(\ref{EBK2}) for the first and second excited states ($0_2^+$ and $0_3^+$)
 are mapped onto the $(\phi,j)$ plane and
 shown in Fig. \ref{fig:N16_traj}.
 We also calculate the trajectories using the explicit transformation
@@ -2161,7 +2258,7 @@ with each other, while we see small deviation between the full TDHFB
 and the ASCC/TDHFB2 calculations for the $0_3^+$ state.
 
 The calculated wave functions for the excited $0^+$ states 
-are shown in Fig. \ref{fig:N16_occ}. 
+are shown in Fig. \ref{fig:N16_occ2}. 
 We show the occupation probabilities which are decomposed 
 into the $2n$-particle-$2n$-hole components. 
 The left end of the horizontal axis at $m_2-m_1=-8$ $(j=-4)$
@@ -2179,9 +2276,9 @@ the TDHFB+SPA calculation well.
 %In two-level system, the classical Hamiltonian in (\ref{TDHFB_Hamiltonian_2}) is
 %\begin{align}
 %\mathcal{H} 
-%  =& \sum_{l=1,2} \epsilon_l\Omega_l(1- \cos{\theta}_l)& \nonumber \\ 
-% &- \frac{g}{4}\sum_{l=1,2} \Omega_l [\Omega_l(1-\cos^2{\theta}_l)+(1-\cos{\theta}_l)^2] \nonumber \\
-%- \frac{g}{2} \Omega_{1}\Omega_{2}&\sqrt{(1-\cos^2{\theta}_{l_1})(1-\cos^2{\theta}_{l_2})}\cos{(\chi_{2}-\chi_{1})}   .
+%  =& \sum_{\alpha=1,2} \epsilon_{\alpha}\Omega_{\alpha}(1- \cos{\theta}_{\alpha})& \nonumber \\ 
+% &- \frac{g}{4}\sum_{\alpha=1,2} \Omega_{\alpha} [\Omega_{\alpha}(1-\cos^2{\theta}_{\alpha})+(1-\cos{\theta}_{\alpha})^2] \nonumber \\
+%- \frac{g}{2} \Omega_{1}\Omega_{2}&\sqrt{(1-\cos^2{\theta}_{\alpha})(1-\cos^2{\theta}_{\beta})}\cos{(\chi_{2}-\chi_{1})}   .
 %\end{align}
 %If we define the canonical coordinate $\phi=\chi_2-\chi_1$, it attributes to one-dimensional system. The conjugate momentum is $j= \frac{\partial\mathcal{L}}{\partial\dot{\phi}} = \{\Omega_2(1-\cos{\theta}_2) - \Omega_1(1-\cos{\theta}_1)\}/4$. The ATDHFB indicates that the Hamiltonian can be expanded up to second order with respect to $\phi$
 %\begin{align}
@@ -2294,6 +2391,7 @@ this case.
  \label{potential}
 \end{figure}
 \begin{table}[htbp]
+\begin{center}
 \caption{Calculated excitation energies of the first and the second
 excited states in units of $\epsilon_0$.
 In the exact calculation, the second excited state in the ASCC+SPA
@@ -2301,12 +2399,15 @@ corresponds to the $0_4^+$ state.
 See text for details.}
 \label{ex}
 \begin{tabular}{c|cccccc}
+\toprule
             $N$ & $14$ & $16$ & $18$ & $20$ & $22$ & $24$\\ \hline
 ASCC+SPA (1st exc.) & $3.87$ & $3.90$ & $3.97$ & $4.09$ & $4.23$ & $4.33$\\
     Exact & $4.09$ & $4.13$ & $4.20$ & $4.30$ & $4.44$ & $4.60$\\ \hline
 ASCC+SPA (2nd exc.)& $7.42$ & $7.42$ & $7.60$ & $7.92$ & $8.26$ & $8.47$\\
-Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$
+Exact & $7.65$ & $7.71$ & $7.88$ & $8.15$ & $8.49$ & $8.74$ \\
+\bottomrule
 \end{tabular}
+\end{center}
 \end{table}
 
 \begin{figure}[htbp]
@@ -2331,7 +2432,7 @@ $0_1^+ \to 0_2^+$ and $0_2^+\to 0_1^+$.
 Based on the collective path determined by the ASCC calculation,
 we perform the requantization according to the SPA.
 Table \ref{ex} shows the excitation energies of the first and second
-excited states, determined by the EBK quantization condition (\ref{EBK}).
+excited states, determined by the EBK quantization condition (\ref{EBK2}).
 Comparing the result of the ASCC+SPA with that of the exact calculation,
 we find that the excitation energies are reasonably well reproduced. 
 The ASCC+SPA underestimates the excitation energies only by about 5 \%.
@@ -2463,16 +2564,20 @@ $\Delta(N)=\frac{(-1)^{N+1}}{2}[B(N+1)-2B(N)+B(N-1)]$ of ${}^{192}$Pb.
 The even-even nuclei from ${}^{188}$Pb to ${}^{194}$Pb
 are studied.
 \begin{table}[tb]
+\begin{center}
 \caption{Single-particle energies of Pb isotopes used in the calculation
 in units of MeV.
 These are obtained from the spherical Woods-Saxon potential
 with the parameters of Ref.~\cite{BM69}.
 }
 \begin{tabular}{c|cccccc}
+  \toprule 
   orbit& $h_{9/2}$ & $f_{7/2}$ & $i_{13/2}$ & $p_{3/2}$ & $f_{5/2}$ & $p_{1/2}$\\ \hline
   energy(MeV)& $-10.94$ & $-10.69$ & $-8.74$ & $-8.44$ & $-8.16$ & $-7.45$\\
+  \bottomrule 
 \end{tabular}
 \label{Pb}
+\end{center}
 \end{table}
 
 The TDHFB dynamics is described by six degrees of freedom.
@@ -2513,7 +2618,7 @@ enough to satisfy the condition, $E<V(q_L)$,
 to have a closed trajectory for the first excited state
 (See the last paragraph in Sec.~\ref{sec:three-level-model}).
 We encounter another kind of problem for $^{196}$Pb,
-which will be discussed in Sec.~\ref{sec5}.
+which will be discussed in Chapter~\ref{??}.
 Therefore, in this paper, we calculate the first excited states
 in $^{188,190,192,194}$Pb.
 
@@ -2530,13 +2635,17 @@ The ASCC+SPA method quantitatively reproduces the excitation energy of
 the exact solution.
 
 \begin{table}[bt]
+\begin{center}
 \caption{The same as Table \ref{ex} but for Pb isotopes. The energies are given in units of MeV.}
 \begin{tabular}{c|cccccc}
+  \toprule
    & ${}^{186}$Pb & ${}^{188}$Pb & ${}^{190}$Pb & ${}^{192}$Pb & ${}^{194}$Pb & ${}^{196}$Pb\\ \hline
 ASCC+SPA & $-$ & $2.31$ & $2.21$ & $2.12$ & $2.04$ & $-$ \\ 
-Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$
+Exact & $2.58$ & $2.44$ & $2.34$ & $2.25$ & $2.20$ & $2.15$ \\
+  \bottomrule
 \end{tabular}
 \label{Pb_ex}
+\end{center}
 \end{table}
 \begin{figure}[htb]
  \begin{center}
@@ -2577,8 +2686,9 @@ single-particle levels.
 The collective model has been proposed
 and utilized for the nuclear pairing dynamics
 \cite{BBPK70,GPBW85, ZPPRS99, P07}.
-For those studies, the pairing gap parameter $\Delta$ (or equivalent quantities)
-is assumed to be the collective coordinates.
+For those studies, the pairing collective Hamiltonian is constructed
+in terms of the pairing gap parameter $\Delta$ (or equivalent quantities) 
+and the gauge angle $\Phi$.  
 This is analogous to the Bohr collective model,
 in which the collective coordinates are assumed to be the
 quadrupole deformation parameters, $\alpha_{2\mu}$.
@@ -2590,41 +2700,68 @@ in comparison with experimental data.
 In this chapter, we examine the validity of
 the collective treatment of the pairing.
 
-Although the global gauge angle $\Phi$ is arbitrary,
-the deformation parameter $\alpha\equiv \braket{ \hat{S}^- }$
-in the gauge space is
-usually taken as a real value ($\Phi=0$).
-%In the superfluid phase, 
-The energy minimization with a fixed value of real $\alpha$ always
-leads to $\phi=0$.
+Because pairing rotation is trivial, we only consider the collective coordinate for pairing vibration. The deformation parameter is defined in $\alpha\equiv \braket{ \hat{S}^- }$. 
+To consider pairing vibration only, we fix the gauge angle as $\Phi=0$.
+With $\Phi=0$, the energy minimization with a fixed value of real $\alpha$ always
+leads to $\chi_{\alpha}=0$.
 \begin{align}
-\alpha(j,J) = \braket{Z_0|\hat{S}^-|Z_0}
-	= \sqrt{j_1(\Omega_1-\nu_1-j_1)} +\sqrt{j_2(\Omega_2-\nu_2-j_2)}.
- \label{Delta_BCS}
+\alpha(j) = \left. \braket{Z|\hat{S}^-|Z} \right|_{\chi=0}
+	= \sum_{\alpha} \sqrt{j_{\alpha}(\Omega_{\alpha}-\nu_{\alpha}-j_{\alpha})} .
+ \label{Delta}
 \end{align}
 The parameter $\alpha$ is equivalent to the pairing gap $\Delta$,
-since the relation, $\Delta=G\alpha$,
+since the relation, $\Delta=g\alpha$,
 guarantees one-to-one correspondence between $\alpha$ and $\Delta$. 
 
 \section{Integrable system}
-In Sec.~\ref{sec:canonical}, we treat $\phi$ as a collective coordinate
-and $j$ as its conjugate momentum.
-The collective model treatment is based on the opposite choice,
+In Chapter~\ref{integrable}, we treat $(\phi, j)$ as canonical variables to describe pairing vibration.
+The collective model treatment is based on the choice,
 $j$ as a coordinate and $\phi$ as a momentum, as discussed in Sec. \ref{ATDHFB}.
+\begin{align}
+\alpha(j) = \braket{Z|\hat{S}^-|Z}
+	= \sqrt{j_1(\Omega_1-\nu_1-j_1)} +\sqrt{j_2(\Omega_2-\nu_2-j_2)},
+ \label{Delta_BCS}
+\end{align}
+where $j_1$ and $j_2$ are the function of $j$ as in (\ref{j_l}).
 
 \begin{figure}[tb]
  \begin{center}
 (a) \includegraphics[height=0.44\textwidth,angle=-90]{images/N8p_E.eps}
 (b) \includegraphics[height=0.44\textwidth,angle=-90]{images/N16p_E.eps}
  \end{center}
- \caption{Energy surfaces as functions of $j$,
- Eq. (\ref{TDHFB_Hamiltonian_3}) with $\phi=0$,
- for $x=0.5$, $2$, and $3.2$.
+ \caption{Potential surfaces as functions of $j$,
+ Eq. (\ref{potential_two_level}) for $x=0.5$, $2$, and $3.2$.
  Dashed line is the pairing deformation parameter $\alpha$
  of Eq.~(\ref{Delta_BCS}) as a function of $j$.
  (a) mid-shell ($\Omega=N=8$) and (b) closed-shell ($2\Omega=N=16$).
 }
  \label{fig:p_Delta}
+\end{figure}
+
+
+\begin{figure}[tb]
+% \begin{minipage}{0.45\hsize}
+ \begin{center}
+(a) \includegraphics[height=0.4\textwidth,angle=-90]{images/N50Xeq2p4gap_E.eps}
+% \end{center}
+% \end{minipage}
+% \begin{minipage}{0.45\hsize}
+% \begin{center}
+(b) \includegraphics[height=0.4\textwidth,angle=-90]{images/N16Xeq2p4gap_E.eps}
+ \end{center}
+%\end{minipage}
+\caption{Potential energy surface as functions of $\alpha$ with $x=2.4$;
+(a) $\Omega=N=50$,
+(b) $2\Omega=N=16$.
+Horizontal lines 
+indicate energy spectra. Black lines are obtained
+from the potential energy surface, and green lines are 
+obtained with the CQ method
+(Sec.~\ref{sec:canonical}).
+%Left panels: $\Omega=50$, $N=50$ system;
+% Right panels: $\Omega=8$, $N=16$ system.
+}
+ \label{fig:Delta_E}
 \end{figure}
 
 The problem is that
@@ -2647,8 +2784,8 @@ Apparently, we cannot map the entire region of $j$ to $\alpha$.
 The collective model treatment
 requires the collective wave functions to be well localized
 in the $j<0$ region.
-The potential energy, $E(j)=\mathcal{H}(\phi=0,j;J=N/2)$ of
-Eq. (\ref{TDHFB_Hamiltonian_3}), is also shown in
+The potential energy, $V(j)=\mathcal{H}(\phi=0,j;J=N/2)$ of
+Eq. (\ref{potential_two_level}), is also shown in
 Fig.~\ref{fig:p_Delta}.
 The restriction becomes more serious for the stronger pairing cases.
 For instance, the potential with $x=3.2$ in Fig.~\ref{fig:p_Delta}(a)
@@ -2687,55 +2824,31 @@ Therefore, the collective model treatment assuming
 $\alpha$ ($\Delta$) as the collective coordinate
 is not applicable to small-$\Omega$ and strong-pairing cases.
 
-\begin{figure}[tb]
-% \begin{minipage}{0.45\hsize}
- \begin{center}
-(a) \includegraphics[height=0.4\textwidth,angle=-90]{images/N50Xeq2p4gap_E.eps}
-% \end{center}
-% \end{minipage}
-% \begin{minipage}{0.45\hsize}
-% \begin{center}
-(b) \includegraphics[height=0.4\textwidth,angle=-90]{images/N16Xeq2p4gap_E.eps}
- \end{center}
-%\end{minipage}
-\caption{Potential energy surface as functions of $\alpha$ with $x=2.4$;
-(a) $\Omega=N=50$,
-(b) $2\Omega=N=16$.
-Horizontal lines 
-indicate energy spectra. Black lines are obtained
-from the potential energy surface, and green lines are 
-obtained with the CQ method
-(Sec.~\ref{sec:canonical}).
-%Left panels: $\Omega=50$, $N=50$ system;
-% Right panels: $\Omega=8$, $N=16$ system.
-}
- \label{fig:Delta_E}
-\end{figure}
 
-\section{non-integrable system}
-Finally, we discuss the validity of the collective model approach
-assuming the pairing gap as a collective coordinate.
-The 5D collective Hamiltonian assuming the quadrupole deformation
-parameters $\alpha_{2\mu} (\mu=\pm2,\pm1,$ and $0)$ as the collective coordinates
-is widely utilized to analyze experimental data of quadrupole states.
-Similarly, we may construct the pairing collective Hamiltonian
-in terms of the pairing gap $\Delta$ and the gauge angle $\Phi$. 
+\section{Non-integrable system}
+In Chapter~\ref{non-integrable}, the collective canonical variables $(q^1, p_1)$ describing pairing vibration are obtained from ASCC.
 As far as there is a one-to-one correspondence between $\Delta$ 
-and the collective variable $q^1$ we obtained in the present study,
+and the collective variable $q^1$,
 we can transform the collective Hamiltonian in $(q^1,\Phi)$
-into the one in $(\Delta,\Phi)$.
-The pairing gap $\Delta$ is defined as
-\begin{align}
-  \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|\hat{S}^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
-  &= g\sum_\alpha \sqrt{j^\alpha(\Omega_\alpha-j^\alpha)} .
-\end{align}
-Figure \ref{192Pb_gap} shows the pairing gap $\Delta$ in ${}^{192}$Pb
-as a function of the collective coordinate $q^1$.
-The peak in $\Delta$ is near $q^1=0$ and it is not a monotonic
-function of $q^1$, thus no one-to-one correspondence exists.
-The same behavior is observed for other Pb isotopes too.
-Therefore, the pairing gap $\Delta$ is not a suitable collective coordinate
-to describe the pairing dynamics in the multi-level model.
+into the one in $(\Delta,\Phi)$. As integrable system, however, we cannot map the entire region of $q^1$ to $\Delta$ because the peak values of pairing gap parameter always appear around the middle of the collective path.
+
+%The pairing gap $\Delta$ is defined as
+%\begin{align}
+ % \Delta (q) &\equiv \left. g\braket{\Phi,J;q,p|\hat{S}^-|\Phi,J;q,p} \right|_{\Phi=p=0} \nonumber \\
+%  &= g\sum_\alpha \sqrt{j^\alpha(\Omega_\alpha-j^\alpha)} .
+%\end{align}
+
+In Fig. \ref{q_Delta}, we show two examples of the behavior of pairing gap parameter as a function of the collective coordinate $q^1$.
+Panel (a) corresponds to the case of $N=20$ in three-level system ($\Omega_1=\Omega_2=\Omega_3=8$,
+$\epsilon_1=-\epsilon_0$, $\epsilon_2=0$, $\epsilon_3=1.5\epsilon_0$,
+and $g=0.2\epsilon_0$), and panel (b) corresponds to the case of ${}^{192}$Pb ($g=0.138$ MeV and single-particle level shown in Table \ref{Pb}).
+In both panels, the peak in $\Delta$ is near $q^1=0$ and it is not a monotonic
+function of $q^1$, thus no one-to-one correspondence exists. 
+Because the peak in $\Delta$ emerges near the energy minimum point, the potential surface of $\Delta$ is too shallow to bound first excited states. 
+The same behavior observed for all of the non-integrable systems.
+The situations are similar to the case in Fig. \ref{fig:Delta_E} (b), where the low-lying excited states cannot be properly described.
+
+We conclude that the pairing gap parameter $\Delta$ (or equivalent quantities) is not a suitable collective coordinate to describe the pairing dynamics, in the multi-level pairing model.
 
 %Because only one orbit near the Fermi energy ($i_{13/2}$ orbit for both end points) contributes the value of pairing gap, the value at both end points are small compared with the value around the ground state. There is no one-to-one correspondence between $\Delta$ and $q$ not only in ${}^{192}$Pb, but also in all multi-level systems. 
 
@@ -2744,24 +2857,72 @@ to describe the pairing dynamics in the multi-level model.
 %the pair deformation parameters pairing gap $\Delta$ and global gauge angle $\Phi$. 
 %The utilization of the collective model for nuclear pairing dynamics was done in several references\cite{??}. In our previous study, however, we find that the pairing gap $\Delta$ is not proper to be the collective coordinate in two-level pairing model \cite{??}. In multi-level system, we can investigate the relations between the pairing gap and the collective coordinate. 
 
-\begin{figure}[t]
+\begin{figure}[tb]
  \begin{center}
-  \includegraphics[width=60mm,angle=-90]{images/192Pbgap.eps}
+(a) \includegraphics[height=0.44\textwidth,angle=-90]{images/N20gap.eps}
+(b) \includegraphics[height=0.44\textwidth,angle=-90]{images/192Pbgap.eps}
  \end{center}
-	\caption{Pairing gap as a function of collective coordinate $q^1$
-	in ${}^{192}$Pb. 
+ \caption{Solid line is the potential surface as a function of $q^1$, and
+ dashed line is the pairing gap parameter $\Delta$
+ of Eq.~(\ref{Delta}) as a function of $q^1$.
+ (a) $N=20$ in three-level system ($\Omega_1=\Omega_2=\Omega_3=8$,
+$\epsilon_1=-\epsilon_0$, $\epsilon_2=0$, $\epsilon_3=1.5\epsilon_0$,
+and $g=0.2\epsilon_0$), (b) ${}^{192}$Pb ($g=0.138$ MeV and single-particle level shown in Table \ref{Pb}).
 }
- \label{192Pb_gap}
+ \label{q_Delta}
 \end{figure}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Conclusion}
 \label{conclusion}
 
-We studied the low-lying excited $0^+$ states in multi-level pairing model. We constructed theoretical framework to describe pairing collective motion in large-amplitude regime. The approach roughly consists of two steps: (1) solve the TDHFB equation to obtain the classical trajectories; (2) requantize the TDHFB trajectories to obtain the excited states. The TDHFB degrees of freedom equal to the number of single-particle level. More specifically, the TDHFB degrees of freedom consists of one constant of motion, pairing rotation, and $L-1$ time-dependent degrees of freedom in $L$ single-particle level system. Therefore, we divided the pairing system into two classes, two-level system corresponding to the integrable system and the system more than three-level corresponding to the non-integrable system. 
+In order to construct a theoretical framework to describe large-amplitude collective motion associated with nuclear pairing, apart from realistic nuclear system, we studied the low-lying excited $0^+$ states in multi-level pairing model. Based on the time-dependent Hartree-Fock-Bogoliubov (TDHFB) theory, we constructed the pairing collective excited states in two steps: (1) solve the TDHFB equation to obtain the TDHFB classical trajectories; (2) requantize the TDHFB trajectories to obtain the excited states. In step 1, we found the TDHFB degrees of freedom equal to the number of single-particle level. More specifically, the TDHFB degrees of freedom consists of one constant of motion, pairing rotation described in variables $(\Phi, J)$, and $L-1$ time-dependent degrees of freedom in $L$ single-particle level system. To apply the step 2, we divided the pairing system into two classes, two-level system corresponding to the integrable system and the system more than three-level corresponding to the non-integrable system. 
 
-In two-level system, integrable system, we studied three different methods of requantization of TDHFB, the stationary-phase approximation (SPA) of the path integral, the canonical quantization (CQ), and the Fourier decomposition(FD) of the time-dependent observables. 
+Two-level system corresponds to integrable system because there is only one time-dependent degree of freedom. After the explicit coordinate transformation decoupling the constant of motion, pairing rotation described by $(\Phi, J)$, we obtain the time-dependent variables $(\phi, j)$ describing pairing vibration. Under the transformed canonical variables, we studied three different methods of requantization of TDHFB, the stationary-phase approximation (SPA) to the path integral, the canonical quantization (CQ), and the Fourier decomposition (FD) of the time-dependent observables. 
 
+To test the performance of each requantization method, we considered two classes of systems, large systems with large degeneracy $\Omega$ and number of particles $N$, and small systems which are comparable with the valence orbits in realistic nuclear systems. 
+In the former case, all the quantization methods reasonably reproduced the results of the
+exact calculation not only for excitation spectra, but also for two-particle transfer matrix elements.
+In the later case, on the other hand, the agreement is
+less quantitative for the CQ and the FD, especially for the twoparticle
+transfer matrix elements.
+In contrast, the SPA keeps its accuracy in the entire range of
+pairing strengths.
+One of the reasons of its success is due to the inclusion of the off-diagonal 
+parts of the pair transfer operator,
+by the explicit construction of the microscopic wave functions.
+The CQ and FD calculate the pair transfer matrix elements using only
+the diagonal part (expectation value) of the operator $\hat{S}^\pm$,
+based on Eqs. (\ref{Sp_mean_value}) and (\ref{Sm_mean_value}).
+This is a good approximation when the collectivity is so large that the
+diagonal parts dominate.
+However, the pairing collectivity may be too weak to justify this
+treatment.
+Thus, the SPA is the most accurate tool for description of the pairing collective motions in large-amplitude regime.
+
+The weak point of this approach is that it is applicable only to the
+integrable TDHFB system. To overcome this problem, we proposed the ASCC+SPA method for non-integrable systems. The concept is that we can employ ASCC to decouple an integrable collective subspace from original TDHFB phase space, then, the SPA is available for the collective subspace.
+In this approach, we use the ASCC method to extract the 2D
+collective subspace including the pair rotation.
+In other words, we extract an approximate integrable system 
+in the non-integrable system described by $(q^1,p_1;J,\Phi)$.
+
+We applied the ASCC+SPA method to the multi-level pairing model.
+We investigated the three-level model and 
+the multi-level model simulating Pb isotopes
+with a realistic pairing coupling constant $g$ and single-particle levels.
+In both cases, the low-lying excited $0^+$ states obtained with
+the ASCC+SPA well reproduce the exact solutions
+not only of the excitation energies but also of the wave functions.
+In the ASCC+SPA, the pair-transition calculation is straightforward,
+because we have a microscopic wave function for every quantized state.
+This overcomes a disadvantage in the conventional canonical requantization
+in which we need to construct a pair-transition operator
+in terms of the collective variables only.
+
+We also investigated the conventional treatment of the
+collective model which assumes that the collective coordinate
+is the paring gap parameter.
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \appendix
@@ -2779,7 +2940,7 @@ With the commutation relation in (\ref{SU2commu}), the SU(2) quasispin operators
   \hat{S}^{\pm}\ket{S,S^0} &= \sqrt{(S\mp S^0)(S\pm S^0+1)} \ket{S,S^0\pm 1}
   \label{S_pm} \\
   \hat{S}^0\ket{S,S^0} &= S^0\ket{S,S^0} .
-  \label{S_0}
+%  \label{S_0}
 \end{align}
 Using above relations, the coherent state can be expanded as 
 \begin{align}
@@ -2859,16 +3020,16 @@ From the second line to the third line, we used (\ref{S+}).
 
 Next, we consider the multi-level case. For one-body operators, the extension from the single-level case is simple because we only sum over the index $l$ for the single-particle levels. For two-body operators, we need to give the new derivations basically. For the expectation value of $\hat{S}^+\hat{S}^-$,
 \begin{align}
-  \braket{Z|\hat{S}^+\hat{S}^-|Z} &= \sum_{l_1l_2}\braket{Z|\hat{S}_{l_2}^+\hat{S}_{l_1}^-|Z} .
+  \braket{Z|\hat{S}^+\hat{S}^-|Z} &= \sum_{\alpha\beta}\braket{Z|\hat{S}_{\beta}^+\hat{S}_{\alpha}^-|Z} .
 \end{align}
-When $l_2=l_1$, the form is the same as in (\ref{S+S-}). When $l_2\ne l_1$, from (\ref{S+}) and (\ref{S-}),
+When $\beta=\alpha$, the form is the same as in (\ref{S+S-}). When $\beta\ne \alpha$, from (\ref{S+}) and (\ref{S-}),
 \begin{align}
-  \braket{Z|S_{l_2}^+S_{l_1}^-|Z} = \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2} .
+  \braket{Z|S_{\beta}^+S_{\alpha}^-|Z} = \frac{2S_{\alpha}Z_{\alpha}}{1+|Z_{\alpha}|^2}\frac{2S_{\beta}Z_{\beta}^*}{1+|Z_{\beta}|^2} .
 \end{align}
 Therefore,
 \begin{align}
-    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_l 2S_l|Z_l|^2\frac{2S_l+|Z_l|^2}{(1+|Z_l|^2)^2}
-    + \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2} .
+    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_{\alpha} 2S_{\alpha}|Z_{\alpha}|^2\frac{2S_{\alpha}+|Z_{\alpha}|^2}{(1+|Z_{\alpha}|^2)^2}
+    + \sum_{\alpha \neq \beta} \frac{2S_{\alpha}Z_{\alpha}}{1+|Z_{\alpha}|^2}\frac{2S_{\beta}Z_{\beta}^*}{1+|Z_{\beta}|^2} .
 \end{align}
 
 We conclude the useful formulae for the spin-coherent state as follows.
@@ -2876,9 +3037,9 @@ We conclude the useful formulae for the spin-coherent state as follows.
   \begin{itemize}
  \item Spin-coherent state 
 \begin{equation}
-	\ket{Z} = \prod_{l} \left(1+|Z_l|^2\right)^{-S_l}
-	e^{Z_l \hat{S}_l^{+}} \ket{S_l, S_l^0=-S_l} .
- \label{coherent}
+	\ket{Z} = \prod_{\alpha} \left(1+|Z_{\alpha}|^2\right)^{-S_{\alpha}}
+	e^{Z_{\alpha} \hat{S}_{\alpha}^{+}} \ket{S_{\alpha}, S_{\alpha}^0=-S_{\alpha}} .%
+% \label{coherent}
 \end{equation}
  \item Normalization
 \begin{equation}
@@ -2886,29 +3047,29 @@ We conclude the useful formulae for the spin-coherent state as follows.
 \end{equation}
  \item Overlap
 \begin{equation}
-	  \braket{\eta|Z} = \prod_l \frac{(1+\eta_l^*Z_l)^{2S_l}}{(1+|\eta_l|^2)^{S_l}(1+|Z_l|^2)^{S_l}} .
+	  \braket{\eta|Z} = \prod_{\alpha} \frac{(1+\eta_{\alpha}^*Z_{\alpha})^{2S_{\alpha}}}{(1+|\eta_{\alpha}|^2)^{S_{\alpha}}(1+|Z_{\alpha}|^2)^{S_{\alpha}}} .
   \label{overlap}
 \end{equation}
  \item Expectation value of $\hat{S}^0$
 \begin{equation}
-     \braket{Z|\hat{S}^0|Z} = \sum_l S_l\left( 1-\frac{2}{1+|Z_l|^2} \right)
+     \braket{Z|\hat{S}^0|Z} = \sum_{\alpha} S_{\alpha}\left( 1-\frac{2}{1+|Z_{\alpha}|^2} \right)
 \end{equation}
  \item Expectation value of $\hat{S}^+$
 \begin{equation}
-     \braket{Z|\hat{S}^+|Z} = \sum_l \frac{2S_lZ_l^*}{1+|Z_l|^2}
+     \braket{Z|\hat{S}^+|Z} = \sum_{\alpha} \frac{2S_{\alpha}Z_{\alpha}^*}{1+|Z_{\alpha}|^2}
 \end{equation}
  \item Expectation value of $\hat{S}^-$
 \begin{equation}
-     \braket{Z|\hat{S}^-|Z} = \sum_l \frac{2S_lZ_l}{1+|Z_l|^2}
+     \braket{Z|\hat{S}^-|Z} = \sum_{\alpha} \frac{2S_{\alpha}Z_{\alpha}}{1+|Z_{\alpha}|^2}
 \end{equation}
  \item Expectation value of $\hat{S}^+\hat{S}^-$
 \begin{equation}
-    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_l 2S_l|Z_l|^2\frac{2S_l+|Z_l|^2}{(1+|Z_l|^2)^2}
-    + \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2}
+    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_{\alpha} 2S_{\alpha}|Z_{\alpha}|^2\frac{2S_{\alpha}+|Z_{\alpha}|^2}{(1+|Z_{\alpha}|^2)^2}
+    + \sum_{\alpha \neq \beta} \frac{2S_{\alpha}Z_{\alpha}}{1+|Z_{\alpha}|^2}\frac{2S_{\beta}Z_{\beta}^*}{1+|Z_{\beta}|^2}
 \end{equation}
  \item Expectation value of $\frac{\partial}{\partial t}$
 \begin{equation}
-       \braket{Z|\frac{\partial}{\partial t}|Z} = \sum_l \frac{S_l}{1+|Z_l|^2}(Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*})
+       \braket{Z|\frac{\partial}{\partial t}|Z} = \sum_{\alpha} \frac{S_{\alpha}}{1+|Z_{\alpha}|^2}(Z_{\alpha}^*\dot{Z_{\alpha}}-Z_{\alpha}\dot{Z_{\alpha}^*})
 	\label{ddt}
 \end{equation}
 \end{itemize}
@@ -2919,32 +3080,32 @@ We conclude the useful formulae for the spin-coherent state as follows.
 In the text, we mostly use the transformed formulae derived in the previous section.
 We use $(\chi,j)$ representation. which is defined from the transformation of the complex number $Z$
 \begin{align}
-  Z_l &\equiv \tan{\frac{\theta_l}{2}}e^{-i\chi_l} \\
-  j_l &\equiv S_l(1-\cos{\theta}_l) .
+  Z_{\alpha} &\equiv \tan{\frac{\theta_{\alpha}}{2}}e^{-i\chi_{\alpha}} \\
+  j_{\alpha} &\equiv S_{\alpha}(1-\cos{\theta}_{\alpha}) .
 \end{align}
 In such representation, most of matrix elements of spin-coherent state become concise. Because the derivations of the transformation for those matrix elements are simple, we omit the explanation here. We conclude the useful formulae as follows.
 \begin{framed}
   \begin{itemize}
  \item Expectation value of $\hat{S}^0$
 \begin{equation}
-     \braket{Z|\hat{S}^0|Z} = \sum_l (j_l-S_l)
+     \braket{Z|\hat{S}^0|Z} = \sum_{\alpha} (j_{\alpha}-S_{\alpha})
 \end{equation}
  \item Expectation value of $\hat{S}^+$
 \begin{equation}
-     \braket{Z|\hat{S}^+|Z} = \sum_l \sqrt{j_l(2S_l-j_l)}e^{-i\chi_l}
+     \braket{Z|\hat{S}^+|Z} = \sum_{\alpha} \sqrt{j_{\alpha}(2S_{\alpha}-j_{\alpha})}e^{-i\chi_{\alpha}}
 \end{equation}
  \item Expectation value of $\hat{S}^-$
 \begin{equation}
-     \braket{Z|\hat{S}^-|Z} = \sum_l \sqrt{j_l(2S_l-j_l)}e^{i\chi_l}
+     \braket{Z|\hat{S}^-|Z} = \sum_{\alpha} \sqrt{j_{\alpha}(2S_{\alpha}-j_{\alpha})}e^{i\chi_{\alpha}}
 \end{equation}
  \item Expectation value of $\hat{S}^+\hat{S}^-$
 \begin{equation}
-    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_l \left( 2S_l j_l - j_l^2 +\frac{j_l^2}{2S_l} \right) 
-+ 2\sum_{l_1\le l_2} \sqrt{j_{l_1}j_{l_2}(2S_{l_1}-j_{l_1})(2S_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   .
+    \braket{Z|\hat{S}^+\hat{S}^-|Z} = \sum_{\alpha} \left( 2S_{\alpha} j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{2S_{\alpha}} \right) 
++ 2\sum_{\alpha\le \beta} \sqrt{j_{\alpha}j_{\beta}(2S_{\alpha}-j_{\alpha})(2S_{\beta}-j_{\beta})}\cos{(\chi_{\alpha}-\chi_{\beta})}   .
 \end{equation}
  \item Expectation value of $\frac{\partial}{\partial t}$
 \begin{equation}
-       \braket{Z|\frac{\partial}{\partial t}|Z} = \frac{1}{i}\sum_l j_l \dot{\chi_l}
+       \braket{Z|\frac{\partial}{\partial t}|Z} = \frac{1}{i}\sum_{\alpha} j_{\alpha} \dot{\chi_{\alpha}}
 	\label{ddt2}
 \end{equation}
 \end{itemize}
@@ -2999,29 +3160,29 @@ It can be easily checked by using (\ref{ddt}).
 The extension to the multi-level system is straightforward. The action $\mathcal{S}$ becomes
 \begin{equation}
   \mathcal{S} = \int \mathcal{L}(t) dt, \quad 
-  \mathcal{L}(t) =i\hbar \sum_l \frac{S_l}{1+|Z_l|^2}
-  (Z_l^*\dot{Z_l}-Z_l\dot{Z_l^*}) - \braket{Z|H|Z}
+  \mathcal{L}(t) =i\hbar \sum_{\alpha} \frac{S_{\alpha}}{1+|Z_{\alpha}|^2}
+  (Z_{\alpha}^*\dot{Z_{\alpha}}-Z_{\alpha}\dot{Z_{\alpha}^*}) - \braket{Z|H|Z}
 \end{equation}
 
 \section{Action in pairing model}
 We derived the action in the previous sections. Using the formula in Sec. \ref{formula1}, the expectation value of pairing Hamiltonian is
 \begin{align}
-  \braket{Z|H|Z} =& \sum_l \epsilon_l \left\{ 2S_l\left( 1-\frac{2}{1+|Z_l|^2} \right) + \Omega_l \right\} \nonumber \\
-   &- g\sum_l 2S_l|Z_l|^2\frac{2S_l+|Z_l|^2}{(1+|Z_l|^2)^2}
-    + \sum_{l_1 \neq l_2} \frac{2S_{l_1}Z_{l_1}}{1+|Z_{l_1}|^2}\frac{2S_{l_2}Z_{l_2}^*}{1+|Z_{l_2}|^2} .
+  \braket{Z|H|Z} =& \sum_{\alpha} \epsilon_{\alpha} \left\{ 2S_{\alpha}\left( 1-\frac{2}{1+|Z_{\alpha}|^2} \right) + \Omega_{\alpha} \right\} \nonumber \\
+   &- g\sum_{\alpha} 2S_{\alpha}|Z_{\alpha}|^2\frac{2S_{\alpha}+|Z_{\alpha}|^2}{(1+|Z_{\alpha}|^2)^2}
+    + \sum_{\alpha \neq \beta} \frac{2S_{\alpha}Z_{\alpha}}{1+|Z_{\alpha}|^2}\frac{2S_{\beta}Z_{\beta}^*}{1+|Z_{\beta}|^2} .
 \end{align}
 Using the canonical variables $(\chi,j)$, we can obtain the tractable form of the action based on Sec. \ref{formula2}. 
 The Lagrangian in $(\chi,j)$ representation becomes
 \begin{align}
-	\mathcal{L}(t) =& \sum_l j_l\dot{\chi_l} - \mathcal{H}(\chi,j) ,\\
+	\mathcal{L}(t) =& \sum_{\alpha} j_{\alpha}\dot{\chi_{\alpha}} - \mathcal{H}(\chi,j) ,\\
 	\mathcal{H}(\chi,j) \equiv& \braket{Z|H|Z} \nonumber \\
-	=& \sum_l \epsilon_l\nu_l + \sum_l 2\epsilon_lj_l - g\sum_l \left( (\Omega_l-\nu_l) j_l - j_l^2 +\frac{j_l^2}{\Omega_l-\nu_l} \right) \nonumber \\
-	&- 2g\sum_{l_1\le l_2} \sqrt{j_{l_1}j_{l_2}(\Omega_{l_1}-\nu_{l_1}-j_{l_1})(\Omega_{l_2}-\nu_{l_2}-j_{l_2})}\cos{(\chi_{l_1}-\chi_{l_2})}   .
+	=& \sum_{\alpha} \epsilon_{\alpha}\nu_{\alpha} + \sum_{\alpha} 2\epsilon_{\alpha}j_{\alpha} - g\sum_{\alpha} \left( (\Omega_{\alpha}-\nu_{\alpha}) j_{\alpha} - j_{\alpha}^2 +\frac{j_{\alpha}^2}{\Omega_{\alpha}-\nu_{\alpha}} \right) \nonumber \\
+	&- 2g\sum_{\alpha\le \beta} \sqrt{j_{\alpha}j_{\beta}(\Omega_{\alpha}-\nu_{\alpha}-j_{\alpha})(\Omega_{\beta}-\nu_{\beta}-j_{\beta})}\cos{(\chi_{\alpha}-\chi_{\beta})}   .
 \end{align}
 
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \chapter{Properties of superfluid ground state in pairing model}
-The superfluid ground state correspond to the local minimum point in energy surface. The time-dependent coherent state described in (\ref{coherent}) attributes to BCS trail wave function in $\chi_l=0$. For the simplicity, here, we only consider the even-particle system with $\nu=0$ (without Pauli blocking).
+The superfluid ground state correspond to the local minimum point in energy surface. The time-dependent coherent state described in (\ref{coherent}) attributes to BCS trail wave function in $\chi_{\alpha}=0$. For the simplicity, here, we only consider the even-particle system with $\nu=0$ (without Pauli blocking).
 
 \section{Two-level system}
 \label{two-level}
@@ -3039,11 +3200,11 @@ The explicit form of (\ref{dH}) is
 \end{align}
 where 
 \begin{equation}
-	q_l=\cos{\theta_l} = \frac{\Omega_l - J -2(-1)^l j}{\Omega_l} 
-	\quad \mbox{ for } l=1,2
+	q_{\alpha}=\cos{\theta_{\alpha}} = \frac{\Omega_{\alpha} - J -2(-1)^l j}{\Omega_{\alpha}} 
+	\quad \mbox{ for } \alpha=1,2
 	\label{q_l}
 \end{equation}
-with the range $-1\le q_l\le 1$. $q_l=1$ corresponds to empty occupation and $q_l=-1$ corresponds to full occupation. 
+with the range $-1\le q_{\alpha}\le 1$. $q_{\alpha}=1$ corresponds to empty occupation and $q_{\alpha}=-1$ corresponds to full occupation. 
 
 (\ref{BCS_2level}) has solution only for the superfluid state. In open shell, (\ref{BCS_2level}) always have solution. In closed shell, substituting $q_1=-1$ and $q_2=1$ into (\ref{BCS_2level}) leads the phase transition point between normal state and superfluid state. The last term of right side in (\ref{BCS_2level}) becomes
 \begin{align*}
@@ -3055,7 +3216,7 @@ with the range $-1\le q_l\le 1$. $q_l=1$ corresponds to empty occupation and $q_
 	- \frac{S_1-j_1}{\sqrt{j_1}}\sqrt{2S_2-j_2}\right) \\ 
 	\xrightarrow[j_2\to0]{j_1\to2S_1}\ \ &  4 \sqrt{S_1S_2} .
 \end{align*}
-From second line to the third line, we used the fact of closed shell $J=2S_1$. With $\Omega_l=2S_l$, the phase transition point in closed shell is
+From second line to the third line, we used the fact of closed shell $J=2S_1$. With $\Omega_{\alpha}=2S_{\alpha}$, the phase transition point in closed shell is
 \begin{align}
 	g_c = \frac{2\Delta\epsilon}{\Omega_1+\Omega_2+2\sqrt{\Omega_1\Omega_2}-2} ,
 	\label{g_c}
@@ -3077,17 +3238,69 @@ We can find the phase transition occurs at
 \end{align}
 The last approximation performs well for $\Omega>>1$. We often use the dimensionless coupling constant $x$ in the text. 
 
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%\chapter{Adiabatic self-consistent collective coordinate method}
+
+%\section{Theoretical framework}
+%\section{Matrix elements of local harmonic approximation in pairing model}
+
+
 \clearpage{\pagestyle{empty}\cleardoublepage}
-\chapter{Adiabatic self-consistent collective coordinate method}
+\chapter{Detailed derivation of semiclassical wave function in SPA}
+\section{Derivation of Eq. (\ref{semi_wave_func1})}
+\label{wave_func1}
 
-\section{Theoretical framework}
-\section{Matrix elements of local harmonic approximation in pairing model}
+We give a derivation of the semiclassical wave function
+of Eq. (\ref{semi_wave_func1}).
+The explicit form of coherent state is
+
+\begin{align}
+  \ket{Z} &= \prod_{\alpha=1}^2(1+|Z_{\alpha}|^2)^{-\Omega_{\alpha}/2}e^{Z_{\alpha}S_{\alpha}^{+}}\ket{0} \nonumber \\
+  &= \prod_{\alpha=1}^2\left(1+\tan^2{\frac{\theta_{\alpha}}{2}}\right)^{-\Omega_{\alpha}/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
+  \binom{k}{m} \left(
+  \tan{\frac{\theta_1}{2}}e^{-i\phi_1}S_1^{+} \right)^m \left(
+  \tan{\frac{\theta_2}{2}}e^{-i\phi_2}S_2^{+} \right)^{k-m} \ket{0} \nonumber \\
+  &= \prod_{\alpha=1}^2\left(1+\tan^2{\frac{\theta_{\alpha}}{2}}\right)^{-\Omega_{\alpha}/2} \sum_k \frac{1}{k!} \sum_{m=0}^k
+  \binom{k}{m} \tan^m{\frac{\theta_1}{2}}\tan^{k-m}{\frac{\theta_2}{2}}e^{-ik\Phi}e^{-i(k/2-m)\phi}
+  (S_1^{+})^m(S_2^{+})^{k-m} \ket{0}
+  \label{ZZ}
+\end{align}
+Inserting (\ref{ZZ}) into (\ref{semi_wave_func0}) under fixed $N$ and $E_k$,
+it becomes
+\begin{align}
+	\ket{\psi_k^N} \propto& \oint d\Phi \oint dt
+	e^{i\mathcal{T}_{N,E_k}(\Phi, t)}
+	\ket{\Phi,t}_{N,E_k} \nonumber \\
+  \propto& \sum_k \frac{1}{k!} \sum_{m=0}^k \binom{k}{m} \int_0^{2\pi} d\Phi e^{i(N/2-k)\Phi} 
+  \int_0^T dt e^{i\int \pi(t') \dot{\phi}(t') dt'-i(k/2-m)\phi} \nonumber \\
+  &\times \left\{ \prod_{\alpha=1}^2\left(1+\tan^2{\frac{\theta_{\alpha}}{2}}\right)^{-\Omega_{\alpha}/2} \right\}
+\tan^m{\frac{\theta_1}{2}}\tan^{k-m}\frac{\theta_2}{2}(S_1^{+})^m(S_2^{+})^{k-m} \ket{0} \nonumber \\
+  \propto& \sum_{m=0}^{N/2} \binom{N/2}{m} \int_0^T dt \exp{\left( i\int \pi(t') \dot{\phi}(t') dt'-i(N/4-m)\phi \right)} \nonumber \\
+  &\times \left\{ \prod_{\alpha=1}^2\left(1+\tan^2{\frac{\theta_{\alpha}}{2}}\right)^{-\Omega_{\alpha}/2} \right\} 
+\tan^m{\frac{\theta_1}{2}}\tan^{N/2-m}\frac{\theta_2}{2} (S_1^{+})^m(S_2^{+})^{N/2-m} \ket{0} . \label{semi_wave_func_b}
+\end{align}
+We find that the integration over $\Phi$ is nothing but the number projection.
+In SU(2) quasi-spin representation, the vacuum state is written as
+$\ket{0}=\ket{S_1,-S_1;S_2,-S_2}$, which leads to
+\begin{align}
+  (S_1^{+})^m(S_2^{+})^{N/2-m} \ket{0} 
+  = \sqrt{\frac{(2S_1)!m!}{(2S_1-m)!}} \sqrt{\frac{(2S_2)!(N/2-m)!}{[2S_2-(N/2-m)]!}}
+  \ket{S_1,-S_1+m;S_2,-S_2+(N/2-m)}.
+\end{align}
+For convenience, we define coefficients
+\begin{align}
+  A(q,S,m) &\equiv 
+  \frac{\tan^m{\frac{\theta}{2}}}{\left(1+\tan^2{\frac{\theta}{2}}\right)^{-S}}
+  \sqrt{\frac{(2S)!m!}{(2S-m)!}}  \nonumber \\
+  &= \left(\frac{1-q}{2}\right)^{m/2}\left(\frac{1+q}{2}\right)^{S-m/2} \sqrt{\frac{(2S)!m!}{(2S-m)!}}
+\label{tan}
+\end{align}
+where $q=\cos{\theta}$.
+Inserting Eq. (\ref{tan}) into Eq. (\ref{semi_wave_func_b}) with $N/2=J$,
+we reach Eq. (\ref{semi_wave_func1}).
 
 
-
-
-
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{ref}
 
 
