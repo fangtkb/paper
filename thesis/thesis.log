@@ -1,33 +1,33 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.4.24)  17 DEC 2018 00:10
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.4.24)  1 JAN 2019 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./thesis.tex
 (./thesis.tex
-LaTeX2e <2016/03/31>
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/03/31> patch level 0)
 Babel <3.9r> and hyphenation patterns for 81 language(s) loaded.
 (c:/w32tex/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (c:/w32tex/share/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\bibindent=\dimen102
+\bibindent=\dimen118
 )
 (c:/w32tex/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
 
 (c:/w32tex/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -327,6 +327,10 @@ Now handling font encoding OMX ...
 ... no UTF-8 mapping file for font encoding OMX
 Now handling font encoding U ...
 ... no UTF-8 mapping file for font encoding U
+Now handling font encoding JY1 ...
+... no UTF-8 mapping file for font encoding JY1
+Now handling font encoding JT1 ...
+... no UTF-8 mapping file for font encoding JT1
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -343,7 +347,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks16
+\KV@toks@=\toks17
 )
 (c:/w32tex/share/texmf-dist/tex/generic/ifpdf/ifpdf.sty
 Package: ifpdf 2016/04/04 v3.0 Provides the ifpdf switch
@@ -355,18 +359,18 @@ Package ifvtex Info: VTeX not detected.
 (c:/w32tex/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks17
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
+\Gm@bindingoffset=\dimen119
+\Gm@wd@mp=\dimen120
+\Gm@odd@mp=\dimen121
+\Gm@even@mp=\dimen122
+\Gm@layoutwidth=\dimen123
+\Gm@layoutheight=\dimen124
+\Gm@layouthoffset=\dimen125
+\Gm@layoutvoffset=\dimen126
+\Gm@dimlist=\toks18
 
 (c:/w32tex/share/texmf-dist/tex/latex/geometry/geometry.cfg))
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -386,8 +390,8 @@ Package graphics Info: Driver file: dvips.def on input line 95.
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/dvips.def
 File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
-\Gin@req@height=\dimen111
-\Gin@req@width=\dimen112
+\Gin@req@height=\dimen127
+\Gin@req@width=\dimen128
 )
 (c:/w32tex/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
@@ -402,29 +406,29 @@ File: dvipsnam.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen113
-\lightrulewidth=\dimen114
-\cmidrulewidth=\dimen115
-\belowrulesep=\dimen116
-\belowbottomsep=\dimen117
-\aboverulesep=\dimen118
-\abovetopsep=\dimen119
-\cmidrulesep=\dimen120
-\cmidrulekern=\dimen121
-\defaultaddspace=\dimen122
-\@cmidla=\count91
-\@cmidlb=\count92
-\@aboverulesep=\dimen123
-\@belowrulesep=\dimen124
-\@thisruleclass=\count93
-\@lastruleclass=\count94
-\@thisrulewidth=\dimen125
+\heavyrulewidth=\dimen129
+\lightrulewidth=\dimen130
+\cmidrulewidth=\dimen131
+\belowrulesep=\dimen132
+\belowbottomsep=\dimen133
+\aboverulesep=\dimen134
+\abovetopsep=\dimen135
+\cmidrulesep=\dimen136
+\cmidrulekern=\dimen137
+\defaultaddspace=\dimen138
+\@cmidla=\count93
+\@cmidlb=\count94
+\@aboverulesep=\dimen139
+\@belowrulesep=\dimen140
+\@thisruleclass=\count95
+\@lastruleclass=\count96
+\@thisrulewidth=\dimen141
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen126
-\extrarowheight=\dimen127
-\NC@list=\toks18
+\col@sep=\dimen142
+\extrarowheight=\dimen143
+\NC@list=\toks19
 \extratabsurround=\skip43
 \backup@length=\skip44
 )
@@ -434,12 +438,12 @@ Package: paralist 2015/12/30 v2.5 Extended list environments
 \plpartopsep=\skip46
 \plitemsep=\skip47
 \plparsep=\skip48
-\pl@lab=\toks19
+\pl@lab=\toks20
 )
 (c:/w32tex/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks20
-\verbatim@line=\toks21
+\every@verbatim=\toks21
+\verbatim@line=\toks22
 \verbatim@in@stream=\read1
 )
 (c:/w32tex/share/texmf-dist/tex/latex/subfig/subfig.sty
@@ -451,27 +455,27 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (c:/w32tex/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen128
-\captionmargin@=\dimen129
-\captionwidth=\dimen130
-\caption@tempdima=\dimen131
-\caption@indent=\dimen132
-\caption@parindent=\dimen133
-\caption@hangindent=\dimen134
+\captionmargin=\dimen144
+\captionmargin@=\dimen145
+\captionwidth=\dimen146
+\caption@tempdima=\dimen147
+\caption@indent=\dimen148
+\caption@parindent=\dimen149
+\caption@hangindent=\dimen150
 )
-\c@ContinuedFloat=\count95
+\c@ContinuedFloat=\count97
 )
-\c@KVtest=\count96
+\c@KVtest=\count98
 \sf@farskip=\skip49
-\sf@captopadj=\dimen135
+\sf@captopadj=\dimen151
 \sf@capskip=\skip50
 \sf@nearskip=\skip51
-\c@subfigure=\count97
-\c@subfigure@save=\count98
-\c@lofdepth=\count99
-\c@subtable=\count100
-\c@subtable@save=\count101
-\c@lotdepth=\count102
+\c@subfigure=\count99
+\c@subfigure@save=\count100
+\c@lofdepth=\count101
+\c@subtable=\count102
+\c@subtable@save=\count103
+\c@lotdepth=\count104
 \sf@top=\skip52
 \sf@bottom=\skip53
 )
@@ -485,51 +489,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
-\ex@=\dimen136
+\@emptytoks=\toks23
+\ex@=\dimen152
 ))
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen137
+\pmbraise@=\dimen153
 )
 (c:/w32tex/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count103
+\inf@bad=\count105
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count104
-\leftroot@=\count105
+\uproot@=\count106
+\leftroot@=\count107
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count106
-\DOTSCASE@=\count107
+\classnum@=\count108
+\DOTSCASE@=\count109
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen138
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen154
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count108
-\c@MaxMatrixCols=\count109
+\macc@depth=\count110
+\c@MaxMatrixCols=\count111
 \dotsspace@=\muskip10
-\c@parentequation=\count110
-\dspbrk@lvl=\count111
-\tag@help=\toks23
-\row@=\count112
-\column@=\count113
-\maxfields@=\count114
-\andhelp@=\toks24
-\eqnshift@=\dimen139
-\alignsep@=\dimen140
-\tagshift@=\dimen141
-\tagwidth@=\dimen142
-\totwidth@=\dimen143
-\lineht@=\dimen144
-\@envbody=\toks25
+\c@parentequation=\count112
+\dspbrk@lvl=\count113
+\tag@help=\toks24
+\row@=\count114
+\column@=\count115
+\maxfields@=\count116
+\andhelp@=\toks25
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
+\@envbody=\toks26
 \multlinegap=\skip55
 \multlinetaggap=\skip56
-\mathdisplay@stack=\toks26
+\mathdisplay@stack=\toks27
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
@@ -546,17 +550,17 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (c:/w32tex/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip57
-\fb@frw=\dimen145
-\fb@frh=\dimen146
-\FrameRule=\dimen147
-\FrameSep=\dimen148
+\fb@frw=\dimen161
+\fb@frh=\dimen162
+\FrameRule=\dimen163
+\FrameSep=\dimen164
 )
 (c:/w32tex/share/texmf-dist/tex/latex/braket/braket.sty)
 (c:/w32tex/share/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks27
-\footnotemargin=\dimen149
-\c@pp@next@reset=\count115
+\FN@temptoken=\toks28
+\footnotemargin=\dimen165
+\c@pp@next@reset=\count117
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -646,11 +650,15 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
 LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: dvips
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -681,404 +689,154 @@ LaTeX Font Info:    ... okay on input line 65.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(c:/w32tex/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(c:/w32tex/share/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(c:/w32tex/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(c:/w32tex/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-
-Package epstopdf Warning: Drivers other than `pdftex.def' are not supported.
-
-)
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- [1
-Non-PDF special ignored!
-Non-PDF special ignored!
+[1
 
 
+] [2
 
-Non-PDF special ignored!
-Non-PDF special ignored!{c:/w32tex/share/texmf-dist/fonts/map/pdftex/updmap/pdf
-tex.map}
-Non-PDF special ignored!
-Non-PDF special ignored!] [2
-Non-PDF special ignored!
-Non-PDF special ignored!
+] [1] [2
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
+]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 111.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 111.
 LaTeX Font Info:    Try loading font information for U+msa on input line 114.
-
-(c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 114.
 
 (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \vbox (badness 1152) has occurred while \output is active []
+) [3] [-1] [0
 
- [3
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [-1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+]
+(./thesis.toc
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+ [1])
+\tf@toc=\write3
+\openout3 = `thesis.toc'.
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[0
-Non-PDF special ignored!
-Non-PDF special ignored!
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!] (./thesis.toc [1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!])
-\tf@toc=\write3
-\openout3 = `thesis.toc'.
-
- [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[2]
 Chapter 1.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 142.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 142.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 145.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 145.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 147.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 147.
 File: images/S_n.eps Graphic file (type eps)
 <images/S_n.eps>
 File: images/gap.eps Graphic file (type eps)
- <images/gap.eps> [1
-Non-PDF special ignored!
-Non-PDF special ignored!
+ <images/gap.eps>
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 167.
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!]
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 167.
+
+[1
+
+]
 File: images/pair_coll.eps Graphic file (type eps)
  <images/pair_coll.eps>
 File: images/pair_rot.eps Graphic file (type eps)
- <images/pair_rot.eps> [2
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [3
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [4
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ <images/pair_rot.eps> [2] [3] [4]
 File: images/phonon.eps Graphic file (type eps)
- <images/phonon.eps>
+
+<images/phonon.eps>
 File: images/112Cd.eps Graphic file (type eps)
- <images/112Cd.eps> [5
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [6
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [7
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [8
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ <images/112Cd.eps> [5] [6] [7] [8]
 Chapter 2.
 [9
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [10
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [11
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [12
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [13
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [14
-Non-PDF special ignored!
-Non-PDF special ignored!
+] [10] [11] [12] [13] [14
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
+]
 Chapter 3.
 [15
-Non-PDF special ignored!
-Non-PDF special ignored!
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
+]
 File: images/phase.eps Graphic file (type eps)
- <images/phase.eps> [16
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ <images/phase.eps> [16]
 File: images/phase_compare.eps Graphic file (type eps)
- <images/phase_compare.eps> [17
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [18
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [19
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [20
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [21
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [22
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ <images/phase_compare.eps> [17] [18] [19] [20]
+[21] [22]
 File: images/N50ex_energy_wo_adiabatic.eps Graphic file (type eps)
  <images/N50ex_energy_wo_adiabatic.eps>
 File: images/N100ex_energy_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N100ex_energy_wo_adiabatic.eps> [23
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [24
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+<images/N100ex_energy_wo_adiabatic.eps> [23] [24]
 File: images/N50Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq0p5occ_wo_adiabatic.eps>
+
+<images/N50Xeq0p5occ_wo_adiabatic.eps>
 File: images/N100Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
-
-<images/N100Xeq0p5occ_wo_adiabatic.eps>
+ <images/N100Xeq0p5occ_wo_adiabatic.eps>
 File: images/N50Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N50Xeq2occ_wo_adiabatic.eps>
-File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N100Xeq2occ_wo_adiabatic.eps>
+<images/N50Xeq2occ_wo_adiabatic.eps>
+File: images/N100Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+ <images/N100Xeq2occ_wo_adiabatic.eps>
 File: images/N50Pad_CQ.eps Graphic file (type eps)
- <images/N50Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1155--1156
+
+<images/N50Pad_CQ.eps>
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1154--1155
  [] 
  []
 
 File: images/N50Pad_FD.eps Graphic file (type eps)
 <images/N50Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1161--1162
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1160--1161
  [] 
  []
 
 File: images/N50Pad_SPA.eps Graphic file (type eps)
 <images/N50Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1167--1168
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1166--1167
  [] 
  []
 
-[25
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[25]
 File: images/N100Pad_CQ.eps Graphic file (type eps)
  <images/N100Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1187--1188
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1186--1187
  [] 
  []
 
 File: images/N100Pad_FD.eps Graphic file (type eps)
 <images/N100Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1193--1194
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1192--1193
  [] 
  []
 
 File: images/N100Pad_SPA.eps Graphic file (type eps)
 <images/N100Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1199--1200
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1198--1199
  [] 
  []
 
@@ -1086,77 +844,32 @@ File: images/N8ex_energy_wo_adiabatic.eps Graphic file (type eps)
 <images/N8ex_energy_wo_adiabatic.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ [26]
 File: images/N8Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
- <images/N8Xeq0p5occ_wo_adiabatic.eps>
-File: images/N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
 
-<images/N8Xeq2occ_wo_adiabatic.eps>
+<images/N8Xeq0p5occ_wo_adiabatic.eps>
+File: images/N8Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
+ <images/N8Xeq2occ_wo_adiabatic.eps>
 File: images/N8Pad_CQ.eps Graphic file (type eps)
- <images/N8Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1358--1359
+
+<images/N8Pad_CQ.eps>
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1357--1358
  [] 
  []
 
 File: images/N8Pad_FD.eps Graphic file (type eps)
 <images/N8Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1364--1365
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1363--1364
  [] 
  []
 
 File: images/N8Pad_SPA.eps Graphic file (type eps)
 <images/N8Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1370--1371
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1369--1370
  [] 
  []
 
-[27
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[27]
 File: images/N16ex_energy_wo_adiabatic.eps Graphic file (type eps)
  <images/N16ex_energy_wo_adiabatic.eps>
 File: images/N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
@@ -1164,400 +877,83 @@ File: images/N16Xeq0p5occ_wo_adiabatic.eps Graphic file (type eps)
 <images/N16Xeq0p5occ_wo_adiabatic.eps>
 File: images/N16Xeq2occ_wo_adiabatic.eps Graphic file (type eps)
  <images/N16Xeq2occ_wo_adiabatic.eps>
-[28
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[28]
 File: images/N16Pad_CQ.eps Graphic file (type eps)
  <images/N16Pad_CQ.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1438--1439
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1437--1438
  [] 
  []
 
 File: images/N16Pad_FD.eps Graphic file (type eps)
 <images/N16Pad_FD.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1444--1445
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1443--1444
  [] 
  []
 
 File: images/N16Pad_SPA.eps Graphic file (type eps)
 <images/N16Pad_SPA.eps>
-Overfull \hbox (18.19748pt too wide) in paragraph at lines 1450--1451
+Overfull \hbox (18.19748pt too wide) in paragraph at lines 1449--1450
  [] 
  []
 
-[29
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [30
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[29] [30]
 Chapter 4.
 [31
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [32
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [33
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [34
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [35
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
-Overfull \hbox (22.01358pt too wide) in paragraph at lines 2009--2022
-\OT1/cmr/m/n/10.95 Sec. 4.1.2[]. Cal-cu-lat-ing a tra-jec-tory in the $(\OML/cm
-m/m/it/10.95 q[]; p[]\OT1/cmr/m/n/10.95 )$ space, we can iden-tify a se-ries of
- states $\OMS/cmsy/m/n/10.95 f[]g$
+] [32] [33] [34] [35]
+Overfull \hbox (22.01358pt too wide) in paragraph at lines 2008--2021
+\OT1/cmr/m/n/10.95 Sec. 4.1.2. Cal-cu-lat-ing a tra-jec-tory in the $(\OML/cmm/
+m/it/10.95 q[]; p[]\OT1/cmr/m/n/10.95 )$ space, we can iden-tify a se-ries of s
+tates $\OMS/cmsy/m/n/10.95 f[]g$
  []
 
-
-Overfull \hbox (12.14325pt too wide) in paragraph at lines 2039--2048
-\OT1/cmr/m/n/10.95 Then, the ac-tion for the tra-jec-tory $\OML/cmm/m/it/10.95 
-C[]$ \OT1/cmr/m/n/10.95 can be also ex-pressed as $\OMS/cmsy/m/n/10.95 T\OT1/cm
-r/m/n/10.95 (\OML/cmm/m/it/10.95 q[]; p[]\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.
-95 J\OT1/cmr/m/n/10.95 ) = [][] [] \OML/cmm/m/it/10.95 dt$\OT1/cmr/m/n/10.95 . 
-
- []
-
-[36
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[36] [37]
 File: images/N16X3p2trajectory.eps Graphic file (type eps)
  <images/N16X3p2trajectory.eps>
 File: images/N16X3p2action.eps Graphic file (type eps)
-
-<images/N16X3p2action.eps>
+ <images/N16X3p2action.eps>
 File: images/N16X3p2occ.eps Graphic file (type eps)
- <images/N16X3p2occ.eps> [37
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [38
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+
+<images/N16X3p2occ.eps> [38] [39]
 File: images/omega_sq.eps Graphic file (type eps)
  <images/omega_sq.eps>
 File: images/occ_number.eps Graphic file (type eps)
- <images/occ_number.eps>
-[39
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+
+<images/occ_number.eps> [40]
 File: images/potential.eps Graphic file (type eps)
  <images/potential.eps>
 File: images/intra_trans.eps Graphic file (type eps)
  <images/intra_trans.eps>
 File: images/inter_trans.eps Graphic file (type eps)
 
-<images/inter_trans.eps> [40
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [41
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [42
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+<images/inter_trans.eps> [41]
 File: images/Pbomega_sq.eps Graphic file (type eps)
  <images/Pbomega_sq.eps>
-Overfull \hbox (6.54837pt too wide) in paragraph at lines 2493--2494
+Overfull \hbox (6.54837pt too wide) in paragraph at lines 2497--2498
  [] 
  []
 
 File: images/Pbocc_number.eps Graphic file (type eps)
 <images/Pbocc_number.eps>
-Overfull \hbox (6.54837pt too wide) in paragraph at lines 2502--2503
+Overfull \hbox (6.54837pt too wide) in paragraph at lines 2506--2507
  [] 
  []
 
-[43
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+[42] [43]
 File: images/Pbpotential.eps Graphic file (type eps)
  <images/Pbpotential.eps>
 
-LaTeX Warning: Reference `??' on page 44 undefined on input line 2624.
+LaTeX Warning: Reference `??' on page 44 undefined on input line 2628.
 
-[44
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
 File: images/Pbintra_trans.eps Graphic file (type eps)
- <images/Pbintra_trans.eps>
+<images/Pbintra_trans.eps>
 File: images/Pbinter_trans.eps Graphic file (type eps)
+ <images/Pbinter_trans.eps> [44] [45] [46
 
-<images/Pbinter_trans.eps> [45
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [46
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+
+]
 Chapter 5.
 File: images/N8p_E.eps Graphic file (type eps)
 <images/N8p_E.eps>
@@ -1568,352 +964,117 @@ File: images/N50Xeq2p4gap_E.eps Graphic file (type eps)
 File: images/N16Xeq2p4gap_E.eps Graphic file (type eps)
 
 <images/N16Xeq2p4gap_E.eps> [47
-Non-PDF special ignored!
-Non-PDF special ignored!
 
-
-
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [48
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+] [48]
 File: images/N20gap.eps Graphic file (type eps)
  <images/N20gap.eps>
 File: images/192Pbgap.eps Graphic file (type eps)
- <images/192Pbgap.eps> [49
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [50
-Non-PDF special ignored!
-Non-PDF special ignored!
+
+<images/192Pbgap.eps> [49] [50
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
+]
 Chapter 6.
 [51
-Non-PDF special ignored!
-Non-PDF special ignored!
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!] [52
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+] [52]
 Appendix A.
 [53
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
-
-Non-PDF special ignored!
-Non-PDF special ignored!]
-Overfull \hbox (28.83289pt too wide) in paragraph at lines 3029--3029
+]
+Overfull \hbox (28.83289pt too wide) in paragraph at lines 3032--3032
 [] 
  []
 
-[54
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3060
+[54]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 3063
 .
  (c:/w32tex/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3060.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 3063.
 
-[55
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [56
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [57
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [58
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+ [55] [56] [57]
+[58]
 Appendix B.
 [59
-Non-PDF special ignored!
-Non-PDF special ignored!
 
 
 
+]
+File: images/can-trans.eps Graphic file (type eps)
+ <images/can-trans.eps> [60] [61] [62
 
-Non-PDF special ignored!
-Non-PDF special ignored!] [60
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]
+
+]
 Appendix C.
+[63
 
-Underfull \vbox (badness 6625) has occurred while \output is active []
+]
+Overfull \hbox (3.72713pt too wide) in paragraph at lines 3406--3406
+[] 
+ []
 
- [61
-Non-PDF special ignored!
-Non-PDF special ignored!
+[64]
+Appendix D.
+File: images/spectra_x0.eps Graphic file (type eps)
+<images/spectra_x0.eps>
+File: images/spectra_x0p5.eps Graphic file (type eps)
+ <images/spectra_x0p5.eps>
+File: images/spectra_x1.eps Graphic file (type eps)
+ <images/spectra_x1.eps>
+File: images/spectra_x2.eps Graphic file (type eps)
+
+<images/spectra_x2.eps>
+File: images/spectra_x3p2.eps Graphic file (type eps)
+ <images/spectra_x3p2.eps>
+File: images/spectra_x8.eps Graphic file (type eps)
+ <images/spectra_x8.eps>
+[65
 
 
 
+] [66] [67]
+File: images/spectra_g0.eps Graphic file (type eps)
+ <images/spectra_g0.eps>
+File: images/spectra_g0p05.eps Graphic file (type eps)
+ <images/spectra_g0p05.eps>
+File: images/spectra_g0p1.eps Graphic file (type eps)
 
-Non-PDF special ignored!
-Non-PDF special ignored!] (./thesis.bbl [62
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [63
-Non-PDF special ignored!
-Non-PDF special ignored!
+<images/spectra_g0p1.eps>
+File: images/spectra_g0p15.eps Graphic file (type eps)
+ <images/spectra_g0p15.eps>
+File: images/spectra_g0p2.eps Graphic file (type eps)
+ <images/spectra_g0p2.eps>
+(./thesis.bbl [68] [69] [70]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 7.
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [64
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] [65
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!]) [66
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!] (./thesis.aux)
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 7.
+
+[71
+
+] [72] [73]) [74] (./thesis.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5450 strings out of 493026
- 77346 string characters out of 6136275
- 153236 words of memory out of 5000000
- 8815 multiletter control sequences out of 15000+600000
- 20402 words of font info for 77 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 44i,18n,43p,1695b,381s stack positions out of 5000i,500n,10000p,500000b,80000s
-<c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/w32
-tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/w32tex/share
-/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/w32tex/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/w32tex/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><c:/w32tex/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/w32tex
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/w32tex/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/w32tex/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><c:/w32tex/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr9.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmss10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-s12.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><
-c:/w32tex/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/w32tex
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/w32tex/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/w32tex/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb><c:/w32tex/share/texmf-dist/fonts/type1
-/public/amsfonts/symbols/msam10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/symbols/msbm10.pfb><c:/w32tex/share/texmf-dist/fonts/type1/public/
-amsfonts/symbols/msbm7.pfb>
-Output written on thesis.pdf (75 pages, 495216 bytes).
-PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5108 strings out of 493709
+ 71065 string characters out of 6152372
+ 149882 words of memory out of 5000000
+ 8492 multiletter control sequences out of 15000+600000
+ 29829 words of font info for 118 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 44i,18n,43p,1695b,411s stack positions out of 5000i,500n,10000p,500000b,80000s
 
+Output written on thesis.dvi (83 pages, 325992 bytes).

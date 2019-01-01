@@ -36,10 +36,10 @@
 \contentsline {section}{\numberline {4.2}Application of ASCC+SPA in pairing model}{35}
 \contentsline {subsection}{\numberline {4.2.1}Application of ASCC}{35}
 \contentsline {subsection}{\numberline {4.2.2}Application of SPA}{36}
-\contentsline {section}{\numberline {4.3}Result}{37}
+\contentsline {section}{\numberline {4.3}Result}{38}
 \contentsline {subsection}{\numberline {4.3.1}Integrable case: Two-level pairing model}{38}
-\contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{39}
-\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{44}
+\contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{40}
+\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{43}
 \contentsline {chapter}{\numberline {5}Collective model treatment}{47}
 \contentsline {section}{\numberline {5.1}Integrable system}{47}
 \contentsline {section}{\numberline {5.2}Non-integrable system}{49}
@@ -49,8 +49,13 @@
 \contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{56}
 \contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{57}
 \contentsline {section}{\numberline {A.4}Action in pairing model}{58}
-\contentsline {chapter}{\numberline {B}Properties of superfluid ground state in pairing model}{59}
-\contentsline {section}{\numberline {B.1}Two-level system}{59}
-\contentsline {chapter}{\numberline {C}Detailed derivation of semiclassical wave function in SPA}{61}
-\contentsline {section}{\numberline {C.1}Derivation of Eq. (3.27\hbox {})}{61}
-\contentsline {chapter}{Bibliography}{63}
+\contentsline {chapter}{\numberline {B}Extra discussion in two-level pairing model}{59}
+\contentsline {section}{\numberline {B.1}Phase transition point}{59}
+\contentsline {section}{\numberline {B.2}Canonical quantization in Pauli's prescription}{60}
+\contentsline {chapter}{\numberline {C}Detailed derivation of semiclassical wave function in SPA}{63}
+\contentsline {section}{\numberline {C.1}Derivation of Eq. (3.27\relax )}{63}
+\contentsline {section}{\numberline {C.2}Derivation of Eq. (4.34\relax )}{64}
+\contentsline {chapter}{\numberline {D}Exact energy spectra in multi-level pairing model}{65}
+\contentsline {section}{\numberline {D.1}Two-level system}{65}
+\contentsline {section}{\numberline {D.2}Three-level system}{68}
+\contentsline {chapter}{Bibliography}{71}
