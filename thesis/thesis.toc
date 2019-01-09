@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {3.2}Requantization methods}{18}
 \contentsline {subsection}{\numberline {3.2.1}Stationary phase approximation to the path integral}{18}
 \contentsline {subsection}{\numberline {3.2.2}Canonical quantization}{21}
-\contentsline {subsection}{\numberline {3.2.3}Fourier decomposition}{22}
+\contentsline {subsection}{\numberline {3.2.3}Fourier decomposition}{23}
 \contentsline {section}{\numberline {3.3}Result}{23}
 \contentsline {subsection}{\numberline {3.3.1}Large-$\Omega $ cases}{24}
 \contentsline {subsection}{\numberline {3.3.2}Small-$\Omega $ cases}{27}
@@ -38,24 +38,25 @@
 \contentsline {subsection}{\numberline {4.2.2}Application of SPA}{36}
 \contentsline {section}{\numberline {4.3}Result}{38}
 \contentsline {subsection}{\numberline {4.3.1}Integrable case: Two-level pairing model}{38}
-\contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{40}
-\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{43}
-\contentsline {chapter}{\numberline {5}Collective model treatment}{47}
-\contentsline {section}{\numberline {5.1}Integrable system}{47}
-\contentsline {section}{\numberline {5.2}Non-integrable system}{49}
-\contentsline {chapter}{\numberline {6}Conclusion and perspective}{51}
-\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{53}
-\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{53}
-\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{56}
-\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{57}
-\contentsline {section}{\numberline {A.4}Action in pairing model}{58}
-\contentsline {chapter}{\numberline {B}Extra discussion in two-level pairing model}{59}
-\contentsline {section}{\numberline {B.1}Phase transition point}{59}
-\contentsline {section}{\numberline {B.2}Canonical quantization in Pauli's prescription}{60}
-\contentsline {chapter}{\numberline {C}Detailed derivation of semiclassical wave function in SPA}{63}
-\contentsline {section}{\numberline {C.1}Derivation of Eq. (3.27\relax )}{63}
-\contentsline {section}{\numberline {C.2}Derivation of Eq. (4.34\relax )}{64}
-\contentsline {chapter}{\numberline {D}Exact energy spectra in multi-level pairing model}{65}
-\contentsline {section}{\numberline {D.1}Two-level system}{65}
-\contentsline {section}{\numberline {D.2}Three-level system}{68}
-\contentsline {chapter}{Bibliography}{71}
+\contentsline {subsection}{\numberline {4.3.2}Non-integrable case (1): Three-level pairing model}{39}
+\contentsline {subsection}{\numberline {4.3.3}Non-integrable case (2): Pb isotopes}{44}
+\contentsline {section}{\numberline {4.4}Remaining problems}{45}
+\contentsline {chapter}{\numberline {5}Collective model treatment}{51}
+\contentsline {section}{\numberline {5.1}Integrable system}{51}
+\contentsline {section}{\numberline {5.2}Non-integrable system}{53}
+\contentsline {chapter}{\numberline {6}Conclusion and perspective}{55}
+\contentsline {chapter}{\numberline {A}Detailed derivation of the action in pairing model}{57}
+\contentsline {section}{\numberline {A.1}Matrix elements of the spin-coherent state}{57}
+\contentsline {section}{\numberline {A.2}Matrix elements in special canonical variables $(\chi ,j)$ representation}{60}
+\contentsline {section}{\numberline {A.3}Derivation of the path integral in spin-coherent state}{61}
+\contentsline {section}{\numberline {A.4}Action in pairing model}{62}
+\contentsline {chapter}{\numberline {B}Extra discussion in two-level pairing model}{63}
+\contentsline {section}{\numberline {B.1}Phase transition point}{63}
+\contentsline {section}{\numberline {B.2}Canonical quantization in Pauli's prescription}{64}
+\contentsline {chapter}{\numberline {C}Detailed derivation of semiclassical wave function in SPA}{69}
+\contentsline {section}{\numberline {C.1}Derivation of Eq. (3.27\relax )}{69}
+\contentsline {section}{\numberline {C.2}Derivation of Eq. (4.34\relax )}{70}
+\contentsline {chapter}{\numberline {D}Exact energy spectra in multi-level pairing model}{71}
+\contentsline {section}{\numberline {D.1}Two-level system}{71}
+\contentsline {section}{\numberline {D.2}Three-level system}{74}
+\contentsline {chapter}{Bibliography}{77}
